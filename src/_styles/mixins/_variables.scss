@@ -1,0 +1,33 @@
+$white: #fff;
+$black: #000;
+$darkestGray: #333;
+$darkGray: #6b6b6b;
+$midGray: #999;
+$lightGray: #ebebeb;
+$lightestGray: #f4f7f8;
+$blue: #1565ad;
+$green: #009755;
+
+$link: $blue;
+$linkHover: $blue + #333;
+$text: $midGray;
+$textLight: $white;
+$textDark: $darkestGray;
+$accent: $blue;
+$accentAlt: $green;
+$bg: $white;
+$bgSecondary: $lightestGray;
+$bgDark: $darkestGray;
+$bgGreen: $green;
+$bgBlue: $blue;
+$gradient: linear-gradient(45deg, $blue 30%, $green 30%);
+$gradientHover: linear-gradient(45deg, $blue 45%, $green 45%);
+
+$base: 40px;
+
+$duration: 0.3s;
+$easing: cubic-bezier(.785, .135, .15, .86);
+$easingLight: ease;
+
+$mainFont: 'PT Sans', sans-serif;
+$altFont: 'Myriad', sans-serif;

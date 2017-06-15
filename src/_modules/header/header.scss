@@ -1,0 +1,12 @@
+.header{
+
+    &__logo{
+        float: left;
+
+        svg {
+            fill: $blue;
+            width:220px;
+            height: 150px;
+        }
+    }
+}
