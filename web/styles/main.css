@@ -12555,6 +12555,40 @@ footer.footer .footer__bottom .footer__headquarters .headquarter__adress {
   margin-bottom: 0 !important;
 }
 
+.home__slider:before {
+  content: '';
+  position: absolute;
+  background: transparent;
+  width: 210%;
+  height: 120%;
+  background: transparent;
+  -webkit-box-shadow: inset 0 10px 100px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 10px 100px rgba(0, 0, 0, 0.5);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: -50%;
+  opacity: .7;
+  z-index: 0;
+  z-index: 5;
+}
+
+.home__slider:after {
+  content: '';
+  position: absolute;
+  background: transparent;
+  width: 50%;
+  height: 90%;
+  -webkit-box-shadow: 0 10px 100px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 10px 100px rgba(0, 0, 0, 0.5);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 100%;
+  right: -10.8%;
+  opacity: .2;
+  z-index: 0;
+  z-index: 5;
+}
+
 .home__slider__slide {
   height: 0;
   padding-bottom: 44%;

@@ -6,6 +6,7 @@
         background-image: $gradient;
 
 
+
     }
 
     &__slider {
@@ -14,6 +15,16 @@
         padding-bottom: 44%;
         position: relative;
         margin-bottom: 0!important;
+
+        &:before {
+            @include shades(before);
+            z-index:5;
+        }
+
+        &:after {
+            @include shades(after);
+            z-index:5;
+        }
 
         &__slide{
             height: 0;
