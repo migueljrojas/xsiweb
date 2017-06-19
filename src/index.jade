@@ -9,12 +9,13 @@ block content
         section.home__hero
             +slider('home__slider')
                 each slide in site.data.home.slider
-                    .home__slider
+                    .home__slider__slide(style="background:url(#{slide.img}) no-repeat top right;")
                         .container
-                            img(src=slide.img)
-                            h2=slide.title
-                            p=slide.desc
-                            a._button.-white(href=slide.btn.url)= slide.btn.text
+                            //img(src=slide.img)
+                            .home__slider__data
+                                h2=slide.title
+                                p=slide.desc
+                                a._button.-white(href=slide.btn.url)= slide.btn.text
       
         section.home__porquexsi
             .container

@@ -12005,6 +12005,7 @@ button.close {
   padding: 0;
   border: none;
   outline: none;
+  z-index: 10;
 }
 
 .slick-prev:hover, .slick-prev:focus,
@@ -12031,8 +12032,8 @@ button.close {
   font-family: "slick";
   font-size: 30px;
   line-height: 1;
-  color: #1565ad;
-  opacity: 0.75;
+  color: #fff;
+  opacity: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -12045,12 +12046,12 @@ button.close {
 }
 
 .slick-prev {
-  left: -20px;
+  left: 20px;
 }
 
 [dir="rtl"] .slick-prev {
   left: auto;
-  right: -10px;
+  right: 10px;
 }
 
 .slick-prev:before {
@@ -12062,11 +12063,11 @@ button.close {
 }
 
 .slick-next {
-  right: -20px;
+  right: 20px;
 }
 
 [dir="rtl"] .slick-next {
-  left: -10px;
+  left: 10px;
   right: auto;
 }
 
@@ -12085,13 +12086,13 @@ button.close {
 
 .slick-dots {
   position: absolute;
-  bottom: -25px;
+  bottom: 50px;
   list-style: none;
   display: block;
   text-align: center;
   padding: 0;
   margin: 0;
-  width: 100%;
+  left: 50px;
 }
 
 .slick-dots li {
@@ -12145,7 +12146,7 @@ button.close {
 
 .slick-dots li.slick-active button:before {
   color: #fff;
-  opacity: 0.75;
+  opacity: 1;
 }
 
 .header {
@@ -12153,6 +12154,7 @@ button.close {
   position: absolute;
   top: 0;
   width: 100%;
+  z-index: 1000;
 }
 
 .header .container-fluid .row {
@@ -12541,9 +12543,63 @@ footer.footer .footer__bottom .footer__headquarters .headquarter__adress {
 }
 
 .home__hero {
-  padding: 8% 0;
   background-image: -webkit-linear-gradient(135deg, #009755 30%, #1565ad 55%);
   background-image: linear-gradient(-45deg, #009755 30%, #1565ad 55%);
+}
+
+.home__slider {
+  overflow: hidden;
+  height: 0;
+  padding-bottom: 44%;
+  position: relative;
+  margin-bottom: 0 !important;
+}
+
+.home__slider__slide {
+  height: 0;
+  padding-bottom: 44%;
+  position: relative;
+  background-size: cover;
+}
+
+.home__slider__slide:focus {
+  outline: none;
+}
+
+.home__slider__data {
+  position: absolute;
+  top: 18%;
+  color: #fff;
+  width: 90%;
+}
+
+@media (min-width: 768px) {
+  .home__slider__data {
+    width: 70%;
+  }
+}
+
+@media (min-width: 992px) {
+  .home__slider__data {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .home__slider__data {
+    width: 30%;
+  }
+}
+
+@media (min-width: 992px) {
+  .home__slider__data h2 {
+    font-size: 60px;
+  }
+}
+
+.home__slider__data p {
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 
 .home__porquexsi {
@@ -12630,7 +12686,17 @@ footer.footer .footer__bottom .footer__headquarters .headquarter__adress {
 .home__gestionit__content {
   margin: 0;
   background-color: #333;
-  padding: 8% 8%;
+  padding: 0 8%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .home__gestionit__title {

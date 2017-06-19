@@ -2,8 +2,59 @@
     /* Porque XSI*/
 
     &__hero {
-        padding: 8% 0;
+
         background-image: $gradient;
+
+
+    }
+
+    &__slider {
+        overflow: hidden;
+        height: 0;
+        padding-bottom: 44%;
+        position: relative;
+        margin-bottom: 0!important;
+
+        &__slide{
+            height: 0;
+            padding-bottom: 44%;
+            position: relative;
+            background-size: cover;
+
+            &:focus{
+                outline: none;
+            }
+        }
+
+        &__data {
+            position: absolute;
+            top: 18%;
+            color:$white;
+            width:90%;
+
+            @include breakpoint(sm){
+                width: 70%;
+            }
+
+            @include breakpoint(md){
+                width: 40%;
+            }
+
+            @include breakpoint(lg){
+                width: 30%;
+            }
+
+            h2 {
+                @include breakpoint(md){
+                    font-size: 60px;
+                }
+            }
+
+            p{
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+        }
     }
 
     &__porquexsi {
@@ -76,7 +127,10 @@
         &__content {
           margin: 0;
           background-color: $darkestGray;
-          padding: 8% 8%;
+          padding: 0 8%;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
         }
 
         &__title {
@@ -253,7 +307,7 @@
                 height: auto;
             }
         }
-        
+
         &__article-title {
             color: $blue;
             font-weight: bold;

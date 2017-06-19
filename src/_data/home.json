@@ -3,7 +3,7 @@
         {
             "title": "¿Qué es ITAD?",
             "desc": "Conozca el servicio que todas las empresas con tecnología deberían considerar. Reciclaje, restauración y re-comercialización de activos de IT.",
-            "img": "https://www.w3schools.com/css/trolltunga.jpg",
+            "img": "/images/home/hero-slide-1.png",
             "btn": {
                 "url": "#",
                 "text": "Me interesa"
@@ -12,7 +12,7 @@
         {
             "title": "Mantenimiento Alternativo",
             "desc": "Mejoramos el SLA de soporte de fabricantes y mejoramos sus costos hasta en un 50%. Cisco, Juniper, Brocade, HP y muchas marcas más.",
-            "img": "https://s3-us-west-1.amazonaws.com/powr/defaults/image-slider1.jpg",
+            "img": "/images/home/hero-slide-2.png",
             "btn": {
                 "url": "#",
                 "text": "Me interesa"
