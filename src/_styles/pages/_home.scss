@@ -2,17 +2,13 @@
     /* Porque XSI*/
 
     &__hero {
-
         background-image: $gradient;
-
-
-
     }
 
     &__slider {
         overflow: hidden;
         height: 0;
-        padding-bottom: 44%;
+        padding-bottom: 40%;
         position: relative;
         margin-bottom: 0!important;
 
@@ -28,7 +24,7 @@
 
         &__slide{
             height: 0;
-            padding-bottom: 44%;
+            padding-bottom: 40%;
             position: relative;
             background-size: cover;
 
