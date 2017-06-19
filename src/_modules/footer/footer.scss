@@ -1,1 +1,126 @@
 // footer styles
+footer.footer {
+  margin: 0 6%;
+
+    .footer__top {
+        .footer__logo {
+          svg {
+            fill: $blue;
+            width: 120px;
+            height: 120px;
+          }
+        }
+        .footer__items1, .footer__items2 {
+            .list__items {
+              font-weight: bold;
+                li {
+                  padding-bottom: 15px;
+                }
+            }
+        }
+        .footer__newsletter {
+            .newsletter__title {
+              font-size: 20px;
+              font-weight: bold;
+              color: $blue;
+              text-transform: capitalize;
+              margin-bottom: 0;
+            }
+            .newsletter__desc {
+              color: $text;
+            }
+            form {
+                input[type=text] {
+                  font-size: 12px;
+                  border: 1px solid $text;
+                  text-transform: uppercase;
+                  padding: 8px 10px;
+                  width: 250px;
+                }
+                input[type=submit] {
+                  background: $link;
+                  color: $white;
+                  display: inline-block;
+                  font-family: $mainFont;
+                  font-size: 14px;
+                  font-weight: bold;
+                  line-height: 36px;
+                  max-width: 300px;
+                  padding: 0 12px;
+                  border: none;
+                  text-align: center;
+                  text-transform: uppercase;
+                  transition: all $duration $easingLight;
+                  &:hover{
+                      background: $linkHover;
+                      text-decoration: none;
+                      color: $white;
+                  }
+
+                  &.-white {
+                      background: $white;
+                      color: $textDark;
+
+                      &:hover{
+                          color: $blue;
+                          background: $white;
+                      }
+                  }
+                }
+            }
+
+            .header__social {
+                display: -webkit-inline-box;
+                margin-top: 10px;
+
+                  li {
+                    &:first-child {
+                      padding-left: 0px;
+                    }
+                    padding-left: 20px;
+                  }
+            }
+        }
+    }
+
+    .footer__bottom {
+      margin-top: 50px;
+
+        .footer__offices {
+            .offices__title {
+                font-size: 24px;
+                color: $blue;
+                text-transform: capitalize;
+                font-weight: bold;
+            }
+        }
+
+        .footer__cities {
+            .list__cities {
+                li {
+                  padding-bottom: 20px;
+                  .city__title {
+                    font-weight: bold;
+                    color: #656565;
+                  }
+                  .city__tlf {
+                    color: $text;
+                  }
+                }
+            }
+        }
+
+        .footer__headquarters {
+            .headquarter__title {
+              font-size: 24px;
+              color: $blue;
+              text-transform: capitalize;
+              font-weight: bold;
+            }
+            .headquarter__adress {
+              color: $text;
+              padding-right: 10px;
+            }
+        }
+    }
+}

@@ -1,6 +1,53 @@
-mixin footer(spec)
-  - spec = spec || {}
-  - spec.__class = spec.__class || ''
+//- mixin footer(spec)
+//-   - spec = spec || {}
+//-   - spec.__class = spec.__class || ''
+//- 
+//-   div(class=spec.__class)&attributes(attributes)
+//-     p This is an example paragraph for the footer module
 
-  div(class=spec.__class)&attributes(attributes)
-    p This is an example paragraph for the footer module
+footer.footer
+    .footer__top.row
+        .footer__logo.col-xs-24.col-sm-8.col-md-8
+          | <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logoOriginal"></use></svg>
+        
+        .footer__items1.col-xs-12.col-sm-4.col-md-4
+            ul.list__items
+                each item in site.data.footer.items1
+                    li
+                        a(href=item.url)=item.name
+                        
+        .footer__items2.col-xs-12.col-sm-4.col-md-4
+            ul.list__items
+                each item in site.data.footer.items2
+                    li
+                        a(href=item.url)=item.name  
+                                                              
+        .footer__newsletter.col-xs-24.col-sm-24.col-md-8
+            p.newsletter__title= site.data.footer.newsletter.title
+            
+            p.newsletter__desc= site.data.footer.newsletter.desc
+            
+            form(action='/newsletter',method='post')
+                input(id='email',type='text',value='',placeholder='Ingrese su e-mail',name='email')
+                input(type='submit',value='send')
+            
+            ul.header__social
+                each red in site.data.social
+                    li
+                        a(href=red.url)
+                            i(class="fa fa-#{red.name}")                  
+                  
+    .footer__bottom.row
+        .footer__offices.col-xs-24.col-md-4
+            p.offices__title= site.data.footer.offices.title
+            
+        .footer__cities.col-xs-24.col-md-16
+            ul.list__cities.row
+                each city in site.data.footer.offices.cities
+                    li.col-xs-12.col-sm-12.col-md-6
+                        p.city__title=city.name
+                        p.city__tlf=city.tlf
+                        
+        .footer__headquarters.col-xs-24.col-md-4 
+            p.headquarter__title Headquarters
+            p.headquarter__adress XS International, Inc. <br> 1005 Alderman Drive <br> Suite 212 <br> Alpharetta,GA 30005

@@ -1,0 +1,31 @@
+{
+  "novedades" : {
+    "title": "novedades",
+    "articles": [
+      {
+        "img": "images/novedades-prueba.jpg",
+        "title": "itad",
+        "desc": "The importance of responsive E-waste management",
+        "url": "#/"
+      },
+      {
+        "img": "images/novedades-prueba.jpg",
+        "title": "maintenance",
+        "desc": "Thir Party Maintenance -Reducing IT cost for manufactureres.",
+        "url": "#/"
+      },
+      {
+        "img": "images/novedades-prueba.jpg",
+        "title": "maintenance",
+        "desc": "3 strategies to Achieve a Headache-Free Merger or Acquisition",
+        "url": "#/"
+      },
+      {
+        "img": "images/novedades-prueba.jpg",
+        "title": "green",
+        "desc": "Large Federal Agency Achieved over 25 percent reduction in annual IT Maintenance cost with XSi",
+        "url": "#/"
+      }
+    ]
+  }
+}

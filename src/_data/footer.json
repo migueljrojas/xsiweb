@@ -1,0 +1,83 @@
+{
+  "items1": [
+      {
+          "name": "Homepage",
+          "url": "#"
+      },
+      {
+          "name": "Mantemiento",
+          "url": "#"
+      },
+      {
+          "name": "Itad",
+          "url": "#"
+      },
+      {
+          "name": "Servicios",
+          "url": "#"
+      }
+  ],
+
+  "items2": [
+      {
+          "name": "Nosotros",
+          "url": "#"
+      },
+      {
+          "name": "Noticias",
+          "url": "#"
+      },
+      {
+          "name": "Nosotros",
+          "url": "#"
+      },
+      {
+          "name": "Noticias",
+          "url": "#"
+      }
+  ],
+
+  "newsletter" : {
+      "title" : "Newsletter",
+      "desc" : "lorem ipsum three lerumb"
+  },
+
+  "offices" : {
+      "title" : "Offices",
+      "cities": [
+          {
+              "name" : "Atlanta",
+              "tlf": "1.800.256.6133"
+          },
+          {
+              "name" : "London",
+              "tlf": "+44-203.514.0678"
+          },
+          {
+              "name" : "Berlin",
+              "tlf": "+49-3056.795436"
+          },
+          {
+              "name" : "Buenos Aires",
+              "tlf": "+54-911.4407.5502"
+          },
+          {
+              "name" : "Ottawa",
+              "tlf": "+1-613.800.0935"
+          },
+          {
+              "name" : "Paris",
+              "tlf": "+33-1.70.61.54.65"
+          },
+          {
+              "name" : "Sao Paulo",
+              "tlf": "+55-11.4933.0688"
+          }
+      ]
+  },
+
+  "headquarters" : {
+    "title" : "Headquarters",
+    "adress" : "XS International, Inc. 1005 Alderman Drive Suite 212 Alpharetta,GA 30005"
+  }
+}

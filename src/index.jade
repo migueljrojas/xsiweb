@@ -1,4 +1,24 @@
 extends _layouts/base
 
 block content
-    h1 Hola Mundo
+  
+    section.novedades__container.row
+      
+        p.novedades__title= site.data.novedades.novedades.title
+        
+        ul.novedades__articles.row
+          each article in site.data.novedades.novedades.articles  
+            li.col-xs-24.col-sm-12.col-md-6
+                div.novedades__img
+                  img(src=article.img)
+                div(style='background-image: url(article.img);')
+                p.novedades__article-title= article.title
+                p.novedades__article-desc= article.desc
+    
+    section.newsletter__container.row
+      
+        p.newsletter__title.col-xs-24.col-md-24 Suscribite a nuestro newsletter
+        
+        form(action='/newsletter',method='post')
+            input(id='email',type='text',value='',placeholder='Ingrese su e-mail',name='email')
+            input(type='submit',value='send')

@@ -1,12 +1,64 @@
-.header{
-
-    &__logo{
+.Header{
+  height: 100px;
+  padding: 20px 30px 20px 30px;
+  background-color: $blue; /* ELIMINAR LUEGO */
+    .header__logo{
         float: left;
-
+        width: 25%;
         svg {
-            fill: $blue;
-            width:220px;
-            height: 150px;
+            fill: $white;
+            width: 70px;
+            height: 70px;
+        }
+    }
+
+    .container {
+        float: left;
+        width: 50%;
+        line-height: 70px;
+
+        nav {
+          text-transform: uppercase;
+            .header__nav {
+              display: -webkit-inline-box;
+
+                li {
+                  padding-left: 20px;
+                  transition: all 150ms ease;
+
+                  &:first-child {
+                    padding-left: 0px;
+                  }
+                   a {
+                     color: $white;
+                   }
+
+                   &:hover {
+                     font-weight: bold;
+                     transition: all 150ms ease;
+                   }
+                }
+            }
+        }
+    }
+
+    .container__social {
+        float: left;
+        width: 25%;
+        text-align: right;
+        line-height: 70px;
+
+        .header__social {
+          display: -webkit-inline-box;
+
+            li {
+              padding-left: 20px;
+
+              a {
+                color: $white;
+              }
+
+            }
         }
     }
 }
