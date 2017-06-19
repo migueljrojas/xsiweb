@@ -3,7 +3,7 @@
         {
             "title": "¿Qué es ITAD?",
             "desc": "Conozca el servicio que todas las empresas con tecnología deberían considerar. Reciclaje, restauración y re-comercialización de activos de IT.",
-            "img": "https://www.w3schools.com/css/trolltunga.jpg",
+            "img": "/images/home/hero-slide-1.png",
             "btn": {
                 "url": "#",
                 "text": "Me interesa"
@@ -12,7 +12,7 @@
         {
             "title": "Mantenimiento Alternativo",
             "desc": "Mejoramos el SLA de soporte de fabricantes y mejoramos sus costos hasta en un 50%. Cisco, Juniper, Brocade, HP y muchas marcas más.",
-            "img": "https://s3-us-west-1.amazonaws.com/powr/defaults/image-slider1.jpg",
+            "img": "/images/home/hero-slide-2.png",
             "btn": {
                 "url": "#",
                 "text": "Me interesa"
@@ -53,10 +53,6 @@
     }
   },
 
-  "xsiquote" : {
-    "img": "images/home/noaa.png"
-  },
-
   "sliderxsi": [
       {
           "text" : "La gran experiencia de XS Internacional a nivel federal y el hecho de trabajar a través de GSA Schedule [Programa de Administración de Servicios Generales de EE.UU] realmente ayudó a la gente de compras, comentó Mike Sellers, Gerente de Operaciones de TI para la División del Laboratirio Marino Hollings de NOAA [Administración Nacional Oceánica y Atmosférica]. Ellos tienen sus reglas que XS Internacional respeta y nos facilita las cosas.",
@@ -70,12 +66,34 @@
 
   "it": {
     "img" : "images/home/it-manager.png",
-    "title": "Soy IT manager"
+    "title": "Soy IT manager",
+    "options" : [
+      {
+          "text" : "Gestión unificada de flota de equipos"
+      },
+      {
+          "text" : "Mejoras de SLA para sus equipos"
+      },
+      {
+          "text" : "Reducción de riesgos de data-breaches"
+      }
+    ]
   },
 
   "finanzas": {
     "img" : "images/home/finanzas.png",
-    "title": "Soy de finanzas"
+    "title": "Soy de finanzas",
+    "options": [
+      {
+          "text" : "Ahorros de hasta 50% en gastos anuales de IT"
+      },
+      {
+          "text" : "Generación de ingresos por comercialización de activos"
+      },
+      {
+          "text" : "Unificación de contratos para fácil gestión"
+      }
+    ]
   },
 
   "gestionit" : {

@@ -9,12 +9,13 @@ block content
         section.home__hero
             +slider('home__slider')
                 each slide in site.data.home.slider
-                    .home__slider
+                    .home__slider__slide(style="background:url(#{slide.img}) no-repeat top right;")
                         .container
-                            img(src=slide.img)
-                            h2=slide.title
-                            p=slide.desc
-                            a._button.-white(href=slide.btn.url)= slide.btn.text
+                            //img(src=slide.img) 
+                            .home__slider__data
+                                h2=slide.title
+                                p=slide.desc
+                                a._button.-white(href=slide.btn.url)= slide.btn.text
       
         section.home__porquexsi
             .container
@@ -44,9 +45,23 @@ block content
                 div.row
                     div.col-xs-12
                         p.it__title= site.data.home.it.title
-                        a.button__soy ¿Por qué elegir xsi?
+                        a.button__soy.btn__soy-it ¿Por qué elegir xsi?
                     div.it__img.col-xs-12
                         img(src= site.data.home.it.img)
+                          
+            div.it-open.row
+                | <i class="fa fa-times btn__close" aria-hidden="true"></i>
+                div.col-md-6
+                div.col-xs-12.col-md-12
+                    p.it__title= site.data.home.it.title
+                    ul
+                      each option in site.data.home.it.options
+                        li 
+                          | <i class="fa fa-check-circle" aria-hidden="true"></i>
+                          p= option.text
+
+                div.it__img.col-xs-12.col-md-6
+                  img(src= site.data.home.it.img)              
                 
             div.finanzas.col-xs-24.col-sm-24.col-md-12 
                 div.row
@@ -54,7 +69,21 @@ block content
                         img(src= site.data.home.finanzas.img) 
                     div.col-xs-12
                         p.finanzas__title= site.data.home.finanzas.title
-                        a.button__soy ¿Por qué elegir xsi?
+                        a.button__soy.btn__soy-finanzas ¿Por qué elegir xsi?
+                        
+            div.finanzas-open.row
+                | <i class="fa fa-times btn__close" aria-hidden="true"></i>
+                div.col-md-6
+                div.col-xs-12.col-md-12
+                    p.finanzas__title= site.data.home.finanzas.title
+                    ul
+                      each option in site.data.home.finanzas.options
+                        li 
+                          | <i class="fa fa-check-circle" aria-hidden="true"></i>
+                          p= option.text
+
+                div.finanzas__img.col-xs-12.col-md-6
+                  img(src= site.data.home.finanzas.img) 
 
       
         section.home__hero-xsi
