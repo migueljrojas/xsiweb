@@ -57,6 +57,17 @@
     "img": "images/home/noaa.png"
   },
 
+  "sliderxsi": [
+      {
+          "text" : "La gran experiencia de XS Internacional a nivel federal y el hecho de trabajar a través de GSA Schedule [Programa de Administración de Servicios Generales de EE.UU] realmente ayudó a la gente de compras, comentó Mike Sellers, Gerente de Operaciones de TI para la División del Laboratirio Marino Hollings de NOAA [Administración Nacional Oceánica y Atmosférica]. Ellos tienen sus reglas que XS Internacional respeta y nos facilita las cosas.",
+          "img" : "images/home/noaa.png"
+      },
+      {
+          "text" : "La gran experiencia de XS Internacional a nivel federal y el hecho de trabajar a través de GSA Schedule [Programa de Administración de Servicios Generales de EE.UU] realmente ayudó a la gente de compras, comentó Mike Sellers, Gerente de Operaciones de TI para la División del Laboratirio Marino Hollings de NOAA [Administración Nacional Oceánica y Atmosférica]. Ellos tienen sus reglas que XS Internacional respeta y nos facilita las cosas.",
+          "img" : "images/home/noaa.png"
+      }
+  ],
+
   "it": {
     "img" : "images/home/it-manager.png",
     "title": "Soy IT manager"
