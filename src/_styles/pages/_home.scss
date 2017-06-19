@@ -2,6 +2,203 @@
 
 }
 
+/* Porque XSI*/
+.porquexsi {
+  margin: 6%;
+
+  .porquexsi__title {
+    color: $darkestGray;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+
+    @include breakpoint(md) {
+      font-size: 35px;
+    }
+  }
+
+  .porquexsi__items {
+
+      .porquexsi__img {
+        text-align: center;
+        margin-bottom: 25px;
+        img {
+          width: 100px;
+        }
+      }
+      .porquexsi__item-title {
+        font-size: 18px;
+        color: $blue;
+        font-weight: bold;
+        text-align: center;
+        text-transform: capitalize;
+      }
+      .porquexsi__item-desc {
+        font-size: 14px;
+        color: $text;
+        text-align: center;
+      }
+  }
+}
+/*Gestion IT*/
+.gestionit {
+  margin-left: 0;
+  margin-right: 0;
+    .gestionit__img {
+      overflow: hidden;
+      padding: 0;
+      height: 400px;
+        img {
+          width: 100%;
+          height: inherit;
+        }
+    }
+
+    .gestionit__content {
+      margin: 0;
+      background-color: $darkestGray;
+      padding: 4% 8%;
+      height: 400px;
+
+        .gestionit__title {
+          color: $white;
+          font-size: 20px;
+          line-height: 20px;
+          font-weight: bold;
+
+          @include breakpoint(md) {
+            font-size: 34px;
+            line-height: 34px;
+          }
+        }
+
+        .gestionit__desc {
+          color: $white;
+          font-size: 14px;
+          margin-top: 18px;
+        }
+    }
+}
+
+/*Seccion Call to action*/
+.call__action-container {
+    background-image: linear-gradient(45deg, $blue 0%, #009755 100%),linear-gradient(45deg, $blue 0%, #009755 100%);
+    padding: 80px 6%;
+
+    p {
+      float: left;
+      color: $white;
+      font-size: 15px;
+      line-height: 10px;
+      font-weight: bold;
+
+        @include breakpoint(sm) {
+          line-height: 40px;
+        }
+        @include breakpoint(md) {
+          font-size: 26px;
+          line-height: 30px;
+          margin-left: 80px;
+        }
+        span {
+          font-size: 17px;
+          @include breakpoint (md) {
+            font-size: 28px;
+          }
+        }
+    }
+
+    ._button-white {
+      background-color: $white;
+      float: left;
+      margin-left: 50px;
+      padding: 10px 30px;
+      border-radius: 8px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+}
+
+/*Seccion Soy XSI*/
+.soyxsi {
+    margin: 50px 6% 0;
+    height: 350px;
+
+    .it__img, .finanzas__img {
+        img {
+          position: absolute;
+          height: 350px;
+          top: 0;
+        }
+    }
+
+    .it__title {
+      font-size: 50px;
+      color: $blue;
+      font-weight: bold;
+      line-height: 50px;
+    }
+    .finanzas__title {
+      font-size: 50px;
+      color: $green;
+      font-weight: bold;
+      line-height: 50px;
+    }
+    .button__soy {
+      background: $white;
+      color: $textDark;
+      display: inline-block;
+      font-family: $mainFont;
+      font-size: 12px;
+      font-weight: bold;
+      line-height: 45px;
+      max-width: 300px;
+      padding: 0 25px;
+      border: 1px solid $lightGray;
+      border-radius: 8px;
+      text-align: center;
+      text-transform: uppercase;
+      transition: all $duration $easingLight;
+      margin-top: 20px;
+
+      &:hover{
+          text-decoration: none;
+          color: $blue;
+      }
+    }
+}
+/*Seccion Quotes*/
+.xsi__quote-container {
+  background-image: linear-gradient(45deg, $blue 0%, #009755 100%),linear-gradient(45deg, $blue 0%, #009755 100%);
+  padding: 50px 6%;
+  margin-left: 0;
+  margin-right: 0;
+
+    .quote__img {
+      text-align: center;
+
+        img {
+          opacity: 0.8;
+        }
+    }
+
+    .quote__desc {
+
+      p {
+        color: white;
+        font-size: 16px;
+        line-height: 25px;
+        margin-top: 20px;
+          @include breakpoint(md) {
+            padding-right: 100px;
+            margin-top: 0;
+          }
+      }
+
+    }
+}
+
 /* Sección Clientes*/
 .clients__bg {
   width: 100%;
@@ -14,6 +211,7 @@
 
   .clients__container {
       margin: 50px 6%;
+      margin-top: 0;
       padding-top: 50px;
 
       .clients__title {

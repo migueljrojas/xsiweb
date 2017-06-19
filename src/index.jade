@@ -2,8 +2,55 @@ extends _layouts/base
 
 block content
   
-    section.xsi__quote-container 
+    section.porquexsi 
+        p.porquexsi__title= site.data.home.porquexsi.title
         
+        ul.row
+            each item in site.data.home.porquexsi.items
+              li.porquexsi__items.col-xs-24.col-sm-12.col-md-6
+                  div.porquexsi__img 
+                    img(src=item.icono)
+                  p.porquexsi__item-title= item.titulo
+                  p.porquexsi__item-desc=  item.texto
+    
+    section.gestionit.row 
+        div.gestionit__img.col-xs-24.col-sm-24.col-md-14
+            img(src= site.data.home.gestionit.img)
+        div.gestionit__content.col-xs-24.col-sm-24.col-md-10
+            p.gestionit__title= site.data.home.gestionit.title
+            p.gestionit__desc= site.data.home.gestionit.desc1
+            p.gestionit__desc= site.data.home.gestionit.desc2
+
+  
+    section.call__action-container
+          |  <p> Le ofrecemos un <span>ANÁLISIS GRATUITO</span> de ahorro </p>
+          a._button-white Me interesa
+    div.clearfix      
+  
+    section.soyxsi.row
+        div.it.col-xs-24.col-sm-24.col-md-12
+            div.row
+                div.col-xs-12
+                    p.it__title= site.data.home.it.title
+                    a.button__soy ¿Por qué elegir xsi?
+                div.it__img.col-xs-12
+                    img(src= site.data.home.it.img)
+            
+        div.finanzas.col-xs-24.col-sm-24.col-md-12 
+            div.row
+                div.finanzas__img.col-xs-12  
+                    img(src= site.data.home.finanzas.img) 
+                div.col-xs-12
+                    p.finanzas__title= site.data.home.finanzas.title
+                    a.button__soy ¿Por qué elegir xsi?
+
+  
+    section.xsi__quote-container.row
+        div.quote__img.col-xs-24.col-sm-12.col-md-12
+            img(src= site.data.home.xsiquote.img)
+              
+        div.quote__desc.col-xs-24.col-sm-12.col-md-12
+            p La gran experiencia de XS Internacional a nivel federal y el hecho de trabajar a través de GSA Schedule [Programa de Administración de Servicios Generales de EE.UU] realmente ayudó a la gente de compras, comentó Mike Sellers, Gerente de Operaciones de TI para la División del Laboratirio Marino Hollings de NOAA [Administración Nacional Oceánica y Atmosférica]. Ellos tienen sus reglas que XS Internacional respeta y nos facilita las cosas."     
   
     section.clients__bg 
         div.clients__container 

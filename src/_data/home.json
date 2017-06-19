@@ -1,27 +1,49 @@
 {
   "porquexsi" : {
-    "title": "¿Por qué XSI?",
+    "title": "¿Por qué XSi?",
     "items": [
       {
-        "icono" : "",
-        "titulo": "",
-        "texto": ""
+        "icono" : "images/home/costos.png",
+        "titulo": "costos",
+        "texto": "Hasta un 50% en costos de mantenimiento + generación de ingresos por viejos equipos (ITAD). "
       },
       {
-        "icono" : "",
-        "titulo": "",
-        "texto": ""
+        "icono" : "images/home/servicio.png",
+        "titulo": "servicio",
+        "texto": "Mejoramos los niveles de servicio de fabricantes con mejores EOL/EOS y mejor SLA. Contamos con un equipo técnico de más de 500 ingenieros."
       },
       {
-        "icono" : "",
-        "titulo": "",
-        "texto": ""
+        "icono" : "images/home/trayectoria.png",
+        "titulo": "trayectoria",
+        "texto": "26 años en la vanguardia de la gestión de IT. Somos pioneros en ITAD y Mantemiento alternativo."
       },
       {
-        "icono" : "",
-        "titulo": "",
-        "texto": ""
+        "icono" : "images/home/respaldo.png",
+        "titulo": "respaldo y cobertura",
+        "texto": "Con base en USA, Sudamérica y Europa y más de 40 partners alrededor del mundo, nuestros procesos están respaldados por las más altas normas de seguridad internacional y entes de sustentabilidad."
       }
     ]
+  },
+
+  "xsiquote" : {
+    "img": "images/home/noaa.png"
+  },
+
+  "it": {
+    "img" : "images/home/it-manager.png",
+    "title": "Soy IT manager"
+  },
+
+  "finanzas": {
+    "img" : "images/home/finanzas.png",
+    "title": "Soy de finanzas"
+  },
+
+  "gestionit" : {
+    "img" : "images/home/video-placeholder.jpg",
+    "title": "Gestión eficiente de IT, a su servicio ",
+    "desc1" : "Los costos de IT para las empresas son un foco de atención permanente. Los OEMs ofrecen servicios post-venta con costos altísimos y a menudo los clientes pagan dicho soporte a pesar de creerlo desproporcionado, por no conocer una alternativa. Además, no ofrecen una solución al equipo en desuso.",
+    "desc2": "En XSi nos apasiona la gestión eficiente de IT. Por eso ofrecemos servicios alternativos con niveles de servicio superadores con costos hasta un 50% más bajos que los OEMs."
   }
+
 }
