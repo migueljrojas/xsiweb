@@ -2,8 +2,12 @@
 
 // Constructor
 var Slider = function() {
-  this.name = 'slider';
-  console.log('%s module', this.name.toLowerCase());
+    var slider = $('._slider');
+    if (slider) {
+        slider.each(function(){
+            $(this).slick();
+        });
+    }
 };
 
 module.exports = Slider;

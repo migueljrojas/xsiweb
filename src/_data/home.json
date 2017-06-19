@@ -1,4 +1,24 @@
 {
+    "slider": [
+        {
+            "title": "¿Qué es ITAD?",
+            "desc": "Conozca el servicio que todas las empresas con tecnología deberían considerar. Reciclaje, restauración y re-comercialización de activos de IT.",
+            "img": "https://www.w3schools.com/css/trolltunga.jpg",
+            "btn": {
+                "url": "#",
+                "text": "Me interesa"
+            }
+        },
+        {
+            "title": "Mantenimiento Alternativo",
+            "desc": "Mejoramos el SLA de soporte de fabricantes y mejoramos sus costos hasta en un 50%. Cisco, Juniper, Brocade, HP y muchas marcas más.",
+            "img": "https://s3-us-west-1.amazonaws.com/powr/defaults/image-slider1.jpg",
+            "btn": {
+                "url": "#",
+                "text": "Me interesa"
+            }
+        }
+    ],
   "porquexsi" : {
     "title": "¿Por qué XSi?",
     "items": [
@@ -23,6 +43,14 @@
         "texto": "Con base en USA, Sudamérica y Europa y más de 40 partners alrededor del mundo, nuestros procesos están respaldados por las más altas normas de seguridad internacional y entes de sustentabilidad."
       }
     ]
+  },
+
+  "cta": {
+    "text": "Le ofrecemos un ANÁLISIS GRATUITO de ahorro",
+    "btn": {
+        "url":"#",
+        "text": "Me interesa"
+    }
   },
 
   "xsiquote" : {

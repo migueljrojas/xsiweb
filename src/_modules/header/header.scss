@@ -1,10 +1,17 @@
-.Header{
-  height: 100px;
-  padding: 20px 30px 20px 30px;
-  background-color: $blue; /* ELIMINAR LUEGO */
-    .header__logo{
-        float: left;
-        width: 25%;
+.header{
+    height: 100px;
+    position: absolute;
+    top:0;
+    width: 100%;
+
+    .container-fluid .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 20px;
+    }
+
+    &__logo{
         svg {
             fill: $white;
             width: 70px;
@@ -12,53 +19,37 @@
         }
     }
 
-    .container {
-        float: left;
-        width: 50%;
-        line-height: 70px;
+    &__nav {
+        display: -webkit-inline-box;
 
-        nav {
-          text-transform: uppercase;
-            .header__nav {
-              display: -webkit-inline-box;
+        li {
+            padding-left: 20px;
+            transition: all 150ms ease;
 
-                li {
-                  padding-left: 20px;
-                  transition: all 150ms ease;
+            &:first-child {
+                padding-left: 0px;
+            }
+            a {
+                color: $white;
+            }
 
-                  &:first-child {
-                    padding-left: 0px;
-                  }
-                   a {
-                     color: $white;
-                   }
-
-                   &:hover {
-                     font-weight: bold;
-                     transition: all 150ms ease;
-                   }
-                }
+            &:hover {
+                font-weight: bold;
+                transition: all 150ms ease;
             }
         }
     }
 
-    .container__social {
-        float: left;
-        width: 25%;
-        text-align: right;
-        line-height: 70px;
+    &__social {
+        display: -webkit-inline-box;
 
-        .header__social {
-          display: -webkit-inline-box;
+        li {
+            padding-left: 20px;
 
-            li {
-              padding-left: 20px;
-
-              a {
+            a {
                 color: $white;
-              }
-
             }
+
         }
     }
 }

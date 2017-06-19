@@ -1,6 +1,10 @@
 // footer styles
 footer.footer {
-  margin: 0 6%;
+  margin: 6% 0;
+
+  @include breakpoint(md){
+      margin: 3% 0;
+  }
 
     .footer__top {
         .footer__logo {

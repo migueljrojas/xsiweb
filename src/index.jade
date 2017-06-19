@@ -1,84 +1,93 @@
 extends _layouts/base
 
+include _modules/slider/slider
+include _modules/cta/cta
+include _modules/suscribe/suscribe
+
 block content
-  
-    section.porquexsi 
-        p.porquexsi__title= site.data.home.porquexsi.title
+    main.home
+        section.home__hero
+            +slider('home__slider')
+                each slide in site.data.home.slider
+                    .home__slider
+                        .container
+                            img(src=slide.img)
+                            h2=slide.title
+                            p=slide.desc
+                            a._button.-white(href=slide.btn.url)= slide.btn.text
+      
+        section.home__porquexsi
+            .container
+                p.home__porquexsi__title= site.data.home.porquexsi.title
+                
+                ul.row
+                    each item in site.data.home.porquexsi.items
+                      li.home__porquexsi__items.col-xs-24.col-sm-12.col-md-6
+                          div.home__porquexsi__img 
+                            img(src=item.icono)
+                          p.home__porquexsi__item-title= item.titulo
+                          p.home__porquexsi__item-desc=  item.texto
         
-        ul.row
-            each item in site.data.home.porquexsi.items
-              li.porquexsi__items.col-xs-24.col-sm-12.col-md-6
-                  div.porquexsi__img 
-                    img(src=item.icono)
-                  p.porquexsi__item-title= item.titulo
-                  p.porquexsi__item-desc=  item.texto
-    
-    section.gestionit.row 
-        div.gestionit__img.col-xs-24.col-sm-24.col-md-14
-            img(src= site.data.home.gestionit.img)
-        div.gestionit__content.col-xs-24.col-sm-24.col-md-10
-            p.gestionit__title= site.data.home.gestionit.title
-            p.gestionit__desc= site.data.home.gestionit.desc1
-            p.gestionit__desc= site.data.home.gestionit.desc2
+        section.home__gestionit.row 
+            div.home__gestionit__img.col-xs-24.col-sm-24.col-md-14
+                img(src= site.data.home.gestionit.img)
+            div.home__gestionit__content.col-xs-24.col-sm-24.col-md-10
+                p.home__gestionit__title= site.data.home.gestionit.title
+                p.home__gestionit__desc= site.data.home.gestionit.desc1
+                p.home__gestionit__desc= site.data.home.gestionit.desc2
 
-  
-    section.call__action-container
-          |  <p> Le ofrecemos un <span>ANÁLISIS GRATUITO</span> de ahorro </p>
-          a._button-white Me interesa
-    div.clearfix      
-  
-    section.soyxsi.row
-        div.it.col-xs-24.col-sm-24.col-md-12
-            div.row
-                div.col-xs-12
-                    p.it__title= site.data.home.it.title
-                    a.button__soy ¿Por qué elegir xsi?
-                div.it__img.col-xs-12
-                    img(src= site.data.home.it.img)
-            
-        div.finanzas.col-xs-24.col-sm-24.col-md-12 
-            div.row
-                div.finanzas__img.col-xs-12  
-                    img(src= site.data.home.finanzas.img) 
-                div.col-xs-12
-                    p.finanzas__title= site.data.home.finanzas.title
-                    a.button__soy ¿Por qué elegir xsi?
+      
+        +cta(site.data.home.cta)
+      
+        section.soyxsi.row
+            div.it.col-xs-24.col-sm-24.col-md-12
+                div.row
+                    div.col-xs-12
+                        p.it__title= site.data.home.it.title
+                        a.button__soy ¿Por qué elegir xsi?
+                    div.it__img.col-xs-12
+                        img(src= site.data.home.it.img)
+                
+            div.finanzas.col-xs-24.col-sm-24.col-md-12 
+                div.row
+                    div.finanzas__img.col-xs-12  
+                        img(src= site.data.home.finanzas.img) 
+                    div.col-xs-12
+                        p.finanzas__title= site.data.home.finanzas.title
+                        a.button__soy ¿Por qué elegir xsi?
 
-  
-    section.xsi__quote-container.row
-        div.quote__img.col-xs-24.col-sm-12.col-md-12
-            img(src= site.data.home.xsiquote.img)
+      
+        section.xsi__quote-container.row
+            div.quote__img.col-xs-24.col-sm-12.col-md-12
+                img(src= site.data.home.xsiquote.img)
+                  
+            div.quote__desc.col-xs-24.col-sm-12.col-md-12
+                p La gran experiencia de XS Internacional a nivel federal y el hecho de trabajar a través de GSA Schedule [Programa de Administración de Servicios Generales de EE.UU] realmente ayudó a la gente de compras, comentó Mike Sellers, Gerente de Operaciones de TI para la División del Laboratirio Marino Hollings de NOAA [Administración Nacional Oceánica y Atmosférica]. Ellos tienen sus reglas que XS Internacional respeta y nos facilita las cosas."     
+      
+        section.home__clients
+            div.container 
+                p.home__clients__title= site.data.clientes.clientes.title
+                ul.row 
+                  each client in site.data.clientes.clientes.clients 
+                    li.col-xs-24.col-sm-12.col-md-6
+                        div.home__clients__img 
+                            img(src=client.img)
+                
+      
+        section.home__novedades
+        
+            .container.home__novedades__container        
+                .row
               
-        div.quote__desc.col-xs-24.col-sm-12.col-md-12
-            p La gran experiencia de XS Internacional a nivel federal y el hecho de trabajar a través de GSA Schedule [Programa de Administración de Servicios Generales de EE.UU] realmente ayudó a la gente de compras, comentó Mike Sellers, Gerente de Operaciones de TI para la División del Laboratirio Marino Hollings de NOAA [Administración Nacional Oceánica y Atmosférica]. Ellos tienen sus reglas que XS Internacional respeta y nos facilita las cosas."     
-  
-    section.clients__bg 
-        div.clients__container 
-            p.clients__title= site.data.clientes.clientes.title
-            ul.row 
-              each client in site.data.clientes.clientes.clients 
-                li.col-xs-24.col-sm-12.col-md-6
-                    div.clients__img 
-                        img(src=client.img)
-            
-  
-    section.novedades__container.row
-      
-        p.novedades__title= site.data.novedades.novedades.title
+                p.home__novedades__title= site.data.novedades.novedades.title
+                
+                ul.home__novedades__articles.row
+                  each article in site.data.novedades.novedades.articles  
+                    li.col-xs-24.col-sm-12.col-md-6
+                        div.home__novedades__img
+                            img(src=article.img)
+                        
+                        p.home__novedades__article-title= article.title
+                        p.home__novedades__article-desc= article.desc
         
-        ul.novedades__articles.row
-          each article in site.data.novedades.novedades.articles  
-            li.col-xs-24.col-sm-12.col-md-6
-                div.novedades__img
-                  img(src=article.img)
-                div(style='background-image: url(article.img);')
-                p.novedades__article-title= article.title
-                p.novedades__article-desc= article.desc
-    
-    section.newsletter__container.row
-      
-        p.newsletter__title.col-xs-24.col-md-24 Suscribite a nuestro newsletter
-        
-        form(action='/newsletter',method='post')
-            input(id='email',type='text',value='',placeholder='Ingrese su e-mail',name='email')
-            input(type='submit',value='send')
+        +suscribe

@@ -3,10 +3,10 @@
 
 'use strict';
 
-var $ = require('jquery');
-//var Link = require('../_modules/link/link');
+global.$ = global.jQuery = require('jquery');
+var Slider = require('../_modules/slider/slider');
 
 $(function() {
-  //new Link(); // Activate Link modules logic
-  console.log('Welcome to Yeogurt!');
+    require('../../bower_components/slick-carousel/slick/slick');
+    new Slider(); 
 });

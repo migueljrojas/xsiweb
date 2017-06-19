@@ -1,6 +1,8 @@
-mixin cta(spec)
-  - spec = spec || {}
-  - spec.__class = spec.__class || ''
+mixin cta(data)
 
-  div(class=spec.__class)&attributes(attributes)
-    p This is an example paragraph for the cta module
+    section.cta
+        .container-fluid
+            .row
+                .col-xs-24.cta__container
+                    p.cta__text=data.text
+                    a._button-white(href=data.btn.url)=data.btn.text

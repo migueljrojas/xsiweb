@@ -1,24 +1,22 @@
-header.Header
+header.header
 
     .header__hamburguer
         span
         span
         span
         
-    .header__logo
-        | <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg>        
-    .container
+    .container-fluid
         nav.row
-            ul.col-xs-24.col-md-12.header__nav
+            .header__logo
+                | <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg>        
+        
+            ul.header__nav
                 each item in site.data.header
                     li
                         a(href=item.url)= item.name
         
-    .container__social    
-      ul.header__social
-          each red in site.data.social
-              li
-                  a(href=red.url)
-                      i(class="fa fa-#{red.name}")
-
-.clearfix
+            ul.header__social
+                each red in site.data.social
+                    li
+                        a(href=red.url)
+                            i(class="fa fa-#{red.name}")

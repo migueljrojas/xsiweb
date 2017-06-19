@@ -60,7 +60,7 @@
     "directories": {
       "source": "src",
       "destination": "build",
-      "temporary": "tmp",
+      "temporary": "web",
       "//": "Directories relative to `source` directory",
       "modules": "_modules",
       "layouts": "_layouts",

@@ -5,7 +5,7 @@ button._button,
     color: $white;
     display: inline-block;
     font-family: $mainFont;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
     height: $base;
     line-height: $base;
@@ -14,6 +14,8 @@ button._button,
     text-align: center;
     text-transform: uppercase;
     transition: all $duration $easingLight;
+    border-radius: $radius;
+
     &:hover{
         background: $linkHover;
         text-decoration: none;
@@ -23,6 +25,7 @@ button._button,
     &.-white {
         background: $white;
         color: $textDark;
+        border: 1px solid rgba(0,0,0,.5);
 
         &:hover{
             color: $blue;

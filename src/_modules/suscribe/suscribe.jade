@@ -1,6 +1,10 @@
-mixin suscribe(spec)
-  - spec = spec || {}
-  - spec.__class = spec.__class || ''
-
-  div(class=spec.__class)&attributes(attributes)
-    p This is an example paragraph for the suscribe module
+mixin suscribe()
+    section.newsletter
+        .container
+            .row
+                .col-xs-24.newsletter__container
+                    p.newsletter__title.col-xs-24.col-md-24 Suscribite a nuestro newsletter
+                    
+                    form.newsletter__form(action='/newsletter',method='post')
+                        input(id='email',type='text',value='',placeholder='Ingrese su e-mail',name='email')
+                        input(type='submit',value='send')
