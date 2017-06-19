@@ -12394,7 +12394,8 @@ footer.footer .footer__bottom .footer__headquarters .headquarter__adress {
 .cta__text {
   color: #fff;
   font-size: 15px;
-  line-height: 10px;
+  line-height: 15px;
+  margin-left: 20px;
   font-weight: bold;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -12412,6 +12413,14 @@ footer.footer .footer__bottom .footer__headquarters .headquarter__adress {
   .cta__text {
     font-size: 26px;
     line-height: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .cta a._button.-white {
+    font-size: 12px;
+    line-height: 14px;
+    padding: 4px 40px;
   }
 }
 
@@ -12537,7 +12546,7 @@ footer.footer .footer__bottom .footer__headquarters .headquarter__adress {
   /* Porque XSI*/
   /*Gestion IT*/
   /*Seccion Soy XSI*/
-  /*Seccion Quotes*/
+  /*SliderXsi*/
   /* Sección Clientes*/
   /* Sección Novedades*/
 }
@@ -12742,8 +12751,8 @@ footer.footer .footer__bottom .footer__headquarters .headquarter__adress {
 
 @media (min-width: 992px) {
   .home__gestionit__title {
-    font-size: 34px;
-    line-height: 34px;
+    font-size: 32px;
+    line-height: 32px;
   }
 }
 
@@ -12758,24 +12767,48 @@ footer.footer .footer__bottom .footer__headquarters .headquarter__adress {
   height: 350px;
 }
 
+.home .soyxsi .it, .home .soyxsi .finanzas {
+  display: block;
+}
+
 .home .soyxsi .it__img img, .home .soyxsi .finanzas__img img {
-  position: absolute;
-  height: 350px;
-  top: 0;
+  height: 250px;
+}
+
+@media (min-width: 992px) {
+  .home .soyxsi .it__img img, .home .soyxsi .finanzas__img img {
+    position: absolute;
+    height: 350px;
+    top: 0;
+  }
 }
 
 .home .soyxsi .it__title {
-  font-size: 50px;
+  font-size: 40px;
   color: #1565ad;
   font-weight: bold;
-  line-height: 50px;
+  line-height: 40px;
+}
+
+@media (min-width: 992px) {
+  .home .soyxsi .it__title {
+    font-size: 50px;
+    line-height: 50px;
+  }
 }
 
 .home .soyxsi .finanzas__title {
-  font-size: 50px;
+  font-size: 40px;
   color: #009755;
   font-weight: bold;
-  line-height: 50px;
+  line-height: 40px;
+}
+
+@media (min-width: 992px) {
+  .home .soyxsi .finanzas__title {
+    font-size: 50px;
+    line-height: 50px;
+  }
 }
 
 .home .soyxsi .button__soy {
@@ -12785,9 +12818,9 @@ footer.footer .footer__bottom .footer__headquarters .headquarter__adress {
   font-family: "PT Sans", sans-serif;
   font-size: 12px;
   font-weight: bold;
-  line-height: 45px;
+  line-height: 18px;
   max-width: 300px;
-  padding: 0 25px;
+  padding: 5px 25px;
   border: 1px solid #ebebeb;
   border-radius: 8px;
   text-align: center;
@@ -12802,23 +12835,129 @@ footer.footer .footer__bottom .footer__headquarters .headquarter__adress {
   color: #1565ad;
 }
 
-.home .xsi__quote-container {
-  background-image: -webkit-linear-gradient(45deg, #1565ad 0%, #009755 100%), -webkit-linear-gradient(45deg, #1565ad 0%, #009755 100%);
-  background-image: linear-gradient(45deg, #1565ad 0%, #009755 100%), linear-gradient(45deg, #1565ad 0%, #009755 100%);
-  padding: 50px 6%;
-  margin-left: 0;
-  margin-right: 0;
+@media (min-width: 768px) {
+  .home .soyxsi .button__soy {
+    line-height: 45px;
+    padding: 0 25px;
+  }
 }
 
-.home .xsi__quote-container .quote__img {
+.home .soyxsi .finanzas-open {
+  display: none;
+}
+
+.home .soyxsi .finanzas-open .fa-times {
+  position: absolute;
+  font-size: 30px;
+  color: #999;
+  left: 80px;
+}
+
+@media (max-width: 767px) {
+  .home .soyxsi .finanzas-open .fa-times {
+    position: relative;
+    left: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .home .soyxsi .finanzas-open .fa-times {
+    position: relative;
+    left: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.home .soyxsi .finanzas-open .finanzas__title {
   text-align: center;
+  margin-bottom: 20px;
 }
 
-.home .xsi__quote-container .quote__img img {
-  opacity: 0.8;
+.home .soyxsi .finanzas-open ul li {
+  font-size: 20px;
+  display: -webkit-inline-box;
 }
 
-.home .xsi__quote-container .quote__desc p {
+.home .soyxsi .finanzas-open ul li .fa-check-circle {
+  margin-right: 5px;
+  color: #009755;
+  font-size: 20px;
+}
+
+.home .soyxsi .it-open {
+  display: none;
+}
+
+.home .soyxsi .it-open .fa-times {
+  position: absolute;
+  font-size: 30px;
+  color: #999;
+  left: 80px;
+}
+
+@media (max-width: 767px) {
+  .home .soyxsi .it-open .fa-times {
+    position: relative;
+    left: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .home .soyxsi .it-open .fa-times {
+    position: relative;
+    left: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.home .soyxsi .it-open .it__title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.home .soyxsi .it-open ul li {
+  font-size: 20px;
+  display: -webkit-inline-box;
+}
+
+.home .soyxsi .it-open ul li .fa-check-circle {
+  margin-right: 5px;
+  color: #1565ad;
+  font-size: 20px;
+}
+
+.home .home__hero-xsi {
+  clear: both;
+  background-image: -webkit-linear-gradient(135deg, #009755 30%, #1565ad 55%);
+  background-image: linear-gradient(-45deg, #009755 30%, #1565ad 55%);
+  height: 680px;
+}
+
+@media (min-width: 768px) {
+  .home .home__hero-xsi {
+    height: 400px;
+  }
+}
+
+.home .home__hero-xsi .container {
+  height: 400px;
+}
+
+.home .home__hero-xsi .container .home__slider-xsi-img {
+  padding-top: 100px;
+}
+
+.home .home__hero-xsi .container .home__slider-xsi-img img {
+  margin: 0 auto;
+}
+
+.home .home__hero-xsi .container .home__slider-xsi-text {
+  padding-top: 100px;
+}
+
+.home .home__hero-xsi .container .home__slider-xsi-text p {
   color: white;
   font-size: 16px;
   line-height: 25px;
@@ -12826,10 +12965,14 @@ footer.footer .footer__bottom .footer__headquarters .headquarter__adress {
 }
 
 @media (min-width: 992px) {
-  .home .xsi__quote-container .quote__desc p {
+  .home .home__hero-xsi .container .home__slider-xsi-text p {
     padding-right: 100px;
     margin-top: 0;
   }
+}
+
+.home .home__hero-xsi .slick-dots {
+  left: 45%;
 }
 
 .home__clients {

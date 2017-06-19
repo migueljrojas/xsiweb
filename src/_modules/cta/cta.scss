@@ -24,7 +24,8 @@
     &__text{
       color: $white;
       font-size: 15px;
-      line-height: 10px;
+      line-height: 15px;
+      margin-left: 20px;
       font-weight: bold;
       flex-wrap: wrap;
 
@@ -37,4 +38,12 @@
           line-height: 30px;
         }
     }
+    @include breakpoint (xs) {
+      a._button.-white {
+        font-size: 12px;
+        line-height: 14px;
+        padding: 4px 40px;
+      }
+    }
+
 }// cta styles

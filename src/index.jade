@@ -11,7 +11,7 @@ block content
                 each slide in site.data.home.slider
                     .home__slider__slide(style="background:url(#{slide.img}) no-repeat top right;")
                         .container
-                            //img(src=slide.img)
+                            //img(src=slide.img) 
                             .home__slider__data
                                 h2=slide.title
                                 p=slide.desc
@@ -45,9 +45,23 @@ block content
                 div.row
                     div.col-xs-12
                         p.it__title= site.data.home.it.title
-                        a.button__soy ¿Por qué elegir xsi?
+                        a.button__soy.btn__soy-it ¿Por qué elegir xsi?
                     div.it__img.col-xs-12
                         img(src= site.data.home.it.img)
+                          
+            div.it-open.row
+                | <i class="fa fa-times btn__close" aria-hidden="true"></i>
+                div.col-md-6
+                div.col-xs-12.col-md-12
+                    p.it__title= site.data.home.it.title
+                    ul
+                      each option in site.data.home.it.options
+                        li 
+                          | <i class="fa fa-check-circle" aria-hidden="true"></i>
+                          p= option.text
+
+                div.it__img.col-xs-12.col-md-6
+                  img(src= site.data.home.it.img)              
                 
             div.finanzas.col-xs-24.col-sm-24.col-md-12 
                 div.row
@@ -55,15 +69,33 @@ block content
                         img(src= site.data.home.finanzas.img) 
                     div.col-xs-12
                         p.finanzas__title= site.data.home.finanzas.title
-                        a.button__soy ¿Por qué elegir xsi?
+                        a.button__soy.btn__soy-finanzas ¿Por qué elegir xsi?
+                        
+            div.finanzas-open.row
+                | <i class="fa fa-times btn__close" aria-hidden="true"></i>
+                div.col-md-6
+                div.col-xs-12.col-md-12
+                    p.finanzas__title= site.data.home.finanzas.title
+                    ul
+                      each option in site.data.home.finanzas.options
+                        li 
+                          | <i class="fa fa-check-circle" aria-hidden="true"></i>
+                          p= option.text
+
+                div.finanzas__img.col-xs-12.col-md-6
+                  img(src= site.data.home.finanzas.img) 
 
       
-        section.xsi__quote-container.row
-            div.quote__img.col-xs-24.col-sm-12.col-md-12
-                img(src= site.data.home.xsiquote.img)
-                  
-            div.quote__desc.col-xs-24.col-sm-12.col-md-12
-                p La gran experiencia de XS Internacional a nivel federal y el hecho de trabajar a través de GSA Schedule [Programa de Administración de Servicios Generales de EE.UU] realmente ayudó a la gente de compras, comentó Mike Sellers, Gerente de Operaciones de TI para la División del Laboratirio Marino Hollings de NOAA [Administración Nacional Oceánica y Atmosférica]. Ellos tienen sus reglas que XS Internacional respeta y nos facilita las cosas."     
+        section.home__hero-xsi
+            +slider('home__slider-xsi')
+                each slide in site.data.home.sliderxsi
+                    .home__slider-xsi
+                          .container.row
+                              .home__slider-xsi-img.col-xs-24.col-sm-12
+                                  img(src= slide.img)
+                              .home__slider-xsi-text.col-xs-24.col-sm-12
+                                  p= slide.text  
+           
       
         section.home__clients
             div.container 
