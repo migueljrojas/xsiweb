@@ -1,0 +1,270 @@
+.services {
+
+  /*Servicios Mantenimiento*/
+  .services__mantenimiento {
+    margin-top: 50px;
+
+      .mantenimiento__title {
+          font-size: 18px;
+          line-height: 24px;
+          color: $textDark;
+          font-weight: bold;
+          text-align: center;
+          @include breakpoint (sm) {
+            font-size: 30px;
+            line-height: 30px;
+            text-align: left;
+          }
+          @include breakpoint (md) {
+            font-size: 45px;
+            line-height: 45px;
+            text-align: left;
+          }
+      }
+
+      .mantenimiento__img {
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+      }
+
+      .mantenimiento__options {
+
+          @include breakpoint (sm) {
+            padding-top: 20%;
+          }
+          @include breakpoint (md) {
+            padding-top: 17%;
+          }
+          li {
+              display: -webkit-box;
+              font-size: 16px;
+              color: $text;
+
+              .fa-check {
+                color: $blue;
+                font-size: 16px;
+                margin-right: 10px;
+              }
+          }
+      }
+  }
+
+  /* Servicios*/
+  .servicios {
+    background-color: $lightGray;
+    padding: 6% 0;
+
+    .servicios__title {
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      @include breakpoint(md) {
+        font-size: 35px;
+      }
+    }
+    .servicios__desc {
+      font-size: 16px;
+      text-align: center;
+      color: $text;
+      @include breakpoint(md) {
+        font-size: 20px;
+        padding: 0 8%;
+        margin-bottom: 80px;
+      }
+    }
+    ul {
+      li {
+        margin-bottom: 80px;
+         .servicios__img {
+           text-align: center;
+           @include breakpoint (md) {
+             text-align: right;
+           }
+           img {
+             margin: 0 auto;
+           }
+         }
+         .servicios__article-title {
+           font-size: 18px;
+           font-weight: bold;
+           color: $blue;
+         }
+         .servicios__article-desc {
+           color: $text;
+         }
+         .btn__more {
+           font-size: 12px;
+           font-weight: bold;
+           text-transform: uppercase;
+         }
+      }
+    }
+  }
+  /* Opiniones SLider*/
+  .opiniones {
+    margin-top: 50px;
+    .opiniones__title {
+      font-size: 25px;
+      font-weight: bold;
+      text-align: center;
+      @include breakpoint (md) {
+        font-size: 35px;
+      }
+    }
+    .opiniones__desc {
+      font-size: 20px;
+      text-align: center;
+      color: $text;
+      padding-top: 10px;
+      margin-bottom: 50px;
+    }
+    .opiniones__slider-img {
+      img {
+        margin: 0 auto;
+      }
+    }
+    .opiniones__slider-text {
+      .slide__title {
+        font-size: 20px;
+        font-weight: bold;
+        color: $blue;
+      }
+      .slide__text {
+        color: $text;
+      }
+    }
+  }
+
+  /* Sección Clientes*/
+  &__clients {
+    width: 100%;
+    padding: 5% 0;
+    background-image: url("/images/main-bg-white.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__title {
+        font-size: 20px;
+        text-align: center;
+        color: $darkGray;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+    }
+    &__img {
+        text-align: center;
+
+        img {
+            width: 120px;
+            height: auto;
+        }
+    }
+
+    .container {
+        margin: 50px auto;
+
+        ul {
+              li {
+                  margin-bottom: 50px;
+              }
+          }
+      }
+  }
+
+  /*Noticias*/
+  .noticias {
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid $lightGray;
+      .novedades__container {
+        padding: 6% 2% 0 5%;
+          .novedades__title {
+            color: $textDark;
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 30px;
+          }
+          .novedades__articles {
+            li {
+              margin-bottom: 30px;
+              .novedades__img {
+                width: 100%;
+                height: 120px;
+                overflow: hidden;
+
+                  img {
+                    width: 100%;
+                    height: auto;
+                  }
+              }
+              .novedades__content {
+                p.novedades__article-title {
+                  font-size: 18px;
+                  font-weight: bold;
+                }
+                .novedades__article-desc {
+                  color: $text;
+                }
+                .btn__more {
+                  text-transform: uppercase;
+                  font-size: 12px;
+                  font-weight: bold;
+                }
+              }
+            }
+          }
+      }
+      .informes__container {
+        background-color: $lightGray;
+        padding: 6% 5% 0 2%;
+          .informes__title {
+            color: $textDark;
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 30px;
+          }
+          .informes__articles {
+            li {
+              margin-bottom: 15px;
+              .informes__category {
+                font-size: 14px;
+                font-weight: bold;
+                color: $blue;
+                padding-left: 15px;
+                padding-bottom: 15px;
+              }
+              .informes__img {
+                width: 100%;
+                height: 120px;
+                overflow: hidden;
+
+                  img {
+                    width: 100%;
+                    height: auto;
+                  }
+              }
+            }
+          }
+          .informes__content {
+            p.informes__article-title {
+              font-size: 18px;
+              font-weight: bold;
+            }
+            .informes__article-desc {
+              color: $text;
+            }
+            .btn__more {
+              text-transform: uppercase;
+              font-size: 12px;
+              font-weight: bold;
+            }
+          }
+      }
+  }
+}

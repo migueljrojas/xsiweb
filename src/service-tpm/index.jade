@@ -1,8 +1,134 @@
 extends ../_layouts/base
 
+include ../_modules/slider/slider
+
+
 block config
   //- Correct base url pathing for this page
   - var baseUrl = '../'
 
 block content
-  p service-tpm page
+    main.services
+      
+      section.home__hero
+          +slider('home__slider')
+              each slide in site.data.home.slider
+                  .home__slider__slide(style="background:url(#{slide.img}) no-repeat top right;")
+                      .container
+                          //img(src=slide.img) 
+                          .home__slider__data
+                              h2=slide.title
+                              p=slide.desc
+                              a._button.-white(href=slide.btn.url)= slide.btn.text
+      
+        section.services__mantenimiento 
+            .container
+                .row   
+                    .col-xs-24.col-sm-12.col-md-12
+                        p.mantenimiento__title= site.data.services.mantenimiento.title
+                        div.mantenimiento__img 
+                            img(src= site.data.services.mantenimiento.img)
+                    
+                    .col-xs-24.col-sm-12.col-md-12
+                        ul.mantenimiento__options
+                            each option in site.data.services.mantenimiento.options 
+                                li 
+                                    | <i class="fa fa-check" aria-hidden="true"></i>
+                                    p= option.text
+                        a._button.-white Me Interesa  
+                        
+        section.cta
+            .container-fluid
+                  .row
+                      .col-xs-24.cta__container
+                          p.cta__text Solicite su Análisis Gratuito de Ahorros
+                          a._button.-white Me Interesa 
+                          
+        section.servicios
+            .container
+                .row
+                    p.servicios__title= site.data.services.servicios.title
+                    p.servicios__desc=  site.data.services.servicios.desc
+                    ul
+                        each item in site.data.services.servicios.items
+                            li.row
+                              .col-xs-24.col-sm-8.col-md-8
+                                div.servicios__img
+                                    img(src= item.img)
+                              div.servicios__content.col-xs-24.col-sm-16.col-md-16
+                                  p.servicios__article-title= item.title
+                                  p.servicios__article-desc= item.desc
+                                  a.btn__more= item.link
+                              
+                              
+        
+        section.cta
+            .container-fluid
+                  .row
+                      .col-xs-24.cta__container
+                          p.cta__text Cambie de servicios con estos simples 6 pasos
+                          a._button.-white Me Interesa          
+
+        section.opiniones
+            .container 
+                .row
+                    p.opiniones__title= site.data.services.opiniones.title
+                    p.opiniones__desc= site.data.services.opiniones.desc
+                    +slider('opiniones__slider')
+                        each slide in site.data.services.opiniones.slides
+                            .opiniones__slider
+                                  .container.row
+                                      .opiniones__slider-img.col-xs-24.col-sm-8
+                                          img(src= slide.img)
+                                      .opiniones__slider-text.col-xs-24.col-sm-16
+                                          p.slide__title= slide.title
+                                          p.slide__text= slide.text
+
+        section.services__clients
+            div.container 
+                p.services__clients__title= site.data.clientesinside.clientes.title
+                ul.row 
+                  each client in site.data.clientesinside.clientes.clients 
+                    li.col-xs-24.col-sm-12.col-md-6
+                        div.services__clients__img 
+                            img(src=client.img)
+      
+        
+        section.cta
+            .container-fluid
+                  .row
+                      .col-xs-24.cta__container
+                          p.cta__text Es hora de ser más eficientes, es hora de dominar su IT
+                          a._button.-white Comencemos   
+        
+        section.noticias 
+            .container-fluid
+                  .row
+                      .novedades__container.col-xs-24.col-sm-12.col-md-12
+                          p.novedades__title= site.data.services.noticias.novedades.title
+                          ul.novedades__articles
+                              each article in site.data.services.noticias.novedades.articles
+                                  li.row
+                                    .col-xs-24.col-sm-8.col-md-8
+                                      div.novedades__img
+                                          img(src= article.img)
+                                    div.novedades__content.col-xs-24.col-sm-16.col-md-16
+                                        p.novedades__article-title= article.title
+                                        p.novedades__article-desc= article.desc
+                                        a.btn__more= article.link
+                                                
+                          
+                      .informes__container.col-xs-24.col-sm-12.col-md-12
+                          p.informes__title= site.data.services.noticias.informes.title
+                          ul.informes__articles
+                              each article in site.data.services.noticias.informes.articles
+                                  li.row
+                                      p.informes__category= article.category
+                                      .col-xs-24.col-sm-8.col-md-8
+                                        div.informes__img
+                                            img(src= article.img)
+                                      div.informes__content.col-xs-24.col-sm-16.col-md-16
+                                          p.informes__article-title= article.title
+                                          p.informes__article-desc= article.desc
+                                          a.btn__more= article.link    
+                                                                 

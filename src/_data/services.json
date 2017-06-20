@@ -1,0 +1,115 @@
+{
+  "mantenimiento" : {
+    "title" : "Por qué contratar mantenimiento con XSi",
+    "img" : "../images/home/video-placeholder.jpg",
+    "options" : [
+        {
+          "text" : "Reducimos hasta un 50%"
+        },
+        {
+          "text" : "Mejoramos los niveles de servicios OEMs"
+        },
+        {
+          "text" : "Extendemos el ciclo de vida de los equipos"
+        },
+        {
+          "text" : "Consolidadmos contratos en uno solo"
+        },
+        {
+          "text" : "Agilizamos la resolución de problemas"
+        },
+        {
+          "text" : "Soporte para la gestión de stock"
+        }
+    ],
+    "url" : "#/"
+  },
+  "noticias" : {
+        "novedades" : {
+            "title": "Novedades",
+            "articles" : [
+                {
+                    "title" : "Cuáles fueron las tendencias de Mantenimiento durante 2016",
+                    "desc" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate odit doloremque molestias commodi inventore nobis tenetur ipsum numquam. Assumenda, accusamus.",
+                    "img" : "../images/home/novedad-1.png",
+                    "url": "/#",
+                    "link" : "ver más >"
+                },
+                {
+                    "title" : "Conozca que dice el último reporte de Gartner",
+                    "desc" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate odit doloremque molestias commodi inventore nobis tenetur ipsum numquam. Assumenda, accusamus.",
+                    "img" : "../images/home/novedad-2.png",
+                    "url": "/#",
+                    "link" : "ver más >"
+                }
+            ]
+        },
+        "informes" : {
+            "title": "Informes",
+            "articles" : [
+                {
+                    "category" : "Whitepaper",
+                    "title" : "3 mitos del Mantenimiento Alternativo",
+                    "desc" : "Descargue nuestro último trabajo y entérese cuáles son los grandes mitos de este servicios.",
+                    "img" : "../images/home/novedad-1.png",
+                    "url": "#/",
+                    "link" : "ver más >"
+                },
+                {
+                    "category" : "playbook",
+                    "title" : "Cómo abordar al OEM",
+                    "desc" : "Conozca el paso a paso realizado por nuestro equipo de especialistas para cambiar el servicio sin mayores complicaciones.",
+                    "img" : "../images/home/novedad-2.png",
+                    "url": "#/",
+                    "link" : "ver más >"
+                }
+            ]
+        }
+
+  },
+  "opiniones" : {
+    "title" : "¿Qué dicen los especialistas?",
+    "desc": "Si todavía está convencido de cambiar a Mantenimiento Alternantivo, mire lo que dicen los especialistas",
+    "slides" : [
+        {
+          "img" : "../images/home/noaa.png",
+          "title": "Apto Solutions",
+          "text": "Después del cierre de un programa, nos quedaba una amplia variedad de servidores, computadoras de escritorio, centrales, routers y otros equipos más. XSi se encargó de hacer pruebas y volver a lanzar al mercado los equipos a nuestro nombre y obtuvimos un importante retorno sobre nuestra inversión de capital. Desde el momento en que firmamos el acuerdo, XSi mantuvo una comunicación honesta y directa, entregándonos informes de avance sobre el relanzamiento todas las semanas. Nuestra única tarea fue entregar una lista de inventario y enviar los equipos a XSi. Gracias a su base de clientes y notificaciones del equipo disponible, XSi pudo inclusive comenzar con el relanzamiento de los equipos antes de que llegaran a sus muelles de cargas. Una vez vendidos los equipos recibimos las transferencias bancarias de inmediato y pudimos finalizar nuestra tarea de recuperación de activos. XSi realmente hizo todo por nosotros durante la iniciativa de recuperación."
+        },
+        {
+          "img" : "../images/home/noaa.png",
+          "title": "Apto Solutions 2",
+          "text": "Después del cierre de un programa, nos quedaba una amplia variedad de servidores, computadoras de escritorio, centrales, routers y otros equipos más. XSi se encargó de hacer pruebas y volver a lanzar al mercado los equipos a nuestro nombre y obtuvimos un importante retorno sobre nuestra inversión de capital. Desde el momento en que firmamos el acuerdo, XSi mantuvo una comunicación honesta y directa, entregándonos informes de avance sobre el relanzamiento todas las semanas. Nuestra única tarea fue entregar una lista de inventario y enviar los equipos a XSi. Gracias a su base de clientes y notificaciones del equipo disponible, XSi pudo inclusive comenzar con el relanzamiento de los equipos antes de que llegaran a sus muelles de cargas. Una vez vendidos los equipos recibimos las transferencias bancarias de inmediato y pudimos finalizar nuestra tarea de recuperación de activos. XSi realmente hizo todo por nosotros durante la iniciativa de recuperación."
+        }
+    ]
+  },
+
+  "servicios" : {
+    "title": "Cómo personalizamos el servicio",
+    "desc": "Nuestro servicio se basa en la flexibilidad y la eficiencia. Personalizamos el servicio de acuerdo a su tipo de equipamiento y tipo de organización.",
+    "items" : [
+        {
+            "img": "../images/home/costos.png",
+            "title": "Equipos de redes",
+            "desc": "Por último se procede a eliminar de forma sustentable el equipamiento o bien sea genera un proceso de comercialización acordado con el cliente para obtener rentabilidad del proceso integral. Así, lo que implicaba un costo, concluye el circuito con un ingreso extraordinario.",
+            "url": "#/",
+            "link": "ver más >"
+        },
+        {
+            "img": "../images/home/servicio.png",
+            "title": "Almacenamiento",
+            "desc": "Por último se procede a eliminar de forma sustentable el equipamiento o bien sea genera un proceso de comercialización acordado con el cliente para obtener rentabilidad del proceso integral. Así, lo que implicaba un costo, concluye el circuito con un ingreso extraordinario.",
+            "url": "#/",
+            "link": "ver más >"
+        },
+        {
+            "img": "../images/home/trayectoria.png",
+            "title": "Servidores",
+            "desc": "Por último se procede a eliminar de forma sustentable el equipamiento o bien sea genera un proceso de comercialización acordado con el cliente para obtener rentabilidad del proceso integral. Así, lo que implicaba un costo, concluye el circuito con un ingreso extraordinario.",
+            "url": "#/",
+            "link": "ver más >"
+        }
+    ]
+  }
+
+}
