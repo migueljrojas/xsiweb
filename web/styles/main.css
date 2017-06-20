@@ -12559,7 +12559,7 @@ footer.footer .footer__bottom .footer__headquarters .headquarter__adress {
 .home__slider {
   overflow: hidden;
   height: 0;
-  padding-bottom: 44%;
+  padding-bottom: 40%;
   position: relative;
   margin-bottom: 0 !important;
 }
@@ -12600,7 +12600,7 @@ footer.footer .footer__bottom .footer__headquarters .headquarter__adress {
 
 .home__slider__slide {
   height: 0;
-  padding-bottom: 44%;
+  padding-bottom: 40%;
   position: relative;
   background-size: cover;
 }
