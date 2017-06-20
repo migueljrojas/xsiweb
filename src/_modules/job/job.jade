@@ -1,6 +1,8 @@
-mixin job(spec)
-  - spec = spec || {}
-  - spec.__class = spec.__class || ''
+mixin job(data)
 
-  div(class=spec.__class)&attributes(attributes)
-    p This is an example paragraph for the job module
+    .job
+        .job__data
+            h2.job__title= data.title
+            p.job__desc= data.desc
+        a._button.-white.job__button Estoy interesado
+        

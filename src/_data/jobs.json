@@ -1,0 +1,49 @@
+{
+    "title": "Hacer Carrera en XSi",
+    "desc": "XSi es una compañía global que se está expandiendo buscando siempre los mejores talentos. Lo animamos e invitamos a enviar su currículum para los siguientes puestos:",
+    "list": [
+        {
+            "title": "TAC Center Engineers",
+            "desc": "TAC engineers must have OEM Certifications (U.S. & E.U.)"
+        },
+        {
+            "title": "Field Engineer",
+            "desc": "Field Engineers must have OEM Certifications (U.S. & E.U.)"
+        },
+        {
+            "title": "Field Engineer - Cleared",
+            "desc": "Field engineers with Security Clearance (U.S. & E.U.)"
+        },
+        {
+            "title": "U.S. Federal Sales",
+            "desc": "Preferred location is Washington D.C."
+        },
+        {
+            "title": "U.S. State/Local Sales",
+            "desc": "Any location"
+        },
+        {
+            "title": "Commercial Sales",
+            "desc": "Accepting resumes for U.S.,E.U., Brazil & APAC"
+        },
+        {
+            "title": "Marketing",
+            "desc": "Atlanta, Georgia HQ"
+        },
+        {
+            "title": "Graphic Design",
+            "desc": "Atlanta, Georgia HQ"
+        },
+        {
+            "title": "Contract Administration",
+            "desc": "Atlanta, Georgia HQ"
+        }
+    ],
+    "cta": {
+        "text": "Le ofrecemos un ANÁLISIS GRATUITO de ahorro",
+        "btn": {
+            "url":"#",
+            "text": "Me interesa"
+        }
+    }
+}
