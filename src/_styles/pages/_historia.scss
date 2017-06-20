@@ -39,12 +39,14 @@
             color: $blue;
             font-size: 21px;
             display: block;
+            font-family: $mainFont;
         }
 
         h2 {
             text-align: center;
-            width:60%;
-            margin: 0 auto 4%;
+            width:90%;
+            max-width: 700px;
+            margin: 0 auto 3%;
             background: $white;
             position: relative;
             z-index: 2;
@@ -57,13 +59,12 @@
                 width:1px;
                 position: absolute;
                 left:calc(50% - 1px);
-                top:0;
+                top:26px;
                 bottom:0;
-                background: $midGray;
+                background: $lightGray;
                 height: 100%;
                 content: '';
                 display: block;
-                opacity: .5;
             }
         }
 
@@ -76,13 +77,13 @@
 
                 &:before {
                     content: '';
-                    width:10px;
-                    height: 10px;
+                    width:11px;
+                    height: 11px;
                     border-radius: 50%;
                     position: absolute;
                     right:-5px;
                     background: $green;
-                    top:0;
+                    top:26px;
                 }
             }
 
@@ -93,7 +94,7 @@
 
                     &:before {
                         right:initial;
-                        left:-5px;
+                        left:-6px;
                     }
                 }
             }

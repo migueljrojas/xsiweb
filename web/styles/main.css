@@ -13972,12 +13972,14 @@ footer.footer .footer__bottom .footer__headquarters .headquarter__adress {
   color: #1565ad;
   font-size: 21px;
   display: block;
+  font-family: "PT Sans", sans-serif;
 }
 
 .historia__body h2 {
   text-align: center;
-  width: 60%;
-  margin: 0 auto 4%;
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto 3%;
   background: #fff;
   position: relative;
   z-index: 2;
@@ -13992,13 +13994,12 @@ footer.footer .footer__bottom .footer__headquarters .headquarter__adress {
   position: absolute;
   left: -webkit-calc(50% - 1px);
   left: calc(50% - 1px);
-  top: 0;
+  top: 26px;
   bottom: 0;
-  background: #999;
+  background: #ebebeb;
   height: 100%;
   content: '';
   display: block;
-  opacity: .5;
 }
 
 .historia__body .row .col-xs-22 {
@@ -14009,13 +14010,13 @@ footer.footer .footer__bottom .footer__headquarters .headquarter__adress {
 
 .historia__body .row .col-xs-22:before {
   content: '';
-  width: 10px;
-  height: 10px;
+  width: 11px;
+  height: 11px;
   border-radius: 50%;
   position: absolute;
   right: -5px;
   background: #009755;
-  top: 0;
+  top: 26px;
 }
 
 .historia__body .row:nth-of-type(odd) .col-xs-22 {
@@ -14025,7 +14026,7 @@ footer.footer .footer__bottom .footer__headquarters .headquarter__adress {
 
 .historia__body .row:nth-of-type(odd) .col-xs-22:before {
   right: initial;
-  left: -5px;
+  left: -6px;
 }
 
 .historia__body .row p {
