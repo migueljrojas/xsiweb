@@ -30,6 +30,7 @@ button._button,
         &:hover{
             color: $blue;
             background: $white;
+            padding: 0 60px;
         }
     }
 
@@ -43,10 +44,17 @@ button._button,
     }
 
     &.-cta{
-        background: $gradient;
+        background: linear-gradient(-45deg, $green, $blue);
         color:$white;
+        padding: 0 25px;
+        height: 70px;
+        letter-spacing: 1px;
+        line-height: 70px;
+        font-family: $mainFont;
+
         &:hover{
-            background: $gradientHover;
+            background: $gradient;
+            padding: 0 40px;
         }
     }
 

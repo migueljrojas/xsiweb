@@ -1,1 +1,74 @@
 // calculator styles
+.calculator {
+    background: $white;
+    box-shadow: 0 0 50px rgba(0,0,0,.1);
+    padding: $base/2 $base $base;
+    width: 100%;
+    font-family: $mainFont;
+    position: relative;
+
+    &__title {
+        text-align: center;
+        margin: 0 0 $base;
+        font-family: $mainFont;
+        color:$darkestGray;
+    }
+
+    &__options {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__dropdown {
+        flex: 1;
+
+        h5{
+            color:$midGray;
+            text-transform: uppercase;
+        }
+
+        &__wrapper {
+            position: relative;
+        }
+
+        label {
+            position: absolute;
+            width:100%;
+            top:0;
+            bottom:0;
+            pointer-events: none;
+            z-index:2;
+
+            &:before{
+                position: absolute;
+                content: '';
+                background: $white;
+                border-left: 2px solid $midGray;
+                border-bottom: 2px solid $midGray;
+                right:calc(30% + 3px);
+                top:5px;
+                transform: rotate(-45deg);
+                width:12px;
+                height:12px;
+            }
+        }
+        select {
+            font-size: 21px;
+            font-weight: 700;
+            color:$blue;
+            border:none;
+            width:70%;
+
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+
+    .-cta{
+        transform: translateX(50%);
+        position: absolute;
+        right:0;
+        box-shadow: 0 0 25px rgba(0,0,0,.2);
+    }
+}

@@ -15,11 +15,15 @@
         &:before {
             @include shades(before);
             z-index:5;
+            right: -140%;
+            opacity: 1;
         }
 
         &:after {
             @include shades(after);
             z-index:5;
+            opacity: .5;
+            right:-7.4%;
         }
 
         &__slide{
@@ -27,15 +31,20 @@
             padding-bottom: 40%;
             position: relative;
             background-size: cover;
+            overflow: hidden;
 
             &:focus{
                 outline: none;
+            }
+
+            ._button.-white {
+                color:$blue;
             }
         }
 
         &__data {
             position: absolute;
-            top: 18%;
+            top: 15%;
             color:$white;
             width:90%;
 
@@ -61,6 +70,18 @@
                 font-size: 16px;
                 margin-bottom: 20px;
             }
+        }
+    }
+
+    &__calculator {
+        @include breakpoint(md){
+
+            position: absolute;
+            transform: translateY(-70%);
+            z-index:10;
+            left:0;
+            right:0;
+            margin:auto;
         }
     }
 
@@ -302,43 +323,62 @@
     }
 
     /*SliderXsi*/
-    .home__hero-xsi {
-      clear: both;
-      background-image: $gradient;
-      height: 680px;
+    &__slider-xsi {
+        clear: both;
+        background-image: $gradient;
+        height: 680px;
 
         @include breakpoint(sm) {
           height: 400px;
+          overflow: hidden;
+
+
         }
 
-          .container {
+        .container {
             height: 400px;
-                .home__slider-xsi-img {
-                  padding-top: 100px;
+            overflow: hidden;
 
-                    img {
-                      margin: 0 auto;
-                    }
+            &:before {
+              @include shades(before);
+              z-index:5;
+              right:-20%;
+            }
+
+            &:after {
+              @include shades(after);
+              z-index:5;
+              right:36.5%;
+            }
+        }
+
+        &-img {
+            padding-top: 100px;
+
+            img {
+                margin: 0 auto;
+            }
+        }
+
+        &-text {
+            padding-top: 100px;
+
+            p {
+                color: white;
+                font-size: 16px;
+                line-height: 25px;
+                margin-top: 20px;
+                @include breakpoint(md) {
+                    padding-right: 100px;
+                    margin-top: 0;
                 }
-                .home__slider-xsi-text {
-                  padding-top: 100px;
+            }
+        }
 
-                    p {
-                      color: white;
-                      font-size: 16px;
-                      line-height: 25px;
-                      margin-top: 20px;
-                        @include breakpoint(md) {
-                          padding-right: 100px;
-                          margin-top: 0;
-                        }
-                    }
-                }
-          }
-
-          .slick-dots {
-            left: 45%;
-          }
+        .slick-dots {
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
 
     /* Sección Clientes*/

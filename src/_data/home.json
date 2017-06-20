@@ -19,6 +19,37 @@
             }
         }
     ],
+    "calculator": {
+        "title": "Calculemos cuál es el ahorro que puede generar con XSi",
+        "dropdowns": [
+            {
+                "name": "Equipamiento",
+                "options": [
+                    "en uso",
+                    "nuevos"
+                ]
+            },
+            {
+                "name": "Tipo de Equipo",
+                "options": [
+                    "teléfono celular",
+                    "tablet"
+                ]
+            },
+            {
+                "name": "Cantidad",
+                "options": [
+                    "500 - 1000",
+                    "1000 - 5000",
+                    "5000 - 10000"
+                ]
+            }
+        ],
+        "btn": {
+            "url": "#",
+            "text": "Simular Ahorro"
+        }
+    },
   "porquexsi" : {
     "title": "¿Por qué XSi?",
     "items": [

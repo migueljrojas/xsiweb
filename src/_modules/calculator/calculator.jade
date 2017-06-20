@@ -1,6 +1,14 @@
-mixin calculator(spec)
-  - spec = spec || {}
-  - spec.__class = spec.__class || ''
-
-  div(class=spec.__class)&attributes(attributes)
-    p This is an example paragraph for the calculator module
+mixin calculator(object)
+    .calculator        
+        h3.calculator__title= object.title
+        .calculator__options
+            each drop, index in object.dropdowns
+                .calculator__dropdown
+                    h5=drop.name
+                    .calculator__dropdown__wrapper
+                        label(for="drop-#{index}")
+                        select(id="drop-#{index}")
+                            each option in drop.options
+                                option=option
+                            
+            a._button.-cta(href=object.btn.url)= object.btn.text

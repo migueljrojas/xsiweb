@@ -13124,7 +13124,8 @@ var Slider = function() {
         slider.each(function(){
             $(this).slick({
                 dots: true,
-                fade: true
+                fade: true,
+                autoplay: true
             });
         });
     }
@@ -13133,6 +13134,37 @@ var Slider = function() {
 module.exports = Slider;
 
 },{}],4:[function(require,module,exports){
+'use strict';
+
+// Constructor
+var Home = function() {
+    $(function soyxsi() {
+
+        //Btn Action IT
+        $( '.btn__soy-it' ).on( 'click', function() {
+            $( '.it, .finanzas' ).css( 'display', 'none' );
+            $( '.it-open' ).css( 'display', 'block' );
+        });
+
+        //Btn Action Finanzas
+        $( '.btn__soy-finanzas' ).on( 'click', function() {
+            $( '.it, .finanzas' ).css( 'display', 'none' );
+            $( '.finanzas-open' ).css( 'display', 'block' );
+        });
+
+        //Btn Action Close
+        $( '.btn__close' ).on( 'click', function(){
+            $( '.finanzas-open' ).css( 'display', 'none' );
+            $( '.it-open' ).css( 'display', 'none' );
+            $( '.it, .finanzas' ).css( 'display', 'block' ).fadeIn( "slow" );
+        });
+
+    });
+};
+
+module.exports = Home;
+
+},{}],5:[function(require,module,exports){
 (function (global){
 // Main javascript entry point
 // Should handle bootstrapping/starting application
@@ -13141,38 +13173,16 @@ module.exports = Slider;
 
 global.$ = global.jQuery = require('jquery');
 var Slider = require('../_modules/slider/slider');
-
-$(function soyxsi() {
-
-    //Btn Action IT
-    $( '.btn__soy-it' ).on( 'click', function() {
-        $( '.it, .finanzas' ).css( 'display', 'none' );
-        $( '.it-open' ).css( 'display', 'block' );
-    });
-
-    //Btn Action Finanzas
-    $( '.btn__soy-finanzas' ).on( 'click', function() {
-        $( '.it, .finanzas' ).css( 'display', 'none' );
-        $( '.finanzas-open' ).css( 'display', 'block' );
-    });
-
-    //Btn Action Close
-    $( '.btn__close' ).on( 'click', function(){
-        $( '.finanzas-open' ).css( 'display', 'none' );
-        $( '.it-open' ).css( 'display', 'none' );
-        $( '.it, .finanzas' ).css( 'display', 'block' ).fadeIn( "slow" );
-    });
-
-});
+var Home = require('./home');
 
 $(function() {
     require('../../bower_components/slick-carousel/slick/slick');
     new Slider();
-    new soyxsi();
+    new Home();
 });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 
-},{"../../bower_components/slick-carousel/slick/slick":1,"../_modules/slider/slider":3,"jquery":2}]},{},[4])
+},{"../../bower_components/slick-carousel/slick/slick":1,"../_modules/slider/slider":3,"./home":4,"jquery":2}]},{},[5])
 
 //# sourceMappingURL=main.js.map

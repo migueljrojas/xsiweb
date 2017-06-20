@@ -3,6 +3,7 @@ extends _layouts/base
 include _modules/slider/slider
 include _modules/cta/cta
 include _modules/suscribe/suscribe
+include _modules/calculator/calculator
 
 block content
     main.home
@@ -16,6 +17,12 @@ block content
                                 h2=slide.title
                                 p=slide.desc
                                 a._button.-white(href=slide.btn.url)= slide.btn.text
+                                
+        section.home__calculator
+            .container
+                .row
+                    .col-xs-24.col-md-20.col-md-offset-2
+                        +calculator(site.data.home.calculator)
       
         section.home__porquexsi
             .container
@@ -86,15 +93,15 @@ block content
                   img(src= site.data.home.finanzas.img) 
 
       
-        section.home__hero-xsi
+        section.home__slider-xsi
             +slider('home__slider-xsi')
                 each slide in site.data.home.sliderxsi
-                    .home__slider-xsi
-                          .container.row
-                              .home__slider-xsi-img.col-xs-24.col-sm-12
-                                  img(src= slide.img)
-                              .home__slider-xsi-text.col-xs-24.col-sm-12
-                                  p= slide.text  
+                    .container
+                        .row
+                            .home__slider-xsi-img.col-xs-24.col-sm-12.col-md-6.col-md-offset-6
+                                img(src= slide.img)
+                            .home__slider-xsi-text.col-xs-24.col-sm-12.col-md-8
+                                p= slide.text  
            
       
         section.home__clients

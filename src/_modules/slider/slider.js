@@ -7,7 +7,8 @@ var Slider = function() {
         slider.each(function(){
             $(this).slick({
                 dots: true,
-                fade: true
+                fade: true,
+                autoplay: true
             });
         });
     }
