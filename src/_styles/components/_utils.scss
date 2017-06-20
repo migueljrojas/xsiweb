@@ -6,6 +6,10 @@
     overflow: hidden;
 }
 
+.-static{
+    position: static;
+}
+
 .-vertical-space{
     padding-top: $base;
     padding-bottom: $base;

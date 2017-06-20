@@ -1,0 +1,71 @@
+{
+    "title": "Aprenda cómo su compañía puede ahorrar en los costos de mantenimiento de IT.",
+    "content": [
+        {
+            "type": "title",
+            "cont": "Cómo un banco ahorró más de 65% en sus costos de mantenimiento de IT a través de nuestra solución de Mantenimiento por Terceros."
+        },
+        {
+            "type": "text",
+            "cont": "Una institución financiera TOP 20 tenía más de 500 switches Cisco (equipos de red) que se acercaban al final de su vida útil (EOL). El precio de catálogo de Cisco para el mantenimiento y el soporte para el SLA solicitado por el cliente (SLA) fue más de $25k por dispositivo, lo que equivale a un precio de lista de $ 12,5 millones. El mismo SLA fue de aproximadamente $ 13k por dispositivo sólo 2 años antes."
+        },
+        {
+            "type": "text",
+            "cont": "Debisdo al coste creciente, el cliente decide contratar a una solución de Mantenimiento por Terceros para gestionar sus dispositvos."
+        },
+        {
+            "type": "title",
+            "cont": "Una Agencia Federal alcanza a reducir más del 25% de sus costos de mantenimiento de IT con XSi."
+        },
+        {
+            "type": "text",
+            "cont": "El cliente es una gran Agencia Federal que es altamente dependiented de su infraestructura de IT (redes, servidores y almacenamiento) para prestar servicios a los ciudadanos que atiende."
+        },
+        {
+            "type": "subtitle",
+            "cont": "El primer objetivo de la agencia era:",
+            "list": [
+                "Reducir significativamente sus costos de mantenimiento anuales, mientras mantenían o aumentaban el nivel de soporte provisto para su infraestructura Cisco.",
+                "-Contratr XSi para proveer servicio anual de soprorte para un gran porcentaje de su base de dispositvos Cisco (este fabricante es el principal en lo que hace a la estructura de este cliente)."
+            ]
+        },
+        {
+            "type": "subtitle",
+            "cont": "El servicio de soporte de XSi incluye",
+            "list": [
+                "Sercicio de XSiAdvancedTAC para configuración y canalización de eventos.",
+                "SLA para soporte de Hardware.",
+                "Servicios de ingenieros especializados para reparación de equipos con fallas."
+            ]
+        },
+        {
+            "type": "subtitle",
+            "cont": "El servicio de soporte de XSi además incluye:",
+            "list": [
+                "SLA multi-fabricante en todos los aspectos del servicio provisto, con mejor tiempo de respuesta en llamadas de soporte (incluyendo Tier III).",
+                "Repuestos in situ.",
+                "Personal altamente capacitado dentro de los United States"
+            ]
+        }
+    ],
+    "form":{
+        "title": "Descargue los casos de estudio ahora",
+        "inputs":[
+            {
+                "type": "text",
+                "label": "Nombre *",
+                "name": "nombre"
+            },
+            {
+                "type": "text",
+                "label": "Apellido *",
+                "name": "apellido"
+            },
+            {
+                "type": "email",
+                "label": "E-Mail *",
+                "name": "email"
+            }
+        ]
+    }
+}

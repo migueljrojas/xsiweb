@@ -1,0 +1,91 @@
+{
+    "title": "XS International (XSi): Pioneros en Matenimiento Altlernativo",
+    "content": [
+        {
+            "type": "text",
+            "cont": "Gartner publicó ¨Competitive Landscape: Leveraging Third-Party Maintenance Providers for Data Center and Network Maintenance Cost Optimization, [ID:G00294372]  por el analista Christine Tenneson y ha marcado XSi como un pionero en el campo de mantenimiento alternativo."
+        },
+        {
+            "type": "title",
+            "cont": "¿Qué es un pionero?",
+            "text": "Según el informe, “los pioneros son los que tienen productos innovadores, que irrumpen, metodologías o modelos de negocio, que podrían redefinir la dinámica competitiva del mercado en el futuro. Puede incluir proveedores de especialidad / de nicho”"
+        },
+        {
+            "type": "title",
+            "cont": "¿Qué nos diferencia de la competencia?",
+            "list": [
+                "Multimarca",
+                "Cisco, Juniper, F5 Nteworks, Brocade/Foundry, Extreme/Enterasys, EMC, HP, Hitachi, y mucho más.",
+                "La experiencia con el Gobierno Federal, el comercio minorista, telecomunicaciones, y muchos otros campos más.",
+                "Especialistas en Mantenimiento de Red.",
+                "Verdadero modelo Hibrido con escalamiento al fabricante.",
+                "Compromiso en hacer un cambio: un consejo de administración miembro del repair,org, una organización formada en 2013 para garantizar los derechos de los consumidores y las empresas para la reparación, reutilización y tener la libertad de elección en la que repara y mantiene sus dispositivos",
+                "Proveedor de subcontratación para nuestra competencia de LATAM"
+            ]
+        },
+        {
+            "type": "title",
+            "cont": "Programa de Canales a Nivel Mundial",
+            "text": "Rápidamente expandiéndonos con prestigiosos y expertos partners en Latinoamérica y Norteamérica."
+        },
+        {
+            "type": "title",
+            "cont": "Soporte global",
+            "list": [
+                "LATAM",
+                "Europa",
+                "Estados Unidos",
+                "Asia/Pacífico"
+            ]
+        }
+    ],
+    "form":{
+        "title": "Descargue los casos de estudio ahora",
+        "inputs":[
+            {
+                "type": "text",
+                "label": "Nombre *",
+                "name": "nombre"
+            },
+            {
+                "type": "text",
+                "label": "Apellido *",
+                "name": "apellido"
+            },
+            {
+                "type": "email",
+                "label": "E-Mail *",
+                "name": "email"
+            },
+            {
+                "type": "text",
+                "label": "Compañía *",
+                "name": "compania"
+            },
+            {
+                "type": "select",
+                "label": "Dispositivo en Uso *",
+                "name": "dispositivo",
+                "options": [
+                    {
+                        "name": "Tablet",
+                        "val": "tablet"
+                    },
+                    {
+                        "name": "Teléfonos Celulares",
+                        "val": "cellphone"
+                    },
+                    {
+                        "name": "Computadora",
+                        "val": "computer"
+                    }
+                ]
+            },
+            {
+                "type": "textarea",
+                "label": "Comentario",
+                "name": "comment"
+            }
+        ]
+    }
+}

@@ -1,3 +1,92 @@
 .analisis {
+    &__hero {
+        background-image: $gradient;
+        padding: 7% 0;
+        overflow: hidden;
+        position: relative;
+        color:$white;
 
+        &:before {
+            @include shades(before);
+            right: -130%;
+            opacity: .7;
+        }
+
+        &:after {
+            @include shades(after);
+            opacity: .3;
+            right:50%;
+            top:-75%;
+            width:80%;
+            height:200%;
+            box-shadow: inset 30px 50px 100px rgba(0,0,0,.5);
+        }
+    }
+
+    &__body {
+        background: url('/images/home/whysxi-bg.png') no-repeat top center;
+        background-size: contain; 
+    }
+
+    &__data {
+        margin-top: 6%;
+    }
+
+    &__title {
+        font-size:21px;
+        margin: 0;
+    }
+
+    &__subtitle {
+        font-size:48px;
+        margin: 0 0 $base/2;
+    }
+
+    &__desc {
+        font-size: 21px;
+    }
+
+    &__bullets {
+        padding: 6% 7%;
+        background: $white;
+        box-shadow: 0 0 50px rgba(0,0,0,.1);
+        float: left;
+        position: relative;
+        z-index:2;
+        width: 100%;
+        transform: translateY(-12%);
+
+        @include breakpoint(md) {
+            width:70%;
+        }
+
+        li {
+            background: transparentize($lightestGray, .7);
+            padding: $base/2 $base;
+            margin-bottom: $base/4;
+            display: flex;
+            align-items: center;
+        }
+
+        &-number {
+            font-size: 48px;
+            font-weight: 700;
+            color:$blue;
+            font-family: $altFont;
+            margin-right: $base;
+        }
+
+        &-text {
+            color:$midGray;
+            font-size: 21px;
+        }
+    }
+
+    &__character {
+        position: absolute;
+        right:0;
+        bottom:20%;
+        width:40%;
+        z-index:2;
+    }
 }

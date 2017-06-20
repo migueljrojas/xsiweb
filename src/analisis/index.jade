@@ -5,4 +5,24 @@ block config
   - var baseUrl = '../'
 
 block content
-  p analisis page
+    main.analisis
+        section.analisis__hero
+            .container
+                .row
+                    .col-xs-24.col-sm-20.col-md-16.col-lg-13.analisis__data
+                        h1.analisis__title= site.data.analisis.title
+                        h2.analisis__subtitle= site.data.analisis.subtitle
+                        p.analisis__desc!= site.data.analisis.desc
+        
+        section.analisis__body
+            .container
+                .row
+                    .col-xs-24
+                        ul.analisis__bullets
+                            each item, index in site.data.analisis.bullets
+                                li
+                                    span.analisis__bullets-number
+                                        | 0#{index + 1}
+                                    span.analisis__bullets-text= item
+                        img.analisis__character(src=site.data.analisis.character)
+        

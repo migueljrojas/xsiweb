@@ -1,0 +1,85 @@
+.gartner {
+    &__hero {
+        background-image: $gradient;
+        padding: 7% 0 15%;
+        overflow: hidden;
+        position: relative;
+        color:$white;
+
+        .container {
+            position: relative;
+        }
+
+        &:before {
+            @include shades(before);
+            right: -130%;
+            opacity: .7;
+        }
+
+        &:after {
+            @include shades(after);
+            opacity: .3;
+            right:50%;
+            top:-75%;
+            width:80%;
+            height:200%;
+            box-shadow: inset 30px 50px 100px rgba(0,0,0,.5);
+        }
+    }
+
+    &__title {
+        font-family: $mainFont;
+    }
+
+    &__body {
+        background: url('/images/home/whysxi-bg.png') no-repeat top center;
+        background-size: contain;
+        color: $midGray;
+        padding: 20% 0 6%;
+        position: relative;
+
+        img {
+            margin-bottom: $base;
+        }
+
+        h2 {
+            color: $blue;
+            font-family: $mainFont;
+            font-size:18px;
+        }
+
+        p{
+            margin-bottom: $base;
+        }
+
+        ul {
+            list-style: disc;
+            padding-left: $base;
+            margin-bottom: $base/4;
+
+            li{
+                margin-bottom: $base/4;
+            }
+        }
+    }
+
+    &__character {
+        position: absolute;
+        right:20%;
+        top:7%;
+        width:18%;
+        z-index:2;
+    }
+
+    &__data {
+        margin-top: 3%;
+    }
+
+    &__form {
+        position: absolute;
+        left:0;
+        right:0;
+        top:-10%;
+        z-index:5;
+    }
+}

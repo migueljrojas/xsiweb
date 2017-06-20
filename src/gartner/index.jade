@@ -1,8 +1,43 @@
 extends ../_layouts/base
+include ../_modules/contact-form/contact-form
 
 block config
   //- Correct base url pathing for this page
   - var baseUrl = '../'
 
 block content
-  p gartner page
+    main.gartner
+        section.gartner__hero
+            .container
+                .row
+                    .col-xs-24.col-sm-20.col-md-16.col-lg-13.gartner__data
+                        h1.gartner__title= site.data.gartner.title
+                    img.gartner__character(src=site.data.analisis.character)
+                      
+      
+        section.gartner__body
+            .gartner__form
+                .container
+                    .row
+                        .col-xs-24.col-sm-20.col-sm-offset-2.col-md-16.col-md-offset-4.col-lg-14.col-md-offset-5
+                            +contact-form(site.data.gartner.form)
+            .container
+                .row
+                    .col-xs-24.col-sm-18.col-sm-offset-3.col-md-14.col-md-offset-5.col-lg-12.col-md-offset-6
+                        img(src="/images/gartner-logo.png")
+                        each item in site.data.gartner.content
+                          
+                            if item.type == 'text'
+                                p=item.cont
+                              
+                            if item.type == 'title'
+                                h2=item.cont
+                                
+                                if item.text
+                                    p=item.text
+                                    
+                                if item.list
+                                    ul
+                                        each bullet in item.list
+                                            li= bullet
+                                      

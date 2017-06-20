@@ -1,0 +1,76 @@
+{
+    "title": "Lorem ipsum dolor",
+    "form":{
+        "title": "Completa el formulario",
+        "inputs":[
+            {
+                "type": "text",
+                "label": "Nombre *",
+                "name": "nombre"
+            },
+            {
+                "type": "text",
+                "label": "Apellido *",
+                "name": "apellido"
+            },
+            {
+                "type": "email",
+                "label": "E-Mail *",
+                "name": "email"
+            },
+            {
+                "type": "text",
+                "label": "Empresa",
+                "name": "empresa"
+            },
+            {
+                "type": "select",
+                "label": "País",
+                "name": "pais",
+                "options": [
+                    {
+                        "name": "País 1",
+                        "val": "pais-1"
+                    },
+                    {
+                        "name": "País 1",
+                        "val": "pais-2"
+                    },
+                    {
+                        "name": "País 1",
+                        "val": "pais-3"
+                    }
+                ]
+            },
+            {
+                "type": "select",
+                "label": "Ciudad",
+                "name": "ciudad",
+                "options": [
+                    {
+                        "name": "Ciudad 1",
+                        "val": "ciudad-1"
+                    },
+                    {
+                        "name": "Ciudad 1",
+                        "val": "ciudad-2"
+                    },
+                    {
+                        "name": "Ciudad 1",
+                        "val": "ciudad-3"
+                    }
+                ]
+            },
+            {
+                "type": "text",
+                "label": "Empresa",
+                "name": "empresa-2"
+            },
+            {
+                "type": "number",
+                "label": "Teléfono",
+                "name": "telefono"
+            }
+        ]
+    }
+}

@@ -1,6 +1,32 @@
-mixin contact-form(spec)
-  - spec = spec || {}
-  - spec.__class = spec.__class || ''
-
-  div(class=spec.__class)&attributes(attributes)
-    p This is an example paragraph for the contact-form module
+mixin contact-form(data, ld)
+    form.contact-form(method="POST", id=ld)
+        h3.contact-form__title=data.title
+        .row
+            each input, key in data.inputs
+                .contact-form__group.col-xs-24.col-sm-12
+                    if input.type == 'text'
+                        label(for="id-#{input.name}")=input.label
+                        input(type="text", placeholder=input.placeholder, input.attrs)
+                    if input.type == 'email'
+                        label(for="id-#{input.name}")=input.label
+                        input(type="email", placeholder=input.placeholder, input.attrs)
+                    if input.type == 'number'
+                        label(for="id-#{input.name}")=input.label
+                        input(type="number", placeholder=input.placeholder, name=input.name, id="id-#{input.name}", input.attrs)
+                    if input.type == 'checkbox'
+                        label(for="id-#{input.name}")=input.label
+                        input(type="checkbox", value="input.name", name=input.name, id="id-#{input.name}", input.attrs)
+                    if input.type == 'radio'
+                        label(for="id-#{input.name}")=input.label
+                        input(type="radio", value="input.name", name=input.name, id="id-#{input.name}",input.attrs)
+                    if input.type == 'select'
+                        label.-select(for="id-#{input.name}")
+                            span= input.label
+                        select(value="input.name", name=input.name, id="id-#{input.name}",input.attrs)
+                            each item in input.options
+                                option(value="item-val")= item.name
+                    if input.type == 'textarea'
+                        label(for="id-#{input.name}")=input.label
+                        textarea(value="input.name", name=input.name, id="id-#{input.name}")
+            .contact-form__group.col-xs-24
+                input._button.-submit.-white(type="submit", value="Enviar")

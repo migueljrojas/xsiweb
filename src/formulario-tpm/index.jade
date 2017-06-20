@@ -1,8 +1,17 @@
 extends ../_layouts/base
+include ../_modules/contact-form/contact-form
 
 block config
   //- Correct base url pathing for this page
   - var baseUrl = '../'
 
 block content
-  p formulario-tpm page
+    main.formtpm
+        section.formtpm__hero
+            h1.formtpm__title= site.data.formtpm.title
+        section.formtpm__body
+            .formtpm__form
+                .container
+                    .row
+                        .col-xs-24.col-sm-20.col-sm-offset-2.col-md-16.col-md-offset-4.col-lg-14.col-md-offset-5
+                            +contact-form(site.data.formtpm.form)

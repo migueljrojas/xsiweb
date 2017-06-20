@@ -55,7 +55,69 @@
       </nav>
     </div>
   </header>
-  <p>formulario-general page</p>
+  <main class="formgral">
+    <section class="formgral__hero">
+      <h1 class="formgral__title">Lorem ipsum dolor</h1>
+    </section>
+    <section class="formgral__body">
+      <div class="formgral__form">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-24 col-sm-20 col-sm-offset-2 col-md-16 col-md-offset-4 col-lg-14 col-md-offset-5">
+              <form method="POST" class="contact-form">
+                <h3 class="contact-form__title">Completa el formulario</h3>
+                <div class="row">
+                  <div class="contact-form__group col-xs-24 col-sm-12">
+                    <label for="id-nombre">Nombre *</label>
+                    <input type="text" input.attrs="input.attrs"/>
+                  </div>
+                  <div class="contact-form__group col-xs-24 col-sm-12">
+                    <label for="id-apellido">Apellido *</label>
+                    <input type="text" input.attrs="input.attrs"/>
+                  </div>
+                  <div class="contact-form__group col-xs-24 col-sm-12">
+                    <label for="id-email">E-Mail *</label>
+                    <input type="email" input.attrs="input.attrs"/>
+                  </div>
+                  <div class="contact-form__group col-xs-24 col-sm-12">
+                    <label for="id-empresa">Empresa</label>
+                    <input type="text" input.attrs="input.attrs"/>
+                  </div>
+                  <div class="contact-form__group col-xs-24 col-sm-12">
+                    <label for="id-pais" class="-select"><span>País</span></label>
+                    <select value="input.name" name="pais" id="id-pais" input.attrs="input.attrs">
+                      <option value="item-val">País 1</option>
+                      <option value="item-val">País 1</option>
+                      <option value="item-val">País 1</option>
+                    </select>
+                  </div>
+                  <div class="contact-form__group col-xs-24 col-sm-12">
+                    <label for="id-ciudad" class="-select"><span>Ciudad</span></label>
+                    <select value="input.name" name="ciudad" id="id-ciudad" input.attrs="input.attrs">
+                      <option value="item-val">Ciudad 1</option>
+                      <option value="item-val">Ciudad 1</option>
+                      <option value="item-val">Ciudad 1</option>
+                    </select>
+                  </div>
+                  <div class="contact-form__group col-xs-24 col-sm-12">
+                    <label for="id-empresa-2">Empresa</label>
+                    <input type="text" input.attrs="input.attrs"/>
+                  </div>
+                  <div class="contact-form__group col-xs-24 col-sm-12">
+                    <label for="id-telefono">Teléfono</label>
+                    <input type="number" name="telefono" id="id-telefono" input.attrs="input.attrs"/>
+                  </div>
+                  <div class="contact-form__group col-xs-24">
+                    <input type="submit" value="Enviar" class="_button -submit -white"/>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
   <footer class="footer">
     <div class="container">
       <div class="footer__top row">
