@@ -1,0 +1,68 @@
+{
+  "servicioitad" : {
+    "title" : "Porque toda empresa necesita servicio ITAD",
+    "img" : "../images/home/video-placeholder.jpg",
+    "costos" : {
+      "title" : "Costos",
+      "img": "../images/home/costos.png",
+      "text1": "Generación de ingresos para la venta de equipos",
+      "text2": "Reducción de gastos de almacenamientos inncesarios"
+    } ,
+    "riesgos" : {
+      "title" : "Riesgos",
+      "img": "../images/home/servicio.png",
+      "text1": "Reducción homologada de riesgos de data breaches"
+    },
+    "eficiencia" : {
+      "title": "Eficiencia",
+      "img": "../images/home/trayectoria.png",
+      "text1": "Gestión eficiente del inventario",
+      "text2": "Gestión sustentable de la basura electrónica"
+    }
+  },
+  "servicios" : {
+    "title": "En qué consiste el proceso de ITAD",
+    "desc": "ITAD Asset Disposition es un servicio innovador e integral, que dispone gestión, optimización y monetiación o reciclaje del hardware de su empresa. El cliente puede contar con un servicio permante de ITAD, o bien usar un servicio one-shot, muy común para el cierre de operaciones o renovación total de la flota.",
+    "img": "../images/itad/procesoitad.png",
+    "items" : [
+        {
+            "img": "../images/home/costos.png",
+            "title": "Inventario y análisis",
+            "desc": "En esta etapa inicial, se genera un inventario del equipamiento a procesar al detalle, se hace análisis preliminar de cada equipo y se procede a su acondicionamiento y puesta a punto.",
+            "url": "#/",
+            "link": "ver más >"
+        },
+        {
+            "img": "../images/home/servicio.png",
+            "title": "Wipping y diagnóstico",
+            "desc": "En esta etapa, el equipo lleva a cabo distintos procesos para quitar todo tipo de rastro de los equipos de información y de uso anterios, así como se emiten certificados de la información eliminada o resguardada. Finalizado este proceso, se diagnóstica que el equipo esta apto para reinserción",
+            "url": "#/",
+            "link": "ver más >"
+        },
+        {
+            "img": "../images/home/trayectoria.png",
+            "title": "Reventa o reciclaje",
+            "desc": "Por último se procede a eliminar de forma sustentable el equipamiento o bien sea genera un proceso de comercialización acordado con el cliente para obtener rentabilidad del proceso integral. Así, lo que implicaba un costo, concluye el circuito con un ingreso extraordinario.",
+            "url": "#/",
+            "link": "ver más >"
+        }
+    ]
+  },
+
+  "opiniones" : {
+    "title" : "¿Qué dicen de nosotros?",
+    "desc": "Cada vez más y más empresas adoptan el servicio ITAD para optimizar los costos de IT. Conozca lo que opinan las grandes firmas y que opinan los especialistas.",
+    "slides" : [
+        {
+          "img" : "../images/itad/person2.jpg",
+          "title": "Franz Filicky, Lockheed Martin",
+          "text": "Después del cierre de un programa, nos quedaba una amplia variedad de servidores, computadoras de escritorio, centrales, routers y otros equipos más. XSi se encargó de hacer pruebas y volver a lanzar al mercado los equipos a nuestro nombre y obtuvimos un importante retorno sobre nuestra inversión de capital. Desde el momento en que firmamos el acuerdo, XSi mantuvo una comunicación honesta y directa, entregándonos informes de avance sobre el relanzamiento todas las semanas. Nuestra única tarea fue entregar una lista de inventario y enviar los equipos a XSi. Gracias a su base de clientes y notificaciones del equipo disponible, XSi pudo inclusive comenzar con el relanzamiento de los equipos antes de que llegaran a sus muelles de cargas. Una vez vendidos los equipos recibimos las transferencias bancarias de inmediato y pudimos finalizar nuestra tarea de recuperación de activos. XSi realmente hizo todo por nosotros durante la iniciativa de recuperación."
+        },
+        {
+          "img" : "../images/itad/person.jpg",
+          "title": "Lockheed Martin, Franz Filicky",
+          "text": "Después del cierre de un programa, nos quedaba una amplia variedad de servidores, computadoras de escritorio, centrales, routers y otros equipos más. XSi se encargó de hacer pruebas y volver a lanzar al mercado los equipos a nuestro nombre y obtuvimos un importante retorno sobre nuestra inversión de capital. Desde el momento en que firmamos el acuerdo, XSi mantuvo una comunicación honesta y directa, entregándonos informes de avance sobre el relanzamiento todas las semanas. Nuestra única tarea fue entregar una lista de inventario y enviar los equipos a XSi. Gracias a su base de clientes y notificaciones del equipo disponible, XSi pudo inclusive comenzar con el relanzamiento de los equipos antes de que llegaran a sus muelles de cargas. Una vez vendidos los equipos recibimos las transferencias bancarias de inmediato y pudimos finalizar nuestra tarea de recuperación de activos. XSi realmente hizo todo por nosotros durante la iniciativa de recuperación."
+        }
+    ]
+  }
+}

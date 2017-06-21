@@ -1,0 +1,91 @@
+.services.itad {
+
+  .services__mantenimiento {
+    .itad__services {
+      &:first-child {
+        padding-top:12%;
+      }
+      margin-bottom: 20px;
+      .icono {
+        text-align: right;
+        img {
+          width: 100px;
+          height: 100px;
+        }
+      }
+      .content {
+        .servicioitad__title {
+          font-size: 18px;
+          font-weight: bold;
+          color: $blue;
+        }
+        .servicioitad__text {
+          color: $text;
+        }
+      }
+    }
+  }
+  /* Servicios*/
+  .servicios {
+    background-color: $lightGray;
+    padding: 6% 0;
+
+    .servicios__title {
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      @include breakpoint(md) {
+        font-size: 35px;
+      }
+    }
+    .servicios__desc {
+      font-size: 16px;
+      text-align: center;
+      color: $text;
+      @include breakpoint(md) {
+        font-size: 20px;
+        padding: 0 8%;
+        margin-bottom: 80px;
+      }
+    }
+    ul {
+      li {
+        margin-bottom: 80px;
+         .servicios__img {
+           text-align: center;
+           @include breakpoint (md) {
+             text-align: center;
+           }
+           img {
+             margin: 0 auto;
+           }
+         }
+         .servicios__article-title {
+           font-size: 18px;
+           font-weight: bold;
+           color: $blue;
+           text-align: center;
+           margin-top: 15px;
+         }
+         .servicios__article-desc {
+           color: $text;
+           text-align: center;
+         }
+      }
+    }
+    .procesoitad__img {
+      text-align: center;
+    }
+  }
+  /* Opiniones SLider*/
+  .opiniones {
+    .opiniones__slider-img {
+      img {
+        margin: 0 auto;
+        border-radius: 50%;
+      }
+    }
+
+  }
+
+}

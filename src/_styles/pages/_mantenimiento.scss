@@ -1,0 +1,43 @@
+.mantenimiento {
+  .mantenimiento__title, .fabricantes__title {
+    margin-bottom: 4%;
+    margin-top: 4%;
+    &:first-child {
+      margin-top: 0;
+
+    }
+
+    p {
+      font-size: 26px;
+      font-weight: bold;
+      color: $blue;
+    }
+  }
+  .mantenimiento__img {
+
+    img {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  .mantenimiento__desc {
+    margin-bottom: 15px;
+  }
+
+  .network,.storage,.server {
+    p {
+      font-weight: bold;
+      color: $black;
+      }
+    ul {
+        li {
+          color: $text;
+          list-style: initial;
+          p {
+            color: $text;
+            font-weight: normal;
+          }
+          }
+    }
+  }
+}

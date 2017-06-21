@@ -1,0 +1,113 @@
+{
+    "title":"Marcas con soporte",
+    "mantenimiento" : {
+        "title": "XSi brinda servicios de mantenimiento y soporte incluyendo:",
+        "items" : [
+            {
+              "img": "../images/home/servicio.png",
+              "desc": "Servicios de Mantenimiento administrados"
+            },
+            {
+              "img": "../images/home/servicio.png",
+              "desc": "Advanced TAC con soporte multi-idioma"
+            },
+            {
+              "img": "../images/home/servicio.png",
+              "desc": "Administrador in situ ocasional (para contratos grandes multi fabricante)"
+            },
+            {
+              "img": "../images/home/servicio.png",
+              "desc": "Administrador in situ ocasional (para contratos grandes multi fabricante)"
+            },
+            {
+              "img": "../images/home/servicio.png",
+              "desc": "Ingenieros y repuestos al día siguiente"
+            },
+            {
+              "img": "../images/home/servicio.png",
+              "desc": "Reemplazo de piezas al día siguiente"
+            },
+            {
+              "img": "../images/home/servicio.png",
+              "desc": "Kit de piezas in situ"
+            },
+            {
+              "img": "../images/home/servicio.png",
+              "desc": "Soporte técnico Telefónico"
+            }
+        ]
+    },
+    "fabricantes" : {
+        "title": "A continuación, la lista de fabricantes cuyos productos cubrimos:",
+        "network": {
+          "title" : "Network Maintenance",
+          "items" : [
+            {
+                "name" : "Cisco"
+            },
+            {
+                "name" : "Juniper"
+            },
+            {
+                "name" : "Brocade"
+            },
+            {
+                "name" : "Extreme Networks"
+            },
+            {
+                "name" : "F5 Networks"
+            },
+            {
+                "name" : "Fortinet"
+            }
+          ]
+        },
+        "storage": {
+          "title" : "Storage Maintenance",
+          "items" : [
+            {
+                "name" : "EMC/Dell"
+            },
+            {
+                "name" : "HP"
+            },
+            {
+                "name" : "IBM"
+            },
+            {
+                "name" : "Hitachi"
+            },
+            {
+                "name" : "NetApp"
+            }
+          ]
+        },
+        "server": {
+          "title" : "Server Maintenance",
+          "items" : [
+            {
+                "name" : "Dell"
+            },
+            {
+                "name" : "HP"
+            },
+            {
+                "name" : "IBM"
+            },
+            {
+                "name" : "Oracle/sun"
+            },
+            {
+                "name" : "SGI"
+            }
+          ]
+        }
+    },
+    "cta": {
+        "text": "Tengamos una conversación para hablar de cómo XSi puede ahorrarte tiempo,dinero y recursos en su mantenimeinto de IT.",
+        "btn": {
+            "url":"#",
+            "text": "Me interesa"
+        }
+    }
+}

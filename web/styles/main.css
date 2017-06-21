@@ -14137,6 +14137,148 @@ footer.footer .footer__bottom .footer__headquarters .headquarter__adress {
   margin-bottom: 40px;
 }
 
+.mantenimiento .mantenimiento__title, .mantenimiento .fabricantes__title {
+  margin-bottom: 4%;
+  margin-top: 4%;
+}
+
+.mantenimiento .mantenimiento__title:first-child, .mantenimiento .fabricantes__title:first-child {
+  margin-top: 0;
+}
+
+.mantenimiento .mantenimiento__title p, .mantenimiento .fabricantes__title p {
+  font-size: 26px;
+  font-weight: bold;
+  color: #1565ad;
+}
+
+.mantenimiento .mantenimiento__img img {
+  width: 60px;
+  height: 60px;
+}
+
+.mantenimiento .mantenimiento__desc {
+  margin-bottom: 15px;
+}
+
+.mantenimiento .network p, .mantenimiento .storage p, .mantenimiento .server p {
+  font-weight: bold;
+  color: #000;
+}
+
+.mantenimiento .network ul li, .mantenimiento .storage ul li, .mantenimiento .server ul li {
+  color: #999;
+  list-style: initial;
+}
+
+.mantenimiento .network ul li p, .mantenimiento .storage ul li p, .mantenimiento .server ul li p {
+  color: #999;
+  font-weight: normal;
+}
+
+.services.itad {
+  /* Servicios*/
+  /* Opiniones SLider*/
+}
+
+.services.itad .services__mantenimiento .itad__services {
+  margin-bottom: 20px;
+}
+
+.services.itad .services__mantenimiento .itad__services:first-child {
+  padding-top: 12%;
+}
+
+.services.itad .services__mantenimiento .itad__services .icono {
+  text-align: right;
+}
+
+.services.itad .services__mantenimiento .itad__services .icono img {
+  width: 100px;
+  height: 100px;
+}
+
+.services.itad .services__mantenimiento .itad__services .content .servicioitad__title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1565ad;
+}
+
+.services.itad .services__mantenimiento .itad__services .content .servicioitad__text {
+  color: #999;
+}
+
+.services.itad .servicios {
+  background-color: #ebebeb;
+  padding: 6% 0;
+}
+
+.services.itad .servicios .servicios__title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .services.itad .servicios .servicios__title {
+    font-size: 35px;
+  }
+}
+
+.services.itad .servicios .servicios__desc {
+  font-size: 16px;
+  text-align: center;
+  color: #999;
+}
+
+@media (min-width: 992px) {
+  .services.itad .servicios .servicios__desc {
+    font-size: 20px;
+    padding: 0 8%;
+    margin-bottom: 80px;
+  }
+}
+
+.services.itad .servicios ul li {
+  margin-bottom: 80px;
+}
+
+.services.itad .servicios ul li .servicios__img {
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .services.itad .servicios ul li .servicios__img {
+    text-align: center;
+  }
+}
+
+.services.itad .servicios ul li .servicios__img img {
+  margin: 0 auto;
+}
+
+.services.itad .servicios ul li .servicios__article-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1565ad;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.services.itad .servicios ul li .servicios__article-desc {
+  color: #999;
+  text-align: center;
+}
+
+.services.itad .servicios .procesoitad__img {
+  text-align: center;
+}
+
+.services.itad .opiniones .opiniones__slider-img img {
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
 .services {
   /*Servicios Mantenimiento*/
   /* Servicios*/

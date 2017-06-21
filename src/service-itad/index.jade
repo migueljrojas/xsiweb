@@ -1,8 +1,144 @@
 extends ../_layouts/base
 
+include ../_modules/slider/slider
+
+
 block config
   //- Correct base url pathing for this page
   - var baseUrl = '../'
 
 block content
-  p service-itad page
+    main.services.itad
+      
+      section.home__hero
+          +slider('home__slider')
+              each slide in site.data.home.slider
+                  .home__slider__slide(style="background:url(#{slide.img}) no-repeat top right;")
+                      .container
+                          //img(src=slide.img) 
+                          .home__slider__data
+                              h2=slide.title
+                              p=slide.desc
+                              a._button.-white(href=slide.btn.url)= slide.btn.text
+      
+        section.services__mantenimiento 
+            .container
+                .row   
+                    .col-xs-24.col-sm-12.col-md-12
+                        p.mantenimiento__title= site.data.itad.servicioitad.title
+                        div.mantenimiento__img 
+                            img(src= site.data.itad.servicioitad.img)
+                    
+                    .col-xs-24.col-sm-12.col-md-12
+                        .row.itad__services
+                            div.icono.col-xs-8
+                              img(src= site.data.itad.servicioitad.costos.img)
+                            div.content.col-xs-16
+                              p.servicioitad__title=  site.data.itad.servicioitad.costos.title
+                              p.servicioitad__text=   site.data.itad.servicioitad.costos.text1 
+                              p.servicioitad__text=   site.data.itad.servicioitad.costos.text2
+                        
+                        .row.itad__services
+                            div.icono.col-xs-8
+                              img(src= site.data.itad.servicioitad.riesgos.img)
+                            div.content.col-xs-16
+                              p.servicioitad__title=  site.data.itad.servicioitad.riesgos.title
+                              p.servicioitad__text=   site.data.itad.servicioitad.riesgos.text1 
+                              p.servicioitad__text=   site.data.itad.servicioitad.riesgos.text2  
+                              
+                        .row.itad__services
+                            div.icono.col-xs-8
+                              img(src= site.data.itad.servicioitad.eficiencia.img)
+                            div.content.col-xs-16
+                              p.servicioitad__title=  site.data.itad.servicioitad.eficiencia.title
+                              p.servicioitad__text=   site.data.itad.servicioitad.eficiencia.text1 
+                              p.servicioitad__text=   site.data.itad.servicioitad.costos.text2          
+
+
+                        
+        section.cta
+            .container-fluid
+                  .row
+                      .col-xs-24.cta__container
+                          p.cta__text Contáctenos para asesoramiento gratuito sin compromiso
+                          a._button.-white Me Interesa 
+                          
+        section.servicios
+            .container
+                .row
+                    p.servicios__title= site.data.itad.servicios.title
+                    p.servicios__desc=  site.data.itad.servicios.desc
+                    ul
+                        each item in site.data.itad.servicios.items
+                            li.col-xs-24.col-sm-8.col-md-8                             
+                              div.servicios__content
+                                  div.servicios__img
+                                    img(src= item.img)
+                                  p.servicios__article-title= item.title
+                                  p.servicios__article-desc= item.desc
+                    
+                    div.procesoitad__img 
+                        img(src=site.data.itad.servicios.img)
+                      
+        
+        section.cta
+            .container-fluid
+                  .row
+                      .col-xs-24.cta__container
+                          p.cta__text Conozca a detalle el proceso de ITAD
+                          a._button.-white Me Interesa          
+
+        section.opiniones
+            .container 
+                .row
+                    p.opiniones__title= site.data.itad.opiniones.title
+                    p.opiniones__desc= site.data.itad.opiniones.desc
+                    +slider('opiniones__slider')
+                        each slide in site.data.itad.opiniones.slides
+                            .opiniones__slider
+                                  .container.row
+                                      .opiniones__slider-img.col-xs-24.col-sm-8
+                                          img(src= slide.img)
+                                      .opiniones__slider-text.col-xs-24.col-sm-16
+                                          p.slide__title= slide.title
+                                          p.slide__text= slide.text
+
+
+        section.cta
+            .container-fluid
+                  .row
+                      .col-xs-24.cta__container
+                          p.cta__text ¿Cómo obtenemos las mejores ganancias?
+                          a._button.-white Descúbralo   
+        
+        section.noticias 
+            .container-fluid
+                  .row
+                      .novedades__container.col-xs-24.col-sm-12.col-md-12
+                          p.novedades__title= site.data.services.noticias.novedades.title
+                          ul.novedades__articles
+                              each article in site.data.services.noticias.novedades.articles
+                                  li.row
+                                    .col-xs-24.col-sm-8.col-md-8
+                                      div.novedades__img
+                                          img(src= article.img)
+                                    div.novedades__content.col-xs-24.col-sm-16.col-md-16
+                                        p.novedades__article-title= article.title
+                                        p.novedades__article-desc= article.desc
+                                        a.btn__more= article.link
+                                                
+                          
+                      .informes__container.col-xs-24.col-sm-12.col-md-12
+                          p.informes__title= site.data.services.noticias.informes.title
+                          ul.informes__articles
+                              each article in site.data.services.noticias.informes.articles
+                                  li.row
+                                      p.informes__category= article.category
+                                      .col-xs-24.col-sm-8.col-md-8
+                                        div.informes__img
+                                            img(src= article.img)
+                                      div.informes__content.col-xs-24.col-sm-16.col-md-16
+                                          p.informes__article-title= article.title
+                                          p.informes__article-desc= article.desc
+                                          a.btn__more= article.link    
+                                                                 

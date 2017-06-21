@@ -1,8 +1,51 @@
 extends ../_layouts/base
+include ../_modules/cta/cta
 
 block config
   //- Correct base url pathing for this page
   - var baseUrl = '../'
 
 block content
-  p mantenimiento page
+    main.about.mantenimiento
+        section.about__hero
+            h1.about__title= site.data.mantenimiento.title
+        section.about__body
+            .container
+                .mantenimiento__title 
+                    p= site.data.mantenimiento.mantenimiento.title
+                    
+                ul.row
+                    each item in site.data.mantenimiento.mantenimiento.items
+                        li.col-xs-24.col-sm-6.col-md-6 
+                          div.mantenimiento__img
+                              img(src= item.img)
+                          
+                          p.mantenimiento__desc= item.desc  
+                          
+                .fabricantes__title 
+                    p= site.data.mantenimiento.fabricantes.title
+                    
+                .row
+                    div.network.col-xs-24.col-sm-8.col-md-8
+                      p= site.data.mantenimiento.fabricantes.network.title
+                      ul 
+                          each item in site.data.mantenimiento.fabricantes.network.items 
+                            li 
+                              p= item.name
+                    
+                    div.storage.col-xs-24.col-sm-8.col-md-8
+                      p= site.data.mantenimiento.fabricantes.storage.title
+                      ul 
+                          each item in site.data.mantenimiento.fabricantes.server.items 
+                            li 
+                              p= item.name
+                    div.server.col-xs-24.col-sm-8.col-md-8   
+                      p= site.data.mantenimiento.fabricantes.server.title 
+                      ul 
+                          each item in site.data.mantenimiento.fabricantes.storage.items 
+                            li 
+                              p= item.name
+
+                        
+        section.about__cta
+            +cta(site.data.mantenimiento.cta)
