@@ -1,1 +1,31 @@
-// article styles
+.article{
+    padding: $base * 1.5;
+    display: flex;
+    border-top: 1px solid $lightGray;
+
+    &__img{
+        margin-right: $base * 1.5;
+    }
+
+    &__data {
+        h3 {
+            color:$blue;
+            font-size:21px;
+            margin:0 0 $base/2;
+        }
+
+        p{
+            font-size: 16px;
+            color:$midGray;
+            margin:0 0 $base/2;
+        }
+    }
+
+    &__read-more {
+        cursor: pointer;
+        display: block;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 12px;
+    }
+}

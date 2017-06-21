@@ -1,0 +1,110 @@
+{
+    "title": "Programas de canales",
+    "subtitle": "Programa de partners",
+    "desc": "Forma parte de nuestro grupo de asociados.",
+    "content": [
+        {
+            "type": "text",
+            "cont": "Xsi es líder en mantenimiento de hardware y software de IT que ofrece ahorros de gastos operativos a organizaciones que son directamente usuarios finales y a través de nuestros canales socios en EE.UU. y en el mundo."
+        },
+        {
+            "type": "text",
+            "cont": "(4) Centros de Asistencia Técnica (EE:UU., Reino Unido, Francia y Alemania) ofrecen soporte de canales a nivel mundial en múltiples idiomas."
+        },
+        {
+            "type": "title",
+            "cont": "Nuestro Programa de Partners incluye:",
+            "list": [
+                "OEM con divisiones de mantenimiento de terceros",
+                "Distribuidores autorizados de OEM",
+                "Revendedores y Socios Comerciales Autorizados de OEM (Comerciales y Federales)",
+                "Principales Contratistas Federales (Contratistas de IDIQ)",
+                "Organizaciones de Mantenimiento Independientes (IMO)",
+                "Revendedores Independientes"
+            ]
+        },
+        {
+            "type": "text",
+            "cont": "Si bien existen muchas organizaciones de mantenimiento que soportan servidores y almacenamiento, la especialdiad en Soportes de Equipos de Redes es lo que marca la diferencia de XSi. Contamos con la mayor cantidad de ingenieros certificados de la industria."
+        },
+        {
+            "type": "title",
+            "cont": "Beneficios para nuestros asociados:",
+            "list": [
+                "Portal con Marca Propia",
+                "Mayor participación en las ganancias de las que pueden ofrecer los fabricantes",
+                "Ahorros significativos para sus clientes",
+                "Paquete con el mantenimiento de OEM que vende conforme a un mismo contrato",
+                "Extensión del alcance a Operaciones de Soporte Global",
+                "+500 Ingenieros de Soporte de Tac Certificados",
+                "Partes originales que se pueden rastrear hasta el fabricante",
+                "Mantenimiento de Hardware de Redes a su cartera, incluyendo Cisco, Juniper, F5 y Brocade",
+                "Trayectoria de +24 años con referencias federales y de Global 2000",
+                "Respuesta más rápidas para sus clientes que los Centros de TAC de fabricante",
+                "Escalamiento al fabricante incorporado en el contrato",
+                "Contratos simplificados y más fáciles de gestionar",
+                "Generación de informes mensuales sobre las renovaciones",
+                "Liderazgo en las compras de mantenimiento de sus clientes"
+            ]
+        }
+    ],
+    "sidebar": {
+        "head": {
+            "title": "Channel Program Contáctenos",
+            "person": "Nick Mann",
+            "cargo": "Channel Manager",
+            "phone": "Phone: 678.537.4107",
+            "email": "Email: sales@xsnet.com"
+        },
+        "form":{
+            "title": "Contacta con el departamento de asociados",
+            "inputs":[
+                {
+                    "type": "text",
+                    "label": "Nombre *",
+                    "name": "nombre"
+                },
+                {
+                    "type": "text",
+                    "label": "Apellido *",
+                    "name": "apellido"
+                },
+                {
+                    "type": "email",
+                    "label": "E-Mail *",
+                    "name": "email"
+                },
+                {
+                    "type": "text",
+                    "label": "Agencia *",
+                    "name": "agencia"
+                },
+                {
+                    "type": "select",
+                    "label": "¿Cuál es la naturaleza de su solicitud? *",
+                    "name": "pais",
+                    "placeholder": "Selecciones una",
+                    "options": [
+                        {
+                            "name": "Opción 1",
+                            "val": "opt-1"
+                        },
+                        {
+                            "name": "Opción 2",
+                            "val": "opt-2"
+                        },
+                        {
+                            "name": "opción 3",
+                            "val": "opt-3"
+                        }
+                    ]
+                },
+                {
+                    "type": "textarea",
+                    "label": "Mensaje *",
+                    "name": "mensaje"
+                }
+            ]
+        }
+    }
+}

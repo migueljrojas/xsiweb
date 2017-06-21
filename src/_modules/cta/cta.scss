@@ -19,30 +19,43 @@
     &__container {
         display: flex;
         justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+        @include breakpoint(sm){
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
     }
 
     &__text{
       color: $white;
-      font-size: 15px;
-      line-height: 15px;
-      font-weight: bold;
-      flex-wrap: wrap;
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: $base/2;
+
 
         @include breakpoint(sm) {
+          text-align: left;
           line-height: 40px;
-          flex-wrap: nowrap;
+          margin-right: 40px;
+          margin-bottom: 0;
         }
         @include breakpoint(md) {
           font-size: 26px;
           line-height: 30px;
-          margin-right: 40px;
+          max-width: 60%;
         }
     }
     @include breakpoint (xs) {
       a._button.-white {
-        font-size: 12px;
-        line-height: 14px;
-        padding: 4px 40px;
+        font-size: 16px;
+        line-height: 28px;
+        padding: 4px 20px;
       }
     }
 

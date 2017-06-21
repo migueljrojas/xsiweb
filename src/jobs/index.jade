@@ -16,8 +16,8 @@ block content
                     .col-xs-24.col-md-20.col-md-offset-2
                         p.jobs__desc= site.data.jobs.desc
                     .col-xs-24
-                        each item in site.data.jobs.list
-                            +job(item)
+                        each item, index in site.data.jobs.list
+                            +job(item, index)
                             
             +cta(site.data.jobs.cta)
                         

@@ -12,9 +12,9 @@ block content
         section.historia__body
             h2= site.data.historia.subtitle
             .container
-                each item in site.data.historia.moments
+                each item, index in site.data.historia.moments
                     .row
-                        .col-xs-22.col-sm-12
+                        .col-xs-22.col-sm-12.wow.fadeInUpBig(data-wow-delay="#{(index + 1)/4}s")
                             h3=item.title
                             p!=item.text
                             

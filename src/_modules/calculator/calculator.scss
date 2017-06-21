@@ -2,10 +2,14 @@
 .calculator {
     background: $white;
     box-shadow: 0 0 50px rgba(0,0,0,.1);
-    padding: $base/2 $base $base;
+    padding: $base/2;
     width: 100%;
     font-family: $mainFont;
     position: relative;
+
+    @include breakpoint(sm) {
+        padding: $base/2 $base $base;
+    }
 
     &__title {
         text-align: center;
@@ -17,10 +21,29 @@
     &__options {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+        @include breakpoint(sm) {
+            flex-direction: row;
+        }
+
+        @include breakpoint(md) {
+            flex-wrap: nowrap;
+        }
     }
 
     &__dropdown {
         flex: 1;
+        margin-bottom: $base/2;
+
+        @include breakpoint(sm){
+            flex-basis: 30%;
+        }
+
+        @include breakpoint(md){
+            margin-bottom: 0;
+        }
 
         h5{
             color:$midGray;
@@ -45,11 +68,19 @@
                 background: $white;
                 border-left: 2px solid $midGray;
                 border-bottom: 2px solid $midGray;
-                right:calc(30% + 3px);
+                right:3px;
                 top:5px;
                 transform: rotate(-45deg);
                 width:12px;
                 height:12px;
+
+                @include breakpoint(sm) {
+                    right:calc(10% + 3px);
+                }
+
+                @include breakpoint(md) {
+                    right:calc(30% + 3px);
+                }
             }
         }
         select {
@@ -57,7 +88,15 @@
             font-weight: 700;
             color:$blue;
             border:none;
-            width:70%;
+            width:100%;
+
+            @include breakpoint(sm) {
+                width:90%;
+            }
+
+            @include breakpoint(md) {
+                width:70%;
+            }
 
             &:focus{
                 outline: none;
@@ -66,9 +105,14 @@
     }
 
     .-cta{
-        transform: translateX(50%);
-        position: absolute;
-        right:0;
-        box-shadow: 0 0 25px rgba(0,0,0,.2);
+        @include breakpoint(md){
+            flex-basis: 100%;
+        }
+        @include breakpoint(md){
+            transform: translateX(50%);
+            position: absolute;
+            right:0;
+            box-shadow: 0 0 25px rgba(0,0,0,.2);
+        }
     }
 }

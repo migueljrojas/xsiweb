@@ -47,6 +47,7 @@ $altFont: 'Myriad', sans-serif;
         top:-50%;
         opacity: .7;
         z-index:0;
+        pointer-events: none;
     }
 
     @if $mode == after {
@@ -61,5 +62,6 @@ $altFont: 'Myriad', sans-serif;
         right:-10.8%;
         opacity: .2;
         z-index:0;
+        pointer-events: none;
     }
 }

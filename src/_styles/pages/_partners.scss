@@ -1,0 +1,128 @@
+.partners {
+    &__hero {
+        background-image: $gradient;
+        padding: 4% 0;
+        overflow: hidden;
+        position: relative;
+
+        &:before {
+            @include shades(before);
+            z-index:5;
+            right: -110%;
+            opacity: .7;
+        }
+
+        &:after {
+            @include shades(after);
+            z-index:5;
+            opacity: .3;
+            right:50%;
+            top:-175%;
+            width:80%;
+            height:280%;
+            box-shadow: inset 0 10px 100px rgba(0,0,0,.5);
+        }
+    }
+
+    &__subhero {
+        background: url("/images/partners/bg.jpg") no-repeat top center;
+        background-size: cover;
+        margin-bottom: -7%;
+
+        .container{
+            height:0;
+            padding-bottom: 44%;
+            position: relative;
+        }
+
+        &__data {
+            position: absolute;
+            left:50%;
+            top:50%;
+            transform: translateY(-50%);
+            width:40%;
+
+            h2 {
+                color: $blue;
+                font-size: 48px;
+            }
+
+            p{
+                color: $midGray;
+            }
+        }
+    }
+
+    &__title {
+        text-align: center;
+        margin: 0;
+        color:$white;
+        margin-top: 5%;
+    }
+
+    &__body {
+        padding: 4% 0;
+        color: $midGray;
+
+        h3 {
+            color: $blue;
+            font-family: $mainFont;
+            font-size:18px;
+        }
+
+        p{
+            margin-bottom: $base;
+        }
+
+        ul {
+            list-style: disc;
+            padding-left: $base;
+            margin-bottom: $base/4;
+
+            li{
+                margin-bottom: $base/4;
+            }
+        }
+    }
+
+    &__sidebar {
+        background: $lightestGray;
+
+        &__data {
+            background:  linear-gradient(-90deg, $green, $blue);
+            color:$white;
+            padding: $base;
+            margin-left: -15px;
+            margin-right: -15px;
+
+            h4 {
+                margin:0 0 10px;
+                font-family: $mainFont;
+                font-size:18px;
+            }
+
+            span {
+                font-size:12px;
+                display: block;
+                margin-bottom: 5px;
+
+                &:first-of-type {
+                    font-weight: 700;
+                }
+            }
+        }
+
+        &__form .contact-form{
+            background: $lightestGray;
+            box-shadow: none;
+            .contact-form__group {
+                width: 100%;
+            }
+
+            .contact-form__title {
+                width:70%;
+                text-align: left;
+            }
+        }
+    }
+}

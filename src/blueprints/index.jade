@@ -19,21 +19,21 @@ block content
             .blueprints__form
                 .container
                     .row
-                        .col-xs-24.col-sm-20.col-sm-offset-2.col-md-16.col-md-offset-4.col-lg-14.col-md-offset-5
+                        .col-xs-24.col-sm-20.col-sm-offset-2.col-md-16.col-md-offset-4.col-lg-14.col-md-offset-5.wow.fadeInRightBig
                             +contact-form(site.data.blueprints.form)
             .container
                 .row
                     .col-xs-24.col-sm-18.col-sm-offset-3.col-md-14.col-md-offset-5.col-lg-12.col-md-offset-6
                         each item in site.data.blueprints.content
                             if item.type == 'title'
-                                h2=item.cont
+                                h2.wow.fadeInLeft=item.cont
                             
                             if item.type == 'text'
-                                p=item.cont
+                                p.wow.fadeInLeft=item.cont
                                 
                             if item.type == 'subtitle'
-                                h3=item.cont
-                                ul
+                                h3.wow.fadeInLeft=item.cont
+                                ul.wow.fadeInLeft
                                     each bullet in item.list
                                         li= bullet
                                     

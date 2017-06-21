@@ -5,4 +5,28 @@ block config
   - var baseUrl = '../'
 
 block content
-  p team page
+    main.team
+        section.team__hero
+            h1.team__title= site.data.team.title
+        section.team__body
+            .container
+                .team__members-wrapper
+                    each item, index in site.data.team.members
+                        .team__member.wow.fadeInUp(data-wow-delay="#{(index + 1)/8}s")
+                            .team__member__overlay
+                                span Ver perfil completo
+                            .team__member__img
+                                img(src=item.img)
+                            .team__member__data
+                                h2.team__member__name!= item.name
+                                span.team__member__job= item.cargo
+                                p.team__member__bio= item.bio
+                                ul.team__member__social
+                                    each red in item.social
+                                        li
+                                            a(href=red.url, target="_blank")
+                                                i(class="fa fa-#{red.name}")
+                            .team__member__btn-close
+                                span
+                                span
+                

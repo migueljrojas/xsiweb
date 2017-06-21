@@ -1,9 +1,13 @@
 .about {
     &__hero {
         background-image: $gradient;
-        padding: 4% 0;
+        padding: 30% 0;
         overflow: hidden;
         position: relative;
+
+        @include breakpoint(lg) {
+            padding: 4% 0;
+        }
 
         &:before {
             @include shades(before);
@@ -32,11 +36,16 @@
     }
 
     &__body {
-        padding: 4% 0;
+        padding: 10% 0;
         color:$midGray;
         font-size: 16px;
         position: relative;
-        background: url('/images/about/about-top-bg.png') no-repeat top left;
+
+        @include breakpoint(sm) {
+            padding: 4% 0;
+            background: url('/images/about/about-top-bg.png') no-repeat top left;
+        }
+
 
         .video-col {
             text-align: center;

@@ -1,6 +1,11 @@
-mixin article(spec)
-  - spec = spec || {}
-  - spec.__class = spec.__class || ''
-
-  div(class=spec.__class)&attributes(attributes)
-    p This is an example paragraph for the article module
+mixin article(data)
+    article.article
+        .article__img
+            img(src=data.img)
+        .article__data
+            h3=data.title
+            each par in data.content
+                p= par
+            a.article__read-more(href=data.url) seguir leyendo
+                
+        

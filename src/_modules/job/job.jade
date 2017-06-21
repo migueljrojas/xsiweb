@@ -1,6 +1,6 @@
-mixin job(data)
+mixin job(data, index)
 
-    .job
+    .job.wow.fadeInRightBig(data-wow-delay="#{(index + 1)/8}s")
         .job__data
             h2.job__title= data.title
             p.job__desc= data.desc

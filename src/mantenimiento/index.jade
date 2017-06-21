@@ -15,8 +15,8 @@ block content
                     p= site.data.mantenimiento.mantenimiento.title
                     
                 ul.row
-                    each item in site.data.mantenimiento.mantenimiento.items
-                        li.col-xs-24.col-sm-6.col-md-6 
+                    each item, index in site.data.mantenimiento.mantenimiento.items
+                        li.col-xs-24.col-sm-6.col-md-6.wow.fadeInUp(data-wow-delay="#{(index + 1)/4}s") 
                           div.mantenimiento__img
                               img(src= item.img)
                           
@@ -29,21 +29,21 @@ block content
                     div.network.col-xs-24.col-sm-8.col-md-8
                       p= site.data.mantenimiento.fabricantes.network.title
                       ul 
-                          each item in site.data.mantenimiento.fabricantes.network.items 
-                            li 
+                          each item, index in site.data.mantenimiento.fabricantes.network.items 
+                            li.wow.fadeInLeft(data-wow-delay="#{(index + 1)/4}s") 
                               p= item.name
                     
                     div.storage.col-xs-24.col-sm-8.col-md-8
                       p= site.data.mantenimiento.fabricantes.storage.title
                       ul 
-                          each item in site.data.mantenimiento.fabricantes.server.items 
-                            li 
+                          each item, index in site.data.mantenimiento.fabricantes.server.items 
+                            li.wow.fadeInLeft(data-wow-delay="#{(index + 1)/4}s") 
                               p= item.name
                     div.server.col-xs-24.col-sm-8.col-md-8   
                       p= site.data.mantenimiento.fabricantes.server.title 
                       ul 
-                          each item in site.data.mantenimiento.fabricantes.storage.items 
-                            li 
+                          each item, index in site.data.mantenimiento.fabricantes.storage.items 
+                            li.wow.fadeInLeft(data-wow-delay="#{(index + 1)/4}s") 
                               p= item.name
 
                         

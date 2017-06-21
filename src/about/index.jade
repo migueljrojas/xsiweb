@@ -15,7 +15,7 @@ block content
                     if item.type == 'text'
                         .row.-short
                             .col-xs-24.col-sm-18.col-sm-offset-3.col-md-14.col-md-offset-5.col-lg-12.col-md-offset-6
-                                p!= item.cont
+                                p.wow.fadeInLeft(data-wow-delay="#{(index + 1)/4}s")!= item.cont
                     if item.type == 'video'
                         .row.-large
                             .about__video-wrapper

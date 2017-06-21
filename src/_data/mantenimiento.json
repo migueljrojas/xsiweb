@@ -4,35 +4,35 @@
         "title": "XSi brinda servicios de mantenimiento y soporte incluyendo:",
         "items" : [
             {
-              "img": "../images/home/servicio.png",
+              "img": "../images/mantenimiento/service-1.png",
               "desc": "Servicios de Mantenimiento administrados"
             },
             {
-              "img": "../images/home/servicio.png",
+              "img": "../images/mantenimiento/service-2.png",
               "desc": "Advanced TAC con soporte multi-idioma"
             },
             {
-              "img": "../images/home/servicio.png",
+              "img": "../images/mantenimiento/service-3.png",
               "desc": "Administrador in situ ocasional (para contratos grandes multi fabricante)"
             },
             {
-              "img": "../images/home/servicio.png",
+              "img": "../images/mantenimiento/service-4.png",
               "desc": "Administrador in situ ocasional (para contratos grandes multi fabricante)"
             },
             {
-              "img": "../images/home/servicio.png",
+              "img": "../images/mantenimiento/service-5.png",
               "desc": "Ingenieros y repuestos al día siguiente"
             },
             {
-              "img": "../images/home/servicio.png",
+              "img": "../images/mantenimiento/service-6.png",
               "desc": "Reemplazo de piezas al día siguiente"
             },
             {
-              "img": "../images/home/servicio.png",
+              "img": "../images/mantenimiento/service-7.png",
               "desc": "Kit de piezas in situ"
             },
             {
-              "img": "../images/home/servicio.png",
+              "img": "../images/mantenimiento/service-8.png",
               "desc": "Soporte técnico Telefónico"
             }
         ]

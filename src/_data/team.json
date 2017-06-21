@@ -1,0 +1,197 @@
+{
+    "title": "Equipo de Trabajo",
+    "members": [
+        {
+            "name":"Doug<br>Krueger",
+            "cargo": "CEO",
+            "img": "/images/team/profile-1.jpg",
+            "bio": "Durante los primeros 11 años de su carrera, Doug ocupó cargos de ventas y liderazgo de ventas en Pitney Bowes y Johnson and Johnson",
+            "social": [
+                {
+                    "url": "http://twitter.com",
+                    "name": "twitter"
+                },
+                {
+                    "url": "http://linkedin.com",
+                    "name": "linkedin"
+                },
+                {
+                    "url": "http://google.com",
+                    "name": "google-plus"
+                },
+                {
+                    "url": "mail@xsi.com",
+                    "name": "envelope"
+                }
+            ]
+        },
+        {
+            "name":"Tod A.<br>Bone",
+            "cargo": "FUNDADOR Y PRESIDENTE",
+            "img": "/images/team/profile-2.jpg",
+            "bio": "Desde 1990, Todd ha fundado cinco compañías en el sector de IT, incluyendo XS International, Inc., Max Commerce Inc., Renovo Group y AvarSYS. Cuenta con más de 25 años de experiencia en el desarrollo de compañías tecnológicas.",
+            "social": [
+                {
+                    "url": "http://twitter.com",
+                    "name": "twitter"
+                },
+                {
+                    "url": "http://linkedin.com",
+                    "name": "linkedin"
+                },
+                {
+                    "url": "http://google.com",
+                    "name": "google-plus"
+                },
+                {
+                    "url": "mail@xsi.com",
+                    "name": "envelope"
+                }
+            ]
+        },
+        {
+            "name":"Harry<br>Carey",
+            "cargo": "DIRECTOR DE NEGOCIOS ESTRATÉGICOS",
+            "img": "/images/team/profile-3.jpg",
+            "bio": "Harry dedicó los últimos 30 años a especializarse en la integración de tecnologías en toda la ecuación empresarial con el fin de producir resultados económicos y organizacionales efectivos en diversos mercados verticales.",
+            "social": [
+                {
+                    "url": "http://twitter.com",
+                    "name": "twitter"
+                },
+                {
+                    "url": "http://linkedin.com",
+                    "name": "linkedin"
+                },
+                {
+                    "url": "http://google.com",
+                    "name": "google-plus"
+                },
+                {
+                    "url": "mail@xsi.com",
+                    "name": "envelope"
+                }
+            ]
+        },
+        {
+            "name":"Daniel<br>Cagliero",
+            "cargo": "DIRECTOR COMERCIAL LATM",
+            "img": "/images/team/profile-4.jpg",
+            "bio": "Daniel, con casi 30 años de experiencia laboral, posee una amplia gama de conocimientos y experiencia en desarrollo de negocios, marketing, ventas y asistencia técnica. Trabajó en muchas organizaciones de todo el mundo, incluidas Alcon Laboratories, Banco Rural, World Business Games, Meritent y Meritent International.",
+            "social": [
+                {
+                    "url": "http://twitter.com",
+                    "name": "twitter"
+                },
+                {
+                    "url": "http://linkedin.com",
+                    "name": "linkedin"
+                },
+                {
+                    "url": "http://google.com",
+                    "name": "google-plus"
+                },
+                {
+                    "url": "mail@xsi.com",
+                    "name": "envelope"
+                }
+            ]
+        },
+        {
+            "name":"Ricardo<br>Bolo",
+            "cargo": "DIRECTOR DE TECNOLOGÍA LATAM",
+            "img": "/images/team/profile-5.jpg",
+            "bio": "Durante los primeros 11 años de su carrera, Doug ocupó cargos de ventas y liderazgo de ventas en Pitney Bowes y Johnson and Johnson",
+            "social": [
+                {
+                    "url": "http://twitter.com",
+                    "name": "twitter"
+                },
+                {
+                    "url": "http://linkedin.com",
+                    "name": "linkedin"
+                },
+                {
+                    "url": "http://google.com",
+                    "name": "google-plus"
+                },
+                {
+                    "url": "mail@xsi.com",
+                    "name": "envelope"
+                }
+            ]
+        },
+        {
+            "name":"General<br>Mayor John<br>Madula",
+            "cargo": "ASESOR",
+            "img": "/images/team/profile-6.jpg",
+            "bio": "Durante los primeros 11 años de su carrera, Doug ocupó cargos de ventas y liderazgo de ventas en Pitney Bowes y Johnson and Johnson",
+            "social": [
+                {
+                    "url": "http://twitter.com",
+                    "name": "twitter"
+                },
+                {
+                    "url": "http://linkedin.com",
+                    "name": "linkedin"
+                },
+                {
+                    "url": "http://google.com",
+                    "name": "google-plus"
+                },
+                {
+                    "url": "mail@xsi.com",
+                    "name": "envelope"
+                }
+            ]
+        },
+        {
+            "name":"Mark<br>Tonnesen",
+            "cargo": "ASESOR",
+            "img": "/images/team/profile-7.jpg",
+            "bio": "Durante los primeros 11 años de su carrera, Doug ocupó cargos de ventas y liderazgo de ventas en Pitney Bowes y Johnson and Johnson",
+            "social": [
+                {
+                    "url": "http://twitter.com",
+                    "name": "twitter"
+                },
+                {
+                    "url": "http://linkedin.com",
+                    "name": "linkedin"
+                },
+                {
+                    "url": "http://google.com",
+                    "name": "google-plus"
+                },
+                {
+                    "url": "mail@xsi.com",
+                    "name": "envelope"
+                }
+            ]
+        },
+        {
+            "name":"Dale W.<br>Malik",
+            "cargo": "ASESOR",
+            "img": "/images/team/profile-8.jpg",
+            "bio": "Daniel, con casi 30 años de experiencia laboral, posee una amplia gama de conocimientos y experiencia en desarrollo de negocios, marketing, ventas y asistencia técnica. Trabajó en muchas organizaciones de todo el mundo, incluidas Alcon Laboratories, Banco Rural, World Business Games, Meritent y Meritent International.",
+            "social": [
+                {
+                    "url": "http://twitter.com",
+                    "name": "twitter"
+                },
+                {
+                    "url": "http://linkedin.com",
+                    "name": "linkedin"
+                },
+                {
+                    "url": "http://google.com",
+                    "name": "google-plus"
+                },
+                {
+                    "url": "mail@xsi.com",
+                    "name": "envelope"
+                }
+            ]
+        }
+    ]
+}

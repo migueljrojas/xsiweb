@@ -1,0 +1,302 @@
+.team {
+    &__hero {
+        background-image: $gradient;
+        padding: 4% 0;
+        overflow: hidden;
+        position: relative;
+
+        &:before {
+            @include shades(before);
+            z-index:5;
+            right: -110%;
+            opacity: .7;
+        }
+
+        &:after {
+            @include shades(after);
+            z-index:5;
+            opacity: .3;
+            right:50%;
+            top:-175%;
+            width:80%;
+            height:280%;
+            box-shadow: inset 0 10px 100px rgba(0,0,0,.5);
+        }
+    }
+
+    &__title {
+        text-align: center;
+        margin: 0;
+        color:$white;
+        margin-top: 5%;
+    }
+
+    &__body {
+        padding: 4% 0;
+        color:$midGray;
+    }
+
+    &__members-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        padding-bottom: 60%;
+    }
+
+    &__member {
+        flex-basis:25%;
+        width:25%;
+        position: absolute;
+        height:0;
+        padding-bottom: 30%;
+        overflow: hidden;
+        transition: all .5s $easing;
+
+        &:nth-child(1) {
+            left:0;
+            top:0;
+        }
+
+        &:nth-child(2) {
+            left:25%;
+            top:0;
+        }
+
+        &:nth-child(3) {
+            left:50%;
+            top:0;
+        }
+
+        &:nth-child(4) {
+            left:75%;
+            top:0;
+        }
+
+        &:nth-child(5) {
+            left:0;
+            top:50%;
+        }
+
+        &:nth-child(6) {
+            left:25%;
+            top:50%;
+        }
+
+        &:nth-child(7) {
+            left:50%;
+            top:50%;
+        }
+
+        &:nth-child(8) {
+            left:75%;
+            top:50%;
+        }
+
+        &.-animating{
+            .team__member__overlay {
+                display: none;
+            }
+            &:hover {
+                .team__member__overlay {
+                    display: none;
+                }
+            }
+        }
+
+        &.-expanded {
+            position: absolute;
+            top:0;
+            bottom:0;
+            left:0;
+            right:0;
+            background: $white;
+            width:100%;
+            height: 100%;
+            flex-basis: 100%;
+            z-index:15;
+
+            &:after {
+                background:url("/images/team/profile-bg.jpg") no-repeat top center;
+                background-size: contain;
+                top:0;
+                z-index:0;
+            }
+
+            &:hover {
+
+                .team__member__overlay {
+                    display: none;
+                    opacity: 0;
+                }
+            }
+
+            .team__member__img {
+                z-index:5;
+                top:20%;
+                left:10%;
+                box-shadow: 0 0 50px rgba(0,0,0,.3);
+            }
+
+            .team__member__data {
+                left: 40%;
+                top: 15%;
+                bottom: initial;
+                right:initial;
+                width:60%;
+                cursor:default;
+            }
+
+            .team__member__name {
+                color: $darkGray;
+                font-size: 48px;
+                font-family: $altFont;
+                margin-bottom: 0;
+            }
+
+            .team__member__job {
+                color:$green;
+                font-weight:700;
+                font-family: $altFont;
+            }
+
+            .team__member__bio {
+                display: block;
+                padding: $base/2 0;
+                line-height: 1.6em;
+            }
+
+            .team__member__social {
+                display: block;
+            }
+
+            .team__member__btn-close {
+                display: block;
+            }
+        }
+
+        &:after {
+            position: absolute;
+            content: '';
+            display: block;
+            background: linear-gradient(180deg, rgba(0,0,0,.0), rgba(0,0,0,.8));
+            bottom: 0;
+            top: 50%;
+            left:0;
+            right:0;
+            transition: all .5s $easing;
+            z-index:2;
+        }
+
+        &:hover {
+
+            .team__member__overlay {
+                opacity: 1;
+                transform: translateY(0);
+                cursor: pointer;
+            }
+        }
+
+        &__overlay {
+            background: transparentize($blue, .1);
+            position: absolute;
+            top:0;
+            left:0;
+            bottom:0;
+            right:0;
+            color:$white;
+            font-weight: 700;
+            font-family: $mainFont;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transform: translateY(-100%);
+            transition: all .5s $easing;
+            z-index: 10;
+            cursor: pointer;
+        }
+
+        .team__member__img {
+            position: relative;
+            z-index:1;
+            top:0;
+            left:0;
+            box-shadow: 0 0 0 rgba(0,0,0,.3);
+            float: left;
+            transition: all .5s $easing;
+        }
+
+        &__data {
+            width: 100%;
+            position: absolute;
+            bottom:0;
+            padding: $base/2;
+            z-index:5;
+            cursor: pointer;
+            transition: all .5s $easing;
+        }
+
+        &__name {
+            color: $white;
+            font-size: 32px;
+            font-family: $altFont;
+            transition: all .5s $easing;
+        }
+
+        &__job {
+            color:$green;
+            font-weight:700;
+            font-family: $altFont;
+            transition: all .5s $easing;
+        }
+
+        &__bio {
+            display: none;
+            color: $midGray;
+            width:65%;
+            transition: all .5s $easing;
+        }
+
+        &__social {
+            display: none;
+            transition: all .5s $easing;
+
+            li{
+                display: inline-block;
+                margin-right: 5px;
+
+                a{
+                    color:$midGray;
+                }
+            }
+        }
+
+        &__btn-close {
+            display: none;
+            width:20px;
+            height: 20px;
+            position: absolute;
+            right:10%;
+            top:5%;
+            z-index: 20;
+            cursor:pointer;
+
+            span {
+                width:100%;
+                height: 2px;
+                position: absolute;
+                top:calc(50% - 1px);
+                display: block;
+                background: $midGray;
+                transform: rotate(-45deg);
+
+                &:last-child {
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+
+
+}

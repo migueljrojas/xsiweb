@@ -19,25 +19,25 @@ block content
             .gartner__form
                 .container
                     .row
-                        .col-xs-24.col-sm-20.col-sm-offset-2.col-md-16.col-md-offset-4.col-lg-14.col-md-offset-5
+                        .col-xs-24.col-sm-20.col-sm-offset-2.col-md-16.col-md-offset-4.col-lg-14.col-md-offset-5.wow.fadeInRightBig
                             +contact-form(site.data.gartner.form)
             .container
                 .row
                     .col-xs-24.col-sm-18.col-sm-offset-3.col-md-14.col-md-offset-5.col-lg-12.col-md-offset-6
-                        img(src="/images/gartner-logo.png")
-                        each item in site.data.gartner.content
+                        img.wow.fadeInLeft(src="/images/gartner-logo.png")
+                        each item, index in site.data.gartner.content
                           
                             if item.type == 'text'
-                                p=item.cont
+                                p.wow.fadeInLeft(data-wow-delay="#{(index + 1)/4}s")=item.cont
                               
                             if item.type == 'title'
-                                h2=item.cont
+                                h2.wow.fadeInLeft(data-wow-delay="#{(index + 1)/4}s")=item.cont
                                 
                                 if item.text
-                                    p=item.text
+                                    p.wow.fadeInLeft(data-wow-delay="#{(index + 1)/4}s")=item.text
                                     
                                 if item.list
                                     ul
                                         each bullet in item.list
-                                            li= bullet
+                                            li.wow.fadeInLeft(data-wow-delay="#{(index + 1)/4}s")= bullet
                                       

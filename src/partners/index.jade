@@ -1,8 +1,47 @@
 extends ../_layouts/base
+include ../_modules/contact-form/contact-form
 
 block config
   //- Correct base url pathing for this page
   - var baseUrl = '../'
 
 block content
-  p partners page
+    main.partners
+        section.partners__hero
+            h1.partners__title= site.data.partners.title
+        section.partners__subhero.wow.fadeInRightBig
+            .container
+                .row
+                    .partners__subhero__data
+                        h2.partners__subtitle= site.data.partners.subtitle
+                        p.partners__desc= site.data.partners.desc
+        section.partners__body
+            .container
+                .row
+                    .col-xs-24.col-md-16.partners__content
+                        each item in site.data.partners.content
+                            if item.type == 'text'
+                                p=item.cont
+                              
+                            if item.type == 'title'
+                                h3=item.cont
+                                
+                                if item.text
+                                    p=item.text
+                                    
+                                if item.list
+                                    ul
+                                        each bullet in item.list
+                                            li= bullet
+                                            
+                    .col-xs-24.col-md-8.partners__sidebar
+                        .partners__sidebar__data
+                            h4= site.data.partners.sidebar.head.title
+                            span= site.data.partners.sidebar.head.person
+                            span= site.data.partners.sidebar.head.cargo
+                            span= site.data.partners.sidebar.head.phone
+                            span= site.data.partners.sidebar.head.email
+                            
+                        .partners__sidebar__form
+                            +contact-form(site.data.partners.sidebar.form)
+                            

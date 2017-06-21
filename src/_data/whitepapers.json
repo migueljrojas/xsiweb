@@ -1,0 +1,33 @@
+{
+    "title": "White papers",
+    "subtitle": "Inormes para resolver cualquier consulta o duda",
+    "desc": "Aprende más sobre el mantenimiento alternativo y cómo puede ayudar a tu organización",
+    "link": "¿Preguntas? Contacta a <a href=\"mailto:info@xsinet.com\">info@xsinet.com</a>",
+    "articles": [
+        {
+            "title":"Cómo los Programas de Mantenimiento Alternativos Están Reduciendo los Gastos de IT",
+            "content": [
+                "El gasto promedio en mantenimiento de IT de las empresas es de 6,4% de la ganancia actual. Permítanos ayudarle a optimizar ese gasto.",
+                "De acuerdo a Gartner, el 80% de los gastos de IT ocurren luego de la compra. Esto es principalmente porque los fabricantes imponen altísimos costes de reparación y mantenimiento. Aprenda cómo puede el Mantenimiento por Terceros ayudarle a reducir esos costos."
+            ],
+            "img": "/images/whitepapers/doc-1.jpg",
+            "url":"#"
+        },
+        {
+            "title":"3 Mitos Sobre Servicio Alternativo",
+            "content": [
+                "Los niveles de servicio tradicional de los fabricantes no cumplen con las necesidades dinámicas y cambiantes de las compañías.",
+                "Un reciente estudio lanzado por Gartner reveló que los profesionales de IT, en busca de optimizar los gastos y optimizar el uso de los equipos adquiridos, están asociandose con proveedores de mantenimiento para terceros para aprovechar el máximo potencial de vida útil de los dispositivos."
+            ],
+            "img": "/images/whitepapers/doc-2.jpg",
+            "url":"#"
+        }
+    ],
+    "cta": {
+      "text": "Le ofrecemos un ANÁLISIS GRATUITO de ahorro",
+      "btn": {
+          "url":"#",
+          "text": "Me interesa"
+      }
+    }
+}
