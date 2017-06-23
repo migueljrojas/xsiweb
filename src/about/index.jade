@@ -14,14 +14,14 @@ block content
                 each item in site.data.about.content
                     if item.type == 'text'
                         .row.-short
-                            .col-xs-24.col-sm-18.col-sm-offset-3.col-md-14.col-md-offset-5.col-lg-12.col-md-offset-6
+                            .col-xs-24.col-sm-18.col-sm-offset-3.col-md-16.col-md-offset-4
                                 p.wow.fadeInLeft(data-wow-delay="#{(index + 1)/4}s")!= item.cont
                     if item.type == 'video'
                         .row.-large
                             .about__video-wrapper
                             .col-xs-24
                                 .row.-short
-                                    .col-xs-24.col-sm-22.col-sm-offset-1.col-md-20.col-md-offset-2.video-col
+                                    .col-xs-24.col-sm-22.col-sm-offset-1.col-md-24.about__video-col
                                         a
                                             img.img-responsive(src=item.cont.placeholder)
                         

@@ -33,27 +33,46 @@
   </svg>
   <header class="header">
     <div class="header__hamburguer"><span></span><span></span><span></span></div>
-    <div class="container-fluid">
-      <nav class="row">
-        <div class="header__logo"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg>        </div>
-        <ul class="header__nav">
-          <li><a href="#">Homepage</a></li>
-          <li><a href="#">Mantemiento</a></li>
-          <li><a href="/service-itad">Itad</a></li>
-          <li><a href="/service-tpm">Servicios</a></li>
-          <li><a href="#">Nosotros</a></li>
-          <li><a href="#">Noticias</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
-        <ul class="header__social">
-          <li><a href="http://facebook.com"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="http://twitter.com"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="http://google.com"><i class="fa fa-google-plus"></i></a></li>
-          <li><a href="http://linkedin.com"><i class="fa fa-linkedin"></i></a></li>
-        </ul>
-      </nav>
-    </div>
+    <div class="header__logo"><a href="/"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg>        </a></div>
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li><a href="/">Homepage</a>
+        </li>
+        <li><a href="#">Mantemiento</a>
+          <ul class="header__submenu">
+            <li><a href="/mantenimiento">Marcas con Soporte</a></li>
+            <li><a href="#">Modelos de Servicio</a></li>
+            <li><a href="#">Cómo Abandonar al Fabricante</a></li>
+            <li><a href="#">Qué dicen los especialistas</a></li>
+          </ul>
+        </li>
+        <li><a href="/service-itad">Itad</a>
+        </li>
+        <li><a href="/service-tpm">Servicios</a>
+        </li>
+        <li><a href="#">Sobre XSi</a>
+          <ul class="header__submenu">
+            <li><a href="/about">Acerca de XSi</a></li>
+            <li><a href="#">Misión</a></li>
+            <li><a href="/team">Equipo</a></li>
+            <li><a href="/historia">Historia</a></li>
+            <li><a href="#">Reconocimientos</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Noticias</a>
+        </li>
+        <li><a href="#">Blog</a>
+        </li>
+        <li><a href="#">Contacto</a>
+        </li>
+      </ul>
+      <ul class="header__social">
+        <li><a href="http://facebook.com"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="http://twitter.com"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="http://google.com"><i class="fa fa-google-plus"></i></a></li>
+        <li><a href="http://linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+      </ul>
+    </nav>
   </header>
   <main class="formtpm">
     <section class="formtpm__hero">
@@ -63,7 +82,7 @@
       <div class="formtpm__form">
         <div class="container">
           <div class="row">
-            <div class="col-xs-24 col-sm-20 col-sm-offset-2 col-md-16 col-md-offset-4 col-lg-14 col-md-offset-5">
+            <div class="col-xs-24 col-sm-20 col-sm-offset-2">
               <form method="POST" class="contact-form">
                 <h3 class="contact-form__title">Completa el formulario</h3>
                 <div class="row">
@@ -112,23 +131,22 @@
         <div class="footer__logo col-xs-24 col-sm-8 col-md-8"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logoOriginal"></use></svg></div>
         <div class="footer__items1 col-xs-12 col-sm-4 col-md-4">
           <ul class="list__items">
-            <li><a href="#">Homepage</a></li>
-            <li><a href="#">Mantemiento</a></li>
-            <li><a href="#">Itad</a></li>
-            <li><a href="#">Servicios</a></li>
+            <li><a href="/">Homepage</a></li>
+            <li><a href="/mantenimiento">Mantemiento</a></li>
+            <li><a href="/service-itad">Itad</a></li>
+            <li><a href="/service-tpm">Servicios</a></li>
           </ul>
         </div>
         <div class="footer__items2 col-xs-12 col-sm-4 col-md-4">
           <ul class="list__items">
-            <li><a href="#">Nosotros</a></li>
+            <li><a href="/about">Sobre XSi</a></li>
             <li><a href="#">Noticias</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Noticias</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contacto</a></li>
           </ul>
         </div>
         <div class="footer__newsletter col-xs-24 col-sm-24 col-md-8">
           <p class="newsletter__title">Newsletter</p>
-          <p class="newsletter__desc">lorem ipsum three lerumb</p>
           <form action="/newsletter" method="post">
             <input id="email" type="text" value="" placeholder="Ingrese su e-mail" name="email">
             <input type="submit" value="send">

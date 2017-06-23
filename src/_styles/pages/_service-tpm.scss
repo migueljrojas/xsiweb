@@ -1,8 +1,111 @@
-.services {
+.servicetpm {
+
+    &__hero {
+        background-image: $gradient;
+        height:0;
+        padding-bottom: 130%;
+        overflow: hidden;
+        position: relative;
+
+        a._button.-white {
+            color:$blue;
+        }
+
+        @include breakpoint(sm) {
+            padding-bottom: 80%;
+        }
+
+        @include breakpoint(md) {
+            padding-bottom: 60%;
+        }
+
+        @include breakpoint(lg) {
+            padding-bottom: 48%;
+        }
+
+        &:before {
+            @include shades(before);
+            z-index:0;
+            right: -140%;
+            opacity: 1;
+        }
+
+        &:after {
+            @include shades(after);
+            z-index:0;
+            opacity: .5;
+            right:-7.4%;
+        }
+
+        &__data {
+            color:$white;
+            z-index: 2;
+            position: absolute;
+            top: 13%;
+
+            @include breakpoint(md){
+                top: 15%;
+            }
+
+            h2 {
+                @include breakpoint(md){
+                    font-size: 60px;
+                }
+            }
+
+            p{
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+        }
+
+        &__character {
+            position: absolute;
+            top:5px;
+            right:0;
+            z-index: 2;
+
+            img {
+                max-width: 100%;
+
+            }
+
+            @include breakpoint(xs) {
+                display:none;
+            }
+        }
+    }
+
+    &__calculator {
+        margin-top: $base/2;
+        @include breakpoint(md){
+
+            position: absolute;
+            transform: translateY(-70%);
+            z-index:10;
+            left:0;
+            right:0;
+            margin:auto;
+        }
+    }
+
+    &__ctaone {
+        margin-top: -15px;
+    }
 
   /*Servicios Mantenimiento*/
-  .services__mantenimiento {
-    margin-top: 50px;
+  .servicetpm__mantenimiento {
+      background: url('/images/service-tpm/whyxsi.png') no-repeat top center;
+      padding: 10% 0;
+      margin-top: -5px;
+
+      ._button.-white{
+        border: 1px solid $lightestGray;
+        color: $blue;
+        height: 50px;
+        line-height: 50px;
+        padding: 0 40px;
+      }
 
       .mantenimiento__title {
           font-size: 18px;
@@ -10,6 +113,7 @@
           color: $textDark;
           font-weight: bold;
           text-align: center;
+          font-family: $altFont;
           @include breakpoint (sm) {
             font-size: 30px;
             line-height: 30px;
@@ -27,13 +131,26 @@
         height: 400px;
         overflow: hidden;
 
-          img {
-            width: 100%;
-            height: auto;
-          }
+        img {
+            position: absolute;
+          width: 100%;
+          height: auto;
+          top:0;
+          opacity: 1;
+          z-index:2;
+          left:0;
+          transition: all .5s $easing;
+        }
+
+        &.-playback {
+            img {
+                opacity: 0;
+            }
+        }
       }
 
       .mantenimiento__options {
+          margin: $base*1.5 0 $base;
 
           @include breakpoint (sm) {
             padding-top: 20%;
@@ -43,12 +160,12 @@
           }
           li {
               display: -webkit-box;
-              font-size: 16px;
+              font-size: 18px;
               color: $text;
 
               .fa-check {
                 color: $blue;
-                font-size: 16px;
+                font-size: 18px;
                 margin-right: 10px;
               }
           }
@@ -56,19 +173,22 @@
   }
 
   /* Servicios*/
-  .servicios {
-    background-color: $lightGray;
+  &__services {
+    background: $lightGray url('/images/service-tpm/services-bg.png') no-repeat top center;
     padding: 6% 0;
 
-    .servicios__title {
+    $y: &;
+
+    &__title {
       font-size: 24px;
       font-weight: bold;
       text-align: center;
+      font-family: $altFont;
       @include breakpoint(md) {
-        font-size: 35px;
+        font-size: 42px;
       }
     }
-    .servicios__desc {
+    &__desc {
       font-size: 16px;
       text-align: center;
       color: $text;
@@ -81,25 +201,29 @@
     ul {
       li {
         margin-bottom: 80px;
-         .servicios__img {
+         #{$y}__img {
            text-align: center;
-           @include breakpoint (md) {
-             text-align: right;
-           }
+           margin-bottom: $base;
            img {
              margin: 0 auto;
            }
          }
-         .servicios__article-title {
-           font-size: 18px;
+         #{$y}__article-title {
+           font-size: 20px;
            font-weight: bold;
            color: $blue;
+           text-align: center;
          }
-         .servicios__article-desc {
+         #{$y}__article-desc {
            color: $text;
+           text-align: center;
+           font-size: 14px;
+           margin-bottom: $base/2;
          }
          .btn__more {
-           font-size: 12px;
+             text-align: center;
+             display: block;
+           font-size: 14px;
            font-weight: bold;
            text-transform: uppercase;
          }
@@ -107,39 +231,48 @@
     }
   }
   /* Opiniones SLider*/
-  .opiniones {
-    margin-top: 50px;
-    .opiniones__title {
-      font-size: 25px;
-      font-weight: bold;
-      text-align: center;
-      @include breakpoint (md) {
-        font-size: 35px;
-      }
+    &__opiniones {
+        background: url('/images/service-tpm/especialist-bg.png') no-repeat top center;
+        padding: 10% 0;
+        margin-bottom: -10px;
+        &__title {
+          font-size: 25px;
+          font-weight: bold;
+          text-align: center;
+          @include breakpoint (md) {
+            font-size: 35px;
+          }
+        }
+        &__desc {
+          font-size: 20px;
+          text-align: center;
+          color: $text;
+          padding-top: 10px;
+          margin-bottom: 50px;
+        }
+        &__slider-img {
+          img {
+            margin: 0 auto;
+            max-width: 100%;
+          }
+        }
+        &__slider-text {
+          .slide__title {
+            font-size: 20px;
+            font-weight: bold;
+            color: $blue;
+          }
+          .slide__text {
+            color: $text;
+          }
+        }
+
+        .slick-prev, .slick-next {
+            &:before {
+                color:$lightGray!important;
+            }
+        }
     }
-    .opiniones__desc {
-      font-size: 20px;
-      text-align: center;
-      color: $text;
-      padding-top: 10px;
-      margin-bottom: 50px;
-    }
-    .opiniones__slider-img {
-      img {
-        margin: 0 auto;
-      }
-    }
-    .opiniones__slider-text {
-      .slide__title {
-        font-size: 20px;
-        font-weight: bold;
-        color: $blue;
-      }
-      .slide__text {
-        color: $text;
-      }
-    }
-  }
 
   /* Sección Clientes*/
   &__clients {
@@ -182,6 +315,7 @@
     margin-left: auto;
     margin-right: auto;
     border-bottom: 1px solid $lightGray;
+
       .novedades__container {
         padding: 6% 2% 0 5%;
           .novedades__title {
@@ -222,7 +356,7 @@
       }
       .informes__container {
         background-color: $lightGray;
-        padding: 6% 5% 0 2%;
+        padding: 6% 5% 4% 2%;
           .informes__title {
             color: $textDark;
             font-size: 32px;
@@ -237,7 +371,7 @@
                 font-weight: bold;
                 color: $blue;
                 padding-left: 15px;
-                padding-bottom: 15px;
+                padding-bottom: 0px;
               }
               .informes__img {
                 width: 100%;

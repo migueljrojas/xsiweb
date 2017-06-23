@@ -33,27 +33,46 @@
   </svg>
   <header class="header">
     <div class="header__hamburguer"><span></span><span></span><span></span></div>
-    <div class="container-fluid">
-      <nav class="row">
-        <div class="header__logo"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg>        </div>
-        <ul class="header__nav">
-          <li><a href="#">Homepage</a></li>
-          <li><a href="#">Mantemiento</a></li>
-          <li><a href="/service-itad">Itad</a></li>
-          <li><a href="/service-tpm">Servicios</a></li>
-          <li><a href="#">Nosotros</a></li>
-          <li><a href="#">Noticias</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
-        <ul class="header__social">
-          <li><a href="http://facebook.com"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="http://twitter.com"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="http://google.com"><i class="fa fa-google-plus"></i></a></li>
-          <li><a href="http://linkedin.com"><i class="fa fa-linkedin"></i></a></li>
-        </ul>
-      </nav>
-    </div>
+    <div class="header__logo"><a href="/"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg>        </a></div>
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li><a href="/">Homepage</a>
+        </li>
+        <li><a href="#">Mantemiento</a>
+          <ul class="header__submenu">
+            <li><a href="/mantenimiento">Marcas con Soporte</a></li>
+            <li><a href="#">Modelos de Servicio</a></li>
+            <li><a href="#">Cómo Abandonar al Fabricante</a></li>
+            <li><a href="#">Qué dicen los especialistas</a></li>
+          </ul>
+        </li>
+        <li><a href="/service-itad">Itad</a>
+        </li>
+        <li><a href="/service-tpm">Servicios</a>
+        </li>
+        <li><a href="#">Sobre XSi</a>
+          <ul class="header__submenu">
+            <li><a href="/about">Acerca de XSi</a></li>
+            <li><a href="#">Misión</a></li>
+            <li><a href="/team">Equipo</a></li>
+            <li><a href="/historia">Historia</a></li>
+            <li><a href="#">Reconocimientos</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Noticias</a>
+        </li>
+        <li><a href="#">Blog</a>
+        </li>
+        <li><a href="#">Contacto</a>
+        </li>
+      </ul>
+      <ul class="header__social">
+        <li><a href="http://facebook.com"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="http://twitter.com"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="http://google.com"><i class="fa fa-google-plus"></i></a></li>
+        <li><a href="http://linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+      </ul>
+    </nav>
   </header>
   <main class="whitepapers">
     <section class="whitepapers__hero">
@@ -66,27 +85,25 @@
             <h2>Inormes para resolver cualquier consulta o duda</h2>
             <p>Aprende más sobre el mantenimiento alternativo y cómo puede ayudar a tu organización</p><span>¿Preguntas? Contacta a <a href="mailto:info@xsinet.com">info@xsinet.com</a></span>
           </div>
-          <div class="row">
-            <div data-wow-delay="0.125s" class="col-xs-24 wow fadeInRightBig">
-              <article class="article">
-                <div class="article__img"><img src="/images/whitepapers/doc-1.jpg"/></div>
-                <div class="article__data">
-                  <h3>Cómo los Programas de Mantenimiento Alternativos Están Reduciendo los Gastos de IT</h3>
-                  <p>El gasto promedio en mantenimiento de IT de las empresas es de 6,4% de la ganancia actual. Permítanos ayudarle a optimizar ese gasto.</p>
-                  <p>De acuerdo a Gartner, el 80% de los gastos de IT ocurren luego de la compra. Esto es principalmente porque los fabricantes imponen altísimos costes de reparación y mantenimiento. Aprenda cómo puede el Mantenimiento por Terceros ayudarle a reducir esos costos.</p><a href="#" class="article__read-more">seguir leyendo</a>
-                </div>
-              </article>
-            </div>
-            <div data-wow-delay="0.25s" class="col-xs-24 wow fadeInRightBig">
-              <article class="article">
-                <div class="article__img"><img src="/images/whitepapers/doc-2.jpg"/></div>
-                <div class="article__data">
-                  <h3>3 Mitos Sobre Servicio Alternativo</h3>
-                  <p>Los niveles de servicio tradicional de los fabricantes no cumplen con las necesidades dinámicas y cambiantes de las compañías.</p>
-                  <p>Un reciente estudio lanzado por Gartner reveló que los profesionales de IT, en busca de optimizar los gastos y optimizar el uso de los equipos adquiridos, están asociandose con proveedores de mantenimiento para terceros para aprovechar el máximo potencial de vida útil de los dispositivos.</p><a href="#" class="article__read-more">seguir leyendo</a>
-                </div>
-              </article>
-            </div>
+          <div data-wow-delay="0.125s" class="col-xs-24 wow fadeInRightBig">
+            <article class="article">
+              <div class="article__img"><img src="/images/whitepapers/doc-1.jpg"/></div>
+              <div class="article__data">
+                <h3>Cómo los Programas de Mantenimiento Alternativos Están Reduciendo los Gastos de IT</h3>
+                <p>El gasto promedio en mantenimiento de IT de las empresas es de 6,4% de la ganancia actual. Permítanos ayudarle a optimizar ese gasto.</p>
+                <p>De acuerdo a Gartner, el 80% de los gastos de IT ocurren luego de la compra. Esto es principalmente porque los fabricantes imponen altísimos costes de reparación y mantenimiento. Aprenda cómo puede el Mantenimiento por Terceros ayudarle a reducir esos costos.</p><a href="#" class="article__read-more">seguir leyendo</a>
+              </div>
+            </article>
+          </div>
+          <div data-wow-delay="0.25s" class="col-xs-24 wow fadeInRightBig">
+            <article class="article">
+              <div class="article__img"><img src="/images/whitepapers/doc-2.jpg"/></div>
+              <div class="article__data">
+                <h3>3 Mitos Sobre Servicio Alternativo</h3>
+                <p>Los niveles de servicio tradicional de los fabricantes no cumplen con las necesidades dinámicas y cambiantes de las compañías.</p>
+                <p>Un reciente estudio lanzado por Gartner reveló que los profesionales de IT, en busca de optimizar los gastos y optimizar el uso de los equipos adquiridos, están asociandose con proveedores de mantenimiento para terceros para aprovechar el máximo potencial de vida útil de los dispositivos.</p><a href="#" class="article__read-more">seguir leyendo</a>
+              </div>
+            </article>
           </div>
         </div>
       </div>
@@ -109,23 +126,22 @@
         <div class="footer__logo col-xs-24 col-sm-8 col-md-8"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logoOriginal"></use></svg></div>
         <div class="footer__items1 col-xs-12 col-sm-4 col-md-4">
           <ul class="list__items">
-            <li><a href="#">Homepage</a></li>
-            <li><a href="#">Mantemiento</a></li>
-            <li><a href="#">Itad</a></li>
-            <li><a href="#">Servicios</a></li>
+            <li><a href="/">Homepage</a></li>
+            <li><a href="/mantenimiento">Mantemiento</a></li>
+            <li><a href="/service-itad">Itad</a></li>
+            <li><a href="/service-tpm">Servicios</a></li>
           </ul>
         </div>
         <div class="footer__items2 col-xs-12 col-sm-4 col-md-4">
           <ul class="list__items">
-            <li><a href="#">Nosotros</a></li>
+            <li><a href="/about">Sobre XSi</a></li>
             <li><a href="#">Noticias</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Noticias</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contacto</a></li>
           </ul>
         </div>
         <div class="footer__newsletter col-xs-24 col-sm-24 col-md-8">
           <p class="newsletter__title">Newsletter</p>
-          <p class="newsletter__desc">lorem ipsum three lerumb</p>
           <form action="/newsletter" method="post">
             <input id="email" type="text" value="" placeholder="Ingrese su e-mail" name="email">
             <input type="submit" value="send">

@@ -30,6 +30,11 @@ body {
     overflow-x: hidden;
 }
 
+main,
+footer {
+    transition: all .5s $easing;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: $altFont;
     font-weight: bold;

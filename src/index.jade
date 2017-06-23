@@ -36,8 +36,10 @@ block content
                           p.home__porquexsi__item-desc=  item.texto
         
         section.home__gestionit.row 
-            div.home__gestionit__img.col-xs-24.col-sm-24.col-md-14.wow.fadeInLeftBig
+            div.home__gestionit__img.col-xs-24.col-sm-24.col-md-14.wow.fadeInLeftBig.js-video
                 img(src= site.data.home.gestionit.img)
+                .embed-responsive.embed-responsive-16by9
+                    iframe.embed-responsive-item(allowfullscreen)
             div.home__gestionit__content.col-xs-24.col-sm-24.col-md-10.wow.fadeInRightBig
                 p.home__gestionit__title= site.data.home.gestionit.title
                 p.home__gestionit__desc= site.data.home.gestionit.desc1
@@ -51,7 +53,7 @@ block content
                 .row
                     div.it.col-xs-24.col-sm-24.col-md-12
                         div.row
-                            div.col-xs-12
+                            div.col-xs-12.soyxsi__data
                                 p.it__title= site.data.home.it.title
                                 a.button__soy.btn__soy-it ¿Por qué elegir xsi?
                             div.it__img.col-xs-12
@@ -60,14 +62,14 @@ block content
                     div.it-open.col-xs-24
                         .row
                             .btn__close
-                            div.col-md-6
-                            div.col-xs-12.col-md-12
+                            div.col-xs-12.col-md-8.soyxsi__data
                                 p.it__title= site.data.home.it.title
                                 ul
                                   each option in site.data.home.it.options
                                     li 
                                       | <i class="fa fa-check-circle" aria-hidden="true"></i>
                                       p= option.text
+                                a.button__soy.btn__soy-it Me Convencieron
 
                             div.it__img.col-xs-12.col-md-6
                               img(src= site.data.home.it.img)              
@@ -76,7 +78,7 @@ block content
                         div.row
                             div.finanzas__img.col-xs-12  
                                 img(src= site.data.home.finanzas.img) 
-                            div.col-xs-12
+                            div.col-xs-12.soyxsi__data
                                 p.finanzas__title= site.data.home.finanzas.title
                                 a.button__soy.btn__soy-finanzas ¿Por qué elegir xsi?
                                 
@@ -84,13 +86,14 @@ block content
                         .row
                             .btn__close
                             div.col-md-6
-                            div.col-xs-12.col-md-12
+                            div.col-xs-12.col-md-10.soyxsi__data
                                 p.finanzas__title= site.data.home.finanzas.title
                                 ul
                                   each option in site.data.home.finanzas.options
                                     li 
                                       | <i class="fa fa-check-circle" aria-hidden="true"></i>
                                       p= option.text
+                                a.button__soy.btn__soy-it Me Convencieron
 
                             div.finanzas__img.col-xs-12.col-md-6
                               img(src= site.data.home.finanzas.img) 

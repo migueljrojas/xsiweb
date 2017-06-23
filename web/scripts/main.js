@@ -13126,6 +13126,40 @@ return jQuery;
 'use strict';
 
 // Constructor
+var Header = function() {
+    var header = $('.header');
+    var body = $('body');
+    var main = $('main');
+    var footer = $('footer');
+
+    header.addClass('-ontop');
+
+    $('.header__hamburguer').on('click', function(){
+        header.toggleClass('-open');
+        body.toggleClass('-hideOverflow');
+        main.toggleClass('-blur');
+        footer.toggleClass('-blur');
+    });
+
+    $(function() {
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 100) {
+                header.removeClass('-ontop');
+            } else {
+                header.addClass('-ontop');
+            }
+        });
+    });
+};
+
+module.exports = Header;
+
+},{}],5:[function(require,module,exports){
+'use strict';
+
+// Constructor
 var Job = function() {
     var jobs = $('.team__member');
 
@@ -13160,7 +13194,7 @@ var Job = function() {
 
 module.exports = Job;
 
-},{}],5:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 'use strict';
 
 // Constructor
@@ -13179,7 +13213,7 @@ var Slider = function() {
 
 module.exports = Slider;
 
-},{}],6:[function(require,module,exports){
+},{}],7:[function(require,module,exports){
 'use strict';
 
 // Constructor
@@ -13206,11 +13240,78 @@ var Home = function() {
         });
 
     });
+
+
+    var container = $('.js-video');
+    var frame = container.find('iframe');
+
+    if( container ) {
+        $(window).on("scroll", function() {
+
+            var scroll = $(window).scrollTop();
+            var containerTop = container.get(0).getBoundingClientRect().top;
+
+            if ( !container.hasClass('-playback') ) {
+                if ( containerTop <= 450 && containerTop > -50 ) {
+                    frame.attr("src","https://www.youtube.com/embed/J3CawfqexeU?rel=0&showinfo=0&autoplay=1&controls=0&t=15s");
+                    container.addClass('-playback');
+                }
+            }
+
+            ////www.youtube.com/embed/zpOULjyy-n8?rel=0&autoplay=1&controls=0
+
+            if ( container.hasClass('-playback') ) {
+                if ( containerTop > 450 || containerTop < -50 ) {
+                    frame.attr("src","");
+                    container.removeClass('-playback');
+                }
+            }
+
+        });
+    }
+
+
 };
 
 module.exports = Home;
 
-},{}],7:[function(require,module,exports){
+},{}],8:[function(require,module,exports){
+'use strict';
+
+// Constructor
+var Itad = function() {
+    var container = $('.js-video');
+    var frame = container.find('iframe');
+
+    if( container ) {
+        $(window).on("scroll", function() {
+
+            var scroll = $(window).scrollTop();
+            var containerTop = container.get(0).getBoundingClientRect().top;
+
+            if ( !container.hasClass('-playback') ) {
+                if ( containerTop <= 450 && containerTop > -50 ) {
+                    frame.attr("src","https://www.youtube.com/embed/5RXrUV2N7ZA?rel=0&showinfo=0&autoplay=1&controls=0");
+                    container.addClass('-playback');
+                }
+            }
+
+            ////www.youtube.com/embed/zpOULjyy-n8?rel=0&autoplay=1&controls=0
+
+            if ( container.hasClass('-playback') ) {
+                if ( containerTop > 450 || containerTop < -50 ) {
+                    frame.attr("src","");
+                    container.removeClass('-playback');
+                }
+            }
+
+        });
+    }
+};
+
+module.exports = Itad;
+
+},{}],9:[function(require,module,exports){
 (function (global){
 // Main javascript entry point
 // Should handle bootstrapping/starting application
@@ -13218,21 +13319,24 @@ module.exports = Home;
 'use strict';
 
 global.$ = global.jQuery = require('jquery');
+var Header = require('../_modules/header/header');
 var Slider = require('../_modules/slider/slider');
 var Job = require('../_modules/job/job');
 var Home = require('./home');
+var Itad = require('./itad');
 
 $(function() {
     require('../../bower_components/bootstrap-sass/assets/javascripts/bootstrap.min');
     require('../../bower_components/slick-carousel/slick/slick');
 
+    new Header();
     new Slider();
-    new Home();
+    new Itad();
     new Job();
 });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 
-},{"../../bower_components/bootstrap-sass/assets/javascripts/bootstrap.min":1,"../../bower_components/slick-carousel/slick/slick":2,"../_modules/job/job":4,"../_modules/slider/slider":5,"./home":6,"jquery":3}]},{},[7])
+},{"../../bower_components/bootstrap-sass/assets/javascripts/bootstrap.min":1,"../../bower_components/slick-carousel/slick/slick":2,"../_modules/header/header":4,"../_modules/job/job":5,"../_modules/slider/slider":6,"./home":7,"./itad":8,"jquery":3}]},{},[9])
 
 //# sourceMappingURL=main.js.map

@@ -1,6 +1,8 @@
 extends ../_layouts/base
 
 include ../_modules/slider/slider
+include ../_modules/calculator/calculator
+include ../_modules/cta/cta
 
 
 block config
@@ -8,106 +10,100 @@ block config
   - var baseUrl = '../'
 
 block content
-    main.services
+    main.servicetpm
       
-      section.home__hero
-          +slider('home__slider')
-              each slide in site.data.home.slider
-                  .home__slider__slide(style="background:url(#{slide.img}) no-repeat top right;")
-                      .container
-                          //img(src=slide.img) 
-                          .home__slider__data
-                              h2=slide.title
-                              p=slide.desc
-                              a._button.-white(href=slide.btn.url)= slide.btn.text
+        section.servicetpm__hero
+            .container
+                .row
+                    .servicetpm__hero__data.col-xs-24.col-sm-16.col-md-10
+                        h2=site.data.servicetpm.hero.title
+                        p!=site.data.servicetpm.hero.desc
+                        a._button.-white(href=site.data.servicetpm.hero.btn.url)= site.data.servicetpm.hero.btn.text
+                    .servicetpm__hero__character.col-sm-8.col-md-12
+                        img(src="/images/service-tpm/hero.png")
+                        
+        section.servicetpm__calculator
+            .container
+                .row
+                    .col-xs-24.col-md-20.col-md-offset-2.wow.fadeInRightBig
+                        +calculator(site.data.servicetpm.calculator)
       
-        section.services__mantenimiento 
+        section.servicetpm__mantenimiento 
             .container
                 .row   
-                    .col-xs-24.col-sm-12.col-md-12
-                        p.mantenimiento__title= site.data.services.mantenimiento.title
-                        div.mantenimiento__img 
-                            img(src= site.data.services.mantenimiento.img)
+                    .col-xs-24.col-sm-12
+                        p.mantenimiento__title= site.data.servicetpm.mantenimiento.title
+                        div.mantenimiento__img.js-video 
+                            img(src= site.data.servicetpm.mantenimiento.img)
+                            .embed-responsive.embed-responsive-16by9
+                                iframe.embed-responsive-item(allowfullscreen)
                     
-                    .col-xs-24.col-sm-12.col-md-12
+                    .col-xs-24.col-sm-12.col-md-10.col-md-offset-2
                         ul.mantenimiento__options
-                            each option in site.data.services.mantenimiento.options 
+                            each option in site.data.servicetpm.mantenimiento.options 
                                 li 
                                     | <i class="fa fa-check" aria-hidden="true"></i>
                                     p= option.text
                         a._button.-white Me Interesa  
                         
-        section.cta
-            .container-fluid
-                  .row
-                      .col-xs-24.cta__container
-                          p.cta__text Solicite su Análisis Gratuito de Ahorros
-                          a._button.-white Me Interesa 
+        section.servicetpm__ctaone.wow.fadeInLeftBig
+            +cta(site.data.servicetpm.ctaone)
                           
-        section.servicios
+        section.servicetpm__services
             .container
                 .row
-                    p.servicios__title= site.data.services.servicios.title
-                    p.servicios__desc=  site.data.services.servicios.desc
-                    ul
-                        each item in site.data.services.servicios.items
-                            li.row
-                              .col-xs-24.col-sm-8.col-md-8
-                                div.servicios__img
-                                    img(src= item.img)
-                              div.servicios__content.col-xs-24.col-sm-16.col-md-16
-                                  p.servicios__article-title= item.title
-                                  p.servicios__article-desc= item.desc
-                                  a.btn__more= item.link
+                    .col-sm-24
+                        p.servicetpm__services__title= site.data.servicetpm.servicios.title
+                        p.servicetpm__services__desc=  site.data.servicetpm.servicios.desc
+                        ul.row
+                            each item in site.data.servicetpm.servicios.items
+                                li.col-xs-24.col-sm-8.col-md-8.wow.fadeInUp
+                                    div.servicetpm__services__img
+                                        img(src= item.img)
+                                    article.servicetpm__services__content
+                                        p.servicetpm__services__article-title= item.title
+                                        p.servicetpm__services__article-desc= item.desc
+                                        a.btn__more= item.link
                               
-                              
+        section.servicetpm__ctatwo.wow.fadeInLeftBig
+            +cta(site.data.servicetpm.ctatwo)
         
-        section.cta
-            .container-fluid
-                  .row
-                      .col-xs-24.cta__container
-                          p.cta__text Cambie de servicios con estos simples 6 pasos
-                          a._button.-white Me Interesa          
 
-        section.opiniones
+        section.servicetpm__opiniones
             .container 
                 .row
-                    p.opiniones__title= site.data.services.opiniones.title
-                    p.opiniones__desc= site.data.services.opiniones.desc
+                    p.servicetpm__opiniones__title= site.data.servicetpm.opiniones.title
+                    p.servicetpm__opiniones__desc= site.data.servicetpm.opiniones.desc
                     +slider('opiniones__slider')
-                        each slide in site.data.services.opiniones.slides
-                            .opiniones__slider
+                        each slide in site.data.servicetpm.opiniones.slides
+                            .servicetpm__opiniones__slider
                                   .container.row
-                                      .opiniones__slider-img.col-xs-24.col-sm-8
+                                      .servicetpm__opiniones__slider-img.col-xs-24.col-sm-8.col-sm-offset-2
                                           img(src= slide.img)
-                                      .opiniones__slider-text.col-xs-24.col-sm-16
+                                      .servicetpm__opiniones__slider-text.col-xs-24.col-sm-10.col-sm-offset-1
                                           p.slide__title= slide.title
                                           p.slide__text= slide.text
 
-        section.services__clients
+        section.servicetpm__clients
             div.container 
-                p.services__clients__title= site.data.clientesinside.clientes.title
+                p.servicetpm__clients__title= site.data.clientesinside.clientes.title
                 ul.row 
                   each client in site.data.clientesinside.clientes.clients 
                     li.col-xs-24.col-sm-12.col-md-6
-                        div.services__clients__img 
+                        div.servicetpm__clients__img 
                             img(src=client.img)
       
-        
-        section.cta
-            .container-fluid
-                  .row
-                      .col-xs-24.cta__container
-                          p.cta__text Es hora de ser más eficientes, es hora de dominar su IT
-                          a._button.-white Comencemos   
+      
+        section.servicetpm__ctathree.wow.fadeInLeftBig
+            +cta(site.data.servicetpm.ctathree)
         
         section.noticias 
             .container-fluid
                   .row
                       .novedades__container.col-xs-24.col-sm-12.col-md-12
-                          p.novedades__title= site.data.services.noticias.novedades.title
+                          p.novedades__title= site.data.servicetpm.noticias.novedades.title
                           ul.novedades__articles
-                              each article in site.data.services.noticias.novedades.articles
+                              each article in site.data.servicetpm.noticias.novedades.articles
                                   li.row
                                     .col-xs-24.col-sm-8.col-md-8
                                       div.novedades__img
@@ -119,9 +115,9 @@ block content
                                                 
                           
                       .informes__container.col-xs-24.col-sm-12.col-md-12
-                          p.informes__title= site.data.services.noticias.informes.title
+                          p.informes__title= site.data.servicetpm.noticias.informes.title
                           ul.informes__articles
-                              each article in site.data.services.noticias.informes.articles
+                              each article in site.data.servicetpm.noticias.informes.articles
                                   li.row
                                       p.informes__category= article.category
                                       .col-xs-24.col-sm-8.col-md-8

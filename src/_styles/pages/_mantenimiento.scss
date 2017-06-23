@@ -1,19 +1,86 @@
 .mantenimiento {
-  .mantenimiento__title, .fabricantes__title {
-    margin-bottom: 4%;
-    margin-top: 4%;
+
+    &__hero {
+        background-image: $gradient;
+        padding: 30% 0;
+        overflow: hidden;
+        position: relative;
+
+        @include breakpoint(md) {
+            padding: 4% 0;
+        }
+
+        &:before {
+            @include shades(before);
+            z-index:5;
+            right: -110%;
+            opacity: .7;
+        }
+
+        &:after {
+            @include shades(after);
+            z-index:5;
+            opacity: .3;
+            right:50%;
+            top:-175%;
+            width:80%;
+            height:280%;
+            box-shadow: inset 0 10px 100px rgba(0,0,0,.5);
+        }
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 4%;
+        margin-top: 4%;
+        color:$white;
+        margin-top: 5%;
+
+        @include breakpoint(sm) {
+            font-size:60px;
+        }
+    }
+
+    &__body {
+        padding: 10% 0;
+        color:$midGray;
+        font-size: 16px;
+        position: relative;
+
+        @include breakpoint(sm) {
+            padding: 4% 0;
+            background: url('/images/mantenimiento/bg.png') no-repeat top center;
+            background-size: cover;
+            font-size: 21px;
+            line-height: 33px;
+        }
+    }
+
+
+    &__includes {
+        margin-bottom: 60px;
+    }
+
+
+  &__subtitle {
+
     &:first-child {
       margin-top: 0;
 
     }
 
     p {
-      font-size: 26px;
+      font-size: 32px;
       font-weight: bold;
       color: $blue;
     }
+
+    @include breakpoint(md) {
+        width:60%;
+        margin-bottom: 40px;
+    }
   }
-  .mantenimiento__img {
+  &__img {
       text-align: center;
       width:60px;
       margin-bottom: 10px;
@@ -23,8 +90,11 @@
       display: inline-block;
     }
   }
-  .mantenimiento__desc {
+  &__desc {
     margin-bottom: 15px;
+    @include breakpoint(xs) {
+        height: 110px;
+    }
   }
 
   .network,.storage,.server {
@@ -33,6 +103,7 @@
       color: $black;
       }
     ul {
+        padding-left: 20px;
         li {
           color: $text;
           list-style: initial;

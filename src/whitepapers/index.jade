@@ -17,12 +17,12 @@ block content
                         h2= site.data.whitepapers.subtitle
                         p= site.data.whitepapers.desc
                         span!= site.data.whitepapers.link
+                                            
                     
-                    .row
-                        each item, index in site.data.whitepapers.articles
-                            .col-xs-24.wow.fadeInRightBig(data-wow-delay="#{(index + 1)/8}s")
-                                +article(item)
-                                
+                    each item, index in site.data.whitepapers.articles
+                        .col-xs-24.wow.fadeInRightBig(data-wow-delay="#{(index + 1)/8}s")
+                            +article(item)
+                            
         section.whitepapers__cta
             +cta(site.data.whitepapers.cta)
         

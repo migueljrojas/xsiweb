@@ -3,15 +3,40 @@
     display: flex;
     border-top: 1px solid $lightGray;
 
+    @include breakpoint(xs) {
+        flex-direction: column;
+        width: 100%;
+        padding: $base;
+    }
+
     &__img{
         margin-right: $base * 1.5;
+        width:100%;
+        max-width: 250px;
+
+        @include breakpoint(xs) {
+            margin-right: $base;
+        }
+
+        img{
+            max-width: 100%;
+        }
     }
 
     &__data {
+
+        @include breakpoint(xs) {
+            margin-top: $base;
+        }
+
         h3 {
             color:$blue;
             font-size:21px;
             margin:0 0 $base/2;
+
+            @include breakpoint(sm){
+                font-size:26px;
+            }
         }
 
         p{
@@ -26,6 +51,6 @@
         display: block;
         text-transform: uppercase;
         font-weight: 700;
-        font-size: 12px;
+        font-size: 14px;
     }
 }

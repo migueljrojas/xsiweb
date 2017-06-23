@@ -6,6 +6,10 @@
         position: relative;
         color:$white;
 
+        @include breakpoint(sm) {
+            padding: 7% 0 12%;
+        }
+
         &:before {
             @include shades(before);
             right: -130%;
@@ -25,21 +29,45 @@
 
     &__body {
         background: url('/images/home/whysxi-bg.png') no-repeat top center;
-        background-size: contain; 
+        background-size: contain;
     }
 
     &__data {
-        margin-top: 6%;
+        margin-top: 24%;
+        margin-bottom: 70%;
+
+        @include breakpoint(sm){
+            margin-top: 10%;
+            margin-bottom: 15%;
+        }
+
+        @include breakpoint(md){
+            margin-top: 6%;
+            margin-bottom: 10%;
+        }
+
+        @include breakpoint(lg){
+            margin-top: 6%;
+            margin-bottom: 0;
+        }
     }
 
     &__title {
-        font-size:21px;
-        margin: 0;
+        font-size:16px;
+        margin: 0 0 5px;
+
+        @include breakpoint(sm){
+            font-size:21px;
+        }
     }
 
     &__subtitle {
-        font-size:48px;
+        font-size:24px;
         margin: 0 0 $base/2;
+
+        @include breakpoint(sm) {
+            font-size:60px;
+        }
     }
 
     &__desc {
@@ -54,10 +82,10 @@
         position: relative;
         z-index:2;
         width: 100%;
-        transform: translateY(-12%);
+        transform: translateY(-20%);
 
         @include breakpoint(md) {
-            width:70%;
+            width:73%;
         }
 
         li {
@@ -85,8 +113,17 @@
     &__character {
         position: absolute;
         right:0;
-        bottom:20%;
+        top:-25%;
+        bottom:initial;
         width:40%;
-        z-index:2;
+        z-index:0;
+
+        @include breakpoint(sm){
+            bottom:35%;
+            width:38%;
+            top:initial;
+            z-index:2;
+            right:-2%;
+        }
     }
 }

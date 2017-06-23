@@ -1,30 +1,173 @@
-.services.itad {
+.serviceitad {
 
-  .services__mantenimiento {
-    .itad__services {
-      &:first-child {
-        padding-top:12%;
-      }
-      margin-bottom: 20px;
-      .icono {
-        text-align: right;
-        img {
-          width: 100px;
-          height: 100px;
+    &__hero {
+        background-image: $gradient;
+        height:0;
+        padding-bottom: 130%;
+        overflow: hidden;
+        position: relative;
+
+        a._button.-white {
+            color:$blue;
         }
-      }
-      .content {
-        .servicioitad__title {
-          font-size: 18px;
-          font-weight: bold;
-          color: $blue;
+
+        @include breakpoint(sm) {
+            padding-bottom: 80%;
         }
-        .servicioitad__text {
-          color: $text;
+
+        @include breakpoint(md) {
+            padding-bottom: 60%;
         }
-      }
+
+        @include breakpoint(lg) {
+            padding-bottom: 48%;
+        }
+
+        &:before {
+            @include shades(before);
+            z-index:0;
+            right: -140%;
+            opacity: 1;
+        }
+
+        &:after {
+            @include shades(after);
+            z-index:0;
+            opacity: .5;
+            right:-7.4%;
+        }
+
+        &__data {
+            color:$white;
+            z-index: 2;
+            position: absolute;
+            top: 13%;
+
+            @include breakpoint(md){
+                top: 15%;
+            }
+
+            h2 {
+                @include breakpoint(md){
+                    font-size: 60px;
+                }
+            }
+
+            p{
+                font-size: 16px;
+                margin-bottom: 20px;
+                max-width: 60%;
+            }
+        }
+
+        &__character {
+            position: absolute;
+            top:7%;
+            right:5%;
+            z-index: 2;
+
+            img {
+                max-width: 100%;
+
+            }
+
+            @include breakpoint(xs) {
+                display:none;
+            }
+        }
     }
-  }
+
+    &__calculator {
+        margin-top: $base/2;
+        @include breakpoint(md){
+
+            position: absolute;
+            transform: translateY(-70%);
+            z-index:10;
+            left:0;
+            right:0;
+            margin:auto;
+        }
+    }
+
+    .serviceitad__mantenimiento {
+        background: url('/images/service-tpm/whyxsi.png') no-repeat top center;
+        padding: 10% 0;
+        margin-top: -5px;
+
+        .itad__services {
+          padding-top:6%;
+
+          &:first-child {
+              margin-top: 15%;
+          }
+
+          .content {
+            .servicioitad__title {
+              font-size: 18px;
+              font-weight: bold;
+              color: $blue;
+            }
+            .servicioitad__text {
+              color: $text;
+
+              i.fa {
+                  color:$blue;
+              }
+
+              a {
+                  padding-left: 20px;
+                  font-weight: 700;
+              }
+            }
+          }
+        }
+
+        .mantenimiento__title {
+            font-size: 18px;
+            line-height: 24px;
+            color: $textDark;
+            font-weight: bold;
+            text-align: center;
+            font-family: $altFont;
+            @include breakpoint (sm) {
+              font-size: 30px;
+              line-height: 30px;
+              text-align: left;
+            }
+            @include breakpoint (md) {
+              font-size: 45px;
+              line-height: 45px;
+              text-align: left;
+            }
+        }
+
+        .mantenimiento__img {
+          width: 100%;
+          height: 0;
+          padding-bottom: 56.5%;
+          overflow: hidden;
+          position: relative;
+
+            img {
+                position: absolute;
+              width: 100%;
+              height: auto;
+              top:0;
+              opacity: 1;
+              z-index:2;
+              left:0;
+              transition: all .5s $easing;
+            }
+
+            &.-playback {
+                img {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+
   /* Servicios*/
   .servicios {
     background-color: $lightGray;
@@ -61,7 +204,7 @@
            }
          }
          .servicios__article-title {
-           font-size: 18px;
+           font-size: 24px;
            font-weight: bold;
            color: $blue;
            text-align: center;
@@ -78,14 +221,142 @@
     }
   }
   /* Opiniones SLider*/
-  .opiniones {
-    .opiniones__slider-img {
-      img {
-        margin: 0 auto;
-        border-radius: 50%;
-      }
-    }
 
+  &__opiniones {
+      background: url('/images/service-tpm/especialist-bg.png') no-repeat top center;
+      padding: 4% 0 6%;
+      margin-bottom: -20px;
+      &__title {
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        @include breakpoint (md) {
+          font-size: 35px;
+        }
+      }
+      &__desc {
+        font-size: 20px;
+        text-align: center;
+        color: $text;
+        padding-top: 10px;
+        margin-bottom: 50px;
+        max-width: 70%;
+        margin: 0 auto $base;
+      }
+      &__slider-img {
+        img {
+          margin: 0 auto;
+          max-width: 100%;
+          border-radius: 50%;
+        }
+      }
+      &__slider-text {
+        .slide__title {
+          font-size: 20px;
+          font-weight: bold;
+          color: $blue;
+        }
+        .slide__text {
+          color: $text;
+        }
+      }
+
+      .slick-prev, .slick-next {
+          &:before {
+              color:$lightGray!important;
+          }
+      }
+  }
+
+  .noticias {
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid $lightGray;
+
+      .novedades__container {
+        padding: 6% 2% 0 5%;
+          .novedades__title {
+            color: $textDark;
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 30px;
+          }
+          .novedades__articles {
+            li {
+              margin-bottom: 30px;
+              .novedades__img {
+                width: 100%;
+                height: 120px;
+                overflow: hidden;
+
+                  img {
+                    width: 100%;
+                    height: auto;
+                  }
+              }
+              .novedades__content {
+                p.novedades__article-title {
+                  font-size: 18px;
+                  font-weight: bold;
+                }
+                .novedades__article-desc {
+                  color: $text;
+                }
+                .btn__more {
+                  text-transform: uppercase;
+                  font-size: 12px;
+                  font-weight: bold;
+                }
+              }
+            }
+          }
+      }
+      .informes__container {
+        background-color: $lightGray;
+        padding: 6% 5% 4% 2%;
+          .informes__title {
+            color: $textDark;
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 30px;
+          }
+          .informes__articles {
+            li {
+              margin-bottom: 15px;
+              .informes__category {
+                font-size: 14px;
+                font-weight: bold;
+                color: $blue;
+                padding-left: 15px;
+                padding-bottom: 0px;
+              }
+              .informes__img {
+                width: 100%;
+                height: 120px;
+                overflow: hidden;
+
+                  img {
+                    width: 100%;
+                    height: auto;
+                  }
+              }
+            }
+          }
+          .informes__content {
+            p.informes__article-title {
+              font-size: 18px;
+              font-weight: bold;
+            }
+            .informes__article-desc {
+              color: $text;
+            }
+            .btn__more {
+              text-transform: uppercase;
+              font-size: 12px;
+              font-weight: bold;
+            }
+          }
+      }
   }
 
 }

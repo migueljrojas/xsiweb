@@ -33,95 +33,154 @@
   </svg>
   <header class="header">
     <div class="header__hamburguer"><span></span><span></span><span></span></div>
-    <div class="container-fluid">
-      <nav class="row">
-        <div class="header__logo"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg>        </div>
-        <ul class="header__nav">
-          <li><a href="#">Homepage</a></li>
-          <li><a href="#">Mantemiento</a></li>
-          <li><a href="/service-itad">Itad</a></li>
-          <li><a href="/service-tpm">Servicios</a></li>
-          <li><a href="#">Nosotros</a></li>
-          <li><a href="#">Noticias</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
-        <ul class="header__social">
-          <li><a href="http://facebook.com"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="http://twitter.com"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="http://google.com"><i class="fa fa-google-plus"></i></a></li>
-          <li><a href="http://linkedin.com"><i class="fa fa-linkedin"></i></a></li>
-        </ul>
-      </nav>
-    </div>
+    <div class="header__logo"><a href="/"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg>        </a></div>
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li><a href="/">Homepage</a>
+        </li>
+        <li><a href="#">Mantemiento</a>
+          <ul class="header__submenu">
+            <li><a href="/mantenimiento">Marcas con Soporte</a></li>
+            <li><a href="#">Modelos de Servicio</a></li>
+            <li><a href="#">Cómo Abandonar al Fabricante</a></li>
+            <li><a href="#">Qué dicen los especialistas</a></li>
+          </ul>
+        </li>
+        <li><a href="/service-itad">Itad</a>
+        </li>
+        <li><a href="/service-tpm">Servicios</a>
+        </li>
+        <li><a href="#">Sobre XSi</a>
+          <ul class="header__submenu">
+            <li><a href="/about">Acerca de XSi</a></li>
+            <li><a href="#">Misión</a></li>
+            <li><a href="/team">Equipo</a></li>
+            <li><a href="/historia">Historia</a></li>
+            <li><a href="#">Reconocimientos</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Noticias</a>
+        </li>
+        <li><a href="#">Blog</a>
+        </li>
+        <li><a href="#">Contacto</a>
+        </li>
+      </ul>
+      <ul class="header__social">
+        <li><a href="http://facebook.com"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="http://twitter.com"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="http://google.com"><i class="fa fa-google-plus"></i></a></li>
+        <li><a href="http://linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+      </ul>
+    </nav>
   </header>
-  <main class="services itad">
-    <section class="home__hero">
-      <div class="_slider home__slider">
-        <div style="background:url(/images/home/hero-slide-1.png) no-repeat top right;" class="home__slider__slide">
-          <div class="container">
-            <!--img(src=slide.img) -->
-            <div class="home__slider__data">
-              <h2>¿Qué es ITAD?</h2>
-              <p>Conozca el servicio que todas las empresas con tecnología deberían considerar. Reciclaje, restauración y re-comercialización de activos de IT.</p><a href="#" class="_button -white">Me interesa</a>
-            </div>
+  <main class="serviceitad">
+    <section class="serviceitad__hero">
+      <div class="container">
+        <div class="row">
+          <div class="serviceitad__hero__data col-xs-24 col-sm-14 col-md-13">
+            <h2>Domine su IT con nuestro servicio de Re-disposicion<br>de Activos (ITAD)</h2>
+            <p>La renovación de IT supone un dolor de cabeza para las empresas, no sólo por el costo, sino por el destino de los viejos equipos.<br>ITAD soluciona a su favor esta situación de forma profesional generando ingresos extraordinarios por la comercialización de los equipos.</p><a href="#" class="_button -white">Me interesa</a>
           </div>
+          <div class="serviceitad__hero__character col-sm-11"><img src="/images/service-itad/hero.png"></div>
         </div>
-        <div style="background:url(/images/home/hero-slide-2.png) no-repeat top right;" class="home__slider__slide">
-          <div class="container">
-            <!--img(src=slide.img) -->
-            <div class="home__slider__data">
-              <h2>Mantenimiento Alternativo</h2>
-              <p>Mejoramos el SLA de soporte de fabricantes y mejoramos sus costos hasta en un 50%. Cisco, Juniper, Brocade, HP y muchas marcas más.</p><a href="#" class="_button -white">Me interesa</a>
+      </div>
+    </section>
+    <section class="serviceitad__calculator">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-24 col-md-20 col-md-offset-2 wow fadeInRightBig">
+            <div class="calculator">       
+              <h3 class="calculator__title">Calculemos sus ingresos</h3>
+              <div class="calculator__options">
+                <div class="calculator__dropdown">
+                  <h5>Marca</h5>
+                  <div class="calculator__dropdown__wrapper">
+                    <label for="drop-0"></label>
+                    <select id="drop-0">
+                      <option>juniper</option>
+                      <option>cisco</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="calculator__dropdown">
+                  <h5>Tipo</h5>
+                  <div class="calculator__dropdown__wrapper">
+                    <label for="drop-1"></label>
+                    <select id="drop-1">
+                      <option>servidor</option>
+                      <option>tablet</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="calculator__dropdown">
+                  <h5>Cantidad</h5>
+                  <div class="calculator__dropdown__wrapper">
+                    <label for="drop-2"></label>
+                    <select id="drop-2">
+                      <option>50 - 100</option>
+                      <option>1000 - 5000</option>
+                      <option>5000 - 10000</option>
+                    </select>
+                  </div>
+                </div><a href="#" class="_button -cta">Simular Ahorro</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="services__mantenimiento"> 
+    <section class="serviceitad__mantenimiento"> 
       <div class="container">
         <div class="row">  
-          <div class="col-xs-24 col-sm-12 col-md-12">
+          <div class="col-xs-24 col-sm-12">
             <p class="mantenimiento__title">Porque toda empresa necesita servicio ITAD</p>
-            <div class="mantenimiento__img"> <img src="../images/home/video-placeholder.jpg"></div>
+            <div class="mantenimiento__img js-video"><img src="../images/home/video-placeholder.jpg">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe allowfullscreen class="embed-responsive-item"></iframe>
+              </div>
+            </div>
+            <div class="col-xs-24 col-sm-12 col-md-10 col-md-offset-2"></div>
           </div>
           <div class="col-xs-24 col-sm-12 col-md-12">
             <div class="row itad__services">
-              <div class="icono col-xs-8"><img src="../images/home/costos.png"></div>
+              <div class="icono col-xs-8 col-sm-4"><img src="../images/home/costos.png" class="img-responsive"></div>
               <div class="content col-xs-16">
                 <p class="servicioitad__title">Costos</p>
-                <p class="servicioitad__text">Generación de ingresos para la venta de equipos</p>
-                <p class="servicioitad__text">Reducción de gastos de almacenamientos inncesarios</p>
+                <p class="servicioitad__text"><i class="fa fa-check" ></i> Generación de ingresos para la venta de equipos</p>
+                <p class="servicioitad__text"><i class="fa fa-check" ></i> Reducción de gastos de almacenamientos inncesarios</p>
               </div>
             </div>
             <div class="row itad__services">
-              <div class="icono col-xs-8"><img src="../images/home/servicio.png"></div>
+              <div class="icono col-xs-8 col-sm-4"><img src="../images/service-itad/icon-risk.png" class="img-responsive"></div>
               <div class="content col-xs-16">
                 <p class="servicioitad__title">Riesgos</p>
-                <p class="servicioitad__text">Reducción homologada de riesgos de data breaches</p>
-                <p class="servicioitad__text"></p>
+                <p class="servicioitad__text"><i class="fa fa-check" ></i> Reducción homologada de riesgos de data breaches</p>
+                <p class="servicioitad__text"><a href="#" >Ver más</a></p>
               </div>
             </div>
             <div class="row itad__services">
-              <div class="icono col-xs-8"><img src="../images/home/trayectoria.png"></div>
+              <div class="icono col-xs-8 col-sm-4"><img src="../images/service-itad/icon-eficiencia.png" class="img-responsive"></div>
               <div class="content col-xs-16">
                 <p class="servicioitad__title">Eficiencia</p>
-                <p class="servicioitad__text">Gestión eficiente del inventario</p>
-                <p class="servicioitad__text">Reducción de gastos de almacenamientos inncesarios</p>
+                <p class="servicioitad__text"><i class="fa fa-check" ></i> Gestión eficiente del inventario</p>
+                <p class="servicioitad__text"><i class="fa fa-check" ></i> Reducción de gastos de almacenamientos inncesarios</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="cta">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-xs-24 cta__container">
-            <p class="cta__text">Contáctenos para asesoramiento gratuito sin compromiso</p><a class="_button -white">Me Interesa </a>
+    <section class="servicetpm__ctaone wow fadeInLeftBig">
+      <section class="cta">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-24 cta__container">
+              <p class="cta__text">Contáctenos para asesoramiento gratuito sin compromiso</p><a href="#" class="_button -white">Me interesa</a>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </section>
     <section class="servicios">
       <div class="container">
@@ -131,21 +190,21 @@
           <ul>
             <li class="col-xs-24 col-sm-8 col-md-8">                            
               <div class="servicios__content">
-                <div class="servicios__img"><img src="../images/home/costos.png"></div>
+                <div class="servicios__img"><img src="../images/service-itad/icon-inventory.png"></div>
                 <p class="servicios__article-title">Inventario y análisis</p>
                 <p class="servicios__article-desc">En esta etapa inicial, se genera un inventario del equipamiento a procesar al detalle, se hace análisis preliminar de cada equipo y se procede a su acondicionamiento y puesta a punto.</p>
               </div>
             </li>
             <li class="col-xs-24 col-sm-8 col-md-8">                            
               <div class="servicios__content">
-                <div class="servicios__img"><img src="../images/home/servicio.png"></div>
+                <div class="servicios__img"><img src="../images/service-itad/icon-wipe.png"></div>
                 <p class="servicios__article-title">Wipping y diagnóstico</p>
                 <p class="servicios__article-desc">En esta etapa, el equipo lleva a cabo distintos procesos para quitar todo tipo de rastro de los equipos de información y de uso anterios, así como se emiten certificados de la información eliminada o resguardada. Finalizado este proceso, se diagnóstica que el equipo esta apto para reinserción</p>
               </div>
             </li>
             <li class="col-xs-24 col-sm-8 col-md-8">                            
               <div class="servicios__content">
-                <div class="servicios__img"><img src="../images/home/trayectoria.png"></div>
+                <div class="servicios__img"><img src="../images/service-itad/icon-resale.png"></div>
                 <p class="servicios__article-title">Reventa o reciclaje</p>
                 <p class="servicios__article-desc">Por último se procede a eliminar de forma sustentable el equipamiento o bien sea genera un proceso de comercialización acordado con el cliente para obtener rentabilidad del proceso integral. Así, lo que implicaba un costo, concluye el circuito con un ingreso extraordinario.</p>
               </div>
@@ -155,34 +214,36 @@
         </div>
       </div>
     </section>
-    <section class="cta">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-xs-24 cta__container">
-            <p class="cta__text">Conozca a detalle el proceso de ITAD</p><a class="_button -white">Me Interesa          </a>
+    <section class="servicetpm__ctatwo wow fadeInLeftBig">
+      <section class="cta">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-24 cta__container">
+              <p class="cta__text">Conozca a detalle el proceso de ITAD</p><a href="#" class="_button -white">Me interesa</a>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </section>
-    <section class="opiniones">
+    <section class="serviceitad__opiniones">
       <div class="container"> 
         <div class="row">
-          <p class="opiniones__title">¿Qué dicen de nosotros?</p>
-          <p class="opiniones__desc">Cada vez más y más empresas adoptan el servicio ITAD para optimizar los costos de IT. Conozca lo que opinan las grandes firmas y que opinan los especialistas.</p>
+          <p class="serviceitad__opiniones__title">¿Qué dicen de nosotros?</p>
+          <p class="serviceitad__opiniones__desc">Cada vez más y más empresas adoptan el servicio ITAD para optimizar los costos de IT. Conozca lo que opinan las grandes firmas y que opinan los especialistas.</p>
           <div class="_slider opiniones__slider">
-            <div class="opiniones__slider">
+            <div class="serviceitad__opiniones__slider">
               <div class="container row">
-                <div class="opiniones__slider-img col-xs-24 col-sm-8"><img src="../images/itad/person2.jpg"></div>
-                <div class="opiniones__slider-text col-xs-24 col-sm-16">
+                <div class="serviceitad__opiniones__slider-img col-xs-24 col-sm-8 col-sm-offset-2"><img src="../images/itad/person2.jpg"></div>
+                <div class="serviceitad__opiniones__slider-text col-xs-24 col-sm-13">
                   <p class="slide__title">Franz Filicky, Lockheed Martin</p>
                   <p class="slide__text">Después del cierre de un programa, nos quedaba una amplia variedad de servidores, computadoras de escritorio, centrales, routers y otros equipos más. XSi se encargó de hacer pruebas y volver a lanzar al mercado los equipos a nuestro nombre y obtuvimos un importante retorno sobre nuestra inversión de capital. Desde el momento en que firmamos el acuerdo, XSi mantuvo una comunicación honesta y directa, entregándonos informes de avance sobre el relanzamiento todas las semanas. Nuestra única tarea fue entregar una lista de inventario y enviar los equipos a XSi. Gracias a su base de clientes y notificaciones del equipo disponible, XSi pudo inclusive comenzar con el relanzamiento de los equipos antes de que llegaran a sus muelles de cargas. Una vez vendidos los equipos recibimos las transferencias bancarias de inmediato y pudimos finalizar nuestra tarea de recuperación de activos. XSi realmente hizo todo por nosotros durante la iniciativa de recuperación.</p>
                 </div>
               </div>
             </div>
-            <div class="opiniones__slider">
+            <div class="serviceitad__opiniones__slider">
               <div class="container row">
-                <div class="opiniones__slider-img col-xs-24 col-sm-8"><img src="../images/itad/person.jpg"></div>
-                <div class="opiniones__slider-text col-xs-24 col-sm-16">
+                <div class="serviceitad__opiniones__slider-img col-xs-24 col-sm-8 col-sm-offset-2"><img src="../images/itad/person.jpg"></div>
+                <div class="serviceitad__opiniones__slider-text col-xs-24 col-sm-13">
                   <p class="slide__title">Lockheed Martin, Franz Filicky</p>
                   <p class="slide__text">Después del cierre de un programa, nos quedaba una amplia variedad de servidores, computadoras de escritorio, centrales, routers y otros equipos más. XSi se encargó de hacer pruebas y volver a lanzar al mercado los equipos a nuestro nombre y obtuvimos un importante retorno sobre nuestra inversión de capital. Desde el momento en que firmamos el acuerdo, XSi mantuvo una comunicación honesta y directa, entregándonos informes de avance sobre el relanzamiento todas las semanas. Nuestra única tarea fue entregar una lista de inventario y enviar los equipos a XSi. Gracias a su base de clientes y notificaciones del equipo disponible, XSi pudo inclusive comenzar con el relanzamiento de los equipos antes de que llegaran a sus muelles de cargas. Una vez vendidos los equipos recibimos las transferencias bancarias de inmediato y pudimos finalizar nuestra tarea de recuperación de activos. XSi realmente hizo todo por nosotros durante la iniciativa de recuperación.</p>
                 </div>
@@ -192,14 +253,16 @@
         </div>
       </div>
     </section>
-    <section class="cta">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-xs-24 cta__container">
-            <p class="cta__text">¿Cómo obtenemos las mejores ganancias?</p><a class="_button -white">Descúbralo   </a>
+    <section class="servicetpm__ctathree wow fadeInLeftBig">
+      <section class="cta">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-24 cta__container">
+              <p class="cta__text">¿Cómo obtenemos las mejores ganancias?</p><a href="#" class="_button -white">Descúbralo</a>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </section>
     <section class="noticias"> 
       <div class="container-fluid">
@@ -241,7 +304,7 @@
                 </div>
               </li>
               <li class="row">
-                <p class="informes__category">playbook</p>
+                <p class="informes__category">Playbook</p>
                 <div class="col-xs-24 col-sm-8 col-md-8">
                   <div class="informes__img"><img src="../images/home/novedad-2.png"></div>
                 </div>
@@ -262,23 +325,22 @@
         <div class="footer__logo col-xs-24 col-sm-8 col-md-8"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logoOriginal"></use></svg></div>
         <div class="footer__items1 col-xs-12 col-sm-4 col-md-4">
           <ul class="list__items">
-            <li><a href="#">Homepage</a></li>
-            <li><a href="#">Mantemiento</a></li>
-            <li><a href="#">Itad</a></li>
-            <li><a href="#">Servicios</a></li>
+            <li><a href="/">Homepage</a></li>
+            <li><a href="/mantenimiento">Mantemiento</a></li>
+            <li><a href="/service-itad">Itad</a></li>
+            <li><a href="/service-tpm">Servicios</a></li>
           </ul>
         </div>
         <div class="footer__items2 col-xs-12 col-sm-4 col-md-4">
           <ul class="list__items">
-            <li><a href="#">Nosotros</a></li>
+            <li><a href="/about">Sobre XSi</a></li>
             <li><a href="#">Noticias</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Noticias</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contacto</a></li>
           </ul>
         </div>
         <div class="footer__newsletter col-xs-24 col-sm-24 col-md-8">
           <p class="newsletter__title">Newsletter</p>
-          <p class="newsletter__desc">lorem ipsum three lerumb</p>
           <form action="/newsletter" method="post">
             <input id="email" type="text" value="" placeholder="Ingrese su e-mail" name="email">
             <input type="submit" value="send">

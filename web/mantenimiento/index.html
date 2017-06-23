@@ -33,72 +33,91 @@
   </svg>
   <header class="header">
     <div class="header__hamburguer"><span></span><span></span><span></span></div>
-    <div class="container-fluid">
-      <nav class="row">
-        <div class="header__logo"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg>        </div>
-        <ul class="header__nav">
-          <li><a href="#">Homepage</a></li>
-          <li><a href="#">Mantemiento</a></li>
-          <li><a href="/service-itad">Itad</a></li>
-          <li><a href="/service-tpm">Servicios</a></li>
-          <li><a href="#">Nosotros</a></li>
-          <li><a href="#">Noticias</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
-        <ul class="header__social">
-          <li><a href="http://facebook.com"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="http://twitter.com"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="http://google.com"><i class="fa fa-google-plus"></i></a></li>
-          <li><a href="http://linkedin.com"><i class="fa fa-linkedin"></i></a></li>
-        </ul>
-      </nav>
-    </div>
+    <div class="header__logo"><a href="/"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg>        </a></div>
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li><a href="/">Homepage</a>
+        </li>
+        <li><a href="#">Mantemiento</a>
+          <ul class="header__submenu">
+            <li><a href="/mantenimiento">Marcas con Soporte</a></li>
+            <li><a href="#">Modelos de Servicio</a></li>
+            <li><a href="#">Cómo Abandonar al Fabricante</a></li>
+            <li><a href="#">Qué dicen los especialistas</a></li>
+          </ul>
+        </li>
+        <li><a href="/service-itad">Itad</a>
+        </li>
+        <li><a href="/service-tpm">Servicios</a>
+        </li>
+        <li><a href="#">Sobre XSi</a>
+          <ul class="header__submenu">
+            <li><a href="/about">Acerca de XSi</a></li>
+            <li><a href="#">Misión</a></li>
+            <li><a href="/team">Equipo</a></li>
+            <li><a href="/historia">Historia</a></li>
+            <li><a href="#">Reconocimientos</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Noticias</a>
+        </li>
+        <li><a href="#">Blog</a>
+        </li>
+        <li><a href="#">Contacto</a>
+        </li>
+      </ul>
+      <ul class="header__social">
+        <li><a href="http://facebook.com"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="http://twitter.com"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="http://google.com"><i class="fa fa-google-plus"></i></a></li>
+        <li><a href="http://linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+      </ul>
+    </nav>
   </header>
-  <main class="about mantenimiento">
-    <section class="about__hero">
-      <h1 class="about__title">Marcas con soporte</h1>
+  <main class="mantenimiento">
+    <section class="mantenimiento__hero">
+      <h1 class="mantenimiento__title">Marcas con soporte</h1>
     </section>
-    <section class="about__body">
+    <section class="mantenimiento__body">
       <div class="container">
-        <div class="mantenimiento__title"> 
+        <div class="mantenimiento__subtitle"> 
           <p>XSi brinda servicios de mantenimiento y soporte incluyendo:</p>
         </div>
-        <ul class="row">
-          <li data-wow-delay="0.25s" class="col-xs-24 col-sm-6 col-md-6 wow fadeInUp"> 
+        <ul class="row mantenimiento__includes">
+          <li data-wow-delay="0.25s" class="col-xs-12 col-sm-6 col-md-6 wow fadeInUp"> 
             <div class="mantenimiento__img"><img src="../images/mantenimiento/service-1.png"></div>
             <p class="mantenimiento__desc">Servicios de Mantenimiento administrados</p>
           </li>
-          <li data-wow-delay="0.5s" class="col-xs-24 col-sm-6 col-md-6 wow fadeInUp"> 
+          <li data-wow-delay="0.5s" class="col-xs-12 col-sm-6 col-md-6 wow fadeInUp"> 
             <div class="mantenimiento__img"><img src="../images/mantenimiento/service-2.png"></div>
             <p class="mantenimiento__desc">Advanced TAC con soporte multi-idioma</p>
           </li>
-          <li data-wow-delay="0.75s" class="col-xs-24 col-sm-6 col-md-6 wow fadeInUp"> 
+          <li data-wow-delay="0.75s" class="col-xs-12 col-sm-6 col-md-6 wow fadeInUp"> 
             <div class="mantenimiento__img"><img src="../images/mantenimiento/service-3.png"></div>
             <p class="mantenimiento__desc">Administrador in situ ocasional (para contratos grandes multi fabricante)</p>
           </li>
-          <li data-wow-delay="1s" class="col-xs-24 col-sm-6 col-md-6 wow fadeInUp"> 
+          <li data-wow-delay="1s" class="col-xs-12 col-sm-6 col-md-6 wow fadeInUp"> 
             <div class="mantenimiento__img"><img src="../images/mantenimiento/service-4.png"></div>
             <p class="mantenimiento__desc">Administrador in situ ocasional (para contratos grandes multi fabricante)</p>
           </li>
-          <li data-wow-delay="1.25s" class="col-xs-24 col-sm-6 col-md-6 wow fadeInUp"> 
+          <li data-wow-delay="1.25s" class="col-xs-12 col-sm-6 col-md-6 wow fadeInUp"> 
             <div class="mantenimiento__img"><img src="../images/mantenimiento/service-5.png"></div>
             <p class="mantenimiento__desc">Ingenieros y repuestos al día siguiente</p>
           </li>
-          <li data-wow-delay="1.5s" class="col-xs-24 col-sm-6 col-md-6 wow fadeInUp"> 
+          <li data-wow-delay="1.5s" class="col-xs-12 col-sm-6 col-md-6 wow fadeInUp"> 
             <div class="mantenimiento__img"><img src="../images/mantenimiento/service-6.png"></div>
             <p class="mantenimiento__desc">Reemplazo de piezas al día siguiente</p>
           </li>
-          <li data-wow-delay="1.75s" class="col-xs-24 col-sm-6 col-md-6 wow fadeInUp"> 
+          <li data-wow-delay="1.75s" class="col-xs-12 col-sm-6 col-md-6 wow fadeInUp"> 
             <div class="mantenimiento__img"><img src="../images/mantenimiento/service-7.png"></div>
             <p class="mantenimiento__desc">Kit de piezas in situ</p>
           </li>
-          <li data-wow-delay="2s" class="col-xs-24 col-sm-6 col-md-6 wow fadeInUp"> 
+          <li data-wow-delay="2s" class="col-xs-12 col-sm-6 col-md-6 wow fadeInUp"> 
             <div class="mantenimiento__img"><img src="../images/mantenimiento/service-8.png"></div>
             <p class="mantenimiento__desc">Soporte técnico Telefónico</p>
           </li>
         </ul>
-        <div class="fabricantes__title"> 
+        <div class="mantenimiento__subtitle"> 
           <p>A continuación, la lista de fabricantes cuyos productos cubrimos:</p>
         </div>
         <div class="row">
@@ -186,23 +205,22 @@
         <div class="footer__logo col-xs-24 col-sm-8 col-md-8"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logoOriginal"></use></svg></div>
         <div class="footer__items1 col-xs-12 col-sm-4 col-md-4">
           <ul class="list__items">
-            <li><a href="#">Homepage</a></li>
-            <li><a href="#">Mantemiento</a></li>
-            <li><a href="#">Itad</a></li>
-            <li><a href="#">Servicios</a></li>
+            <li><a href="/">Homepage</a></li>
+            <li><a href="/mantenimiento">Mantemiento</a></li>
+            <li><a href="/service-itad">Itad</a></li>
+            <li><a href="/service-tpm">Servicios</a></li>
           </ul>
         </div>
         <div class="footer__items2 col-xs-12 col-sm-4 col-md-4">
           <ul class="list__items">
-            <li><a href="#">Nosotros</a></li>
+            <li><a href="/about">Sobre XSi</a></li>
             <li><a href="#">Noticias</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Noticias</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contacto</a></li>
           </ul>
         </div>
         <div class="footer__newsletter col-xs-24 col-sm-24 col-md-8">
           <p class="newsletter__title">Newsletter</p>
-          <p class="newsletter__desc">lorem ipsum three lerumb</p>
           <form action="/newsletter" method="post">
             <input id="email" type="text" value="" placeholder="Ingrese su e-mail" name="email">
             <input type="submit" value="send">

@@ -2,37 +2,37 @@
   "items1": [
       {
           "name": "Homepage",
-          "url": "#"
+          "url": "/"
       },
       {
           "name": "Mantemiento",
-          "url": "#"
+          "url": "/mantenimiento"
       },
       {
           "name": "Itad",
-          "url": "#"
+          "url": "/service-itad"
       },
       {
           "name": "Servicios",
-          "url": "#"
+          "url": "/service-tpm"
       }
   ],
 
   "items2": [
       {
-          "name": "Nosotros",
-          "url": "#"
+          "name": "Sobre XSi",
+          "url": "/about"
       },
       {
           "name": "Noticias",
           "url": "#"
       },
       {
-          "name": "Nosotros",
+          "name": "Blog",
           "url": "#"
       },
       {
-          "name": "Noticias",
+          "name": "Contacto",
           "url": "#"
       }
   ],

@@ -1,11 +1,29 @@
 [
     {
         "name":"Homepage",
-        "url":"#"
+        "url":"/"
     },
     {
         "name":"Mantemiento",
-        "url":"#"
+        "url":"#",
+        "submenu": [
+            {
+                "name":"Marcas con Soporte",
+                "url":"/mantenimiento"
+            },
+            {
+                "name":"Modelos de Servicio",
+                "url":"#"
+            },
+            {
+                "name":"Cómo Abandonar al Fabricante",
+                "url":"#"
+            },
+            {
+                "name":"Qué dicen los especialistas",
+                "url":"#"
+            }
+        ]
     },
     {
         "name":"Itad",
@@ -16,8 +34,30 @@
         "url":"/service-tpm"
     },
     {
-        "name":"Nosotros",
-        "url":"#"
+        "name":"Sobre XSi",
+        "url":"#",
+        "submenu": [
+            {
+                "name":"Acerca de XSi",
+                "url":"/about"
+            },
+            {
+                "name":"Misión",
+                "url":"#"
+            },
+            {
+                "name":"Equipo",
+                "url":"/team"
+            },
+            {
+                "name":"Historia",
+                "url":"/historia"
+            },
+            {
+                "name": "Reconocimientos",
+                "url": "#"
+            }
+        ]
     },
     {
         "name":"Noticias",

@@ -9,9 +9,9 @@ block content
         section.analisis__hero
             .container
                 .row
-                    .col-xs-24.col-sm-20.col-md-16.col-lg-13.analisis__data
+                    .col-xs-24.col-sm-20.col-md-16.col-lg-18.analisis__data
                         h1.analisis__title= site.data.analisis.title
-                        h2.analisis__subtitle= site.data.analisis.subtitle
+                        h2.analisis__subtitle!= site.data.analisis.subtitle
                         p.analisis__desc!= site.data.analisis.desc
         
         section.analisis__body

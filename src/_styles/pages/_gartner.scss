@@ -1,7 +1,7 @@
 .gartner {
     &__hero {
         background-image: $gradient;
-        padding: 7% 0 15%;
+        padding: 10% 0 18%;
         overflow: hidden;
         position: relative;
         color:$white;
@@ -29,6 +29,11 @@
 
     &__title {
         font-family: $mainFont;
+        font-size: 24px;
+
+        @include breakpoint(sm){
+            font-size: 60px;
+        }
     }
 
     &__body {
@@ -38,6 +43,10 @@
         padding: 20% 0 6%;
         position: relative;
 
+        @include breakpoint(md){
+            padding: 20% 0 6%;
+        }
+
         img {
             margin-bottom: $base;
         }
@@ -46,10 +55,18 @@
             color: $blue;
             font-family: $mainFont;
             font-size:18px;
+            @include breakpoint(md){
+                font-size: 26px;
+                line-height: 33px;
+            }
         }
 
         p{
             margin-bottom: $base;
+            @include breakpoint(md){
+                font-size: 21px;
+                line-height: 33px;
+            }
         }
 
         ul {
@@ -59,27 +76,56 @@
 
             li{
                 margin-bottom: $base/4;
+                @include breakpoint(md){
+                    font-size: 21px;
+                    line-height: 33px;
+                }
             }
         }
     }
 
     &__character {
         position: absolute;
-        right:20%;
+        right:10%;
         top:7%;
-        width:18%;
+        width:30%;
         z-index:2;
+
+        @include breakpoint(xs) {
+            display: none;
+        }
     }
 
     &__data {
-        margin-top: 3%;
+        margin-top: 24%;
+        margin-bottom: 12%;
+
+        @include breakpoint(sm){
+            margin-top: 10%;
+            margin-bottom: 15%;
+        }
+
+        @include breakpoint(md){
+            margin-top: 6%;
+            margin-bottom: 10%;
+        }
+
+        @include breakpoint(lg){
+            margin-top: 3%;
+            margin-bottom: 0;
+        }
     }
 
     &__form {
-        position: absolute;
+        position: relative;
         left:0;
         right:0;
-        top:-10%;
+        margin-top:-32%;
         z-index:5;
+        margin-bottom: $base;
+
+        @include breakpoint(md) {
+            position: absolute;
+        }
     }
 }

@@ -6,23 +6,23 @@ block config
   - var baseUrl = '../'
 
 block content
-    main.about.mantenimiento
-        section.about__hero
-            h1.about__title= site.data.mantenimiento.title
-        section.about__body
+    main.mantenimiento
+        section.mantenimiento__hero
+            h1.mantenimiento__title= site.data.mantenimiento.title
+        section.mantenimiento__body
             .container
-                .mantenimiento__title 
+                .mantenimiento__subtitle 
                     p= site.data.mantenimiento.mantenimiento.title
                     
-                ul.row
+                ul.row.mantenimiento__includes
                     each item, index in site.data.mantenimiento.mantenimiento.items
-                        li.col-xs-24.col-sm-6.col-md-6.wow.fadeInUp(data-wow-delay="#{(index + 1)/4}s") 
+                        li.col-xs-12.col-sm-6.col-md-6.wow.fadeInUp(data-wow-delay="#{(index + 1)/4}s") 
                           div.mantenimiento__img
                               img(src= item.img)
                           
                           p.mantenimiento__desc= item.desc  
                           
-                .fabricantes__title 
+                .mantenimiento__subtitle 
                     p= site.data.mantenimiento.fabricantes.title
                     
                 .row

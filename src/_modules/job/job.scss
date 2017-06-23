@@ -6,17 +6,27 @@
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid $lightGray;
+    flex-direction: column;
+
+    @include breakpoint(sm) {
+        flex-direction: row;
+    }
 
     &__title {
         color: $blue;
-        font-size:24px;
+        font-size:26px;
         margin: 0 0 10px;
         font-family: $mainFont;
     }
 
     &__desc {
         color: $midGray;
-        margin: 0;
+        margin: 10px 0;
+        font-size: 18px;
+
+        @include breakpoint(sm) {
+            margin: 0;
+        }
     }
 
     &__button {

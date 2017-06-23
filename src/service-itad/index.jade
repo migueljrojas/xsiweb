@@ -1,6 +1,8 @@
 extends ../_layouts/base
 
 include ../_modules/slider/slider
+include ../_modules/cta/cta
+include ../_modules/calculator/calculator
 
 
 block config
@@ -8,60 +10,65 @@ block config
   - var baseUrl = '../'
 
 block content
-    main.services.itad
+    main.serviceitad
       
-      section.home__hero
-          +slider('home__slider')
-              each slide in site.data.home.slider
-                  .home__slider__slide(style="background:url(#{slide.img}) no-repeat top right;")
-                      .container
-                          //img(src=slide.img) 
-                          .home__slider__data
-                              h2=slide.title
-                              p=slide.desc
-                              a._button.-white(href=slide.btn.url)= slide.btn.text
+        section.serviceitad__hero
+            .container
+                .row
+                    .serviceitad__hero__data.col-xs-24.col-sm-14.col-md-13
+                        h2!=site.data.itad.hero.title
+                        p!=site.data.itad.hero.desc
+                        a._button.-white(href=site.data.itad.hero.btn.url)= site.data.itad.hero.btn.text
+                    .serviceitad__hero__character.col-sm-11
+                        img(src="/images/service-itad/hero.png")
       
-        section.services__mantenimiento 
+        section.serviceitad__calculator
+            .container
+                .row
+                    .col-xs-24.col-md-20.col-md-offset-2.wow.fadeInRightBig
+                        +calculator(site.data.itad.calculator)
+        
+        
+        section.serviceitad__mantenimiento 
             .container
                 .row   
-                    .col-xs-24.col-sm-12.col-md-12
+                    .col-xs-24.col-sm-12
                         p.mantenimiento__title= site.data.itad.servicioitad.title
-                        div.mantenimiento__img 
+                        div.mantenimiento__img.js-video
                             img(src= site.data.itad.servicioitad.img)
+                            .embed-responsive.embed-responsive-16by9
+                                iframe.embed-responsive-item(allowfullscreen)
+                        
+                        .col-xs-24.col-sm-12.col-md-10.col-md-offset-2
                     
                     .col-xs-24.col-sm-12.col-md-12
                         .row.itad__services
-                            div.icono.col-xs-8
-                              img(src= site.data.itad.servicioitad.costos.img)
+                            div.icono.col-xs-8.col-sm-4
+                              img.img-responsive(src= site.data.itad.servicioitad.costos.img)
                             div.content.col-xs-16
                               p.servicioitad__title=  site.data.itad.servicioitad.costos.title
-                              p.servicioitad__text=   site.data.itad.servicioitad.costos.text1 
-                              p.servicioitad__text=   site.data.itad.servicioitad.costos.text2
+                              p.servicioitad__text!=   site.data.itad.servicioitad.costos.text1 
+                              p.servicioitad__text!=   site.data.itad.servicioitad.costos.text2
                         
                         .row.itad__services
-                            div.icono.col-xs-8
-                              img(src= site.data.itad.servicioitad.riesgos.img)
+                            div.icono.col-xs-8.col-sm-4
+                              img.img-responsive(src= site.data.itad.servicioitad.riesgos.img)
                             div.content.col-xs-16
                               p.servicioitad__title=  site.data.itad.servicioitad.riesgos.title
-                              p.servicioitad__text=   site.data.itad.servicioitad.riesgos.text1 
-                              p.servicioitad__text=   site.data.itad.servicioitad.riesgos.text2  
+                              p.servicioitad__text!=   site.data.itad.servicioitad.riesgos.text1 
+                              p.servicioitad__text!=   site.data.itad.servicioitad.riesgos.text2  
                               
                         .row.itad__services
-                            div.icono.col-xs-8
-                              img(src= site.data.itad.servicioitad.eficiencia.img)
+                            div.icono.col-xs-8.col-sm-4
+                              img.img-responsive(src= site.data.itad.servicioitad.eficiencia.img)
                             div.content.col-xs-16
                               p.servicioitad__title=  site.data.itad.servicioitad.eficiencia.title
-                              p.servicioitad__text=   site.data.itad.servicioitad.eficiencia.text1 
-                              p.servicioitad__text=   site.data.itad.servicioitad.costos.text2          
+                              p.servicioitad__text!=   site.data.itad.servicioitad.eficiencia.text1 
+                              p.servicioitad__text!=   site.data.itad.servicioitad.costos.text2          
 
 
-                        
-        section.cta
-            .container-fluid
-                  .row
-                      .col-xs-24.cta__container
-                          p.cta__text Contáctenos para asesoramiento gratuito sin compromiso
-                          a._button.-white Me Interesa 
+        section.servicetpm__ctaone.wow.fadeInLeftBig
+          +cta(site.data.itad.ctaone)
                           
         section.servicios
             .container
@@ -81,43 +88,35 @@ block content
                         img(src=site.data.itad.servicios.img)
                       
         
-        section.cta
-            .container-fluid
-                  .row
-                      .col-xs-24.cta__container
-                          p.cta__text Conozca a detalle el proceso de ITAD
-                          a._button.-white Me Interesa          
+        section.servicetpm__ctatwo.wow.fadeInLeftBig
+          +cta(site.data.itad.ctatwo)          
 
-        section.opiniones
+        section.serviceitad__opiniones
             .container 
                 .row
-                    p.opiniones__title= site.data.itad.opiniones.title
-                    p.opiniones__desc= site.data.itad.opiniones.desc
+                    p.serviceitad__opiniones__title= site.data.itad.opiniones.title
+                    p.serviceitad__opiniones__desc= site.data.itad.opiniones.desc
                     +slider('opiniones__slider')
                         each slide in site.data.itad.opiniones.slides
-                            .opiniones__slider
+                            .serviceitad__opiniones__slider
                                   .container.row
-                                      .opiniones__slider-img.col-xs-24.col-sm-8
+                                      .serviceitad__opiniones__slider-img.col-xs-24.col-sm-8.col-sm-offset-2
                                           img(src= slide.img)
-                                      .opiniones__slider-text.col-xs-24.col-sm-16
+                                      .serviceitad__opiniones__slider-text.col-xs-24.col-sm-13
                                           p.slide__title= slide.title
                                           p.slide__text= slide.text
 
 
-        section.cta
-            .container-fluid
-                  .row
-                      .col-xs-24.cta__container
-                          p.cta__text ¿Cómo obtenemos las mejores ganancias?
-                          a._button.-white Descúbralo   
+        section.servicetpm__ctathree.wow.fadeInLeftBig
+            +cta(site.data.itad.ctathree)
         
         section.noticias 
             .container-fluid
                   .row
                       .novedades__container.col-xs-24.col-sm-12.col-md-12
-                          p.novedades__title= site.data.services.noticias.novedades.title
+                          p.novedades__title= site.data.itad.noticias.novedades.title
                           ul.novedades__articles
-                              each article in site.data.services.noticias.novedades.articles
+                              each article in site.data.itad.noticias.novedades.articles
                                   li.row
                                     .col-xs-24.col-sm-8.col-md-8
                                       div.novedades__img
@@ -129,9 +128,9 @@ block content
                                                 
                           
                       .informes__container.col-xs-24.col-sm-12.col-md-12
-                          p.informes__title= site.data.services.noticias.informes.title
+                          p.informes__title= site.data.itad.noticias.informes.title
                           ul.informes__articles
-                              each article in site.data.services.noticias.informes.articles
+                              each article in site.data.itad.noticias.informes.articles
                                   li.row
                                       p.informes__category= article.category
                                       .col-xs-24.col-sm-8.col-md-8

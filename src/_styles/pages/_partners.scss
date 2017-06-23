@@ -1,9 +1,13 @@
 .partners {
     &__hero {
         background-image: $gradient;
-        padding: 4% 0;
+        padding: 30% 0;
         overflow: hidden;
         position: relative;
+
+        @include breakpoint(md) {
+            padding: 4% 0;
+        }
 
         &:before {
             @include shades(before);
@@ -31,8 +35,12 @@
 
         .container{
             height:0;
-            padding-bottom: 44%;
+            padding-bottom: 60%;
             position: relative;
+
+            @include breakpoint(sm) {
+                padding-bottom: 44%;
+            }
         }
 
         &__data {
@@ -44,7 +52,11 @@
 
             h2 {
                 color: $blue;
-                font-size: 48px;
+                font-size: 21px;
+
+                @include breakpoint(sm) {
+                    font-size: 48px;
+                }
             }
 
             p{
@@ -58,6 +70,11 @@
         margin: 0;
         color:$white;
         margin-top: 5%;
+        font-size: 28px;
+
+        @include breakpoint(sm) {
+            font-size:36px;
+        }
     }
 
     &__body {

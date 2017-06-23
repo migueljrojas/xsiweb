@@ -1,9 +1,13 @@
 .whitepapers{
     &__hero {
         background-image: $gradient;
-        padding: 4% 0;
+        padding: 30% 0;
         overflow: hidden;
         position: relative;
+
+        @include breakpoint(md) {
+            padding: 4% 0;
+        }
 
         &:before {
             @include shades(before);
@@ -30,15 +34,17 @@
         h2{
             color:$blue;
             margin-bottom: $base/2;
+            font-size: 32px;
         }
 
         p {
             margin-bottom: $base/2;
+            font-size: 21px;
         }
 
         span {
             display: block;
-            font-sizE:12px;
+            font-size:14px;
 
             a{
                 color:$blue;
@@ -52,6 +58,10 @@
         margin: 0;
         color:$white;
         margin-top: 5%;
+
+        @include breakpoint(sm) {
+            font-size:60px;
+        }
     }
 
     &__body {

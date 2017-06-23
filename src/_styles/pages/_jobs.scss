@@ -1,9 +1,13 @@
 .jobs {
     &__hero {
         background-image: $gradient;
-        padding: 4% 0;
+        padding: 30% 0;
         overflow: hidden;
         position: relative;
+
+        @include breakpoint(md) {
+            padding: 4% 0;
+        }
 
         &:before {
             @include shades(before);
@@ -29,16 +33,25 @@
         margin: 0;
         color:$white;
         margin-top: 5%;
+
+        @include breakpoint(sm) {
+            font-size:60px;
+        }
     }
 
     &__body {
         padding: 4% 0;
-
     }
-    
-    &__desd {
+
+    &__desc {
         font-size: 18px;
+        line-height: 28px;
         color: $midGray;
         margin-bottom: $base;
+
+        @include breakpoint(md){
+            font-size: 21px;
+            line-height: 33px;
+        }
     }
 }

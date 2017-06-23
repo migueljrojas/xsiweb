@@ -10,6 +10,10 @@
     position: static;
 }
 
+.-blur {
+    filter: blur(7px);
+}
+
 .-vertical-space{
     padding-top: $base;
     padding-bottom: $base;

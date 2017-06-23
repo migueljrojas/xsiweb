@@ -17,7 +17,11 @@
         }
 
         @include breakpoint(md) {
-            padding-bottom: 40%;
+            padding-bottom: 60%;
+        }
+
+        @include breakpoint(lg) {
+            padding-bottom: 48%;
         }
 
         &:before {
@@ -46,7 +50,11 @@
             }
 
             @include breakpoint(md) {
-                padding-bottom: 40%;
+                padding-bottom: 60%;
+            }
+
+            @include breakpoint(lg) {
+                padding-bottom: 48%;
             }
 
             &:focus{
@@ -76,7 +84,7 @@
 
         &__data {
             position: absolute;
-            top: 20%;
+            top: 13%;
             color:$white;
             width:90%;
             z-index: 2;
@@ -221,8 +229,13 @@
 
     /*Seccion Soy XSI*/
     .soyxsi {
-        //margin: 50px 6% 0;
-        height: 350px;
+
+        $s: &;
+
+        @include breakpoint(sm){
+            height: 350px;
+        }
+
         .it, .finanzas {
           display: block;
           padding-top: $base/2;
@@ -239,6 +252,20 @@
                 border-right: 1px solid $lightestGray;
                 background: none;
                 height: 350px;
+                .soyxsi__data {
+                    padding-top: 60px;
+                    transform: translateX(55%);
+                }
+            }
+        }
+
+        .finanzas {
+            text-align: right;
+            @include breakpoint(sm){
+                .soyxsi__data {
+                    padding-top: 60px;
+                    transform: translateX(-55%);
+                }
             }
         }
 
@@ -281,8 +308,8 @@
           line-height: 40px;
           font-family: $mainFont;
             @include breakpoint (md) {
-              font-size: 50px;
-              line-height: 50px;
+              font-size: 60px;
+              line-height: 60px;
               width:300px;
             }
         }
@@ -292,9 +319,11 @@
           font-weight: bold;
           line-height: 40px;
           font-family: $mainFont;
+          display: inline-block;
+
             @include breakpoint (md) {
-              font-size: 50px;
-              line-height: 50px;
+              font-size: 60px;
+              line-height: 60px;
               width:300px;
               text-align: right;
             }
@@ -315,6 +344,7 @@
           text-transform: uppercase;
           transition: all $duration $easingLight;
           margin-top: 20px;
+          cursor: pointer;
 
           &:hover{
               text-decoration: none;
@@ -338,6 +368,9 @@
                     bottom:-23px;
                 }
             }
+            .button__soy {
+                transform: translateX(-50%);
+            }
         }
 
 
@@ -349,20 +382,47 @@
                 margin-bottom: 20px;
                 font-family: $mainFont;
                 font-size: 28px;
+                @include breakpoint(sm){
+                    width:100%;
+                    font-size: 60px;
+                    transform: translateX(-60px);
+                }
               }
 
               ul {
+                  text-align: left;
                   li {
                     font-size: 16px;
                     display: -webkit-inline-box;
                     font-weight: 700;
                     color:$midGray;
+                    @include breakpoint(sm){
+                        font-size: 20px;
+                    }
 
                     .fa-check-circle {
                       margin-right: 5px;
                       color: $green;
                       font-size: 20px;
                     }
+                  }
+              }
+
+              .soyxsi__data {
+                  @include breakpoint(sm){
+                      left:50%;
+                      transform: translateX(-50%);
+                      position: absolute;
+                      top:60px;
+                      text-align: center;
+                  }
+              }
+
+              .finanzas__img {
+                  @include breakpoint(sm){
+                      left:65%;
+                      position: absolute;
+                      top:40px;
                   }
               }
         }
@@ -375,23 +435,52 @@
                 margin-bottom: 20px;
                 font-family: $mainFont;
                 font-size: 28px;
+                @include breakpoint(sm){
+                    font-size: 60px;
+                    width: 100%;
+                    margin-left: -40px;
+                }
               }
 
               ul {
+                  text-align: left;
                   li {
-                    font-size: 18px;
+                    font-size: 16px;
                     display: -webkit-inline-box;
+                    width:auto;
                     font-weight: 700;
                     color:$midGray;
+                    @include breakpoint(sm){
+                        font-size: 20px;
+                    }
 
 
                     .fa-check-circle {
                       margin-right: 5px;
-                      color: $blue;
+                      color: $green;
                       font-size: 20px;
                     }
                   }
               }
+
+              .soyxsi__data {
+                  @include breakpoint(sm){
+                      left:50%;
+                      transform: translateX(-50%);
+                      position: absolute;
+                      top:60px;
+                      text-align: center;
+                  }
+              }
+
+              .it__img {
+                  @include breakpoint(sm){
+                      left:65%;
+                      position: absolute;
+                      top:40px;
+                  }
+              }
+
         }
 
         .btn__close {
@@ -402,6 +491,12 @@
             top:20px;
             cursor: pointer;
             z-index:5;
+
+            @include breakpoint(md){
+                left:50%;
+                transform: translateX(-600px);
+                right:initial;
+            }
 
             &:before,
             &:after{

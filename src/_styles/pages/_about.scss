@@ -5,7 +5,7 @@
         overflow: hidden;
         position: relative;
 
-        @include breakpoint(lg) {
+        @include breakpoint(md) {
             padding: 4% 0;
         }
 
@@ -33,6 +33,10 @@
         margin: 0;
         color:$white;
         margin-top: 5%;
+
+        @include breakpoint(sm) {
+            font-size:60px;
+        }
     }
 
     &__body {
@@ -44,10 +48,12 @@
         @include breakpoint(sm) {
             padding: 4% 0;
             background: url('/images/about/about-top-bg.png') no-repeat top left;
+            font-size: 21px;
+            line-height: 33px;
         }
 
 
-        .video-col {
+        .about__video-col {
             text-align: center;
             z-index:1;
             a {
@@ -57,8 +63,8 @@
             img {
                 display: inline-block;
             }
-            margin-top: 4%;
-            margin-bottom: 4%;
+            padding-top: 6%;
+            padding-bottom: 6%;
         }
 
         .subtitle {
@@ -96,7 +102,10 @@
         bottom: 7%;
         top:33%;
         z-index: 0;
-        background: url('/images/about/video-bg.png') no-repeat top right;
-        background-size: contain;
+
+        @include breakpoint(sm){
+            background: url('/images/about/video-bg.png') no-repeat top right;
+            background-size: contain;
+        }
     }
 }

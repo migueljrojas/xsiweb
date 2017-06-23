@@ -1,9 +1,14 @@
 .team {
     &__hero {
         background-image: $gradient;
-        padding: 4% 0;
+        padding: 30% 0;
         overflow: hidden;
         position: relative;
+
+        @include breakpoint(md) {
+            padding: 4% 0;
+        }
+
 
         &:before {
             @include shades(before);
@@ -29,18 +34,31 @@
         margin: 0;
         color:$white;
         margin-top: 5%;
+
+        @include breakpoint(sm) {
+            font-size:60px;
+        }
     }
 
     &__body {
-        padding: 4% 0;
+        padding: 10% 0;
         color:$midGray;
+
+        @include breakpoint(sm){
+            padding: 4% 0;
+        }
     }
 
     &__members-wrapper {
         display: flex;
         flex-wrap: wrap;
         position: relative;
-        padding-bottom: 60%;
+        padding-bottom: 300%;
+
+        @include breakpoint(sm){
+            padding-bottom: 60%;
+        }
+
     }
 
     &__member {
@@ -52,6 +70,12 @@
         overflow: hidden;
         transition: all .5s $easing;
 
+        @include breakpoint(xs){
+            flex-basis:50%;
+            width:50%;
+            padding-bottom: 75%;
+        }
+
         &:nth-child(1) {
             left:0;
             top:0;
@@ -60,39 +84,74 @@
         &:nth-child(2) {
             left:25%;
             top:0;
+            @include breakpoint(xs){
+                left:50%;
+                top:0;
+            }
         }
 
         &:nth-child(3) {
             left:50%;
             top:0;
+
+            @include breakpoint(xs){
+                left:0%;
+                top:25%;
+            }
         }
 
         &:nth-child(4) {
             left:75%;
             top:0;
+
+            @include breakpoint(xs){
+                left:50%;
+                top:25%;
+            }
         }
 
         &:nth-child(5) {
             left:0;
             top:50%;
+
+            @include breakpoint(xs){
+                left:0%;
+                top:50%;
+            }
         }
 
         &:nth-child(6) {
             left:25%;
             top:50%;
+
+            @include breakpoint(xs){
+                left:50%;
+                top:50%;
+            }
         }
 
         &:nth-child(7) {
             left:50%;
             top:50%;
+
+            @include breakpoint(xs){
+                left:0%;
+                top:75%;
+            }
         }
 
         &:nth-child(8) {
             left:75%;
             top:50%;
+
+            @include breakpoint(xs){
+                left:50%;
+                top:75%;
+            }
         }
 
         &.-animating{
+            z-index:10;
             .team__member__overlay {
                 display: none;
             }
@@ -144,25 +203,38 @@
                 right:initial;
                 width:60%;
                 cursor:default;
+
+                @include breakpoint(xs){
+                    position: relative;
+                    top:25%;
+                    width: 100%;
+                    left:10%;
+                }
             }
 
             .team__member__name {
                 color: $darkGray;
-                font-size: 48px;
+                font-size: 60px;
                 font-family: $altFont;
                 margin-bottom: 0;
+
+                @include breakpoint(xs){
+                    font-size: 28px;
+                }
             }
 
             .team__member__job {
                 color:$green;
                 font-weight:700;
                 font-family: $altFont;
+                font-size: 16px;
             }
 
             .team__member__bio {
                 display: block;
                 padding: $base/2 0;
-                line-height: 1.6em;
+                line-height: 33px;
+                font-size: 16px;
             }
 
             .team__member__social {
@@ -193,6 +265,10 @@
                 opacity: 1;
                 transform: translateY(0);
                 cursor: pointer;
+
+                @include breakpoint(xs){
+                    opacity: 0;
+                }
             }
         }
 
@@ -215,6 +291,11 @@
             transition: all .5s $easing;
             z-index: 10;
             cursor: pointer;
+
+            @include breakpoint(xs){
+                opacity: 0;
+                transform: translateY(0);
+            }
         }
 
         .team__member__img {
@@ -225,6 +306,12 @@
             box-shadow: 0 0 0 rgba(0,0,0,.3);
             float: left;
             transition: all .5s $easing;
+
+            img{
+                @include breakpoint(xs){
+                    max-width: 125%;
+                }
+            }
         }
 
         &__data {
@@ -239,9 +326,13 @@
 
         &__name {
             color: $white;
-            font-size: 32px;
+            font-size: 36px;
             font-family: $altFont;
             transition: all .5s $easing;
+
+            @include breakpoint(xs){
+                font-size: 21px;
+            }
         }
 
         &__job {
@@ -249,6 +340,7 @@
             font-weight:700;
             font-family: $altFont;
             transition: all .5s $easing;
+            font-size: 12px;
         }
 
         &__bio {
@@ -297,6 +389,4 @@
             }
         }
     }
-
-
 }
