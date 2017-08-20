@@ -35,7 +35,7 @@
         margin-top: 5%;
 
         @include breakpoint(sm) {
-            font-size:60px;
+            font-size: 48px;
         }
     }
 
@@ -44,7 +44,8 @@
         color:$midGray;
         font-size: 16px;
         position: relative;
-        background: url('/images/about/about-top-bg.png') no-repeat top left;
+        background: url('/images/form/bg.png') no-repeat top left;
+        background-size: cover;
     }
 
     &__form {

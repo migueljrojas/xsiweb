@@ -17,10 +17,12 @@ block content
                 .row
                     .serviceitad__hero__data.col-xs-24.col-sm-14.col-md-13
                         h2!=site.data.itad.hero.title
+                        h4!=site.data.itad.hero.subtitle
                         p!=site.data.itad.hero.desc
                         a._button.-white(href=site.data.itad.hero.btn.url)= site.data.itad.hero.btn.text
                     .serviceitad__hero__character.col-sm-11
-                        img(src="/images/service-itad/hero.png")
+                        img._body(src="/images/service-itad/hero.png")
+                        img._arm(src="/images/service-itad/arm.png")
       
         section.serviceitad__calculator
             .container
@@ -34,7 +36,7 @@ block content
                 .row   
                     .col-xs-24.col-sm-12
                         p.mantenimiento__title= site.data.itad.servicioitad.title
-                        div.mantenimiento__img.js-video
+                        div.mantenimiento__img.js-video.-itad
                             img(src= site.data.itad.servicioitad.img)
                             .embed-responsive.embed-responsive-16by9
                                 iframe.embed-responsive-item(allowfullscreen)
@@ -84,8 +86,9 @@ block content
                                   p.servicios__article-title= item.title
                                   p.servicios__article-desc= item.desc
                     
-                    div.procesoitad__img 
-                        img(src=site.data.itad.servicios.img)
+                    div.procesoitad__img
+                        a(href=site.data.itad.servicios.img, target="_blank")
+                            img.img-responsive(src=site.data.itad.servicios.img)
                       
         
         section.servicetpm__ctatwo.wow.fadeInLeftBig

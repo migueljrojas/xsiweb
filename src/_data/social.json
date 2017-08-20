@@ -1,18 +1,14 @@
 [
     {
         "name": "facebook",
-        "url": "http://facebook.com"
+        "url": "https://www.facebook.com/XSiLatam/"
     },
     {
         "name": "twitter",
-        "url": "http://twitter.com"
-    },
-    {
-        "name": "google-plus",
-        "url": "http://google.com"
+        "url": "https://twitter.com/XSiLatam"
     },
     {
         "name": "linkedin",
-        "url": "http://linkedin.com"
+        "url": "https://www.linkedin.com/company-beta/87228/"
     }
 ]

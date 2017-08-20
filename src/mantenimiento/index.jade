@@ -26,20 +26,20 @@ block content
                     p= site.data.mantenimiento.fabricantes.title
                     
                 .row
-                    div.network.col-xs-24.col-sm-8.col-md-8
+                    div.network.col-xs-24.col-sm-8.col-md-6.col-md-offset-4
                       p= site.data.mantenimiento.fabricantes.network.title
                       ul 
                           each item, index in site.data.mantenimiento.fabricantes.network.items 
                             li.wow.fadeInLeft(data-wow-delay="#{(index + 1)/4}s") 
                               p= item.name
                     
-                    div.storage.col-xs-24.col-sm-8.col-md-8
+                    div.storage.col-xs-24.col-sm-8.col-md-6
                       p= site.data.mantenimiento.fabricantes.storage.title
                       ul 
                           each item, index in site.data.mantenimiento.fabricantes.server.items 
                             li.wow.fadeInLeft(data-wow-delay="#{(index + 1)/4}s") 
                               p= item.name
-                    div.server.col-xs-24.col-sm-8.col-md-8   
+                    div.server.col-xs-24.col-sm-8.col-md-6   
                       p= site.data.mantenimiento.fabricantes.server.title 
                       ul 
                           each item, index in site.data.mantenimiento.fabricantes.storage.items 

@@ -8,7 +8,7 @@ var Header = require('../_modules/header/header');
 var Slider = require('../_modules/slider/slider');
 var Job = require('../_modules/job/job');
 var Home = require('./home');
-var Itad = require('./itad');
+var VideoReplace = require('./videoReplace');
 
 $(function() {
     require('../../bower_components/bootstrap-sass/assets/javascripts/bootstrap.min');
@@ -16,6 +16,7 @@ $(function() {
 
     new Header();
     new Slider();
-    new Itad();
+    new VideoReplace();
     new Job();
+    new Home();
 });

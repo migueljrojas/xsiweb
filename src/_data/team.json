@@ -5,46 +5,40 @@
             "name":"Doug<br>Krueger",
             "cargo": "CEO",
             "img": "/images/team/profile-1.jpg",
-            "bio": "Durante los primeros 11 años de su carrera, Doug ocupó cargos de ventas y liderazgo de ventas en Pitney Bowes y Johnson and Johnson",
+            "bio": [
+                "Durante los primeros 11 años de su carrera, Doug ocupó cargos de ventas y liderazgo de ventas en Pitney Bowes y Johnson and Johnson.  Doug tiene más de 15 años de experiencia en liderazgo ejecutivo desarrollando equipos, aumentando ingresos y desarrollando relaciones duraderas con clientes, socios y colegas.",
+                "En Cisco Systems, Doug estuvo al frente de equipos de alto rendimiento que operan negocios de U$S130 millones, creó la primera Operación Civil Federal en Juniper Networks y la desarrolló hasta convertirla en un negocio de U$S40 millones, promovió el crecimiento de Tumbleweed Communications para posibilitar su adquisición por parte de Axway, Inc. y se desempeñó como ejecutivo en Fortress Technologies durante su exitosa venta a General Dynamics.",
+                "Doug se graduó con el título de licenciado [BA] en la Universidad de Wisconsin en 1987 y desde entonces continuó sus estudios, realizando Maestrías en Finanzas, Contabilidad y Administración. Doug participa en el American Council for Technology (ACT) [Consejo Estadounidense para la Tecnología] - Industry Advisory Council (IAC) [Consejo Asesor de la Industria], AFCEA y CBMC.",
+                "Algunos de los intereses de Doug son mirar y entrenar a sus cuatro hijos en lacrosse, básquetbol, golf y cross country.  A Doug también le gusta competir en triatlones y maratones con su esposa Mayra."
+            ],
             "social": [
                 {
-                    "url": "http://twitter.com",
-                    "name": "twitter"
-                },
-                {
-                    "url": "http://linkedin.com",
+                    "url": "https://www.linkedin.com/in/dougkrueger1",
                     "name": "linkedin"
                 },
                 {
-                    "url": "http://google.com",
-                    "name": "google-plus"
-                },
-                {
-                    "url": "mail@xsi.com",
+                    "url": "dkrueger@xsnet.com",
                     "name": "envelope"
                 }
             ]
         },
         {
-            "name":"Tod A.<br>Bone",
+            "name":"Todd<br>Bone",
             "cargo": "FUNDADOR Y PRESIDENTE",
             "img": "/images/team/profile-2.jpg",
-            "bio": "Desde 1990, Todd ha fundado cinco compañías en el sector de IT, incluyendo XS International, Inc., Max Commerce Inc., Renovo Group y AvarSYS. Cuenta con más de 25 años de experiencia en el desarrollo de compañías tecnológicas.",
+            "bio": [
+                "Desde 1990, Todd ha fundado cinco compañías en el sector de IT, incluyendo XS International, Inc., Max Commerce Inc., Renovo Group y AvarSYS. Cuenta con más de 25 años de experiencia en el desarrollo de compañías tecnológicas. Trabajó con clientes de los sectores público y privado, tanto en EE.UU. como en el exterior.",
+                "Entre sus habilidades podemos mencionar contrataciones con el Gobierno, asesoramiento técnico, informática de alto rendimiento, visualización y simulación por computadora, consolidación de servidores, servicios en la nube (Aplicaciones SaaS), desarrollo e implementación de portales de internet, administración de marketing en internet, programas y ejecutivos, aplicaciones y redes móviles, mantenimiento de software y hardware de servidores y almacenamiento.",
+                "Todd participa en una serie de organizaciones sin fines de lucro, incluyendo: The Entrepreneur’s Organization (12 años en el Consejo de Atlanta, ex presidente de Atlanta, Presidente de la Conferencia Regional “Nerve” 2012 y miembro del Consejo de la Región de la Costa Este); ASCDI (actual vicepresidente y miembro del directorio, presidente del Comité Legislativo); SIA (Comité Competitivo); Iniciativa de los Derechos de los Propietarios [Owners’ Rights Initiative]; y vicepresidente y miembro del directorio de la Coalición del Derecho Digital a Reparar [Digital Right to Repair Coalition]. Todd también es miembro de GIDEP y SAE.",
+                "Se graduó en la Universidad Estatal de Ohio en 1986 con el título de licenciado [Bachelor of Science] en Finanzas y realizó la Maestría Empresarial de 3 años de EO en el MIT. Además de pasar tiempo con su esposa y sus tres hijos, entre sus intereses se encuentran la vinicultura, calificar vinos argentinos, viajes internacionales, deportes y proyectos de arquitectura y remodelación del hogar."
+            ],
             "social": [
                 {
-                    "url": "http://twitter.com",
-                    "name": "twitter"
-                },
-                {
-                    "url": "http://linkedin.com",
+                    "url": "http://www.linkedin.com/in/toddbone",
                     "name": "linkedin"
                 },
                 {
-                    "url": "http://google.com",
-                    "name": "google-plus"
-                },
-                {
-                    "url": "mail@xsi.com",
+                    "url": "tbone@xsnet.com",
                     "name": "envelope"
                 }
             ]
@@ -53,46 +47,38 @@
             "name":"Harry<br>Carey",
             "cargo": "DIRECTOR DE NEGOCIOS ESTRATÉGICOS",
             "img": "/images/team/profile-3.jpg",
-            "bio": "Harry dedicó los últimos 30 años a especializarse en la integración de tecnologías en toda la ecuación empresarial con el fin de producir resultados económicos y organizacionales efectivos en diversos mercados verticales.",
+            "bio": [
+                "Harry dedicó los últimos 30 años a especializarse en la integración de tecnologías en toda la ecuación empresarial con el fin de producir resultados económicos y organizacionales efectivos en diversos mercados verticales. Dirigió con éxito importantes iniciativas de desarrollo de negocios en mercados informáticos comerciales, científicos, del gobierno federal e internacionales.",
+                "Su carrera incluye varios cargos ejecutivos y en desarrollo de negocios en GE, Honeywell, Data General, Concurrent Computer, Hitachi Data Systems, Clariion y System Integrators. También es un condecorado líder del pelotón de combate de Vietnam.",
+                "Harry se graduó con el título de licenciado [Bachelor of Science] en Educación de la Universidad de Norwich en Northfield, Vermont."
+            ],
             "social": [
                 {
-                    "url": "http://twitter.com",
-                    "name": "twitter"
-                },
-                {
-                    "url": "http://linkedin.com",
+                    "url": "http://www.linkedin.com/pub/harry-carey/89/74/406",
                     "name": "linkedin"
                 },
                 {
-                    "url": "http://google.com",
-                    "name": "google-plus"
-                },
-                {
-                    "url": "mail@xsi.com",
+                    "url": "hcarey@xsnet.com",
                     "name": "envelope"
                 }
             ]
         },
         {
             "name":"Daniel<br>Cagliero",
-            "cargo": "DIRECTOR COMERCIAL LATM",
+            "cargo": "DIRECTOR COMERCIAL LATAM",
             "img": "/images/team/profile-4.jpg",
-            "bio": "Daniel, con casi 30 años de experiencia laboral, posee una amplia gama de conocimientos y experiencia en desarrollo de negocios, marketing, ventas y asistencia técnica. Trabajó en muchas organizaciones de todo el mundo, incluidas Alcon Laboratories, Banco Rural, World Business Games, Meritent y Meritent International.",
+            "bio": [
+                "Daniel, con casi 30 años de experiencia laboral, posee una amplia gama de conocimientos y experiencia en desarrollo de negocios, marketing, ventas y asistencia técnica.  Trabajó en muchas organizaciones de todo el mundo, incluidas Alcon Laboratories, Banco Rural, World Business Games, Meritent y Meritent International.",
+                "Daniel estuvo al frente de equipos en el desarrollo de planes de marketing estratégico, aceleración de ventas y análisis de negocios, ente otros.  Participó en el lanzamiento exitoso de productos y campañas en la industria farmacéutica y financiera.  Sus especialidades incluyen negociaciones a nivel individual y grupal, análisis de beneficios y planificación estratégica.  Se desempeñó con éxito como líder de equipos de profesionales altamente capacitados, en el crecimiento de beneficios comerciales basados en el impacto del resultado final y en la implementación de automatización de la fuerza de ventas.",
+                "Daniel es trilingüe (español, inglés y portugués), y se graduó con el título de Licenciado en Sistemas de Información y Tecnología de la Universidad de Belgrano y de Licenciado en Educación Ejecutiva de la Universidad de Pennsylvania – The Wharton School."
+            ],
             "social": [
                 {
-                    "url": "http://twitter.com",
-                    "name": "twitter"
-                },
-                {
-                    "url": "http://linkedin.com",
+                    "url": "https://www.linkedin.com/in/danielcagliero",
                     "name": "linkedin"
                 },
                 {
-                    "url": "http://google.com",
-                    "name": "google-plus"
-                },
-                {
-                    "url": "mail@xsi.com",
+                    "url": "dcagliero@xsnet.com",
                     "name": "envelope"
                 }
             ]
@@ -101,22 +87,16 @@
             "name":"Ricardo<br>Bolo",
             "cargo": "DIRECTOR DE TECNOLOGÍA LATAM",
             "img": "/images/team/profile-5.jpg",
-            "bio": "Durante los primeros 11 años de su carrera, Doug ocupó cargos de ventas y liderazgo de ventas en Pitney Bowes y Johnson and Johnson",
+            "bio": [
+                "Desde 1984, tiene un firme compromiso con el mejoramiento de las habilidades comerciales para Atención al Cliente de IT tanto en el mercado corporativo como el federal gracias a su trabajo para NCR Corporation, con base en Argentina.",
+                "Dejó la compañía como Gerente de Atención al Cliente para continuar su carrera en Silicon Graphics Inc., donde fue responsable del Negocio de Atención al Cliente para la región Sur de América Latina en los mercados de Petróleo y Gas y Entretenimiento.",
+                "En 2002, Ricardo comenzó su propia compañía de IT con base en Buenos Aires, Argentina, dedicada a Ventas y Soporte de grandes compañías en la región Sur de América Latina.",
+                "Durante los 2 últimos años, Ricardo se ha dedicado de lleno al desarrollo del negocio de servicios ITAD en LATAM.",
+                "Ricardo se graduó con el título de licenciado en la Universidad CAECE, en Buenos Aires, Argentina."
+            ],
             "social": [
                 {
-                    "url": "http://twitter.com",
-                    "name": "twitter"
-                },
-                {
-                    "url": "http://linkedin.com",
-                    "name": "linkedin"
-                },
-                {
-                    "url": "http://google.com",
-                    "name": "google-plus"
-                },
-                {
-                    "url": "mail@xsi.com",
+                    "url": "rbolo@sgi.com.ar",
                     "name": "envelope"
                 }
             ]
@@ -125,72 +105,32 @@
             "name":"General<br>Mayor John<br>Madula",
             "cargo": "ASESOR",
             "img": "/images/team/profile-6.jpg",
-            "bio": "Durante los primeros 11 años de su carrera, Doug ocupó cargos de ventas y liderazgo de ventas en Pitney Bowes y Johnson and Johnson",
-            "social": [
-                {
-                    "url": "http://twitter.com",
-                    "name": "twitter"
-                },
-                {
-                    "url": "http://linkedin.com",
-                    "name": "linkedin"
-                },
-                {
-                    "url": "http://google.com",
-                    "name": "google-plus"
-                },
-                {
-                    "url": "mail@xsi.com",
-                    "name": "envelope"
-                }
+            "bio": [
+                "El General Mayor de la Fuerza Aérea Maluda se retiró en septiembre de 2009 después de 34 años en servicio.  Al momento de su retiro, el General Maluda era Director de Transformación y Estrategia del Ciberespacio, en la Oficina del Secretario de la Fuerza Aérea, y Director de Información.",
+                "En ese cargo, ideó la doctrina, estrategia y política para comunicaciones y actividades de información y se desempeñó como defensor funcional para 30.000 miembros del personal. Anteriormente, el General Maluda fue Vicecomandante, 8va Fuerza Aérea, Base de la Fuerza Aérea Barksdale, Louisiana. El General Maluda se alistó en la Fuerza Aérea en 1973 y recibió su grado de oficial en 1978 como un distinguido graduado del programa ROTC en la Universidad del Estado de Troy, Alabama.",
+                "El General Maluda también se graduó con el título de licenciado [Bachelor of Science] en Ingeniería Eléctrica en la Universidad de Auburn, realizó una Maestría en Administración de Sistemas en la Universidad del Sur de California, además de contar con una Certificación de Maestría en Dirección del American College of Corporate Directors [Colegio Estadounidense de Directores Corporativos].",
+                "Entre los aspectos más destacados de su carrera podemos mencionar su servicio en tres importantes comandos, con los comandos de combatientes unificados, un organismo de defensa, la Casa Blanca y el Estado Mayor de la Fuerza Aérea. La experiencia en el estado mayor del General Maluda incluye cargos en el Cuartel General de la Fuerza Aérea de EE.UU., Comando de Combate Aéreo, Fuerza Aérea de EE.UU. en Europa, Comando de Operaciones Especiales de la Fuerza Aérea, Comando Espacial de EE.UU. y la Agencia de Comunicaciones de la Casa Blanca.",
+                "Actualmente, el General Maluda se desempeña como miembro del Directorio de TELOS. También se desempeña como asesor del Distinguido Comité de Revisión del Instituto de Tecnología de la Fuerza Aérea."
             ]
         },
         {
             "name":"Mark<br>Tonnesen",
             "cargo": "ASESOR",
             "img": "/images/team/profile-7.jpg",
-            "bio": "Durante los primeros 11 años de su carrera, Doug ocupó cargos de ventas y liderazgo de ventas en Pitney Bowes y Johnson and Johnson",
-            "social": [
-                {
-                    "url": "http://twitter.com",
-                    "name": "twitter"
-                },
-                {
-                    "url": "http://linkedin.com",
-                    "name": "linkedin"
-                },
-                {
-                    "url": "http://google.com",
-                    "name": "google-plus"
-                },
-                {
-                    "url": "mail@xsi.com",
-                    "name": "envelope"
-                }
+            "bio": [
+                "CEO de MapMyID, una compañía tecnológica de comercio electrónico que permite a comerciantes y consumidores enviar obsequios, paquetes, etc., sin necesidad de una dirección de envío. Antes de ocupar ese cargo, fue recientemente Vicepresidente Senior y Director de Información en EA. Antes de EA, se desempeñó como Director de Información en McAfee, Logitech y Cisco. Sus esfuerzos facilitaron la huella cero del centro de datos en la prestación de servicios de IT para el sector empresarial.",
+                "Además, fue responsable de la plataforma de juegos online que presta servicios a 300 millones de jugadores por día. Sus conocimientos técnicos para el desarrollo, DevOps y servicios de producción a escala, las 24 hs., los 7 días de la semana para los consumidores fueron la clave del crecimiento de EA en los negocios online. Mark Tonnesen es un ejecutivo con experiencia en la transformación de las funciones de negocios y IT al ofrecer soluciones innovadoras claves para impulsar el crecimiento.",
+                "Durante sus diferentes roles de liderazgo, tuvo un buen desempeño en programas de negocios y arquitectura tecnológica a pequeña y gran escala. Sus esfuerzos facilitaron la huella cero del centro de datos en la prestación de servicios de IT para el sector empresarial. Sus conocimientos de negocios y sistemas permitieron obtener mejoras en las eficiencias de negocios y sistemas, mejoras en las competitividad y una mayor flexibilidad comercial."
             ]
         },
         {
             "name":"Dale W.<br>Malik",
             "cargo": "ASESOR",
             "img": "/images/team/profile-8.jpg",
-            "bio": "Daniel, con casi 30 años de experiencia laboral, posee una amplia gama de conocimientos y experiencia en desarrollo de negocios, marketing, ventas y asistencia técnica. Trabajó en muchas organizaciones de todo el mundo, incluidas Alcon Laboratories, Banco Rural, World Business Games, Meritent y Meritent International.",
-            "social": [
-                {
-                    "url": "http://twitter.com",
-                    "name": "twitter"
-                },
-                {
-                    "url": "http://linkedin.com",
-                    "name": "linkedin"
-                },
-                {
-                    "url": "http://google.com",
-                    "name": "google-plus"
-                },
-                {
-                    "url": "mail@xsi.com",
-                    "name": "envelope"
-                }
+            "bio": [
+                "El Sr. Malik como líder de la industria durante más de 25 años impulsó el desarrollo de productos para consumidores y comerciales de avanzada para Bell Laboratories, AT&T, BellSouth, Computer Music, y Link Technologies.",
+                "Posee más de 100 patentes en estos campos y estuvo al frente de la introducción de una amplia gama de productos y servicios en el mercado. A través de los años, ha sido reconocido como director de innovación y estrategia de BellSouth (hoy AT&T) y es tenido en cuenta para ofrecer soluciones creativas para los emprendimientos más desafiantes.",
+                "Graduado en el Manhattan College, el Sr. Malik obtuvo el título de licenciado [Bachelor] en Ingeniería Electrónica y recibió una beca de Posgrado para enseñar y estudiar para su posterior Maestría en diseño de sistemas informáticos."
             ]
         }
     ]

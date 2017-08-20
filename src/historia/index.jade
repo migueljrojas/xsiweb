@@ -9,8 +9,25 @@ block content
     main.historia
         section.historia__hero
             h1.historia__title= site.data.historia.title
+
         section.historia__body
             h2= site.data.historia.subtitle
+            
+        section.about__body
+            .container-fluid
+                each item in site.data.about.content
+                    if item.type == 'text'
+                    if item.type == 'video'
+                        .row.-large
+                            .about__video-wrapper
+                            .col-xs-24.col-sm-20.col-md-18.col-sm-offset-2.col-md-offset-3
+                                .row
+                                    .about__video-col.js-video
+                                        img.img-responsive(src=item.cont.placeholder)
+                                        .embed-responsive.embed-responsive-16by9
+                                            iframe.embed-responsive-item(allowfullscreen)
+                                            
+        section.historia__body                
             .container
                 each item, index in site.data.historia.moments
                     .row

@@ -65,6 +65,25 @@
                 "type": "email",
                 "label": "E-Mail *",
                 "name": "email"
+            },
+            {
+                "type": "select",
+                "label": "País *",
+                "name": "pais",
+                "options": [
+                    {
+                        "name": "Pais 1",
+                        "val": "pais-1"
+                    },
+                    {
+                        "name": "País 2",
+                        "val": "pais-2"
+                    },
+                    {
+                        "name": "País 3",
+                        "val": "pais-3"
+                    }
+                ]
             }
         ]
     }

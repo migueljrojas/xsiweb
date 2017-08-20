@@ -7,7 +7,7 @@
         color:$white;
 
         @include breakpoint(md) {
-            padding: 12% 0 20%;
+            padding: 7% 0 14%;
         }
 
         .container {
@@ -36,8 +36,13 @@
         font-size: 24px;
 
         @include breakpoint(sm){
-            font-size: 36px;
+            font-size: 48px;
+            margin-bottom: 80px;
         }
+    }
+
+    &__subtitle {
+        color:$blue;
     }
 
     &__body {
@@ -47,20 +52,28 @@
         position: relative;
 
         @include breakpoint(sm){
-            padding: 12.5% 0 6%;
-        }
-
-        h2 {
-            color:$textDark;
-            font-size:24px;
-            font-family: $mainFont;
-            margin-bottom: $base;
+            padding: 20% 0 6%;
         }
 
         h3 {
+            color:$textDark;
+            font-size:21px;
+            font-family: $mainFont;
+            margin-bottom: $base;
+
+            @include breakpoint(md){
+                font-size:28px;
+            }
+        }
+
+        h4 {
             color: $blue;
             font-family: $mainFont;
             font-size:18px;
+
+            @include breakpoint(md){
+                font-size:24px;
+            }
         }
 
         p{
@@ -88,9 +101,9 @@
 
     &__character {
         position: absolute;
-        right:20%;
+        right:10%;
         top:7%;
-        width:18%;
+        width:25%;
         z-index:2;
 
         @include breakpoint(xs){
@@ -122,7 +135,7 @@
         position: absolute;
         left:0;
         right:0;
-        top:-15%;
+        top:-10%;
         z-index:5;
     }
 }

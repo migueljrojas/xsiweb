@@ -1,39 +1,32 @@
 {
   "items1": [
-      {
-          "name": "Homepage",
-          "url": "/"
-      },
+
       {
           "name": "Mantemiento",
-          "url": "/mantenimiento"
+          "url": "/service-tpm"
       },
       {
           "name": "Itad",
           "url": "/service-itad"
       },
       {
-          "name": "Servicios",
-          "url": "/service-tpm"
+          "name": "Sobre XSi",
+          "url": "/about"
       }
   ],
 
   "items2": [
       {
-          "name": "Sobre XSi",
-          "url": "/about"
-      },
-      {
-          "name": "Noticias",
+          "name": "Novedades",
           "url": "#"
       },
       {
-          "name": "Blog",
-          "url": "#"
+          "name": "Prensa y Media",
+          "url": "/gartner"
       },
       {
           "name": "Contacto",
-          "url": "#"
+          "url": "/contacto"
       }
   ],
 

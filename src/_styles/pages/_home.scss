@@ -96,15 +96,18 @@
             @include breakpoint(md){
                 width: 40%;
                 top: 15%;
+                left: 50%;
+                transform: translateX(-390px);
             }
 
             @include breakpoint(lg){
                 width: 30%;
+                transform: translateX(-473px);
             }
 
             h2 {
                 @include breakpoint(md){
-                    font-size: 60px;
+                    font-size: 48px;
                 }
             }
 
@@ -113,6 +116,12 @@
                 margin-bottom: 20px;
             }
         }
+    }
+
+    .temp-title {
+        color: $blue;
+        text-align: center;
+        margin-top: $base*10;
     }
 
     &__calculator {
@@ -183,7 +192,7 @@
             position: relative;
 
             @include breakpoint(md){
-                padding: 0 0 31.5% 0;
+                padding: 0 0 32.5% 0;
             }
 
             img {
@@ -192,6 +201,14 @@
               position: absolute;
               top:0;
               left:0;
+              transition: all .5s $easing;
+            }
+
+            &.-playback {
+                img {
+                    opacity: 0;
+                    pointer-events: none;
+                }
             }
         }
 
@@ -240,9 +257,18 @@
           display: block;
           padding-top: $base/2;
           overflow: hidden;
+          transition: all .5s $easing;
+          opacity: 1;
+          position: relative;
 
           @include breakpoint(sm){
               overflow: visible;
+          }
+
+          &.-hidden {
+              opacity:0;
+              pointer-events: none;
+              position: absolute;
           }
         }
 
@@ -265,6 +291,14 @@
                 .soyxsi__data {
                     padding-top: 60px;
                     transform: translateX(-55%);
+                }
+            }
+
+            &.-hidden {
+                top: 300px;
+                @include breakpoint(md){
+                    left:50%;
+                    top:initial;
                 }
             }
         }
@@ -308,7 +342,7 @@
           line-height: 40px;
           font-family: $mainFont;
             @include breakpoint (md) {
-              font-size: 60px;
+              font-size: 48px;
               line-height: 60px;
               width:300px;
             }
@@ -322,7 +356,7 @@
           display: inline-block;
 
             @include breakpoint (md) {
-              font-size: 60px;
+              font-size: 48px;
               line-height: 60px;
               width:300px;
               text-align: right;
@@ -337,13 +371,13 @@
           font-weight: bold;
           line-height: 18px;
           max-width: 300px;
-          padding: 5px 25px;
+          padding: 5px 10px;
           border: 1px solid $lightGray;
           border-radius: 8px;
           text-align: center;
           text-transform: uppercase;
           transition: all $duration $easingLight;
-          margin-top: 20px;
+          margin: 20px 0;
           cursor: pointer;
 
           &:hover{
@@ -369,13 +403,26 @@
                 }
             }
             .button__soy {
-                transform: translateX(-50%);
+                @include breakpoint (sm) {
+                    transform: translateX(-50%);
+                }
+            }
+
+            opacity:0;
+            pointer-events: none;
+            transition: all .5s $easing;
+            position: absolute;
+
+            &.-shown {
+                opacity:1;
+                pointer-events: all;
+                position: relative;
             }
         }
 
 
         .finanzas-open {
-            display: none;
+            display: flex;
             padding-top: $base/2;
               .finanzas__title {
                 text-align: center;
@@ -384,7 +431,7 @@
                 font-size: 28px;
                 @include breakpoint(sm){
                     width:100%;
-                    font-size: 60px;
+                    font-size: 48px;
                     transform: translateX(-60px);
                 }
               }
@@ -410,7 +457,7 @@
 
               .soyxsi__data {
                   @include breakpoint(sm){
-                      left:50%;
+                      left:40%;
                       transform: translateX(-50%);
                       position: absolute;
                       top:60px;
@@ -428,7 +475,7 @@
         }
 
         .it-open {
-            display: none;
+            display: flex;
             padding-top: $base/2;
               .it__title {
                 text-align: center;
@@ -436,8 +483,8 @@
                 font-family: $mainFont;
                 font-size: 28px;
                 @include breakpoint(sm){
-                    font-size: 60px;
-                    width: 100%;
+                    font-size: 48px;
+                    width: 110%;
                     margin-left: -40px;
                 }
               }
@@ -523,7 +570,7 @@
         height: 680px;
 
         @include breakpoint(sm) {
-          height: 400px;
+          height: 380px;
           overflow: hidden;
 
 
@@ -532,7 +579,7 @@
         .container {
 
             @include breakpoint(sm) {
-                height: 400px;
+                height: 380px;
                 overflow: hidden;
             }
 
@@ -554,6 +601,8 @@
 
             img {
                 margin: 0 auto;
+                width: 150px;
+                //max-width: 200px;
             }
         }
 
@@ -570,7 +619,6 @@
                 line-height: 25px;
                 margin-top: 20px;
                 @include breakpoint(md) {
-                    padding-right: 100px;
                     margin-top: 0;
                 }
             }
@@ -604,6 +652,7 @@
           img {
               width: 120px;
               height: auto;
+              filter:grayscale(100%);
           }
       }
 

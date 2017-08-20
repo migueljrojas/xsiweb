@@ -2,9 +2,10 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>XSI Web</title>
+  <title>XSI Latam</title>
   <meta name="description" content="XSI website">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
   <link rel="stylesheet" href="../styles/main.css">
 </head>
 <body>
@@ -31,46 +32,47 @@
         </g>
     </symbol>
   </svg>
-  <header class="header">
+  <header id="header" class="header">
     <div class="header__hamburguer"><span></span><span></span><span></span></div>
     <div class="header__logo"><a href="/"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg>        </a></div>
     <nav class="header__nav">
       <ul class="header__menu">
-        <li><a href="/">Homepage</a>
+        <li><a href="/">Home</a>
         </li>
-        <li><a href="#">Mantemiento</a>
+        <li><a href="/service-tpm">Mantenimiento</a>
           <ul class="header__submenu">
             <li><a href="/mantenimiento">Marcas con Soporte</a></li>
-            <li><a href="#">Modelos de Servicio</a></li>
-            <li><a href="#">Cómo Abandonar al Fabricante</a></li>
-            <li><a href="#">Qué dicen los especialistas</a></li>
+            <li><a href="/analisis">Modelos de Servicio</a></li>
+            <li><a href="/abandonar-fabricante">Cómo Abandonar al Fabricante</a></li>
+            <li><a href="/partners">Partners</a></li>
           </ul>
         </li>
         <li><a href="/service-itad">Itad</a>
         </li>
-        <li><a href="/service-tpm">Servicios</a>
-        </li>
-        <li><a href="#">Sobre XSi</a>
+        <li><a href="#">Nosotros</a>
           <ul class="header__submenu">
             <li><a href="/about">Acerca de XSi</a></li>
-            <li><a href="#">Misión</a></li>
+            <li><a href="/mision">Misión</a></li>
             <li><a href="/team">Equipo</a></li>
             <li><a href="/historia">Historia</a></li>
-            <li><a href="#">Reconocimientos</a></li>
           </ul>
         </li>
-        <li><a href="#">Noticias</a>
+        <li><a href="#">Novedades</a>
         </li>
-        <li><a href="#">Blog</a>
+        <li><a href="#">Prensa</a>
+          <ul class="header__submenu">
+            <li><a href="/gartner">Gartner</a></li>
+            <li><a href="/blueprints">Blueprints</a></li>
+            <li><a href="/whitepapers">Whitepapers</a></li>
+          </ul>
         </li>
-        <li><a href="#">Contacto</a>
+        <li><a href="/contacto">Contacto</a>
         </li>
       </ul>
       <ul class="header__social">
-        <li><a href="http://facebook.com"><i class="fa fa-facebook"></i></a></li>
-        <li><a href="http://twitter.com"><i class="fa fa-twitter"></i></a></li>
-        <li><a href="http://google.com"><i class="fa fa-google-plus"></i></a></li>
-        <li><a href="http://linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="https://www.facebook.com/XSiLatam/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://twitter.com/XSiLatam" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://www.linkedin.com/company-beta/87228/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
       </ul>
     </nav>
   </header>
@@ -78,9 +80,10 @@
     <section class="gartner__hero">
       <div class="container">
         <div class="row">
-          <div class="col-xs-24 col-sm-20 col-md-16 col-lg-13 gartner__data">
-            <h1 class="gartner__title">XS International (XSi): Pioneros en Mantenimiento Altlernativo</h1>
-          </div><img src="/images/analisis/character.png" class="gartner__character">
+          <div class="col-xs-24 col-sm-20 col-sm-offset-1 col-md-16 col-lg-13 gartner__data">
+            <h1 class="gartner__title">XS International:<br>"Pioneros en Mantenimiento Alternativo"</h1>
+          </div>
+          <div class="gartner__character">           <img src="/images/analisis/character.png" class="_body"><img src="/images/analisis/arm.png" class="_arm"></div>
         </div>
       </div>
     </section>
@@ -88,7 +91,7 @@
       <div class="gartner__form">
         <div class="container">
           <div class="row">
-            <div class="col-xs-24 col-sm-20 col-sm-offset-2 wow fadeInRightBig">
+            <div class="col-xs-24 col-sm-20 col-sm-offset-2 col-md-16 col-md-offset-4 wow fadeInRightBig">
               <form method="POST" class="contact-form">
                 <h3 class="contact-form__title">Descargue los casos de estudio ahora</h3>
                 <div class="row">
@@ -109,19 +112,15 @@
                     <input type="text" input.attrs="input.attrs"/>
                   </div>
                   <div class="contact-form__group col-xs-24 col-sm-12">
-                    <label for="id-dispositivo" class="-select"><span>Dispositivo en Uso *</span></label>
-                    <select value="input.name" name="dispositivo" id="id-dispositivo" input.attrs="input.attrs">
-                      <option value="item-val">Tablet</option>
-                      <option value="item-val">Teléfonos Celulares</option>
-                      <option value="item-val">Computadora</option>
+                    <label for="id-pais" class="-select"><span>País *</span></label>
+                    <select value="input.name" name="pais" id="id-pais" input.attrs="input.attrs">
+                      <option value="item-val">Pais 1</option>
+                      <option value="item-val">País 2</option>
+                      <option value="item-val">País 3</option>
                     </select>
                   </div>
-                  <div class="contact-form__group col-xs-24 col-sm-12">
-                    <label for="id-comment">Comentario</label>
-                    <textarea value="input.name" name="comment" id="id-comment"></textarea>
-                  </div>
                   <div class="contact-form__group col-xs-24">
-                    <input type="submit" value="Enviar" class="_button -submit -white"/>
+                    <input type="submit" value="Descargar" class="_button -submit -white"/>
                   </div>
                 </div>
               </form>
@@ -159,24 +158,23 @@
       </div>
     </section>
   </main>
-  <footer class="footer">
+  <footer id="footer" class="footer"><a href="#header" class="gotop -hidden">Ir arriba
+      <div class="fa fa-chevron-up"></div></a>
     <div class="container">
       <div class="footer__top row">
         <div class="footer__logo col-xs-24 col-sm-8 col-md-8"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logoOriginal"></use></svg></div>
         <div class="footer__items1 col-xs-12 col-sm-4 col-md-4">
           <ul class="list__items">
-            <li><a href="/">Homepage</a></li>
-            <li><a href="/mantenimiento">Mantemiento</a></li>
+            <li><a href="/service-tpm">Mantemiento</a></li>
             <li><a href="/service-itad">Itad</a></li>
-            <li><a href="/service-tpm">Servicios</a></li>
+            <li><a href="/about">Sobre XSi</a></li>
           </ul>
         </div>
         <div class="footer__items2 col-xs-12 col-sm-4 col-md-4">
           <ul class="list__items">
-            <li><a href="/about">Sobre XSi</a></li>
-            <li><a href="#">Noticias</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Novedades</a></li>
+            <li><a href="/gartner">Prensa y Media</a></li>
+            <li><a href="/contacto">Contacto</a></li>
           </ul>
         </div>
         <div class="footer__newsletter col-xs-24 col-sm-24 col-md-8">
@@ -186,10 +184,9 @@
             <input type="submit" value="send">
           </form>
           <ul class="header__social">
-            <li><a href="http://facebook.com"><i class="fa fa-facebook">                 </i></a></li>
-            <li><a href="http://twitter.com"><i class="fa fa-twitter">                 </i></a></li>
-            <li><a href="http://google.com"><i class="fa fa-google-plus">                 </i></a></li>
-            <li><a href="http://linkedin.com"><i class="fa fa-linkedin">                 </i></a></li>
+            <li><a href="https://www.facebook.com/XSiLatam/" target="_blank"><i class="fa fa-facebook">                 </i></a></li>
+            <li><a href="https://twitter.com/XSiLatam" target="_blank"><i class="fa fa-twitter">                 </i></a></li>
+            <li><a href="https://www.linkedin.com/company-beta/87228/" target="_blank"><i class="fa fa-linkedin">                 </i></a></li>
           </ul>
         </div>
       </div>

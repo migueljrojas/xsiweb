@@ -1,3 +1,9 @@
+@media (-moz-touch-enabled: 1), (pointer:coarse) {
+    .header__menu > li:nth-child(2) > a {
+        pointer-events: none;
+    }
+}
+
 .header{
 
     $p: &;
@@ -115,6 +121,7 @@
         & > li{
             border-bottom: 1px dotted rgba(255,255,255,.5);
             position: relative;
+            transition: all $duration $easing;
             @include breakpoint(md) {
                 border:none;
             }
@@ -130,6 +137,11 @@
                         transform: translate3d(0, 0, 0);
                     }
                 }
+            }
+
+            &.-active{
+                border-top: 3px solid $white;
+                margin-top: -3px;
             }
         }
 
@@ -163,7 +175,7 @@
                 left:50%;
                 opacity: 0;
                 pointer-events: none;
-                transform: translate3d(-50%, -100%, 0);
+                transform: translate3d(-50%, -200%, 0);
                 transition: transform .6s $easing, opacity .4s $easing;
 
                 li:not(:last-child){

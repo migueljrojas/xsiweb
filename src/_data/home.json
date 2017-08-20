@@ -5,8 +5,8 @@
             "desc": "Conozca el servicio que todas las empresas con tecnología deberían considerar. Reciclaje, restauración y re-comercialización de activos de IT.",
             "img": "/images/home/hero-slide-1.png",
             "btn": {
-                "url": "#",
-                "text": "Me interesa"
+                "url": "/service-itad",
+                "text": "Ver más"
             }
         },
         {
@@ -14,8 +14,8 @@
             "desc": "Mejoramos el SLA de soporte de fabricantes y mejoramos sus costos hasta en un 50%. Cisco, Juniper, Brocade, HP y muchas marcas más.",
             "img": "/images/home/hero-slide-2.png",
             "btn": {
-                "url": "#",
-                "text": "Me interesa"
+                "url": "/service-tpm",
+                "text": "Ver más"
             }
         }
     ],
@@ -66,7 +66,7 @@
       {
         "icono" : "images/home/trayectoria.png",
         "titulo": "trayectoria",
-        "texto": "26 años en la vanguardia de la gestión de IT. Somos pioneros en ITAD y Mantemiento alternativo."
+        "texto": "26 años en la vanguardia de la gestión de IT. Somos pioneros en ITAD y Mantenimiento alternativo."
       },
       {
         "icono" : "images/home/respaldo.png",
@@ -79,19 +79,23 @@
   "cta": {
     "text": "Le ofrecemos un ANÁLISIS GRATUITO de ahorro",
     "btn": {
-        "url":"#",
+        "url":"/analisis",
         "text": "Me interesa"
     }
   },
 
   "sliderxsi": [
       {
-          "text" : "La gran experiencia de XS Internacional a nivel federal y el hecho de trabajar a través de GSA Schedule [Programa de Administración de Servicios Generales de EE.UU] realmente ayudó a la gente de compras, comentó Mike Sellers, Gerente de Operaciones de TI para la División del Laboratirio Marino Hollings de NOAA [Administración Nacional Oceánica y Atmosférica]. Ellos tienen sus reglas que XS Internacional respeta y nos facilita las cosas.",
+          "text" : "\"El proceso en las dos ubicaciones fue excepcional. Tanto el cliente como Access Systems quedaron muy satisfechos con la efectividad del trabajo. En primer lugar, el subcontratista pudo completar el trabajo en tiempo récord. El cliente [Departamento del Tesoro de EE.UU.] quedó realmente más que satisfecho...\"",
+          "img" : "https://www.xsnet.com/hs-fs/hub/64787/file-1800276257-jpg/images/SimplexCore/Access-sytems-logo.jpg"
+      },
+      {
+          "text" : "\"La gran experiencia de XS Internacional a nivel federal y el hecho de trabajar a través de GSA Schedule [Programa de Administración de Servicios Generales de EE.UU] realmente ayudó a la gente de compras, comentó Mike Sellers, Gerente de Operaciones de TI para la División del Laboratirio Marino Hollings de NOAA [Administración Nacional Oceánica y Atmosférica]. Ellos tienen sus reglas que XS Internacional respeta y nos facilita las cosas.\"",
           "img" : "images/home/noaa.png"
       },
       {
-          "text" : "La gran experiencia de XS Internacional a nivel federal y el hecho de trabajar a través de GSA Schedule [Programa de Administración de Servicios Generales de EE.UU] realmente ayudó a la gente de compras, comentó Mike Sellers, Gerente de Operaciones de TI para la División del Laboratirio Marino Hollings de NOAA [Administración Nacional Oceánica y Atmosférica]. Ellos tienen sus reglas que XS Internacional respeta y nos facilita las cosas.",
-          "img" : "images/home/noaa.png"
+          "text" : "\"Ayer recibimos en Hong Kong todos los servidores del centro de datos de Virginia Equinix. ¡Todo funcionó después de instalarlo en el centro de datos de Hong Kong y ustedes hicieron un trabajo excepcional para Gamania! Se esforzaron mucho en nuestro proyecto y nos alegra haber trabajado con ustedes. Trabajaron muchísimo y entregaron todo antes de lo programado. Gracias por apoyar a Gamania. Fue un placer trabajar con ustedes.\"",
+          "img" : "https://www.xsnet.com/hs-fs/hub/64787/file-2131270110-png/images/Gamania_Digital.png?t=1499272851962&width=90&name=Gamania_Digital.png"
       }
   ],
 

@@ -20,12 +20,15 @@ block content
                             .team__member__data
                                 h2.team__member__name!= item.name
                                 span.team__member__job= item.cargo
-                                p.team__member__bio= item.bio
+                                .team__member__bio__wrapper
+                                    each par in item.bio
+                                        p.team__member__bio= par
                                 ul.team__member__social
-                                    each red in item.social
-                                        li
-                                            a(href=red.url, target="_blank")
-                                                i(class="fa fa-#{red.name}")
+                                    if item.social
+                                        each red in item.social
+                                            li
+                                                a(href=red.url, target="_blank")
+                                                    i(class="fa fa-#{red.name}")
                             .team__member__btn-close
                                 span
                                 span

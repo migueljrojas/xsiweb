@@ -83,4 +83,11 @@
             font-size: 50px;
         }
     }
+
+    &__subtitle {
+        color:$textLight;
+        font-size:21px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
 }

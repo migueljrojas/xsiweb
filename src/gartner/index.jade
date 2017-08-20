@@ -10,17 +10,19 @@ block content
         section.gartner__hero
             .container
                 .row
-                    .col-xs-24.col-sm-20.col-md-16.col-lg-13.gartner__data
-                        h1.gartner__title= site.data.gartner.title
-                    img.gartner__character(src=site.data.analisis.character)
+                    .col-xs-24.col-sm-20.col-sm-offset-1.col-md-16.col-lg-13.gartner__data
+                        h1.gartner__title!= site.data.gartner.title
+                    .gartner__character            
+                        img._body(src="/images/analisis/character.png")
+                        img._arm(src="/images/analisis/arm.png")
                       
       
         section.gartner__body
             .gartner__form
                 .container
                     .row
-                        .col-xs-24.col-sm-20.col-sm-offset-2.wow.fadeInRightBig
-                            +contact-form(site.data.gartner.form)
+                        .col-xs-24.col-sm-20.col-sm-offset-2.col-md-16.col-md-offset-4.wow.fadeInRightBig
+                            +contact-form(site.data.gartner.form, 'Descargar')
             .container
                 .row
                     .col-xs-24.col-sm-18.col-sm-offset-3.gartner__data

@@ -1,7 +1,7 @@
 {
-    "title": "Programas de canales",
+    "title": "Programas de partners",
     "subtitle": "Programa de partners",
-    "desc": "Forma parte de nuestro grupo de asociados.",
+    "desc": "Forme parte de nuestro programa de asociados y permita que sus clientes se beneficien de las ventajas del Mantenimiento Alternativo y de ITAD.",
     "content": [
         {
             "type": "text",
@@ -51,13 +51,11 @@
     "sidebar": {
         "head": {
             "title": "Channel Program Contáctenos",
-            "person": "Nick Mann",
-            "cargo": "Channel Manager",
-            "phone": "Phone: 678.537.4107",
-            "email": "Email: sales@xsnet.com"
+            "person": "Pablo Santos",
+            "email": "Email: psantos@xsnet.com"
         },
         "form":{
-            "title": "Contacta con el departamento de asociados",
+            "title": "Contacta con el Departamento de Asociados!",
             "inputs":[
                 {
                     "type": "text",
@@ -76,28 +74,8 @@
                 },
                 {
                     "type": "text",
-                    "label": "Agencia *",
-                    "name": "agencia"
-                },
-                {
-                    "type": "select",
-                    "label": "¿Cuál es la naturaleza de su solicitud? *",
-                    "name": "pais",
-                    "placeholder": "Selecciones una",
-                    "options": [
-                        {
-                            "name": "Opción 1",
-                            "val": "opt-1"
-                        },
-                        {
-                            "name": "Opción 2",
-                            "val": "opt-2"
-                        },
-                        {
-                            "name": "opción 3",
-                            "val": "opt-3"
-                        }
-                    ]
+                    "label": "Empresa *",
+                    "name": "empresa"
                 },
                 {
                     "type": "textarea",

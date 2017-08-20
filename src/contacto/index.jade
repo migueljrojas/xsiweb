@@ -1,0 +1,27 @@
+extends ../_layouts/base
+include ../_modules/contact-form/contact-form
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../'
+
+block content
+    main.gartner
+        section.gartner__hero
+            .container
+                .row
+                    .col-xs-24.col-sm-20.col-sm-offset-1.col-md-16.col-lg-13.gartner__data
+                        h1.gartner__title!= site.data.contacto.title
+                    .gartner__character            
+                        img._body(src="/images/analisis/character.png")
+                        img._arm(src="/images/analisis/arm.png")
+                      
+      
+        section.gartner__body
+            .gartner__form
+                .container
+                    .row
+                        .col-xs-24.col-sm-20.col-sm-offset-2.col-md-16.col-md-offset-4.wow.fadeInRightBig
+                            +contact-form(site.data.contacto.form, 'Enviar')
+
+                                      

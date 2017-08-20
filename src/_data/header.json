@@ -1,11 +1,11 @@
 [
     {
-        "name":"Homepage",
+        "name":"Home",
         "url":"/"
     },
     {
-        "name":"Mantemiento",
-        "url":"#",
+        "name":"Mantenimiento",
+        "url":"/service-tpm",
         "submenu": [
             {
                 "name":"Marcas con Soporte",
@@ -13,15 +13,15 @@
             },
             {
                 "name":"Modelos de Servicio",
-                "url":"#"
+                "url":"/analisis"
             },
             {
                 "name":"Cómo Abandonar al Fabricante",
-                "url":"#"
+                "url":"/abandonar-fabricante"
             },
             {
-                "name":"Qué dicen los especialistas",
-                "url":"#"
+                "name":"Partners",
+                "url":"/partners"
             }
         ]
     },
@@ -30,11 +30,7 @@
         "url":"/service-itad"
     },
     {
-        "name":"Servicios",
-        "url":"/service-tpm"
-    },
-    {
-        "name":"Sobre XSi",
+        "name":"Nosotros",
         "url":"#",
         "submenu": [
             {
@@ -43,7 +39,7 @@
             },
             {
                 "name":"Misión",
-                "url":"#"
+                "url":"/mision"
             },
             {
                 "name":"Equipo",
@@ -52,23 +48,33 @@
             {
                 "name":"Historia",
                 "url":"/historia"
-            },
-            {
-                "name": "Reconocimientos",
-                "url": "#"
             }
         ]
     },
     {
-        "name":"Noticias",
+        "name":"Novedades",
         "url":"#"
     },
     {
-        "name":"Blog",
-        "url":"#"
+        "name":"Prensa",
+        "url":"#",
+        "submenu": [
+            {
+                "name":"Gartner",
+                "url":"/gartner"
+            },
+            {
+                "name":"Blueprints",
+                "url":"/blueprints"
+            },
+            {
+                "name":"Whitepapers",
+                "url":"/whitepapers"
+            }
+        ]
     },
     {
         "name":"Contacto",
-        "url":"#"
+        "url":"/contacto"
     }
 ]

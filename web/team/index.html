@@ -2,9 +2,10 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>XSI Web</title>
+  <title>XSI Latam</title>
   <meta name="description" content="XSI website">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
   <link rel="stylesheet" href="../styles/main.css">
 </head>
 <body>
@@ -31,46 +32,47 @@
         </g>
     </symbol>
   </svg>
-  <header class="header">
+  <header id="header" class="header">
     <div class="header__hamburguer"><span></span><span></span><span></span></div>
     <div class="header__logo"><a href="/"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg>        </a></div>
     <nav class="header__nav">
       <ul class="header__menu">
-        <li><a href="/">Homepage</a>
+        <li><a href="/">Home</a>
         </li>
-        <li><a href="#">Mantemiento</a>
+        <li><a href="/service-tpm">Mantenimiento</a>
           <ul class="header__submenu">
             <li><a href="/mantenimiento">Marcas con Soporte</a></li>
-            <li><a href="#">Modelos de Servicio</a></li>
-            <li><a href="#">Cómo Abandonar al Fabricante</a></li>
-            <li><a href="#">Qué dicen los especialistas</a></li>
+            <li><a href="/analisis">Modelos de Servicio</a></li>
+            <li><a href="/abandonar-fabricante">Cómo Abandonar al Fabricante</a></li>
+            <li><a href="/partners">Partners</a></li>
           </ul>
         </li>
         <li><a href="/service-itad">Itad</a>
         </li>
-        <li><a href="/service-tpm">Servicios</a>
-        </li>
-        <li><a href="#">Sobre XSi</a>
+        <li><a href="#">Nosotros</a>
           <ul class="header__submenu">
             <li><a href="/about">Acerca de XSi</a></li>
-            <li><a href="#">Misión</a></li>
+            <li><a href="/mision">Misión</a></li>
             <li><a href="/team">Equipo</a></li>
             <li><a href="/historia">Historia</a></li>
-            <li><a href="#">Reconocimientos</a></li>
           </ul>
         </li>
-        <li><a href="#">Noticias</a>
+        <li><a href="#">Novedades</a>
         </li>
-        <li><a href="#">Blog</a>
+        <li><a href="#">Prensa</a>
+          <ul class="header__submenu">
+            <li><a href="/gartner">Gartner</a></li>
+            <li><a href="/blueprints">Blueprints</a></li>
+            <li><a href="/whitepapers">Whitepapers</a></li>
+          </ul>
         </li>
-        <li><a href="#">Contacto</a>
+        <li><a href="/contacto">Contacto</a>
         </li>
       </ul>
       <ul class="header__social">
-        <li><a href="http://facebook.com"><i class="fa fa-facebook"></i></a></li>
-        <li><a href="http://twitter.com"><i class="fa fa-twitter"></i></a></li>
-        <li><a href="http://google.com"><i class="fa fa-google-plus"></i></a></li>
-        <li><a href="http://linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="https://www.facebook.com/XSiLatam/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://twitter.com/XSiLatam" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://www.linkedin.com/company-beta/87228/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
       </ul>
     </nav>
   </header>
@@ -86,12 +88,15 @@
             <div class="team__member__img"><img src="/images/team/profile-1.jpg"></div>
             <div class="team__member__data">
               <h2 class="team__member__name">Doug<br>Krueger</h2><span class="team__member__job">CEO</span>
-              <p class="team__member__bio">Durante los primeros 11 años de su carrera, Doug ocupó cargos de ventas y liderazgo de ventas en Pitney Bowes y Johnson and Johnson</p>
+              <div class="team__member__bio__wrapper">
+                <p class="team__member__bio">Durante los primeros 11 años de su carrera, Doug ocupó cargos de ventas y liderazgo de ventas en Pitney Bowes y Johnson and Johnson.  Doug tiene más de 15 años de experiencia en liderazgo ejecutivo desarrollando equipos, aumentando ingresos y desarrollando relaciones duraderas con clientes, socios y colegas.</p>
+                <p class="team__member__bio">En Cisco Systems, Doug estuvo al frente de equipos de alto rendimiento que operan negocios de U$S130 millones, creó la primera Operación Civil Federal en Juniper Networks y la desarrolló hasta convertirla en un negocio de U$S40 millones, promovió el crecimiento de Tumbleweed Communications para posibilitar su adquisición por parte de Axway, Inc. y se desempeñó como ejecutivo en Fortress Technologies durante su exitosa venta a General Dynamics.</p>
+                <p class="team__member__bio">Doug se graduó con el título de licenciado [BA] en la Universidad de Wisconsin en 1987 y desde entonces continuó sus estudios, realizando Maestrías en Finanzas, Contabilidad y Administración. Doug participa en el American Council for Technology (ACT) [Consejo Estadounidense para la Tecnología] - Industry Advisory Council (IAC) [Consejo Asesor de la Industria], AFCEA y CBMC.</p>
+                <p class="team__member__bio">Algunos de los intereses de Doug son mirar y entrenar a sus cuatro hijos en lacrosse, básquetbol, golf y cross country.  A Doug también le gusta competir en triatlones y maratones con su esposa Mayra.</p>
+              </div>
               <ul class="team__member__social">
-                <li><a href="http://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="http://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="http://google.com" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                <li><a href="mail@xsi.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/dougkrueger1" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="dkrueger@xsnet.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
               </ul>
             </div>
             <div class="team__member__btn-close"><span></span><span></span></div>
@@ -100,13 +105,16 @@
             <div class="team__member__overlay"><span>Ver perfil completo</span></div>
             <div class="team__member__img"><img src="/images/team/profile-2.jpg"></div>
             <div class="team__member__data">
-              <h2 class="team__member__name">Tod A.<br>Bone</h2><span class="team__member__job">FUNDADOR Y PRESIDENTE</span>
-              <p class="team__member__bio">Desde 1990, Todd ha fundado cinco compañías en el sector de IT, incluyendo XS International, Inc., Max Commerce Inc., Renovo Group y AvarSYS. Cuenta con más de 25 años de experiencia en el desarrollo de compañías tecnológicas.</p>
+              <h2 class="team__member__name">Todd<br>Bone</h2><span class="team__member__job">FUNDADOR Y PRESIDENTE</span>
+              <div class="team__member__bio__wrapper">
+                <p class="team__member__bio">Desde 1990, Todd ha fundado cinco compañías en el sector de IT, incluyendo XS International, Inc., Max Commerce Inc., Renovo Group y AvarSYS. Cuenta con más de 25 años de experiencia en el desarrollo de compañías tecnológicas. Trabajó con clientes de los sectores público y privado, tanto en EE.UU. como en el exterior.</p>
+                <p class="team__member__bio">Entre sus habilidades podemos mencionar contrataciones con el Gobierno, asesoramiento técnico, informática de alto rendimiento, visualización y simulación por computadora, consolidación de servidores, servicios en la nube (Aplicaciones SaaS), desarrollo e implementación de portales de internet, administración de marketing en internet, programas y ejecutivos, aplicaciones y redes móviles, mantenimiento de software y hardware de servidores y almacenamiento.</p>
+                <p class="team__member__bio">Todd participa en una serie de organizaciones sin fines de lucro, incluyendo: The Entrepreneur’s Organization (12 años en el Consejo de Atlanta, ex presidente de Atlanta, Presidente de la Conferencia Regional “Nerve” 2012 y miembro del Consejo de la Región de la Costa Este); ASCDI (actual vicepresidente y miembro del directorio, presidente del Comité Legislativo); SIA (Comité Competitivo); Iniciativa de los Derechos de los Propietarios [Owners’ Rights Initiative]; y vicepresidente y miembro del directorio de la Coalición del Derecho Digital a Reparar [Digital Right to Repair Coalition]. Todd también es miembro de GIDEP y SAE.</p>
+                <p class="team__member__bio">Se graduó en la Universidad Estatal de Ohio en 1986 con el título de licenciado [Bachelor of Science] en Finanzas y realizó la Maestría Empresarial de 3 años de EO en el MIT. Además de pasar tiempo con su esposa y sus tres hijos, entre sus intereses se encuentran la vinicultura, calificar vinos argentinos, viajes internacionales, deportes y proyectos de arquitectura y remodelación del hogar.</p>
+              </div>
               <ul class="team__member__social">
-                <li><a href="http://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="http://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="http://google.com" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                <li><a href="mail@xsi.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                <li><a href="http://www.linkedin.com/in/toddbone" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="tbone@xsnet.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
               </ul>
             </div>
             <div class="team__member__btn-close"><span></span><span></span></div>
@@ -116,12 +124,14 @@
             <div class="team__member__img"><img src="/images/team/profile-3.jpg"></div>
             <div class="team__member__data">
               <h2 class="team__member__name">Harry<br>Carey</h2><span class="team__member__job">DIRECTOR DE NEGOCIOS ESTRATÉGICOS</span>
-              <p class="team__member__bio">Harry dedicó los últimos 30 años a especializarse en la integración de tecnologías en toda la ecuación empresarial con el fin de producir resultados económicos y organizacionales efectivos en diversos mercados verticales.</p>
+              <div class="team__member__bio__wrapper">
+                <p class="team__member__bio">Harry dedicó los últimos 30 años a especializarse en la integración de tecnologías en toda la ecuación empresarial con el fin de producir resultados económicos y organizacionales efectivos en diversos mercados verticales. Dirigió con éxito importantes iniciativas de desarrollo de negocios en mercados informáticos comerciales, científicos, del gobierno federal e internacionales.</p>
+                <p class="team__member__bio">Su carrera incluye varios cargos ejecutivos y en desarrollo de negocios en GE, Honeywell, Data General, Concurrent Computer, Hitachi Data Systems, Clariion y System Integrators. También es un condecorado líder del pelotón de combate de Vietnam.</p>
+                <p class="team__member__bio">Harry se graduó con el título de licenciado [Bachelor of Science] en Educación de la Universidad de Norwich en Northfield, Vermont.</p>
+              </div>
               <ul class="team__member__social">
-                <li><a href="http://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="http://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="http://google.com" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                <li><a href="mail@xsi.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                <li><a href="http://www.linkedin.com/pub/harry-carey/89/74/406" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="hcarey@xsnet.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
               </ul>
             </div>
             <div class="team__member__btn-close"><span></span><span></span></div>
@@ -130,13 +140,15 @@
             <div class="team__member__overlay"><span>Ver perfil completo</span></div>
             <div class="team__member__img"><img src="/images/team/profile-4.jpg"></div>
             <div class="team__member__data">
-              <h2 class="team__member__name">Daniel<br>Cagliero</h2><span class="team__member__job">DIRECTOR COMERCIAL LATM</span>
-              <p class="team__member__bio">Daniel, con casi 30 años de experiencia laboral, posee una amplia gama de conocimientos y experiencia en desarrollo de negocios, marketing, ventas y asistencia técnica. Trabajó en muchas organizaciones de todo el mundo, incluidas Alcon Laboratories, Banco Rural, World Business Games, Meritent y Meritent International.</p>
+              <h2 class="team__member__name">Daniel<br>Cagliero</h2><span class="team__member__job">DIRECTOR COMERCIAL LATAM</span>
+              <div class="team__member__bio__wrapper">
+                <p class="team__member__bio">Daniel, con casi 30 años de experiencia laboral, posee una amplia gama de conocimientos y experiencia en desarrollo de negocios, marketing, ventas y asistencia técnica.  Trabajó en muchas organizaciones de todo el mundo, incluidas Alcon Laboratories, Banco Rural, World Business Games, Meritent y Meritent International.</p>
+                <p class="team__member__bio">Daniel estuvo al frente de equipos en el desarrollo de planes de marketing estratégico, aceleración de ventas y análisis de negocios, ente otros.  Participó en el lanzamiento exitoso de productos y campañas en la industria farmacéutica y financiera.  Sus especialidades incluyen negociaciones a nivel individual y grupal, análisis de beneficios y planificación estratégica.  Se desempeñó con éxito como líder de equipos de profesionales altamente capacitados, en el crecimiento de beneficios comerciales basados en el impacto del resultado final y en la implementación de automatización de la fuerza de ventas.</p>
+                <p class="team__member__bio">Daniel es trilingüe (español, inglés y portugués), y se graduó con el título de Licenciado en Sistemas de Información y Tecnología de la Universidad de Belgrano y de Licenciado en Educación Ejecutiva de la Universidad de Pennsylvania – The Wharton School.</p>
+              </div>
               <ul class="team__member__social">
-                <li><a href="http://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="http://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="http://google.com" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                <li><a href="mail@xsi.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/danielcagliero" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="dcagliero@xsnet.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
               </ul>
             </div>
             <div class="team__member__btn-close"><span></span><span></span></div>
@@ -146,12 +158,15 @@
             <div class="team__member__img"><img src="/images/team/profile-5.jpg"></div>
             <div class="team__member__data">
               <h2 class="team__member__name">Ricardo<br>Bolo</h2><span class="team__member__job">DIRECTOR DE TECNOLOGÍA LATAM</span>
-              <p class="team__member__bio">Durante los primeros 11 años de su carrera, Doug ocupó cargos de ventas y liderazgo de ventas en Pitney Bowes y Johnson and Johnson</p>
+              <div class="team__member__bio__wrapper">
+                <p class="team__member__bio">Desde 1984, tiene un firme compromiso con el mejoramiento de las habilidades comerciales para Atención al Cliente de IT tanto en el mercado corporativo como el federal gracias a su trabajo para NCR Corporation, con base en Argentina.</p>
+                <p class="team__member__bio">Dejó la compañía como Gerente de Atención al Cliente para continuar su carrera en Silicon Graphics Inc., donde fue responsable del Negocio de Atención al Cliente para la región Sur de América Latina en los mercados de Petróleo y Gas y Entretenimiento.</p>
+                <p class="team__member__bio">En 2002, Ricardo comenzó su propia compañía de IT con base en Buenos Aires, Argentina, dedicada a Ventas y Soporte de grandes compañías en la región Sur de América Latina.</p>
+                <p class="team__member__bio">Durante los 2 últimos años, Ricardo se ha dedicado de lleno al desarrollo del negocio de servicios ITAD en LATAM.</p>
+                <p class="team__member__bio">Ricardo se graduó con el título de licenciado en la Universidad CAECE, en Buenos Aires, Argentina.</p>
+              </div>
               <ul class="team__member__social">
-                <li><a href="http://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="http://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="http://google.com" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                <li><a href="mail@xsi.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                <li><a href="rbolo@sgi.com.ar" target="_blank"><i class="fa fa-envelope"></i></a></li>
               </ul>
             </div>
             <div class="team__member__btn-close"><span></span><span></span></div>
@@ -161,12 +176,14 @@
             <div class="team__member__img"><img src="/images/team/profile-6.jpg"></div>
             <div class="team__member__data">
               <h2 class="team__member__name">General<br>Mayor John<br>Madula</h2><span class="team__member__job">ASESOR</span>
-              <p class="team__member__bio">Durante los primeros 11 años de su carrera, Doug ocupó cargos de ventas y liderazgo de ventas en Pitney Bowes y Johnson and Johnson</p>
+              <div class="team__member__bio__wrapper">
+                <p class="team__member__bio">El General Mayor de la Fuerza Aérea Maluda se retiró en septiembre de 2009 después de 34 años en servicio.  Al momento de su retiro, el General Maluda era Director de Transformación y Estrategia del Ciberespacio, en la Oficina del Secretario de la Fuerza Aérea, y Director de Información.</p>
+                <p class="team__member__bio">En ese cargo, ideó la doctrina, estrategia y política para comunicaciones y actividades de información y se desempeñó como defensor funcional para 30.000 miembros del personal. Anteriormente, el General Maluda fue Vicecomandante, 8va Fuerza Aérea, Base de la Fuerza Aérea Barksdale, Louisiana. El General Maluda se alistó en la Fuerza Aérea en 1973 y recibió su grado de oficial en 1978 como un distinguido graduado del programa ROTC en la Universidad del Estado de Troy, Alabama.</p>
+                <p class="team__member__bio">El General Maluda también se graduó con el título de licenciado [Bachelor of Science] en Ingeniería Eléctrica en la Universidad de Auburn, realizó una Maestría en Administración de Sistemas en la Universidad del Sur de California, además de contar con una Certificación de Maestría en Dirección del American College of Corporate Directors [Colegio Estadounidense de Directores Corporativos].</p>
+                <p class="team__member__bio">Entre los aspectos más destacados de su carrera podemos mencionar su servicio en tres importantes comandos, con los comandos de combatientes unificados, un organismo de defensa, la Casa Blanca y el Estado Mayor de la Fuerza Aérea. La experiencia en el estado mayor del General Maluda incluye cargos en el Cuartel General de la Fuerza Aérea de EE.UU., Comando de Combate Aéreo, Fuerza Aérea de EE.UU. en Europa, Comando de Operaciones Especiales de la Fuerza Aérea, Comando Espacial de EE.UU. y la Agencia de Comunicaciones de la Casa Blanca.</p>
+                <p class="team__member__bio">Actualmente, el General Maluda se desempeña como miembro del Directorio de TELOS. También se desempeña como asesor del Distinguido Comité de Revisión del Instituto de Tecnología de la Fuerza Aérea.</p>
+              </div>
               <ul class="team__member__social">
-                <li><a href="http://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="http://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="http://google.com" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                <li><a href="mail@xsi.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
               </ul>
             </div>
             <div class="team__member__btn-close"><span></span><span></span></div>
@@ -176,12 +193,12 @@
             <div class="team__member__img"><img src="/images/team/profile-7.jpg"></div>
             <div class="team__member__data">
               <h2 class="team__member__name">Mark<br>Tonnesen</h2><span class="team__member__job">ASESOR</span>
-              <p class="team__member__bio">Durante los primeros 11 años de su carrera, Doug ocupó cargos de ventas y liderazgo de ventas en Pitney Bowes y Johnson and Johnson</p>
+              <div class="team__member__bio__wrapper">
+                <p class="team__member__bio">CEO de MapMyID, una compañía tecnológica de comercio electrónico que permite a comerciantes y consumidores enviar obsequios, paquetes, etc., sin necesidad de una dirección de envío. Antes de ocupar ese cargo, fue recientemente Vicepresidente Senior y Director de Información en EA. Antes de EA, se desempeñó como Director de Información en McAfee, Logitech y Cisco. Sus esfuerzos facilitaron la huella cero del centro de datos en la prestación de servicios de IT para el sector empresarial.</p>
+                <p class="team__member__bio">Además, fue responsable de la plataforma de juegos online que presta servicios a 300 millones de jugadores por día. Sus conocimientos técnicos para el desarrollo, DevOps y servicios de producción a escala, las 24 hs., los 7 días de la semana para los consumidores fueron la clave del crecimiento de EA en los negocios online. Mark Tonnesen es un ejecutivo con experiencia en la transformación de las funciones de negocios y IT al ofrecer soluciones innovadoras claves para impulsar el crecimiento.</p>
+                <p class="team__member__bio">Durante sus diferentes roles de liderazgo, tuvo un buen desempeño en programas de negocios y arquitectura tecnológica a pequeña y gran escala. Sus esfuerzos facilitaron la huella cero del centro de datos en la prestación de servicios de IT para el sector empresarial. Sus conocimientos de negocios y sistemas permitieron obtener mejoras en las eficiencias de negocios y sistemas, mejoras en las competitividad y una mayor flexibilidad comercial.</p>
+              </div>
               <ul class="team__member__social">
-                <li><a href="http://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="http://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="http://google.com" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                <li><a href="mail@xsi.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
               </ul>
             </div>
             <div class="team__member__btn-close"><span></span><span></span></div>
@@ -191,12 +208,12 @@
             <div class="team__member__img"><img src="/images/team/profile-8.jpg"></div>
             <div class="team__member__data">
               <h2 class="team__member__name">Dale W.<br>Malik</h2><span class="team__member__job">ASESOR</span>
-              <p class="team__member__bio">Daniel, con casi 30 años de experiencia laboral, posee una amplia gama de conocimientos y experiencia en desarrollo de negocios, marketing, ventas y asistencia técnica. Trabajó en muchas organizaciones de todo el mundo, incluidas Alcon Laboratories, Banco Rural, World Business Games, Meritent y Meritent International.</p>
+              <div class="team__member__bio__wrapper">
+                <p class="team__member__bio">El Sr. Malik como líder de la industria durante más de 25 años impulsó el desarrollo de productos para consumidores y comerciales de avanzada para Bell Laboratories, AT&amp;T, BellSouth, Computer Music, y Link Technologies.</p>
+                <p class="team__member__bio">Posee más de 100 patentes en estos campos y estuvo al frente de la introducción de una amplia gama de productos y servicios en el mercado. A través de los años, ha sido reconocido como director de innovación y estrategia de BellSouth (hoy AT&amp;T) y es tenido en cuenta para ofrecer soluciones creativas para los emprendimientos más desafiantes.</p>
+                <p class="team__member__bio">Graduado en el Manhattan College, el Sr. Malik obtuvo el título de licenciado [Bachelor] en Ingeniería Electrónica y recibió una beca de Posgrado para enseñar y estudiar para su posterior Maestría en diseño de sistemas informáticos.</p>
+              </div>
               <ul class="team__member__social">
-                <li><a href="http://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="http://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="http://google.com" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                <li><a href="mail@xsi.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
               </ul>
             </div>
             <div class="team__member__btn-close"><span></span><span></span></div>
@@ -205,24 +222,23 @@
       </div>
     </section>
   </main>
-  <footer class="footer">
+  <footer id="footer" class="footer"><a href="#header" class="gotop -hidden">Ir arriba
+      <div class="fa fa-chevron-up"></div></a>
     <div class="container">
       <div class="footer__top row">
         <div class="footer__logo col-xs-24 col-sm-8 col-md-8"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logoOriginal"></use></svg></div>
         <div class="footer__items1 col-xs-12 col-sm-4 col-md-4">
           <ul class="list__items">
-            <li><a href="/">Homepage</a></li>
-            <li><a href="/mantenimiento">Mantemiento</a></li>
+            <li><a href="/service-tpm">Mantemiento</a></li>
             <li><a href="/service-itad">Itad</a></li>
-            <li><a href="/service-tpm">Servicios</a></li>
+            <li><a href="/about">Sobre XSi</a></li>
           </ul>
         </div>
         <div class="footer__items2 col-xs-12 col-sm-4 col-md-4">
           <ul class="list__items">
-            <li><a href="/about">Sobre XSi</a></li>
-            <li><a href="#">Noticias</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Novedades</a></li>
+            <li><a href="/gartner">Prensa y Media</a></li>
+            <li><a href="/contacto">Contacto</a></li>
           </ul>
         </div>
         <div class="footer__newsletter col-xs-24 col-sm-24 col-md-8">
@@ -232,10 +248,9 @@
             <input type="submit" value="send">
           </form>
           <ul class="header__social">
-            <li><a href="http://facebook.com"><i class="fa fa-facebook">                 </i></a></li>
-            <li><a href="http://twitter.com"><i class="fa fa-twitter">                 </i></a></li>
-            <li><a href="http://google.com"><i class="fa fa-google-plus">                 </i></a></li>
-            <li><a href="http://linkedin.com"><i class="fa fa-linkedin">                 </i></a></li>
+            <li><a href="https://www.facebook.com/XSiLatam/" target="_blank"><i class="fa fa-facebook">                 </i></a></li>
+            <li><a href="https://twitter.com/XSiLatam" target="_blank"><i class="fa fa-twitter">                 </i></a></li>
+            <li><a href="https://www.linkedin.com/company-beta/87228/" target="_blank"><i class="fa fa-linkedin">                 </i></a></li>
           </ul>
         </div>
       </div>

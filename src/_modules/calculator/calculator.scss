@@ -6,6 +6,7 @@
     width: 100%;
     font-family: $mainFont;
     position: relative;
+    border-radius: $radius * 2;
 
     @include breakpoint(sm) {
         padding: $base/2 $base $base;

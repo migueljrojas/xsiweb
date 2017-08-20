@@ -3,29 +3,41 @@
       "title": "Estos son algunos de los clientes que han confiado en Xsi",
       "clients": [
           {
-            "img": "../images/home/logo-walt-disney.png"
+            "img": "/images/home/logo-walt-disney.png"
           },
           {
-            "img": "../images/home/logo-mckenna.png"
+            "img": "/images/home/logo-cnpem.png"
           },
           {
-            "img": "../images/home/logo-lockheed.png"
+            "img": "/images/home/logo-lockheed.png"
           },
           {
-            "img": "../images/home/logo-walt-disney.png"
+            "img": "/images/home/logo-dod.png"
           },
           {
-            "img": "../images/home/logo-l3.png"
+            "img": "/images/home/logo-l3.png"
           },
           {
-            "img": "../images/home/logo-ici.png"
+            "img": "/images/home/logo-espn.png"
           },
           {
-            "img": "../images/home/logo-caci.png"
+            "img": "/images/home/logo-lnls.png"
           },
           {
-            "img": "../images/home/logo-l3.png"
-          }
+            "img": "/images/home/logo-tvn.png"
+        },
+        {
+          "img": "/images/home/logo-nasa.png"
+        },
+        {
+          "img": "/images/home/logo-tata.png"
+        },
+        {
+          "img": "/images/home/logo-tech-data.png"
+        },
+        {
+          "img": "/images/home/logo-toyota.png"
+        }
       ]
   }
 }

@@ -1,0 +1,21 @@
+{
+    "title": "Cómo abandonar al fabricante",
+    "subtitle": "Abandonar al fabricante y su suporte oficial siempre es una decisión difícil. ¿Por qué? Porque así lo han querido desde el principio.",
+    "content": [
+        {
+            "type": "text",
+            "cont": "De acuerdo a Gartner, el 80% de los gastos de IT ocurren luego de la compra. Esto es principalmente porque los costos de posventa están planificados para ser altamente rentables, y en consecuencia, las barreras de salida siempre han sido intencionalmente altas. Sin embargo, esa difícil decisión no es tal cuando una compañía como XSi lo acompaña en el proceso para darle soporte y asesoramiento especial."
+        },
+        {
+            "type": "text",
+            "cont": "Descubra cómo cambiar de servicio en pocas semanas sin más consecuencias que las que acusará su bolsillo."
+        }
+    ],
+    "cta": {
+      "text": "Conozca al detalle el proceso para abandonar al fabricante",
+      "btn": {
+          "url":"#",
+          "text": "Me interesa"
+      }
+    }
+}

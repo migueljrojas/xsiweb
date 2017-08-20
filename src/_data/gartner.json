@@ -1,5 +1,5 @@
 {
-    "title": "XS International (XSi): Pioneros en Mantenimiento Altlernativo",
+    "title": "XS International:<br>\"Pioneros en Mantenimiento Alternativo\"",
     "content": [
         {
             "type": "text",
@@ -64,27 +64,22 @@
             },
             {
                 "type": "select",
-                "label": "Dispositivo en Uso *",
-                "name": "dispositivo",
+                "label": "País *",
+                "name": "pais",
                 "options": [
                     {
-                        "name": "Tablet",
-                        "val": "tablet"
+                        "name": "Pais 1",
+                        "val": "pais-1"
                     },
                     {
-                        "name": "Teléfonos Celulares",
-                        "val": "cellphone"
+                        "name": "País 2",
+                        "val": "pais-2"
                     },
                     {
-                        "name": "Computadora",
-                        "val": "computer"
+                        "name": "País 3",
+                        "val": "pais-3"
                     }
                 ]
-            },
-            {
-                "type": "textarea",
-                "label": "Comentario",
-                "name": "comment"
             }
         ]
     }

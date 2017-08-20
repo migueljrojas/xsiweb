@@ -36,7 +36,7 @@
         margin-top: 5%;
 
         @include breakpoint(sm) {
-            font-size:60px;
+            font-size: 48px;
         }
     }
 
@@ -214,7 +214,7 @@
 
             .team__member__name {
                 color: $darkGray;
-                font-size: 60px;
+                font-size: 48px;
                 font-family: $altFont;
                 margin-bottom: 0;
 
@@ -235,6 +235,10 @@
                 padding: $base/2 0;
                 line-height: 33px;
                 font-size: 16px;
+
+                &__wrapper {
+                    display: block;
+                }
             }
 
             .team__member__social {
@@ -346,8 +350,34 @@
         &__bio {
             display: none;
             color: $midGray;
-            width:65%;
             transition: all .5s $easing;
+
+            &__wrapper {
+                height: 260px;
+                overflow-y: scroll;
+                overflow-x: hidden;
+                margin: 20px 0;
+                width: 80%;
+                padding: 0 20px 20px 0;
+                display: none;
+
+                &::-webkit-scrollbar-track
+                {
+                    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+                    background-color: $lightGray;
+                }
+
+                &::-webkit-scrollbar
+                {
+                    width: 5px;
+                    background-color: $lightGray;
+                }
+
+                &::-webkit-scrollbar-thumb
+                {
+                    background-color: $blue;
+                }
+            }
         }
 
         &__social {

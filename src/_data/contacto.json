@@ -1,0 +1,33 @@
+{
+    "title": "Contacto",
+    "form":{
+        "title": "Complete el formulario y lo contactaremos a la brevedad",
+        "inputs":[
+            {
+                "type": "text",
+                "label": "Nombre *",
+                "name": "nombre"
+            },
+            {
+                "type": "text",
+                "label": "Apellido *",
+                "name": "apellido"
+            },
+            {
+                "type": "email",
+                "label": "E-Mail *",
+                "name": "email"
+            },
+            {
+                "type": "text",
+                "label": "Teléfono *",
+                "name": "compania"
+            },
+            {
+                "type": "textarea",
+                "label": "Mensaje *",
+                "name": "mensaje"
+            }
+        ]
+    }
+}

@@ -21,9 +21,10 @@ block content
                             .about__video-wrapper
                             .col-xs-24
                                 .row.-short
-                                    .col-xs-24.col-sm-22.col-sm-offset-1.col-md-24.about__video-col
-                                        a
-                                            img.img-responsive(src=item.cont.placeholder)
+                                    .col-xs-24.col-sm-22.col-sm-offset-1.col-md-24.about__video-col.js-video
+                                        img.img-responsive(src=item.cont.placeholder)
+                                        .embed-responsive.embed-responsive-16by9
+                                            iframe.embed-responsive-item(allowfullscreen)
                         
         section.about__cta
             +cta(site.data.about.cta)

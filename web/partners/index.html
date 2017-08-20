@@ -2,9 +2,10 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>XSI Web</title>
+  <title>XSI Latam</title>
   <meta name="description" content="XSI website">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
   <link rel="stylesheet" href="../styles/main.css">
 </head>
 <body>
@@ -31,59 +32,60 @@
         </g>
     </symbol>
   </svg>
-  <header class="header">
+  <header id="header" class="header">
     <div class="header__hamburguer"><span></span><span></span><span></span></div>
     <div class="header__logo"><a href="/"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg>        </a></div>
     <nav class="header__nav">
       <ul class="header__menu">
-        <li><a href="/">Homepage</a>
+        <li><a href="/">Home</a>
         </li>
-        <li><a href="#">Mantemiento</a>
+        <li><a href="/service-tpm">Mantenimiento</a>
           <ul class="header__submenu">
             <li><a href="/mantenimiento">Marcas con Soporte</a></li>
-            <li><a href="#">Modelos de Servicio</a></li>
-            <li><a href="#">Cómo Abandonar al Fabricante</a></li>
-            <li><a href="#">Qué dicen los especialistas</a></li>
+            <li><a href="/analisis">Modelos de Servicio</a></li>
+            <li><a href="/abandonar-fabricante">Cómo Abandonar al Fabricante</a></li>
+            <li><a href="/partners">Partners</a></li>
           </ul>
         </li>
         <li><a href="/service-itad">Itad</a>
         </li>
-        <li><a href="/service-tpm">Servicios</a>
-        </li>
-        <li><a href="#">Sobre XSi</a>
+        <li><a href="#">Nosotros</a>
           <ul class="header__submenu">
             <li><a href="/about">Acerca de XSi</a></li>
-            <li><a href="#">Misión</a></li>
+            <li><a href="/mision">Misión</a></li>
             <li><a href="/team">Equipo</a></li>
             <li><a href="/historia">Historia</a></li>
-            <li><a href="#">Reconocimientos</a></li>
           </ul>
         </li>
-        <li><a href="#">Noticias</a>
+        <li><a href="#">Novedades</a>
         </li>
-        <li><a href="#">Blog</a>
+        <li><a href="#">Prensa</a>
+          <ul class="header__submenu">
+            <li><a href="/gartner">Gartner</a></li>
+            <li><a href="/blueprints">Blueprints</a></li>
+            <li><a href="/whitepapers">Whitepapers</a></li>
+          </ul>
         </li>
-        <li><a href="#">Contacto</a>
+        <li><a href="/contacto">Contacto</a>
         </li>
       </ul>
       <ul class="header__social">
-        <li><a href="http://facebook.com"><i class="fa fa-facebook"></i></a></li>
-        <li><a href="http://twitter.com"><i class="fa fa-twitter"></i></a></li>
-        <li><a href="http://google.com"><i class="fa fa-google-plus"></i></a></li>
-        <li><a href="http://linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="https://www.facebook.com/XSiLatam/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://twitter.com/XSiLatam" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://www.linkedin.com/company-beta/87228/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
       </ul>
     </nav>
   </header>
   <main class="partners">
     <section class="partners__hero">
-      <h1 class="partners__title">Programas de canales</h1>
+      <h1 class="partners__title">Programas de partners</h1>
     </section>
     <section class="partners__subhero wow fadeInRightBig">
       <div class="container">
         <div class="row">
           <div class="partners__subhero__data">
-            <h2 class="partners__subtitle">Programa de partners</h2>
-            <p class="partners__desc">Forma parte de nuestro grupo de asociados.</p>
+            <!--h2.partners__subtitle= site.data.partners.subtitle-->
+            <h2 class="partners__desc">Forme parte de nuestro programa de asociados y permita que sus clientes se beneficien de las ventajas del Mantenimiento Alternativo y de ITAD.</h2>
           </div>
         </div>
       </div>
@@ -124,11 +126,11 @@
           </div>
           <div class="col-xs-24 col-md-8 partners__sidebar">
             <div class="partners__sidebar__data">
-              <h4>Channel Program Contáctenos</h4><span>Nick Mann</span><span>Channel Manager</span><span>Phone: 678.537.4107</span><span>Email: sales@xsnet.com</span>
+              <h4>Channel Program Contáctenos</h4><span>Pablo Santos</span><span></span><span></span><span>Email: psantos@xsnet.com</span>
             </div>
             <div class="partners__sidebar__form">
               <form method="POST" class="contact-form">
-                <h3 class="contact-form__title">Contacta con el departamento de asociados</h3>
+                <h3 class="contact-form__title">Contacta con el Departamento de Asociados!</h3>
                 <div class="row">
                   <div class="contact-form__group col-xs-24 col-sm-12">
                     <label for="id-nombre">Nombre *</label>
@@ -143,18 +145,10 @@
                     <input type="email" input.attrs="input.attrs"/>
                   </div>
                   <div class="contact-form__group col-xs-24 col-sm-12">
-                    <label for="id-agencia">Agencia *</label>
+                    <label for="id-empresa">Empresa *</label>
                     <input type="text" input.attrs="input.attrs"/>
                   </div>
-                  <div class="contact-form__group col-xs-24 col-sm-12">
-                    <label for="id-pais" class="-select"><span>¿Cuál es la naturaleza de su solicitud? *</span></label>
-                    <select value="input.name" name="pais" id="id-pais" input.attrs="input.attrs">
-                      <option value="item-val">Opción 1</option>
-                      <option value="item-val">Opción 2</option>
-                      <option value="item-val">opción 3</option>
-                    </select>
-                  </div>
-                  <div class="contact-form__group col-xs-24 col-sm-12">
+                  <div class="contact-form__group col-xs-24">
                     <label for="id-mensaje">Mensaje *</label>
                     <textarea value="input.name" name="mensaje" id="id-mensaje"></textarea>
                   </div>
@@ -169,24 +163,23 @@
       </div>
     </section>
   </main>
-  <footer class="footer">
+  <footer id="footer" class="footer"><a href="#header" class="gotop -hidden">Ir arriba
+      <div class="fa fa-chevron-up"></div></a>
     <div class="container">
       <div class="footer__top row">
         <div class="footer__logo col-xs-24 col-sm-8 col-md-8"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logoOriginal"></use></svg></div>
         <div class="footer__items1 col-xs-12 col-sm-4 col-md-4">
           <ul class="list__items">
-            <li><a href="/">Homepage</a></li>
-            <li><a href="/mantenimiento">Mantemiento</a></li>
+            <li><a href="/service-tpm">Mantemiento</a></li>
             <li><a href="/service-itad">Itad</a></li>
-            <li><a href="/service-tpm">Servicios</a></li>
+            <li><a href="/about">Sobre XSi</a></li>
           </ul>
         </div>
         <div class="footer__items2 col-xs-12 col-sm-4 col-md-4">
           <ul class="list__items">
-            <li><a href="/about">Sobre XSi</a></li>
-            <li><a href="#">Noticias</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Novedades</a></li>
+            <li><a href="/gartner">Prensa y Media</a></li>
+            <li><a href="/contacto">Contacto</a></li>
           </ul>
         </div>
         <div class="footer__newsletter col-xs-24 col-sm-24 col-md-8">
@@ -196,10 +189,9 @@
             <input type="submit" value="send">
           </form>
           <ul class="header__social">
-            <li><a href="http://facebook.com"><i class="fa fa-facebook">                 </i></a></li>
-            <li><a href="http://twitter.com"><i class="fa fa-twitter">                 </i></a></li>
-            <li><a href="http://google.com"><i class="fa fa-google-plus">                 </i></a></li>
-            <li><a href="http://linkedin.com"><i class="fa fa-linkedin">                 </i></a></li>
+            <li><a href="https://www.facebook.com/XSiLatam/" target="_blank"><i class="fa fa-facebook">                 </i></a></li>
+            <li><a href="https://twitter.com/XSiLatam" target="_blank"><i class="fa fa-twitter">                 </i></a></li>
+            <li><a href="https://www.linkedin.com/company-beta/87228/" target="_blank"><i class="fa fa-linkedin">                 </i></a></li>
           </ul>
         </div>
       </div>

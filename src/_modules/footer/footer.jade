@@ -1,4 +1,8 @@
-footer.footer
+footer#footer.footer
+    a.gotop.-hidden(href="#header")
+        | Ir arriba
+        .fa.fa-chevron-up
+        
     .container
         .footer__top.row
             .footer__logo.col-xs-24.col-sm-8.col-md-8
@@ -26,7 +30,7 @@ footer.footer
                 ul.header__social
                     each red in site.data.social
                         li
-                            a(href=red.url)
+                            a(href=red.url, target="_blank")
                                 i(class="fa fa-#{red.name}")                  
                       
         .footer__bottom.row

@@ -2,9 +2,10 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>XSI Web</title>
+  <title>XSI Latam</title>
   <meta name="description" content="XSI website">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
   <link rel="stylesheet" href="../styles/main.css">
 </head>
 <body>
@@ -31,46 +32,47 @@
         </g>
     </symbol>
   </svg>
-  <header class="header">
+  <header id="header" class="header">
     <div class="header__hamburguer"><span></span><span></span><span></span></div>
     <div class="header__logo"><a href="/"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg>        </a></div>
     <nav class="header__nav">
       <ul class="header__menu">
-        <li><a href="/">Homepage</a>
+        <li><a href="/">Home</a>
         </li>
-        <li><a href="#">Mantemiento</a>
+        <li><a href="/service-tpm">Mantenimiento</a>
           <ul class="header__submenu">
             <li><a href="/mantenimiento">Marcas con Soporte</a></li>
-            <li><a href="#">Modelos de Servicio</a></li>
-            <li><a href="#">Cómo Abandonar al Fabricante</a></li>
-            <li><a href="#">Qué dicen los especialistas</a></li>
+            <li><a href="/analisis">Modelos de Servicio</a></li>
+            <li><a href="/abandonar-fabricante">Cómo Abandonar al Fabricante</a></li>
+            <li><a href="/partners">Partners</a></li>
           </ul>
         </li>
         <li><a href="/service-itad">Itad</a>
         </li>
-        <li><a href="/service-tpm">Servicios</a>
-        </li>
-        <li><a href="#">Sobre XSi</a>
+        <li><a href="#">Nosotros</a>
           <ul class="header__submenu">
             <li><a href="/about">Acerca de XSi</a></li>
-            <li><a href="#">Misión</a></li>
+            <li><a href="/mision">Misión</a></li>
             <li><a href="/team">Equipo</a></li>
             <li><a href="/historia">Historia</a></li>
-            <li><a href="#">Reconocimientos</a></li>
           </ul>
         </li>
-        <li><a href="#">Noticias</a>
+        <li><a href="#">Novedades</a>
         </li>
-        <li><a href="#">Blog</a>
+        <li><a href="#">Prensa</a>
+          <ul class="header__submenu">
+            <li><a href="/gartner">Gartner</a></li>
+            <li><a href="/blueprints">Blueprints</a></li>
+            <li><a href="/whitepapers">Whitepapers</a></li>
+          </ul>
         </li>
-        <li><a href="#">Contacto</a>
+        <li><a href="/contacto">Contacto</a>
         </li>
       </ul>
       <ul class="header__social">
-        <li><a href="http://facebook.com"><i class="fa fa-facebook"></i></a></li>
-        <li><a href="http://twitter.com"><i class="fa fa-twitter"></i></a></li>
-        <li><a href="http://google.com"><i class="fa fa-google-plus"></i></a></li>
-        <li><a href="http://linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="https://www.facebook.com/XSiLatam/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://twitter.com/XSiLatam" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://www.linkedin.com/company-beta/87228/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
       </ul>
     </nav>
   </header>
@@ -80,6 +82,24 @@
     </section>
     <section class="historia__body">
       <h2>XSi tiene ya más de 25 años de vida. Aquí pasamos a contarles los puntos más importantes que forman parte no sólo de la historia de XSi, sino del campo de la gestión eficiente de IT alrededor del mundo.</h2>
+    </section>
+    <section class="about__body">
+      <div class="container-fluid">
+        <div class="row -large">
+          <div class="about__video-wrapper"></div>
+          <div class="col-xs-24 col-sm-20 col-md-18 col-sm-offset-2 col-md-offset-3">
+            <div class="row">
+              <div class="about__video-col js-video"><img src="/images/about/video-placeholder.jpg" class="img-responsive">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe allowfullscreen class="embed-responsive-item"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="historia__body">               
       <div class="container">
         <div class="row">
           <div data-wow-delay="0.08333333333333333s" class="col-xs-22 col-sm-12 wow fadeInUpBig">
@@ -107,7 +127,7 @@
         </div>
         <div class="row">
           <div data-wow-delay="0.4166666666666667s" class="col-xs-22 col-sm-12 wow fadeInUpBig">
-            <h3>COBERTURA INTERNACIONAL</h3>
+            <h3>Cobertura Internacional</h3>
             <p>Hemos mantenido una fuerte presencia en América Latina desde 1995, con oficinas en Argentina y Brasil. En 2011, ramificamos a Europa con el centro de asistencia técnica en París, Londres y Berlín. A partir de 2014, comenzamos la expansión de nuestros mercados de América Latina con una planta de restauración y reciclaje de IT de 18.500 metros cuadrados en Florianópolis, Brasil, y nos expandimos a Perú, Chile, Colombia, Venezuela, Paraguay y México.</p>
           </div>
         </div>
@@ -126,24 +146,23 @@
       </div>
     </section>
   </main>
-  <footer class="footer">
+  <footer id="footer" class="footer"><a href="#header" class="gotop -hidden">Ir arriba
+      <div class="fa fa-chevron-up"></div></a>
     <div class="container">
       <div class="footer__top row">
         <div class="footer__logo col-xs-24 col-sm-8 col-md-8"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logoOriginal"></use></svg></div>
         <div class="footer__items1 col-xs-12 col-sm-4 col-md-4">
           <ul class="list__items">
-            <li><a href="/">Homepage</a></li>
-            <li><a href="/mantenimiento">Mantemiento</a></li>
+            <li><a href="/service-tpm">Mantemiento</a></li>
             <li><a href="/service-itad">Itad</a></li>
-            <li><a href="/service-tpm">Servicios</a></li>
+            <li><a href="/about">Sobre XSi</a></li>
           </ul>
         </div>
         <div class="footer__items2 col-xs-12 col-sm-4 col-md-4">
           <ul class="list__items">
-            <li><a href="/about">Sobre XSi</a></li>
-            <li><a href="#">Noticias</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Novedades</a></li>
+            <li><a href="/gartner">Prensa y Media</a></li>
+            <li><a href="/contacto">Contacto</a></li>
           </ul>
         </div>
         <div class="footer__newsletter col-xs-24 col-sm-24 col-md-8">
@@ -153,10 +172,9 @@
             <input type="submit" value="send">
           </form>
           <ul class="header__social">
-            <li><a href="http://facebook.com"><i class="fa fa-facebook">                 </i></a></li>
-            <li><a href="http://twitter.com"><i class="fa fa-twitter">                 </i></a></li>
-            <li><a href="http://google.com"><i class="fa fa-google-plus">                 </i></a></li>
-            <li><a href="http://linkedin.com"><i class="fa fa-linkedin">                 </i></a></li>
+            <li><a href="https://www.facebook.com/XSiLatam/" target="_blank"><i class="fa fa-facebook">                 </i></a></li>
+            <li><a href="https://twitter.com/XSiLatam" target="_blank"><i class="fa fa-twitter">                 </i></a></li>
+            <li><a href="https://www.linkedin.com/company-beta/87228/" target="_blank"><i class="fa fa-linkedin">                 </i></a></li>
           </ul>
         </div>
       </div>

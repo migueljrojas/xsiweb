@@ -44,12 +44,19 @@
             top: 13%;
 
             @include breakpoint(md){
+                width: 60%;
                 top: 15%;
+                left: 50%;
+                transform: translateX(-390px);
+            }
+
+            @include breakpoint(lg){
+                transform: translateX(-473px);
             }
 
             h2 {
                 @include breakpoint(md){
-                    font-size: 60px;
+                    font-size: 48px;
                 }
             }
 
@@ -67,8 +74,18 @@
             z-index: 2;
 
             img {
-                max-width: 100%;
+                position: absolute;
+                width:100%;
+                top:0;
+                left:0;
 
+                &._arm {
+                    left:10px;
+                    top:-3px;
+                    animation: wave 1s infinite;
+                    transform-origin: 55% 32%;
+                    transform: rotate(-10deg);
+                }
             }
 
             @include breakpoint(xs) {
@@ -94,6 +111,10 @@
         background: url('/images/service-tpm/whyxsi.png') no-repeat top center;
         padding: 10% 0;
         margin-top: -5px;
+
+        @include customBreakpoint(1450px) {
+            background-size: cover;
+        }
 
         .itad__services {
           padding-top:6%;
@@ -163,6 +184,7 @@
             &.-playback {
                 img {
                     opacity: 0;
+                    pointer-events: none;
                 }
             }
         }
@@ -226,6 +248,11 @@
       background: url('/images/service-tpm/especialist-bg.png') no-repeat top center;
       padding: 4% 0 6%;
       margin-bottom: -20px;
+
+      @include customBreakpoint(1450px) {
+          background-size: cover;
+      }
+
       &__title {
         font-size: 25px;
         font-weight: bold;
@@ -246,8 +273,9 @@
       &__slider-img {
         img {
           margin: 0 auto;
-          max-width: 100%;
-          border-radius: 50%;
+          max-width: 80%;
+          //border-radius: 50%;
+
         }
       }
       &__slider-text {

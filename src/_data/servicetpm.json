@@ -69,7 +69,7 @@
   "ctaone": {
     "text": "Solicite su Análisis Gratuito de Ahorros",
     "btn": {
-        "url":"#",
+        "url":"/analisis",
         "text": "Me interesa"
     }
   },
@@ -77,7 +77,7 @@
   "ctatwo": {
     "text": "Cambie de servicio con estos simples 6 pasos",
     "btn": {
-        "url":"#",
+        "url":"/abandonar-fabricante",
         "text": "Me interesa"
     }
   },
@@ -135,17 +135,17 @@
   },
   "opiniones" : {
     "title" : "¿Qué dicen los especialistas?",
-    "desc": "Si todavía está convencido de cambiar a Mantenimiento Alternantivo, mire lo que dicen los especialistas",
+    "desc": "Si todavía no está convencido de cambiar a Mantenimiento Alternativo, mire lo que dicen los especialistas",
     "slides" : [
         {
           "img" : "../images/service-tpm/forrester.png",
-          "title": "Apto Solutions",
+          "title": "Forrester",
           "text": "A pesar de que los presupuestos de soporte técnico están bajo constante análisis, muchas empresas confían plenamente en los OEMs, lo cual les impide ver los beneficios de extender el ciclo de vida del hardware y las soluciones de mantenimiento alternativo. Forrester Consulting ofrece a las empresas varios consejos para obtener más valor y maximizar el retorno sobre la inversión de la infraestructura de red que han adquirido."
         },
         {
-          "img" : "../images/service-tpm/forrester.png",
-          "title": "Apto Solutions 2",
-          "text": "A pesar de que los presupuestos de soporte técnico están bajo constante análisis, muchas empresas confían plenamente en los OEMs, lo cual les impide ver los beneficios de extender el ciclo de vida del hardware y las soluciones de mantenimiento alternativo. Forrester Consulting ofrece a las empresas varios consejos para obtener más valor y maximizar el retorno sobre la inversión de la infraestructura de red que han adquirido."
+          "img" : "../images/service-tpm/accenture.png",
+          "title": "Accenture",
+          "text": "No ignore la tendencia hacia opciones de mantenimiento alternativo para el soporte técnico de equipos: A medida que nuestros clientes buscan, con mayor frecuencia, nuevas formas de optimizar su estructura de costos de IT, las opciones de mantenimiento alternativo parecen obvias. La calidad de las opciones de soporte técnico alternativo continúa aumentando, no solo ofreciendo importante potencial de ahorro, sino mejor cobertura global."
         }
     ]
   },
@@ -158,22 +158,19 @@
             "img": "../images/service-tpm/icon-redes.png",
             "title": "Equipos de redes",
             "desc": "Hasta un 50% de ahorro en costos de mantenimiento + generación de ingresos por viejos equipos (ITAD). Hasta un 50% de ahorro en costos de mantenimiento + generación de ingresos por viejos equipos (ITAD).",
-            "url": "#/",
-            "link": "ver más >"
+            "url": "#/"
         },
         {
             "img": "../images/service-tpm/icon-almacenamiento.png",
             "title": "Almacenamiento",
             "desc": "Hasta un 50% de ahorro en costos de mantenimiento + generación de ingresos por viejos equipos (ITAD). Hasta un 50% de ahorro en costos de mantenimiento + generación de ingresos por viejos equipos (ITAD).",
-            "url": "#/",
-            "link": "ver más >"
+            "url": "#/"
         },
         {
             "img": "../images/service-tpm/icon-servers.png",
             "title": "Servidores",
             "desc": "Hasta un 50% de ahorro en costos de mantenimiento + generación de ingresos por viejos equipos (ITAD). Hasta un 50% de ahorro en costos de mantenimiento + generación de ingresos por viejos equipos (ITAD).",
-            "url": "#/",
-            "link": "ver más >"
+            "url": "#/"
         }
     ]
   }

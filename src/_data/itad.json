@@ -1,8 +1,9 @@
 {
 
     "hero": {
-        "title": "Domine su IT con nuestro servicio de Re-disposicion<br>de Activos (ITAD)",
-        "desc": "La renovación de IT supone un dolor de cabeza para las empresas, no sólo por el costo, sino por el destino de los viejos equipos.<br>ITAD soluciona a su favor esta situación de forma profesional generando ingresos extraordinarios por la comercialización de los equipos.",
+        "title": "Domine su IT",
+        "subtitle": "con nuestro servicio de Re-disposicion<br>de Activos (ITAD)",
+        "desc": "La renovación de IT supone un dolor de cabeza para las empresas, no sólo por el costo, sino por el destino de los viejos equipos. ITAD soluciona a su favor esta situación de forma profesional generando ingresos extraordinarios por la comercialización de los equipos.",
         "btn": {
             "url": "#",
             "text": "Me interesa"
@@ -42,7 +43,7 @@
     },
 
   "servicioitad" : {
-    "title" : "Porque toda empresa necesita servicio ITAD",
+    "title" : "Por qué toda empresa necesita servicio ITAD",
     "img" : "../images/home/video-placeholder.jpg",
     "costos" : {
       "title" : "Costos",
@@ -53,8 +54,7 @@
     "riesgos" : {
       "title" : "Riesgos",
       "img": "../images/service-itad/icon-risk.png",
-      "text1": "<i class=\"fa fa-check\" ></i> Reducción homologada de riesgos de data breaches",
-      "text2": "<a href=\"#\" >Ver más</a>"
+      "text1": "<i class=\"fa fa-check\" ></i> Reducción homologada de riesgos de data breaches"
     },
     "eficiencia" : {
       "title": "Eficiencia",
@@ -73,7 +73,7 @@
   },
 
   "ctatwo": {
-    "text": "Conozca a detalle el proceso de ITAD",
+    "text": "Conozca al detalle el proceso de ITAD",
     "btn": {
         "url":"#",
         "text": "Me interesa"
@@ -90,7 +90,7 @@
 
   "servicios" : {
     "title": "En qué consiste el proceso de ITAD",
-    "desc": "ITAD Asset Disposition es un servicio innovador e integral, que dispone gestión, optimización y monetiación o reciclaje del hardware de su empresa. El cliente puede contar con un servicio permante de ITAD, o bien usar un servicio one-shot, muy común para el cierre de operaciones o renovación total de la flota.",
+    "desc": "ITAD Asset Disposition es un servicio innovador e integral, que dispone gestión, optimización y monetización o reciclaje del hardware de su empresa. El cliente puede contar con un servicio permanente de ITAD, o bien usar un servicio one-shot, muy común para el cierre de operaciones o renovación total de la flota.",
     "img": "../images/itad/procesoitad.png",
     "items" : [
         {
@@ -162,18 +162,13 @@
   },
 
   "opiniones" : {
-    "title" : "¿Qué dicen de nosotros?",
+    "title" : "¿Qué opinan los especialistas?",
     "desc": "Cada vez más y más empresas adoptan el servicio ITAD para optimizar los costos de IT. Conozca lo que opinan las grandes firmas y que opinan los especialistas.",
     "slides" : [
         {
-          "img" : "../images/itad/person2.jpg",
+          "img" : "../images/service-itad/lockheed_martin.png",
           "title": "Franz Filicky, Lockheed Martin",
-          "text": "Después del cierre de un programa, nos quedaba una amplia variedad de servidores, computadoras de escritorio, centrales, routers y otros equipos más. XSi se encargó de hacer pruebas y volver a lanzar al mercado los equipos a nuestro nombre y obtuvimos un importante retorno sobre nuestra inversión de capital. Desde el momento en que firmamos el acuerdo, XSi mantuvo una comunicación honesta y directa, entregándonos informes de avance sobre el relanzamiento todas las semanas. Nuestra única tarea fue entregar una lista de inventario y enviar los equipos a XSi. Gracias a su base de clientes y notificaciones del equipo disponible, XSi pudo inclusive comenzar con el relanzamiento de los equipos antes de que llegaran a sus muelles de cargas. Una vez vendidos los equipos recibimos las transferencias bancarias de inmediato y pudimos finalizar nuestra tarea de recuperación de activos. XSi realmente hizo todo por nosotros durante la iniciativa de recuperación."
-        },
-        {
-          "img" : "../images/itad/person.jpg",
-          "title": "Lockheed Martin, Franz Filicky",
-          "text": "Después del cierre de un programa, nos quedaba una amplia variedad de servidores, computadoras de escritorio, centrales, routers y otros equipos más. XSi se encargó de hacer pruebas y volver a lanzar al mercado los equipos a nuestro nombre y obtuvimos un importante retorno sobre nuestra inversión de capital. Desde el momento en que firmamos el acuerdo, XSi mantuvo una comunicación honesta y directa, entregándonos informes de avance sobre el relanzamiento todas las semanas. Nuestra única tarea fue entregar una lista de inventario y enviar los equipos a XSi. Gracias a su base de clientes y notificaciones del equipo disponible, XSi pudo inclusive comenzar con el relanzamiento de los equipos antes de que llegaran a sus muelles de cargas. Una vez vendidos los equipos recibimos las transferencias bancarias de inmediato y pudimos finalizar nuestra tarea de recuperación de activos. XSi realmente hizo todo por nosotros durante la iniciativa de recuperación."
+          "text": "\"Después del cierre de un programa, nos quedaba una amplia variedad de servidores, computadoras de escritorio, centrales, routers y otros equipos más. XSi se encargó de hacer pruebas y volver a lanzar al mercado los equipos a nuestro nombre y obtuvimos un importante retorno sobre nuestra inversión de capital. Desde el momento en que firmamos el acuerdo, XSi mantuvo una comunicación honesta y directa, entregándonos informes de avance sobre el relanzamiento todas las semanas. Nuestra única tarea fue entregar una lista de inventario y enviar los equipos a XSi. Gracias a su base de clientes y notificaciones del equipo disponible, XSi pudo inclusive comenzar con el relanzamiento de los equipos antes de que llegaran a sus muelles de cargas. Una vez vendidos los equipos recibimos las transferencias bancarias de inmediato y pudimos finalizar nuestra tarea de recuperación de activos. XSi realmente hizo todo por nosotros durante la iniciativa de recuperación.\""
         }
     ]
   }

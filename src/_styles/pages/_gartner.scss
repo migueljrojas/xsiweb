@@ -12,15 +12,15 @@
 
         &:before {
             @include shades(before);
-            right: -130%;
+            right: -145%;
             opacity: .7;
         }
 
         &:after {
             @include shades(after);
             opacity: .3;
-            right:50%;
-            top:-75%;
+            right:70%;
+            top:-50%;
             width:80%;
             height:200%;
             box-shadow: inset 30px 50px 100px rgba(0,0,0,.5);
@@ -32,7 +32,7 @@
         font-size: 24px;
 
         @include breakpoint(sm){
-            font-size: 60px;
+            font-size: 48px;
         }
     }
 
@@ -44,7 +44,7 @@
         position: relative;
 
         @include breakpoint(md){
-            padding: 20% 0 6%;
+            padding: 24% 0 6%;
         }
 
         img {
@@ -94,6 +94,20 @@
         @include breakpoint(xs) {
             display: none;
         }
+
+        img {
+            position: absolute;
+            width:100%;
+            top:0;
+            left:0;
+
+            &._arm {
+                left:5px;
+                animation: wave 1s infinite;
+                transform-origin: 40% 28%;
+                transform: rotate(-10deg);
+            }
+        }
     }
 
     &__data {
@@ -120,7 +134,7 @@
         position: relative;
         left:0;
         right:0;
-        margin-top:-32%;
+        margin-top:-36%;
         z-index:5;
         margin-bottom: $base;
 

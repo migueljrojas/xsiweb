@@ -10,28 +10,32 @@ block content
         section.blueprints__hero
             .container
                 .row
-                    .col-xs-24.col-sm-20.col-md-16.col-lg-13.blueprints__data
+                    .col-xs-24.col-sm-20.col-sm-offset-1.col-md-14.blueprints__data
                         h1.blueprints__title= site.data.blueprints.title
-                img.blueprints__character(src=site.data.analisis.character)
+                    .gartner__character            
+                        img._body(src="/images/analisis/character.png")
+                        img._arm(src="/images/analisis/arm.png")
                         
         section.blueprints__body
             .blueprints__form
                 .container
                     .row
-                        .col-xs-24.col-sm-20.col-sm-offset-2.col-md-20.col-md-offset-2.wow.fadeInRightBig
-                            +contact-form(site.data.blueprints.form)
+                        .col-xs-24.col-sm-20.col-sm-offset-2.col-md-16.col-md-offset-4.wow.fadeInRightBig
+                            +contact-form(site.data.blueprints.form, 'Descargar')
             .container
                 .row
                     .col-xs-24.col-sm-18.col-sm-offset-3.col-md-16.col-md-offset-4
+                        h2.blueprints__subtitle Dos casos de estudio de XSi que involucran una Institución Financiera & Gran Entidad Federal TOP 40
+                    
                         each item in site.data.blueprints.content
                             if item.type == 'title'
-                                h2.wow.fadeInLeft=item.cont
+                                h3.wow.fadeInLeft=item.cont
                             
                             if item.type == 'text'
                                 p.wow.fadeInLeft=item.cont
                                 
                             if item.type == 'subtitle'
-                                h3.wow.fadeInLeft=item.cont
+                                h4.wow.fadeInLeft=item.cont
                                 ul.wow.fadeInLeft
                                     each bullet in item.list
                                         li= bullet

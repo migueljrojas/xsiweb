@@ -2,9 +2,10 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>XSI Web</title>
+  <title>XSI Latam</title>
   <meta name="description" content="XSI website">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
   <link rel="stylesheet" href="../styles/main.css">
 </head>
 <body>
@@ -31,46 +32,47 @@
         </g>
     </symbol>
   </svg>
-  <header class="header">
+  <header id="header" class="header">
     <div class="header__hamburguer"><span></span><span></span><span></span></div>
     <div class="header__logo"><a href="/"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg>        </a></div>
     <nav class="header__nav">
       <ul class="header__menu">
-        <li><a href="/">Homepage</a>
+        <li><a href="/">Home</a>
         </li>
-        <li><a href="#">Mantemiento</a>
+        <li><a href="/service-tpm">Mantenimiento</a>
           <ul class="header__submenu">
             <li><a href="/mantenimiento">Marcas con Soporte</a></li>
-            <li><a href="#">Modelos de Servicio</a></li>
-            <li><a href="#">Cómo Abandonar al Fabricante</a></li>
-            <li><a href="#">Qué dicen los especialistas</a></li>
+            <li><a href="/analisis">Modelos de Servicio</a></li>
+            <li><a href="/abandonar-fabricante">Cómo Abandonar al Fabricante</a></li>
+            <li><a href="/partners">Partners</a></li>
           </ul>
         </li>
         <li><a href="/service-itad">Itad</a>
         </li>
-        <li><a href="/service-tpm">Servicios</a>
-        </li>
-        <li><a href="#">Sobre XSi</a>
+        <li><a href="#">Nosotros</a>
           <ul class="header__submenu">
             <li><a href="/about">Acerca de XSi</a></li>
-            <li><a href="#">Misión</a></li>
+            <li><a href="/mision">Misión</a></li>
             <li><a href="/team">Equipo</a></li>
             <li><a href="/historia">Historia</a></li>
-            <li><a href="#">Reconocimientos</a></li>
           </ul>
         </li>
-        <li><a href="#">Noticias</a>
+        <li><a href="#">Novedades</a>
         </li>
-        <li><a href="#">Blog</a>
+        <li><a href="#">Prensa</a>
+          <ul class="header__submenu">
+            <li><a href="/gartner">Gartner</a></li>
+            <li><a href="/blueprints">Blueprints</a></li>
+            <li><a href="/whitepapers">Whitepapers</a></li>
+          </ul>
         </li>
-        <li><a href="#">Contacto</a>
+        <li><a href="/contacto">Contacto</a>
         </li>
       </ul>
       <ul class="header__social">
-        <li><a href="http://facebook.com"><i class="fa fa-facebook"></i></a></li>
-        <li><a href="http://twitter.com"><i class="fa fa-twitter"></i></a></li>
-        <li><a href="http://google.com"><i class="fa fa-google-plus"></i></a></li>
-        <li><a href="http://linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="https://www.facebook.com/XSiLatam/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://twitter.com/XSiLatam" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://www.linkedin.com/company-beta/87228/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
       </ul>
     </nav>
   </header>
@@ -82,7 +84,7 @@
             <h2>Domine su IT con Mantenimiento Alternativo</h2>
             <p><strong>Si usted tiene contratado soporte de fabricante, está perdiendo dinero.</strong> Somos la opción inteligente para dar soporte Cisco, Brocade, Juniper, F5 y muchos más, con mejor servicio y menor costo.</p><a href="#" class="_button -white">Me interesa</a>
           </div>
-          <div class="servicetpm__hero__character col-sm-8 col-md-12"><img src="/images/service-tpm/hero.png"></div>
+          <div class="servicetpm__hero__character col-sm-8 col-md-10"><img src="/images/service-tpm/hero.png" class="_body"><img src="/images/service-tpm/arm-left.png" class="_arm -left"><img src="/images/service-tpm/arm-right.png" class="_arm -right"></div>
         </div>
       </div>
     </section>
@@ -90,42 +92,6 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-24 col-md-20 col-md-offset-2 wow fadeInRightBig">
-            <div class="calculator">       
-              <h3 class="calculator__title">Calculemos cuál es el ahorro que puede generar con XSi</h3>
-              <div class="calculator__options">
-                <div class="calculator__dropdown">
-                  <h5>Marca</h5>
-                  <div class="calculator__dropdown__wrapper">
-                    <label for="drop-0"></label>
-                    <select id="drop-0">
-                      <option>juniper</option>
-                      <option>cisco</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="calculator__dropdown">
-                  <h5>Tipo</h5>
-                  <div class="calculator__dropdown__wrapper">
-                    <label for="drop-1"></label>
-                    <select id="drop-1">
-                      <option>servidor</option>
-                      <option>tablet</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="calculator__dropdown">
-                  <h5>Cantidad</h5>
-                  <div class="calculator__dropdown__wrapper">
-                    <label for="drop-2"></label>
-                    <select id="drop-2">
-                      <option>50 - 100</option>
-                      <option>1000 - 5000</option>
-                      <option>5000 - 10000</option>
-                    </select>
-                  </div>
-                </div><a href="#" class="_button -cta">Simular Ahorro</a>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -135,7 +101,7 @@
         <div class="row">  
           <div class="col-xs-24 col-sm-12">
             <p class="mantenimiento__title">Por qué contratar mantenimiento con XSi</p>
-            <div class="mantenimiento__img js-video"> <img src="../images/home/video-placeholder.jpg">
+            <div class="mantenimiento__img js-video -tpm"> <img src="../images/home/video-placeholder.jpg">
               <div class="embed-responsive embed-responsive-16by9">
                 <iframe allowfullscreen class="embed-responsive-item"></iframe>
               </div>
@@ -183,7 +149,7 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-xs-24 cta__container">
-              <p class="cta__text">Solicite su Análisis Gratuito de Ahorros</p><a href="#" class="_button -white">Me interesa</a>
+              <p class="cta__text">Solicite su Análisis Gratuito de Ahorros</p><a href="/analisis" class="_button -white">Me interesa</a>
             </div>
           </div>
         </div>
@@ -200,21 +166,21 @@
                 <div class="servicetpm__services__img"><img src="../images/service-tpm/icon-redes.png"></div>
                 <article class="servicetpm__services__content">
                   <p class="servicetpm__services__article-title">Equipos de redes</p>
-                  <p class="servicetpm__services__article-desc">Hasta un 50% de ahorro en costos de mantenimiento + generación de ingresos por viejos equipos (ITAD). Hasta un 50% de ahorro en costos de mantenimiento + generación de ingresos por viejos equipos (ITAD).</p><a class="btn__more">ver más &gt;</a>
+                  <p class="servicetpm__services__article-desc">Hasta un 50% de ahorro en costos de mantenimiento + generación de ingresos por viejos equipos (ITAD). Hasta un 50% de ahorro en costos de mantenimiento + generación de ingresos por viejos equipos (ITAD).</p><a class="btn__more"></a>
                 </article>
               </li>
               <li class="col-xs-24 col-sm-8 col-md-8 wow fadeInUp">
                 <div class="servicetpm__services__img"><img src="../images/service-tpm/icon-almacenamiento.png"></div>
                 <article class="servicetpm__services__content">
                   <p class="servicetpm__services__article-title">Almacenamiento</p>
-                  <p class="servicetpm__services__article-desc">Hasta un 50% de ahorro en costos de mantenimiento + generación de ingresos por viejos equipos (ITAD). Hasta un 50% de ahorro en costos de mantenimiento + generación de ingresos por viejos equipos (ITAD).</p><a class="btn__more">ver más &gt;</a>
+                  <p class="servicetpm__services__article-desc">Hasta un 50% de ahorro en costos de mantenimiento + generación de ingresos por viejos equipos (ITAD). Hasta un 50% de ahorro en costos de mantenimiento + generación de ingresos por viejos equipos (ITAD).</p><a class="btn__more"></a>
                 </article>
               </li>
               <li class="col-xs-24 col-sm-8 col-md-8 wow fadeInUp">
                 <div class="servicetpm__services__img"><img src="../images/service-tpm/icon-servers.png"></div>
                 <article class="servicetpm__services__content">
                   <p class="servicetpm__services__article-title">Servidores</p>
-                  <p class="servicetpm__services__article-desc">Hasta un 50% de ahorro en costos de mantenimiento + generación de ingresos por viejos equipos (ITAD). Hasta un 50% de ahorro en costos de mantenimiento + generación de ingresos por viejos equipos (ITAD).</p><a class="btn__more">ver más &gt;</a>
+                  <p class="servicetpm__services__article-desc">Hasta un 50% de ahorro en costos de mantenimiento + generación de ingresos por viejos equipos (ITAD). Hasta un 50% de ahorro en costos de mantenimiento + generación de ingresos por viejos equipos (ITAD).</p><a class="btn__more"></a>
                 </article>
               </li>
             </ul>
@@ -227,7 +193,7 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-xs-24 cta__container">
-              <p class="cta__text">Cambie de servicio con estos simples 6 pasos</p><a href="#" class="_button -white">Me interesa</a>
+              <p class="cta__text">Cambie de servicio con estos simples 6 pasos</p><a href="/abandonar-fabricante" class="_button -white">Me interesa</a>
             </div>
           </div>
         </div>
@@ -237,23 +203,23 @@
       <div class="container"> 
         <div class="row">
           <p class="servicetpm__opiniones__title">¿Qué dicen los especialistas?</p>
-          <p class="servicetpm__opiniones__desc">Si todavía está convencido de cambiar a Mantenimiento Alternantivo, mire lo que dicen los especialistas</p>
+          <p class="servicetpm__opiniones__desc">Si todavía no está convencido de cambiar a Mantenimiento Alternativo, mire lo que dicen los especialistas</p>
           <div class="_slider opiniones__slider">
             <div class="servicetpm__opiniones__slider">
               <div class="container row">
                 <div class="servicetpm__opiniones__slider-img col-xs-24 col-sm-8 col-sm-offset-2"><img src="../images/service-tpm/forrester.png"></div>
                 <div class="servicetpm__opiniones__slider-text col-xs-24 col-sm-10 col-sm-offset-1">
-                  <p class="slide__title">Apto Solutions</p>
+                  <p class="slide__title">Forrester</p>
                   <p class="slide__text">A pesar de que los presupuestos de soporte técnico están bajo constante análisis, muchas empresas confían plenamente en los OEMs, lo cual les impide ver los beneficios de extender el ciclo de vida del hardware y las soluciones de mantenimiento alternativo. Forrester Consulting ofrece a las empresas varios consejos para obtener más valor y maximizar el retorno sobre la inversión de la infraestructura de red que han adquirido.</p>
                 </div>
               </div>
             </div>
             <div class="servicetpm__opiniones__slider">
               <div class="container row">
-                <div class="servicetpm__opiniones__slider-img col-xs-24 col-sm-8 col-sm-offset-2"><img src="../images/service-tpm/forrester.png"></div>
+                <div class="servicetpm__opiniones__slider-img col-xs-24 col-sm-8 col-sm-offset-2"><img src="../images/service-tpm/accenture.png"></div>
                 <div class="servicetpm__opiniones__slider-text col-xs-24 col-sm-10 col-sm-offset-1">
-                  <p class="slide__title">Apto Solutions 2</p>
-                  <p class="slide__text">A pesar de que los presupuestos de soporte técnico están bajo constante análisis, muchas empresas confían plenamente en los OEMs, lo cual les impide ver los beneficios de extender el ciclo de vida del hardware y las soluciones de mantenimiento alternativo. Forrester Consulting ofrece a las empresas varios consejos para obtener más valor y maximizar el retorno sobre la inversión de la infraestructura de red que han adquirido.</p>
+                  <p class="slide__title">Accenture</p>
+                  <p class="slide__text">No ignore la tendencia hacia opciones de mantenimiento alternativo para el soporte técnico de equipos: A medida que nuestros clientes buscan, con mayor frecuencia, nuevas formas de optimizar su estructura de costos de IT, las opciones de mantenimiento alternativo parecen obvias. La calidad de las opciones de soporte técnico alternativo continúa aumentando, no solo ofreciendo importante potencial de ahorro, sino mejor cobertura global.</p>
                 </div>
               </div>
             </div>
@@ -266,28 +232,40 @@
         <p class="servicetpm__clients__title">Estos son algunos de los clientes que han confiado en Xsi</p>
         <ul class="row"> 
           <li class="col-xs-24 col-sm-12 col-md-6">
-            <div class="servicetpm__clients__img"> <img src="../images/home/logo-walt-disney.png"></div>
+            <div class="servicetpm__clients__img"> <img src="/images/home/logo-walt-disney.png"></div>
           </li>
           <li class="col-xs-24 col-sm-12 col-md-6">
-            <div class="servicetpm__clients__img"> <img src="../images/home/logo-mckenna.png"></div>
+            <div class="servicetpm__clients__img"> <img src="/images/home/logo-cnpem.png"></div>
           </li>
           <li class="col-xs-24 col-sm-12 col-md-6">
-            <div class="servicetpm__clients__img"> <img src="../images/home/logo-lockheed.png"></div>
+            <div class="servicetpm__clients__img"> <img src="/images/home/logo-lockheed.png"></div>
           </li>
           <li class="col-xs-24 col-sm-12 col-md-6">
-            <div class="servicetpm__clients__img"> <img src="../images/home/logo-walt-disney.png"></div>
+            <div class="servicetpm__clients__img"> <img src="/images/home/logo-dod.png"></div>
           </li>
           <li class="col-xs-24 col-sm-12 col-md-6">
-            <div class="servicetpm__clients__img"> <img src="../images/home/logo-l3.png"></div>
+            <div class="servicetpm__clients__img"> <img src="/images/home/logo-l3.png"></div>
           </li>
           <li class="col-xs-24 col-sm-12 col-md-6">
-            <div class="servicetpm__clients__img"> <img src="../images/home/logo-ici.png"></div>
+            <div class="servicetpm__clients__img"> <img src="/images/home/logo-espn.png"></div>
           </li>
           <li class="col-xs-24 col-sm-12 col-md-6">
-            <div class="servicetpm__clients__img"> <img src="../images/home/logo-caci.png"></div>
+            <div class="servicetpm__clients__img"> <img src="/images/home/logo-lnls.png"></div>
           </li>
           <li class="col-xs-24 col-sm-12 col-md-6">
-            <div class="servicetpm__clients__img"> <img src="../images/home/logo-l3.png"></div>
+            <div class="servicetpm__clients__img"> <img src="/images/home/logo-tvn.png"></div>
+          </li>
+          <li class="col-xs-24 col-sm-12 col-md-6">
+            <div class="servicetpm__clients__img"> <img src="/images/home/logo-nasa.png"></div>
+          </li>
+          <li class="col-xs-24 col-sm-12 col-md-6">
+            <div class="servicetpm__clients__img"> <img src="/images/home/logo-tata.png"></div>
+          </li>
+          <li class="col-xs-24 col-sm-12 col-md-6">
+            <div class="servicetpm__clients__img"> <img src="/images/home/logo-tech-data.png"></div>
+          </li>
+          <li class="col-xs-24 col-sm-12 col-md-6">
+            <div class="servicetpm__clients__img"> <img src="/images/home/logo-toyota.png"></div>
           </li>
         </ul>
       </div>
@@ -358,24 +336,23 @@
       </div>
     </section>
   </main>
-  <footer class="footer">
+  <footer id="footer" class="footer"><a href="#header" class="gotop -hidden">Ir arriba
+      <div class="fa fa-chevron-up"></div></a>
     <div class="container">
       <div class="footer__top row">
         <div class="footer__logo col-xs-24 col-sm-8 col-md-8"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logoOriginal"></use></svg></div>
         <div class="footer__items1 col-xs-12 col-sm-4 col-md-4">
           <ul class="list__items">
-            <li><a href="/">Homepage</a></li>
-            <li><a href="/mantenimiento">Mantemiento</a></li>
+            <li><a href="/service-tpm">Mantemiento</a></li>
             <li><a href="/service-itad">Itad</a></li>
-            <li><a href="/service-tpm">Servicios</a></li>
+            <li><a href="/about">Sobre XSi</a></li>
           </ul>
         </div>
         <div class="footer__items2 col-xs-12 col-sm-4 col-md-4">
           <ul class="list__items">
-            <li><a href="/about">Sobre XSi</a></li>
-            <li><a href="#">Noticias</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Novedades</a></li>
+            <li><a href="/gartner">Prensa y Media</a></li>
+            <li><a href="/contacto">Contacto</a></li>
           </ul>
         </div>
         <div class="footer__newsletter col-xs-24 col-sm-24 col-md-8">
@@ -385,10 +362,9 @@
             <input type="submit" value="send">
           </form>
           <ul class="header__social">
-            <li><a href="http://facebook.com"><i class="fa fa-facebook">                 </i></a></li>
-            <li><a href="http://twitter.com"><i class="fa fa-twitter">                 </i></a></li>
-            <li><a href="http://google.com"><i class="fa fa-google-plus">                 </i></a></li>
-            <li><a href="http://linkedin.com"><i class="fa fa-linkedin">                 </i></a></li>
+            <li><a href="https://www.facebook.com/XSiLatam/" target="_blank"><i class="fa fa-facebook">                 </i></a></li>
+            <li><a href="https://twitter.com/XSiLatam" target="_blank"><i class="fa fa-twitter">                 </i></a></li>
+            <li><a href="https://www.linkedin.com/company-beta/87228/" target="_blank"><i class="fa fa-linkedin">                 </i></a></li>
           </ul>
         </div>
       </div>

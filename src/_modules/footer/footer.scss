@@ -2,6 +2,26 @@
 footer.footer {
   margin: 6% 0;
 
+  .gotop {
+      position: fixed;
+      bottom:0;
+      right:$base;
+      background: $blue;
+      color:$white;
+      font-weight: bold;
+      font-size:14px;
+      padding: 0 20px;
+      text-transform: uppercase;
+      height: $base;
+      line-height: $base;
+      transition: all $duration $easing;
+
+      &.-hidden{
+          opacity: 0;
+          pointer-events: none;
+      }
+  }
+
   @include breakpoint(md){
       margin: 3% 0;
   }

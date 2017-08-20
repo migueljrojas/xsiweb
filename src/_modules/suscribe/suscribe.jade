@@ -3,7 +3,8 @@ mixin suscribe()
         .container
             .row
                 .col-xs-24.newsletter__container
-                    p.newsletter__title.col-xs-24.col-md-24 Suscribite a nuestro newsletter
+                    p.newsletter__title.col-xs-24.col-md-24 ¿Hablamos?
+                    p.newsletter__subtitle Déjenos su e-mail para contactarlo
                     
                     form.newsletter__form(action='/newsletter',method='post')
                         input(id='email',type='text',value='',placeholder='Ingrese su e-mail',name='email')

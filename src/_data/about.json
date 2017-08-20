@@ -36,7 +36,7 @@
     "cta": {
         "text": "Le ofrecemos un ANÁLISIS GRATUITO de ahorro",
         "btn": {
-            "url":"#",
+            "url":"/analisis",
             "text": "Me interesa"
         }
     }

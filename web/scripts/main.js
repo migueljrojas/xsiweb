@@ -13131,6 +13131,9 @@ var Header = function() {
     var body = $('body');
     var main = $('main');
     var footer = $('footer');
+    var gotop = $('.gotop');
+    var url = window.location.pathname;
+    var urlRegExp = new RegExp(url == '/' ? window.location.origin + '/?$' : url.replace(/\/$/,'') + '$');
 
     header.addClass('-ontop');
 
@@ -13150,7 +13153,61 @@ var Header = function() {
             } else {
                 header.addClass('-ontop');
             }
+
+            if (scroll >= 800) {
+                gotop.removeClass('-hidden');
+            } else {
+                gotop.addClass('-hidden');
+            }
         });
+    });
+
+
+    // Select all links with hashes
+    $('a[href*="#"]')
+      // Remove links that don't actually link to anything
+      .not('[href="#"]')
+      .not('[href="#0"]')
+      .click(function(event) {
+        // On-page links
+        if (
+          location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+          &&
+          location.hostname == this.hostname
+        ) {
+          // Figure out element to scroll to
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          // Does a scroll target exist?
+          if (target.length) {
+            // Only prevent default if animation is actually gonna happen
+            event.preventDefault();
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 1000, function() {
+              // Callback after animation
+              // Must change focus!
+              var $target = $(target);
+              $target.focus();
+              if ($target.is(":focus")) { // Checking if the target was focused
+                return false;
+              } else {
+                $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                $target.focus(); // Set focus again
+              };
+            });
+          }
+        }
+    });
+
+
+    // now grab every link from the navigation
+    $('.header__menu li a').each(function(){
+        // and test its normalized href against the url pathname regexp
+
+        if(urlRegExp.test(this.href.replace(/\/$/,''))){
+            $(this).parents('.header__menu li').addClass('-active');
+        }
     });
 };
 
@@ -13222,96 +13279,30 @@ var Home = function() {
 
         //Btn Action IT
         $( '.btn__soy-it' ).on( 'click', function() {
-            $( '.it, .finanzas' ).css( 'display', 'none' );
-            $( '.it-open' ).css( 'display', 'flex' );
+            $( '.it, .finanzas' ).addClass('-hidden');
+            $( '.it-open' ).addClass('-shown');
         });
 
         //Btn Action Finanzas
         $( '.btn__soy-finanzas' ).on( 'click', function() {
-            $( '.it, .finanzas' ).css( 'display', 'none' );
-            $( '.finanzas-open' ).css( 'display', 'flex' );
+            $( '.it, .finanzas' ).addClass('-hidden');
+            $( '.finanzas-open' ).addClass('-shown');
         });
 
         //Btn Action Close
         $( '.btn__close' ).on( 'click', function(){
-            $( '.finanzas-open' ).css( 'display', 'none' );
-            $( '.it-open' ).css( 'display', 'none' );
-            $( '.it, .finanzas' ).css( 'display', 'block' ).fadeIn( "slow" );
+            $( '.finanzas-open' ).removeClass('-shown');
+            $( '.it-open' ).removeClass('-shown');
+            $( '.it, .finanzas' ).removeClass('-hidden');
         });
 
     });
-
-
-    var container = $('.js-video');
-    var frame = container.find('iframe');
-
-    if( container ) {
-        $(window).on("scroll", function() {
-
-            var scroll = $(window).scrollTop();
-            var containerTop = container.get(0).getBoundingClientRect().top;
-
-            if ( !container.hasClass('-playback') ) {
-                if ( containerTop <= 450 && containerTop > -50 ) {
-                    frame.attr("src","https://www.youtube.com/embed/J3CawfqexeU?rel=0&showinfo=0&autoplay=1&controls=0&t=15s");
-                    container.addClass('-playback');
-                }
-            }
-
-            ////www.youtube.com/embed/zpOULjyy-n8?rel=0&autoplay=1&controls=0
-
-            if ( container.hasClass('-playback') ) {
-                if ( containerTop > 450 || containerTop < -50 ) {
-                    frame.attr("src","");
-                    container.removeClass('-playback');
-                }
-            }
-
-        });
-    }
-
 
 };
 
 module.exports = Home;
 
 },{}],8:[function(require,module,exports){
-'use strict';
-
-// Constructor
-var Itad = function() {
-    var container = $('.js-video');
-    var frame = container.find('iframe');
-
-    if( container ) {
-        $(window).on("scroll", function() {
-
-            var scroll = $(window).scrollTop();
-            var containerTop = container.get(0).getBoundingClientRect().top;
-
-            if ( !container.hasClass('-playback') ) {
-                if ( containerTop <= 450 && containerTop > -50 ) {
-                    frame.attr("src","https://www.youtube.com/embed/5RXrUV2N7ZA?rel=0&showinfo=0&autoplay=1&controls=0");
-                    container.addClass('-playback');
-                }
-            }
-
-            ////www.youtube.com/embed/zpOULjyy-n8?rel=0&autoplay=1&controls=0
-
-            if ( container.hasClass('-playback') ) {
-                if ( containerTop > 450 || containerTop < -50 ) {
-                    frame.attr("src","");
-                    container.removeClass('-playback');
-                }
-            }
-
-        });
-    }
-};
-
-module.exports = Itad;
-
-},{}],9:[function(require,module,exports){
 (function (global){
 // Main javascript entry point
 // Should handle bootstrapping/starting application
@@ -13323,7 +13314,7 @@ var Header = require('../_modules/header/header');
 var Slider = require('../_modules/slider/slider');
 var Job = require('../_modules/job/job');
 var Home = require('./home');
-var Itad = require('./itad');
+var VideoReplace = require('./videoReplace');
 
 $(function() {
     require('../../bower_components/bootstrap-sass/assets/javascripts/bootstrap.min');
@@ -13331,12 +13322,58 @@ $(function() {
 
     new Header();
     new Slider();
-    new Itad();
+    new VideoReplace();
     new Job();
+    new Home();
 });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 
-},{"../../bower_components/bootstrap-sass/assets/javascripts/bootstrap.min":1,"../../bower_components/slick-carousel/slick/slick":2,"../_modules/header/header":4,"../_modules/job/job":5,"../_modules/slider/slider":6,"./home":7,"./itad":8,"jquery":3}]},{},[9])
+},{"../../bower_components/bootstrap-sass/assets/javascripts/bootstrap.min":1,"../../bower_components/slick-carousel/slick/slick":2,"../_modules/header/header":4,"../_modules/job/job":5,"../_modules/slider/slider":6,"./home":7,"./videoReplace":9,"jquery":3}],9:[function(require,module,exports){
+'use strict';
+
+// Constructor
+var videoReplace = function() {
+    var container = $('.js-video');
+    var frame = container.find('iframe');
+    var videoHome = 'https://www.youtube.com/embed/J3CawfqexeU?rel=0&showinfo=0&autoplay=1&controls=0&t=15s';
+    var videoItad = 'https://www.youtube.com/embed/5RXrUV2N7ZA?rel=0&showinfo=0&autoplay=1&controls=0';
+    var videoTPM = 'https://www.youtube.com/embed/myd-VNDUC1I?rel=0&showinfo=0&autoplay=1&controls=0';
+
+    if( container.length > 0 ) {
+        $(window).on("scroll", function() {
+
+            var scroll = $(window).scrollTop();
+            var containerTop = container.get(0).getBoundingClientRect().top;
+
+            if ( !container.hasClass('-playback') ) {
+                if ( containerTop <= 500 && containerTop > -100 ) {
+
+                    if ( container.hasClass('-itad') ) {
+                        frame.attr('src', videoItad);
+                    } else if (container.hasClass('-tpm')) {
+                        frame.attr('src', videoTPM);
+                    } else {
+                        frame.attr('src', videoHome);
+                    }
+
+                    container.addClass('-playback');
+                }
+            }
+
+            if ( container.hasClass('-playback') ) {
+                if ( containerTop > 500 || containerTop < -100 ) {
+                    frame.attr("src","");
+                    container.removeClass('-playback');
+                }
+            }
+
+        });
+    }
+};
+
+module.exports = videoReplace;
+
+},{}]},{},[8])
 
 //# sourceMappingURL=main.js.map
